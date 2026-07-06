@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactForm from "../components/ContactForm";
+---
+
+<BaseLayout
+  title="Contact | BuzzNerd"
+  description="Get in touch with BuzzNerd to book a demo or learn how we can help your dealership sell online."
+>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Ready to move your inventory online?</h1>
+      <p>
+        Tell us about your dealership and we’ll show you how BuzzNerd can launch
+        your storefront, sync your inventory, and connect you with buyers.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-panel">
+        <h2>Get in touch</h2>
+        <p>Email: <a href="mailto:hello@buzznerd.com">hello@buzznerd.com</a></p>
+        <p>Phone: <a href="tel:+18005558763">+1 (800) 555-8763</a></p>
+        <p>Sales: <a href="mailto:sales@buzznerd.com">sales@buzznerd.com</a></p>
+      </div>
+
+      <ContactForm client:load />
+    </div>
+  </section>
+</BaseLayout>

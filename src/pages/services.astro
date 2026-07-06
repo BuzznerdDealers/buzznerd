@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+
+const services = [
+  {
+    title: "Branded Storefronts",
+    description:
+      "Launch a dealer website on your own domain or a BuzzNerd subdomain, with your branding and live inventory embedded.",
+  },
+  {
+    title: "Inventory & Listings",
+    description:
+      "Manage trucks, trailers, parts, and equipment across locations. Publish to your site and the BuzzNerd marketplace in one step.",
+  },
+  {
+    title: "Payments & Escrow",
+    description:
+      "Secure transactions with commission handling built in. Buyers pay with confidence; dealers get paid when the deal closes.",
+  },
+  {
+    title: "Shipping & Fulfillment",
+    description:
+      "Generate shipping labels, track deliveries, and connect carrier accounts — all from the same platform your team already uses.",
+  },
+];
+---
+
+<BaseLayout
+  title="Services | BuzzNerd"
+  description="BuzzNerd services for dealership storefronts, inventory management, marketplace listings, and fulfillment."
+>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Services</p>
+      <h1>One platform from listing to delivery.</h1>
+      <p>
+        BuzzNerd covers the full dealer workflow — online storefronts, inventory
+        management, marketplace syndication, payments, and shipping.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <SectionHeader
+        eyebrow="What we offer"
+        title="Built for how dealerships operate"
+        description="Every service is designed around real dealer workflows — not generic e-commerce."
+      />
+
+      <div class="card-grid two-column">
+        {services.map((service) => (
+          <article class="feature-card">
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
