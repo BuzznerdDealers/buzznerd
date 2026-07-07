@@ -61,24 +61,27 @@ src/
   pages/                    Routes: index, [...slug], blog, robots.txt, llms.txt
   index.ts                  Cloudflare Worker (inventory proxy)
 wrangler.toml               Worker + static assets config
-.github/workflows/deploy.yml CI/CD: preview per branch, production on main
+.nvmrc                      Node version for the Cloudflare build (22)
 ```
 
 ## Deployment
 
-Deploys run in GitHub Actions (`.github/workflows/deploy.yml`):
+Deploys are handled by **Cloudflare's Git integration** (connect the repo to a
+Cloudflare Workers project). No GitHub Actions workflow is used.
 
-- **Push to any branch except `main`** → isolated **preview** deploy.
-- **Merge a PR into `main`** → **production** deploy to the custom domain.
-- `main` should be branch-protected (require PR + passing build). Production
-  never changes from a direct push.
+- **Push to any branch except the production branch** → isolated **preview** deploy.
+- **Merge a PR into the production branch (`main`)** → **production** deploy to
+  the custom domain.
+- Set the production branch to `main` in the Cloudflare project settings, and
+  branch-protect `main` (require a PR) so production never changes from a direct push.
 
-### Required repo secrets
+### Cloudflare build settings
 
-| Secret | Purpose |
-| ------ | ------- |
-| `CLOUDFLARE_API_TOKEN` | Deploy Workers + Static Assets |
-| `CLOUDFLARE_ACCOUNT_ID` | Target Cloudflare account |
+| Setting | Value |
+| ------- | ----- |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Node version | 22 (from `.nvmrc`; or set `NODE_VERSION=22`) |
 
 Set `name` in `wrangler.toml` to a unique per-dealer value (e.g. `dealer-abc`).
 
