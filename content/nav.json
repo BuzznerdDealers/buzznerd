@@ -1,0 +1,19 @@
+{
+  "cta": { "label": "View Inventory", "href": "/inventory" },
+  "items": [
+    { "label": "Home", "href": "/" },
+    { "label": "Inventory", "href": "/inventory" },
+    {
+      "label": "Services",
+      "href": "/services",
+      "children": [
+        { "label": "Service & Repair", "href": "/services" },
+        { "label": "Parts", "href": "/parts" },
+        { "label": "Financing", "href": "/financing" }
+      ]
+    },
+    { "label": "About", "href": "/about" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}

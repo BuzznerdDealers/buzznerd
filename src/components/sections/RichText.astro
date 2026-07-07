@@ -1,0 +1,32 @@
+---
+import Section from "../Section.astro";
+
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  container?: "default" | "narrow" | "wide";
+  eyebrow?: string;
+  title?: string;
+  /** Plain text with \n\n between paragraphs, or pre-rendered HTML. */
+  body?: string;
+  html?: string;
+}
+
+const {
+  id,
+  background = "default",
+  container = "narrow",
+  eyebrow,
+  title,
+  body,
+  html,
+} = Astro.props;
+
+const paragraphs = body ? body.split(/\n\n+/).filter(Boolean) : [];
+---
+
+<Section id={id} background={background} container={container} align="left" eyebrow={eyebrow} title={title}>
+  <div class="prose">
+    {html ? <Fragment set:html={html} /> : paragraphs.map((p) => <p>{p}</p>)}
+  </div>
+</Section>

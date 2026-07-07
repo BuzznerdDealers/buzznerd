@@ -1,0 +1,24 @@
+{
+  "columns": [
+    {
+      "title": "Explore",
+      "links": [
+        { "label": "Inventory", "href": "/inventory" },
+        { "label": "Services", "href": "/services" },
+        { "label": "Parts", "href": "/parts" },
+        { "label": "Financing", "href": "/financing" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Locations", "href": "/locations" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    }
+  ],
+  "note": "Serving the region with new & used trucks, expert service, and genuine parts.",
+  "legal": "All rights reserved."
+}

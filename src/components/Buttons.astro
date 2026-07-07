@@ -1,0 +1,26 @@
+---
+export interface Cta {
+  label: string;
+  href: string;
+  style?: "primary" | "secondary" | "ghost";
+}
+
+interface Props {
+  ctas?: Cta[];
+  class?: string;
+}
+
+const { ctas = [], class: className } = Astro.props;
+---
+
+{
+  ctas.length > 0 && (
+    <div class:list={["btn-group", className]}>
+      {ctas.map((cta) => (
+        <a href={cta.href} class:list={["btn", `btn-${cta.style || "primary"}`]}>
+          {cta.label}
+        </a>
+      ))}
+    </div>
+  )
+}

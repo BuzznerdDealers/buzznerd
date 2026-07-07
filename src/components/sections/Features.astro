@@ -1,0 +1,54 @@
+---
+import Section from "../Section.astro";
+import Icon from "../Icon.astro";
+
+interface FeatureItem {
+  title: string;
+  body?: string;
+  icon?: string;
+  href?: string;
+}
+
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  columns?: 2 | 3 | 4;
+  items: FeatureItem[];
+}
+
+const {
+  id,
+  background = "default",
+  eyebrow,
+  title,
+  description,
+  columns = 3,
+  items = [],
+} = Astro.props;
+
+const Wrapper = "div";
+---
+
+<Section id={id} background={background} eyebrow={eyebrow} title={title} description={description}>
+  <div class="grid" data-cols={columns}>
+    {
+      items.map((item) => {
+        const Tag = item.href ? "a" : Wrapper;
+        return (
+          <Tag class="card feature-card" href={item.href}>
+            {item.icon && (
+              <span class="feature-icon">
+                <Icon name={item.icon} />
+              </span>
+            )}
+            <h3>{item.title}</h3>
+            {item.body && <p>{item.body}</p>}
+          </Tag>
+        );
+      })
+    }
+  </div>
+</Section>

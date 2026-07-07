@@ -1,8 +1,13 @@
-name = "astra-start"
+# Cloudflare Worker + Static Assets config.
+# `name` is the Worker/production project name — the onboarding script sets this
+# per dealer (e.g. "dealer-abc"). Keep it unique per dealer.
+name = "dealer-template"
 compatibility_date = "2026-07-06"
 main = "src/index.ts"
 
 [assets]
 directory = "./dist"
 binding = "ASSETS"
+# The Worker runs first only for inventory paths so it can proxy to Remix.
+# Everything else is served directly from the static build in ./dist.
 run_worker_first = ["/inventory/*"]

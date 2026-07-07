@@ -1,0 +1,28 @@
+---
+import Section from "../Section.astro";
+
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  items: { title: string; body?: string }[];
+}
+
+const { id, background = "default", eyebrow, title, description, items = [] } = Astro.props;
+---
+
+<Section id={id} background={background} eyebrow={eyebrow} title={title} description={description}>
+  <ol class="steps" data-cols={items.length}>
+    {
+      items.map((step, i) => (
+        <li class="step">
+          <span class="step-number">{i + 1}</span>
+          <h3>{step.title}</h3>
+          {step.body && <p>{step.body}</p>}
+        </li>
+      ))
+    }
+  </ol>
+</Section>

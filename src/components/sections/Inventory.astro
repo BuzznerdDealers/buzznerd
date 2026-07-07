@@ -1,0 +1,48 @@
+---
+import Section from "../Section.astro";
+import { dealer } from "../../config";
+
+/**
+ * Inventory widget slot. Renders a placeholder <div> that a Remix-served widget
+ * bundle mounts into at runtime (progressive enhancement — the static page
+ * renders instantly, the widget hydrates after). The widget script URL is
+ * derived from the dealer's Remix origin so it stays correct per dealer.
+ *
+ * See CLAUDE.md → "Widgets" for how this connects to the Remix widget system.
+ */
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  /** Widget bundle name served by Remix, e.g. "inventory-scroller" or "search". */
+  widget?: string;
+  /** Optional Vendure collection/filter passed to the widget. */
+  collection?: string;
+}
+
+const {
+  id,
+  background = "default",
+  eyebrow,
+  title,
+  description,
+  widget = "inventory-scroller",
+  collection,
+} = Astro.props;
+
+const scriptSrc = `${dealer.remixOrigin.replace(/\/$/, "")}/widgets/${widget}.js`;
+---
+
+<Section id={id} background={background} eyebrow={eyebrow} title={title} description={description}>
+  <div
+    data-widget={widget}
+    data-channel={dealer.slug}
+    data-collection={collection}
+    class="widget-slot"
+  >
+    <p class="widget-fallback">Loading inventory…</p>
+  </div>
+  <script src={scriptSrc} defer is:inline></script>
+</Section>

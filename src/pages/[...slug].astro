@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "../layouts/PageLayout.astro";
+
+// One route per content/pages/*.json (except home, which is served by index).
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+  return pages
+    .filter((p) => p.id !== "home" && !p.data.draft)
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+---
+
+<PageLayout entry={entry} path={`/${entry.id}`} />

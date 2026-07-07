@@ -1,0 +1,57 @@
+---
+import Hero from "./sections/Hero.astro";
+import PageHeader from "./sections/PageHeader.astro";
+import RichText from "./sections/RichText.astro";
+import Features from "./sections/Features.astro";
+import Split from "./sections/Split.astro";
+import Stats from "./sections/Stats.astro";
+import Steps from "./sections/Steps.astro";
+import Logos from "./sections/Logos.astro";
+import Testimonials from "./sections/Testimonials.astro";
+import Gallery from "./sections/Gallery.astro";
+import Faq from "./sections/Faq.astro";
+import Locations from "./sections/Locations.astro";
+import Cta from "./sections/Cta.astro";
+import Contact from "./sections/Contact.astro";
+import Inventory from "./sections/Inventory.astro";
+
+/**
+ * Registry mapping a section `type` (from content JSON) to its component.
+ * To add a new section type: create the component in ./sections and add one
+ * line here. Everything else (content authoring, rendering) just works.
+ */
+const registry: Record<string, any> = {
+  hero: Hero,
+  pageHeader: PageHeader,
+  richText: RichText,
+  features: Features,
+  split: Split,
+  stats: Stats,
+  steps: Steps,
+  logos: Logos,
+  testimonials: Testimonials,
+  gallery: Gallery,
+  faq: Faq,
+  locations: Locations,
+  cta: Cta,
+  contact: Contact,
+  inventory: Inventory,
+};
+
+interface Props {
+  sections: ({ type: string } & Record<string, any>)[];
+}
+
+const { sections = [] } = Astro.props;
+---
+
+{
+  sections.map(({ type, ...props }) => {
+    const Component = registry[type];
+    if (!Component) {
+      console.warn(`[SectionRenderer] Unknown section type: "${type}"`);
+      return null;
+    }
+    return <Component {...props} />;
+  })
+}

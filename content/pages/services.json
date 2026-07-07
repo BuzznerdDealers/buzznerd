@@ -1,0 +1,45 @@
+{
+  "title": "Services",
+  "seo": {
+    "title": "Service & Repair",
+    "description": "Factory-trained technicians, a fully equipped shop, and fast turnaround to keep your trucks running."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "eyebrow": "Service & repair",
+      "title": "Expert service that keeps you moving",
+      "subheadline": "From routine maintenance to major repairs, our certified technicians have you covered."
+    },
+    {
+      "type": "features",
+      "columns": 3,
+      "items": [
+        { "title": "Preventive Maintenance", "body": "Oil changes, inspections, and scheduled service to prevent costly downtime.", "icon": "wrench" },
+        { "title": "Engine & Drivetrain", "body": "Diagnostics and repair for engines, transmissions, and drivetrains.", "icon": "gear" },
+        { "title": "DPF & Emissions", "body": "Cleaning and service to keep you compliant and efficient.", "icon": "leaf" },
+        { "title": "Brakes & Suspension", "body": "Safety-critical repairs done right the first time.", "icon": "shield" },
+        { "title": "Electrical & Diagnostics", "body": "Advanced diagnostics to find and fix issues fast.", "icon": "bolt" },
+        { "title": "Roadside & Mobile", "body": "24/7 support to get you back on the road.", "icon": "truck" }
+      ]
+    },
+    {
+      "type": "steps",
+      "background": "muted",
+      "title": "How service works",
+      "items": [
+        { "title": "Book", "body": "Schedule online or call any location." },
+        { "title": "Diagnose", "body": "Our techs inspect and give you a clear estimate." },
+        { "title": "Repair", "body": "We fix it right, with genuine parts." },
+        { "title": "Roll out", "body": "Back on the road, fast." }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Need service now?",
+      "body": "Get in touch and we'll get you scheduled.",
+      "ctas": [{ "label": "Schedule Service", "href": "/contact", "style": "primary" }]
+    }
+  ]
+}

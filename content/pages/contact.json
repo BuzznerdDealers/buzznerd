@@ -1,0 +1,37 @@
+{
+  "title": "Contact",
+  "seo": {
+    "title": "Contact Us",
+    "description": "Get in touch with our sales, service, and parts teams. Multiple locations to serve you."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "eyebrow": "Get in touch",
+      "title": "We're here to help",
+      "subheadline": "Reach out about sales, service, parts, or financing — we'll get back to you fast."
+    },
+    {
+      "type": "contact",
+      "showForm": true,
+      "showDetails": true
+    },
+    {
+      "type": "locations",
+      "background": "muted",
+      "title": "Our locations",
+      "items": [
+        {
+          "name": "Main Location",
+          "address": "1234 Highway Dr",
+          "city": "Salt Lake City",
+          "state": "UT",
+          "zip": "84101",
+          "phone": "+1 (800) 555-0100",
+          "hours": "Mon–Fri 7am–6pm, Sat 8am–2pm",
+          "mapUrl": "https://maps.google.com/?q=1234+Highway+Dr+Salt+Lake+City+UT"
+        }
+      ]
+    }
+  ]
+}

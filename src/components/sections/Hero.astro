@@ -1,0 +1,61 @@
+---
+import Buttons, { type Cta } from "../Buttons.astro";
+
+interface Props {
+  eyebrow?: string;
+  headline: string;
+  subheadline?: string;
+  backgroundImage?: string;
+  /** "split" (text + card), "center" (centered), or "image" (full-bleed bg). */
+  layout?: "split" | "center" | "image";
+  ctas?: Cta[];
+  highlights?: { label: string; value: string }[];
+}
+
+const {
+  eyebrow,
+  headline,
+  subheadline,
+  backgroundImage,
+  layout = "split",
+  ctas = [],
+  highlights = [],
+} = Astro.props;
+
+const hasImage = layout === "image" && backgroundImage;
+const style = hasImage
+  ? `--hero-image: url('${backgroundImage}')`
+  : undefined;
+---
+
+<section class:list={["hero", `hero-${layout}`]} style={style} data-has-image={hasImage ? "true" : "false"}>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1>{headline}</h1>
+      {subheadline && <p class="hero-sub">{subheadline}</p>}
+      <Buttons ctas={ctas} />
+    </div>
+
+    {
+      layout === "split" && (
+        <div class="hero-aside" aria-hidden={highlights.length ? "false" : "true"}>
+          {highlights.length > 0 ? (
+            <div class="hero-highlights">
+              {highlights.map((h) => (
+                <div class="hero-highlight">
+                  <strong>{h.value}</strong>
+                  <span>{h.label}</span>
+                </div>
+              ))}
+            </div>
+          ) : backgroundImage ? (
+            <img src={backgroundImage} alt="" class="hero-media" loading="eager" />
+          ) : (
+            <div class="hero-placeholder" />
+          )}
+        </div>
+      )
+    }
+  </div>
+</section>

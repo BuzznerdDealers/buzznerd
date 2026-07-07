@@ -1,0 +1,55 @@
+---
+import { dealer, formatTitle, absoluteUrl } from "../config";
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Canonical/OG path; defaults to the current page. */
+  path?: string;
+  ogImage?: string;
+  /** "website" for pages, "article" for blog posts. */
+  ogType?: "website" | "article";
+  noindex?: boolean;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = dealer.seo.defaultDescription,
+  path = Astro.url.pathname,
+  ogImage = dealer.seo.ogImage,
+  ogType = "website",
+  noindex = false,
+  canonical,
+} = Astro.props;
+
+const pageTitle = formatTitle(title);
+const canonicalUrl = canonical || absoluteUrl(path);
+const imageUrl = absoluteUrl(ogImage || "/og-default.jpg");
+const twitterHandle = dealer.seo.twitterHandle;
+---
+
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+{
+  noindex ? (
+    <meta name="robots" content="noindex, nofollow" />
+  ) : (
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+  )
+}
+
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={dealer.name} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content={dealer.seo.locale || "en_US"} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+{twitterHandle && <meta name="twitter:site" content={twitterHandle} />}

@@ -1,0 +1,33 @@
+---
+import Section from "../Section.astro";
+
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  title?: string;
+  items: { name: string; logo?: string; href?: string }[];
+}
+
+const { id, background = "default", title, items = [] } = Astro.props;
+---
+
+<Section id={id} background={background} title={title}>
+  <div class="logos">
+    {
+      items.map((item) => {
+        const inner = item.logo ? (
+          <img src={item.logo} alt={item.name} loading="lazy" />
+        ) : (
+          <span class="logo-text">{item.name}</span>
+        );
+        return item.href ? (
+          <a href={item.href} class="logo" aria-label={item.name}>
+            {inner}
+          </a>
+        ) : (
+          <div class="logo">{inner}</div>
+        );
+      })
+    }
+  </div>
+</Section>

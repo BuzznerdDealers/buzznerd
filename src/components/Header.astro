@@ -1,0 +1,124 @@
+---
+import { dealer, socialLinks } from "../config";
+import nav from "../../content/nav.json";
+import site from "../../content/site.json";
+
+const currentPath = Astro.url.pathname;
+const topbar = site.topbar ?? { enabled: false };
+const announcement = site.announcement ?? { enabled: false };
+const socials = socialLinks();
+
+function isActive(href: string) {
+  if (href === "/") return currentPath === "/";
+  return currentPath === href || currentPath.startsWith(href + "/");
+}
+---
+
+{
+  announcement.enabled && announcement.text && (
+    <div class="announcement">
+      <a href={announcement.href || "#"}>{announcement.text}</a>
+    </div>
+  )
+}
+
+{
+  topbar.enabled && (
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <p class="topbar-message">{topbar.message}</p>
+        <div class="topbar-right">
+          {topbar.links?.map((l: any) => <a href={l.href}>{l.label}</a>)}
+          {topbar.showPhone && dealer.contact?.phone && (
+            <a class="topbar-phone" href={`tel:${dealer.contact.phone.replace(/[^+\d]/g, "")}`}>
+              {dealer.contact.phone}
+            </a>
+          )}
+          {topbar.showSocial &&
+            socials.map((s) => (
+              <a class="topbar-social" href={s.url} aria-label={s.network} target="_blank" rel="noopener">
+                {s.network[0].toUpperCase()}
+              </a>
+            ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label={`${dealer.name} home`}>
+      {
+        dealer.brand.logo ? (
+          <img src={dealer.brand.logo} alt={dealer.name} class="brand-logo" />
+        ) : (
+          <span class="brand-text">{dealer.shortName || dealer.name}</span>
+        )
+      }
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary">
+      {
+        nav.items.map((item: any) =>
+          item.children?.length ? (
+            <div class="nav-dropdown">
+              <a href={item.href} class:list={[isActive(item.href) && "active"]}>
+                {item.label}
+                <span class="caret" aria-hidden="true">▾</span>
+              </a>
+              <div class="dropdown-menu">
+                {item.children.map((child: any) => (
+                  <a href={child.href}>{child.label}</a>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <a href={item.href} class:list={[isActive(item.href) && "active"]}>
+              {item.label}
+            </a>
+          ),
+        )
+      }
+    </nav>
+
+    <div class="header-actions">
+      {nav.cta && <a class="btn btn-primary header-cta" href={nav.cta.href}>{nav.cta.label}</a>}
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile" data-mobile-nav hidden>
+    {
+      nav.items.map((item: any) => (
+        <>
+          <a href={item.href} class:list={[isActive(item.href) && "active"]}>
+            {item.label}
+          </a>
+          {item.children?.map((child: any) => (
+            <a href={child.href} class="mobile-sublink">
+              {child.label}
+            </a>
+          ))}
+        </>
+      ))
+    }
+    {nav.cta && <a class="btn btn-primary" href={nav.cta.href}>{nav.cta.label}</a>}
+  </nav>
+</header>
+
+<script is:inline>
+  (() => {
+    const toggle = document.querySelector("[data-menu-toggle]");
+    const menu = document.querySelector("[data-mobile-nav]");
+    if (!toggle || !menu) return;
+    toggle.addEventListener("click", () => {
+      const open = menu.hasAttribute("hidden");
+      if (open) menu.removeAttribute("hidden");
+      else menu.setAttribute("hidden", "");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+  })();
+</script>

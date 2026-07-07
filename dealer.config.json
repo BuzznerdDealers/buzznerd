@@ -1,0 +1,48 @@
+{
+  "$schema": "./dealer.config.schema.json",
+  "name": "BuzzNerd Dealer Template",
+  "shortName": "BuzzNerd",
+  "slug": "dealer-template",
+  "domain": "dealer-template.buzznerd.com",
+  "url": "https://dealer-template.buzznerd.com",
+  "vendureChannelId": "REPLACE_WITH_CHANNEL_ID",
+  "remixOrigin": "https://a1.buzznerdrv.com",
+  "businessType": "AutoDealer",
+  "tagline": "Your trusted partner for trucks, parts, and service.",
+  "brand": {
+    "primaryColor": "#1a3a5c",
+    "primaryColorDark": "#12293f",
+    "accentColor": "#e8a020",
+    "textColor": "#0f172a",
+    "logo": "/logo.svg",
+    "logoDark": "",
+    "favicon": "/favicon.svg",
+    "fontHeading": "Plus Jakarta Sans",
+    "fontBody": "Plus Jakarta Sans"
+  },
+  "contact": {
+    "phone": "+1 (800) 555-0100",
+    "email": "sales@dealer-template.com",
+    "address": "1234 Highway Dr",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84101",
+    "country": "US"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "youtube": "",
+    "x": ""
+  },
+  "seo": {
+    "defaultTitle": "BuzzNerd Dealer Template | Trucks, Parts & Service",
+    "titleTemplate": "%s | BuzzNerd Dealer Template",
+    "defaultDescription": "New and used trucks, expert service, genuine parts, financing and leasing — all from one trusted dealer.",
+    "ogImage": "/og-default.jpg",
+    "twitterHandle": "",
+    "locale": "en_US",
+    "themeColor": "#1a3a5c"
+  }
+}

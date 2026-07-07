@@ -1,0 +1,133 @@
+{
+  "title": "Home",
+  "seo": {
+    "title": "Trucks, Parts & Service",
+    "description": "New and used trucks, expert service, genuine parts, financing and leasing — all from one trusted dealer."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "layout": "split",
+      "eyebrow": "Family owned since 1985",
+      "headline": "Your trusted partner for trucks, parts & service.",
+      "subheadline": "Browse our latest inventory, schedule expert service, and get genuine parts — all in one place.",
+      "ctas": [
+        { "label": "View Inventory", "href": "/inventory", "style": "primary" },
+        { "label": "Schedule Service", "href": "/services", "style": "secondary" }
+      ],
+      "highlights": [
+        { "value": "40+", "label": "Years in business" },
+        { "value": "3", "label": "Locations" },
+        { "value": "12k+", "label": "Trucks sold" },
+        { "value": "24/7", "label": "Roadside support" }
+      ]
+    },
+    {
+      "type": "features",
+      "eyebrow": "What we do",
+      "title": "Everything you need under one roof",
+      "columns": 3,
+      "items": [
+        {
+          "title": "New & Used Inventory",
+          "body": "A constantly updated selection of trucks and equipment, ready to work.",
+          "icon": "truck",
+          "href": "/inventory"
+        },
+        {
+          "title": "Expert Service",
+          "body": "Factory-trained technicians and a fully equipped shop keep you moving.",
+          "icon": "wrench",
+          "href": "/services"
+        },
+        {
+          "title": "Genuine Parts",
+          "body": "OEM and aftermarket parts in stock, with fast shipping nationwide.",
+          "icon": "gear",
+          "href": "/parts"
+        }
+      ]
+    },
+    {
+      "type": "inventory",
+      "eyebrow": "In stock now",
+      "title": "Featured inventory",
+      "widget": "inventory-scroller",
+      "collection": "featured"
+    },
+    {
+      "type": "split",
+      "eyebrow": "About us",
+      "title": "Decades of keeping fleets on the road",
+      "body": "We've spent decades earning the trust of owner-operators and fleet managers alike. From the first handshake to long-term service, our team treats your business like our own.",
+      "imageSide": "right",
+      "ctas": [{ "label": "Learn more about us", "href": "/about", "style": "primary" }]
+    },
+    {
+      "type": "stats",
+      "background": "dark",
+      "items": [
+        { "value": "40+", "label": "Years in business" },
+        { "value": "3", "label": "Locations" },
+        { "value": "12k+", "label": "Trucks sold" },
+        { "value": "24/7", "label": "Roadside support" }
+      ]
+    },
+    {
+      "type": "logos",
+      "title": "Brands we carry",
+      "items": [
+        { "name": "Kenworth" },
+        { "name": "Peterbilt" },
+        { "name": "Volvo" },
+        { "name": "Freightliner" }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "background": "muted",
+      "title": "What our customers say",
+      "items": [
+        {
+          "quote": "Best dealer experience I've had in 20 years of trucking. Straight answers and fast service.",
+          "author": "Marcus T.",
+          "role": "Owner-operator"
+        },
+        {
+          "quote": "Their parts team always has what we need in stock. Keeps our fleet running.",
+          "author": "Dana R.",
+          "role": "Fleet manager, Ridgeline Logistics"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "Questions",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Do you offer financing?",
+          "answer": "Yes. We work with multiple lenders to find competitive rates for new and used purchases. Apply online or talk to our finance team."
+        },
+        {
+          "question": "Can I schedule service online?",
+          "answer": "Absolutely. Use our contact form or call any location to book a service appointment that fits your schedule."
+        },
+        {
+          "question": "Do you ship parts?",
+          "answer": "We ship genuine OEM and aftermarket parts nationwide, usually the same business day for in-stock items."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Ready to find your next truck?",
+      "body": "Browse live inventory or talk to our team today.",
+      "ctas": [
+        { "label": "View Inventory", "href": "/inventory", "style": "primary" },
+        { "label": "Contact Us", "href": "/contact", "style": "secondary" }
+      ]
+    }
+  ]
+}

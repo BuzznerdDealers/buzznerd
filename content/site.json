@@ -1,0 +1,17 @@
+{
+  "topbar": {
+    "enabled": true,
+    "message": "Family owned & operated since 1985",
+    "showPhone": true,
+    "showSocial": true,
+    "links": [
+      { "label": "Careers", "href": "/careers" },
+      { "label": "Locations", "href": "/locations" }
+    ]
+  },
+  "announcement": {
+    "enabled": false,
+    "text": "Summer service special — 20% off DPF cleaning through August.",
+    "href": "/blog"
+  }
+}
