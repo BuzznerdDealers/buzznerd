@@ -56,8 +56,14 @@ changes.
 5. **Never hand-edit `vercel.json`.** It is generated from `dealer.config.json`
    (`remixOrigin`) on every build. Change `remixOrigin` in config instead.
    `/inventory/*` must keep rewriting to Remix; `/partials/*` must stay static.
-6. Prefer **editing content** over editing components. Most requests are content
-   changes, not code changes.
+6. **Separate data from design — not "avoid components".** Dealer *data* (text,
+   copy, links, contact info, section content) belongs in `content/*` /
+   `dealer.config.json`. But *design* — layout, structure, styling, the
+   header/footer/nav, and new section types — is meant to be edited freely in
+   components to match this dealer. Redesigning `Header.astro`, `Footer.astro`,
+   `chrome.css`, section components, etc. is expected, not discouraged. The only
+   rule is: keep the dealer's data in flat files so it stays easy to change,
+   while you shape the design however the dealer needs.
 7. **Bump the site version on every change.** For any change you make (content,
    component, style, config), also bump `version` in `content/version.json`
    using semver. This shows in the footer (muted `vX.Y.Z`) so anyone can see
