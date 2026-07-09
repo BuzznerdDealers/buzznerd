@@ -1,16 +1,17 @@
 # BuzzNerd Dealer Site Template
 
 A flexible, content-driven **Astro** template for dealer brand sites, deployed to
-**Cloudflare Workers** (with Static Assets). Clone it per dealer, fill in
-`dealer.config.json`, edit `content/`, and ship.
+**Vercel**. Clone it per dealer, fill in `dealer.config.json`, edit `content/`,
+and ship.
 
 - **No CMS, no database.** Content lives as flat files in Git (JSON + Markdown).
 - **Flexible pages.** Every page is composed from reusable sections — reorder,
   add, or remove sections by editing a JSON array.
 - **SEO + AIO built in.** Meta tags, Open Graph, canonical, JSON-LD structured
   data, `sitemap.xml`, `robots.txt`, and `llms.txt` are all generated for you.
-- **One URL for everything.** A Cloudflare Worker proxies `/inventory/*` to the
-  Remix commerce app; everything else is static.
+- **One URL for everything.** Vercel rewrites `/inventory/*` to the Remix
+  commerce app on Fly.io; everything else is static Astro. Remix pulls brand
+  header/footer partials so inventory looks consistent with the brand site.
 
 ## Quick start (new dealer)
 
@@ -24,7 +25,7 @@ A flexible, content-driven **Astro** template for dealer brand sites, deployed t
    npm install
    npm run dev        # http://localhost:4321
    ```
-5. **Deploy** — see below.
+5. **Deploy** — connect the repo to Vercel (see below).
 
 ## Editing with Claude Code
 
@@ -44,6 +45,7 @@ and how to ship it safely (feature branch → PR → preview → merge). It will
 ```
 dealer.config.json          Dealer identity, brand, contact, SEO (edit per dealer)
 dealer.config.schema.json   JSON Schema for the config (validation + autocomplete)
+vercel.json                 Generated from dealer.config (inventory rewrite) — do not hand-edit
 content/
   nav.json                  Header navigation (+ dropdowns, CTA)
   footer.json               Footer columns
@@ -59,31 +61,56 @@ src/
     sections/               The flexible section library (hero, features, faq …)
   lib/schema.ts             JSON-LD (structured data) builders
   pages/                    Routes: index, [...slug], blog, robots.txt, llms.txt
-  index.ts                  Cloudflare Worker (inventory proxy)
-wrangler.toml               Worker + static assets config
-.nvmrc                      Node version for the Cloudflare build (22)
+  components/Head.astro     <head> injections (analytics, pixels) — also at /partials/head.html
+  pages/partials/           head/header/footer/CSS/JS fragments for Remix chrome
+  styles/chrome.css         Chrome-only CSS, self-contained (also at /partials/styles.css)
+  scripts/chrome.js         Mobile nav / chrome JS (also at /partials/scripts.js)
+scripts/write-vercel-json.mjs  Regenerates vercel.json from remixOrigin
 ```
+
+## Inventory + brand chrome (how it works)
+
+1. **Static brand site** on Vercel serves marketing pages and five chrome partials:
+   - `/partials/head.html` — dealer `<head>` injections (analytics, pixels, meta)
+   - `/partials/header.html` — header/topbar/nav markup
+   - `/partials/footer.html` — footer markup (+ any floating button / widget)
+   - `/partials/styles.css` — self-contained chrome CSS + brand tokens
+   - `/partials/scripts.js` — mobile nav (and any other chrome JS)
+2. **`vercel.json`** rewrites `/inventory/*` to `dealer.remixOrigin` (Remix on Fly).
+   `/partials/*` is **not** rewritten — Remix fetches those from the Vercel CDN.
+3. **Remix** (SaaS, one-time change) looks up the dealer’s `brandSiteUrl`, fetches
+   and caches the partials, and **embeds them server-side**: `head.html` into
+   `<head>`, `header.html`/`footer.html` around its inventory content, plus the
+   CSS `<link>` and JS `<script>`. Server-embedding (not client `innerHTML`) is
+   required so inline analytics/pixel scripts run and pages stay SEO-friendly.
 
 ## Deployment
 
-Deploys are handled by **Cloudflare's Git integration** (connect the repo to a
-Cloudflare Workers project). No GitHub Actions workflow is used.
+Deploys are handled by **Vercel’s Git integration** (connect the GitHub repo to a
+Vercel project). No GitHub Actions workflow is required.
 
 - **Push to any branch except the production branch** → isolated **preview** deploy.
 - **Merge a PR into the production branch (`main`)** → **production** deploy to
   the custom domain.
-- Set the production branch to `main` in the Cloudflare project settings, and
-  branch-protect `main` (require a PR) so production never changes from a direct push.
+- Set the production branch to `main` in Vercel, and branch-protect `main`
+  (require a PR) so production never changes from a direct push.
 
-### Cloudflare build settings
+### Vercel project settings
 
 | Setting | Value |
 | ------- | ----- |
-| Build command | `npm run build` |
-| Deploy command | `npx wrangler deploy` |
-| Node version | 22 (from `.nvmrc`; or set `NODE_VERSION=22`) |
+| Framework Preset | Other |
+| Build command | `npm run build` (runs `prebuild` → writes `vercel.json`) |
+| Output directory | `dist` |
+| Node version | 22 (from `.nvmrc`) |
 
-Set `name` in `wrangler.toml` to a unique per-dealer value (e.g. `dealer-abc`).
+`vercel.json` is generated from `dealer.config.json` on every build so the
+inventory rewrite always points at this dealer’s `remixOrigin`. Do not hand-edit
+it — change `remixOrigin` in `dealer.config.json` instead.
+
+Optional: add a Vercel Deploy Hook / notification that calls the Remix cache
+invalidation endpoint when the brand site redeploys, so header/footer updates
+show up immediately on inventory pages.
 
 ## Adding a new section type
 

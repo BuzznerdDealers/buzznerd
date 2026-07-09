@@ -1,0 +1,37 @@
+{
+  "title": "Locations",
+  "seo": {
+    "title": "Our Locations",
+    "description": "Visit us — find addresses, hours, and directions for each of our locations."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "eyebrow": "Visit us",
+      "title": "Our locations",
+      "subheadline": "Stop by any of our locations for sales, service, and parts."
+    },
+    {
+      "type": "locations",
+      "items": [
+        {
+          "name": "Main Dealership",
+          "address": "1234 Highway Dr",
+          "city": "Salt Lake City",
+          "state": "UT",
+          "zip": "84101",
+          "phone": "+1 (800) 555-0100",
+          "hours": "Mon–Fri 7am–6pm · Sat 8am–2pm",
+          "mapUrl": "https://maps.google.com/?q=1234+Highway+Dr+Salt+Lake+City+UT+84101"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Can't make it in?",
+      "body": "Reach out and we'll help you over the phone or online.",
+      "ctas": [{ "label": "Contact Us", "href": "/contact", "style": "primary" }]
+    }
+  ]
+}

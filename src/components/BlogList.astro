@@ -1,0 +1,88 @@
+---
+import { blogPageHref } from "../lib/blog";
+
+/**
+ * Renders a grid of blog cards plus pagination controls.
+ * Used by both /blog (page 1) and /blog/page/[page] so the markup stays DRY.
+ */
+interface Props {
+  posts: any[];
+  currentPage: number;
+  totalPages: number;
+}
+
+const { posts, currentPage, totalPages } = Astro.props;
+const dateFmt = new Intl.DateTimeFormat("en-US", { dateStyle: "medium" });
+const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+---
+
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">Blog</p>
+    <h1>News & updates</h1>
+  </div>
+</section>
+
+<section class="section bg-default">
+  <div class="container">
+    {
+      posts.length === 0 ? (
+        <p>No posts yet. Check back soon.</p>
+      ) : (
+        <div class="grid" data-cols={3}>
+          {posts.map((post) => (
+            <article class="card blog-card">
+              {post.data.coverImage && (
+                <a href={`/blog/${post.id}`} class="blog-card-media">
+                  <img src={post.data.coverImage.src} alt="" loading="lazy" />
+                </a>
+              )}
+              <div class="blog-card-body">
+                <time datetime={post.data.date.toISOString()}>
+                  {dateFmt.format(post.data.date)}
+                </time>
+                <h2>
+                  <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                </h2>
+                <p>{post.data.excerpt}</p>
+                <a class="blog-card-link" href={`/blog/${post.id}`}>
+                  Read more →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      )
+    }
+
+    {
+      totalPages > 1 && (
+        <nav class="pagination" aria-label="Blog pagination">
+          {currentPage > 1 && (
+            <a class="pagination-link" href={blogPageHref(currentPage - 1)} rel="prev">
+              ← Previous
+            </a>
+          )}
+          <ul class="pagination-pages">
+            {pageNumbers.map((n) => (
+              <li>
+                <a
+                  class:list={["pagination-page", n === currentPage && "is-current"]}
+                  href={blogPageHref(n)}
+                  aria-current={n === currentPage ? "page" : undefined}
+                >
+                  {n}
+                </a>
+              </li>
+            ))}
+          </ul>
+          {currentPage < totalPages && (
+            <a class="pagination-link" href={blogPageHref(currentPage + 1)} rel="next">
+              Next →
+            </a>
+          )}
+        </nav>
+      )
+    }
+  </div>
+</section>

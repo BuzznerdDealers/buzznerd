@@ -1,0 +1,347 @@
+/* ------------------------------------------------------------------ *
+ * Chrome-only styles for header / footer (and shared primitives they
+ * need). Served at /partials/styles.css for the Remix storefront.
+ * Brand tokens (--primary, fonts, etc.) are prepended at build time
+ * from dealer.config.json — see src/pages/partials/styles.css.ts.
+ * ------------------------------------------------------------------ */
+
+:root {
+  --primary: #1a3a5c;
+  --primary-dark: #12293f;
+  --accent: #e8a020;
+  --text: #0f172a;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --bg: #ffffff;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --surface: #f8fafc;
+  --dark: #0f172a;
+  --radius: 16px;
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+  --container: 1160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 120ms ease, background 160ms ease, color 160ms ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  color: #fff;
+  background: var(--primary);
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+/* ---------- Announcement + Topbar ---------- */
+.announcement {
+  background: var(--accent);
+  color: #1a1a1a;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+.topbar {
+  background: var(--primary-dark);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  gap: 16px;
+}
+.topbar-message {
+  margin: 0;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.topbar-right a {
+  color: rgba(255, 255, 255, 0.85);
+}
+.topbar-right a:hover {
+  color: #fff;
+}
+.topbar-phone {
+  font-weight: 700;
+}
+.topbar-social {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+}
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-body);
+  color: var(--text);
+}
+.header-inner {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+.brand-logo {
+  height: 40px;
+  width: auto;
+}
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-weight: 600;
+  color: var(--text);
+}
+.desktop-nav > a,
+.nav-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 140ms ease;
+}
+.desktop-nav a:hover,
+.desktop-nav a.active {
+  color: var(--primary);
+}
+.caret {
+  font-size: 0.7em;
+}
+.nav-dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-menu a {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.dropdown-menu a:hover {
+  background: var(--surface);
+  color: var(--primary);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 4px auto;
+  background: var(--text);
+  border-radius: 2px;
+}
+.mobile-nav {
+  display: grid;
+  gap: 4px;
+  padding: 12px 20px 20px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+.mobile-nav a {
+  padding: 12px 0;
+  font-weight: 700;
+  color: var(--text);
+}
+.mobile-sublink {
+  padding-left: 16px !important;
+  color: var(--muted) !important;
+  font-weight: 600 !important;
+}
+.mobile-nav[hidden] {
+  display: none;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--dark);
+  color: #cbd5e1;
+  padding: 64px 0 28px;
+  font-family: var(--font-body);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, 0.8fr);
+  gap: 40px;
+}
+.footer-brand .brand {
+  color: #fff;
+}
+.footer-brand .brand-logo {
+  filter: brightness(0) invert(1);
+}
+.footer-note {
+  max-width: 320px;
+  margin: 16px 0;
+  color: #94a3b8;
+}
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social a {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-col h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 14px;
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.footer-col a:hover {
+  color: #fff;
+}
+.footer-bottom {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+.footer-bottom p {
+  margin: 0;
+}
+
+/* ---------- Responsive (chrome only) ---------- */
+@media (max-width: 900px) {
+  .desktop-nav,
+  .header-cta {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .topbar {
+    display: none;
+  }
+  .btn {
+    width: 100%;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}

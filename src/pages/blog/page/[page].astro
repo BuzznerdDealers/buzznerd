@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import BlogList from "../../../components/BlogList.astro";
+import { getSortedPosts, POSTS_PER_PAGE } from "../../../lib/blog";
+
+/**
+ * Blog pages 2..N at /blog/page/2, /blog/page/3, …
+ * Page 1 is served by /blog (src/pages/blog/index.astro), so we skip it here.
+ * Post URLs stay at /blog/<slug> (src/pages/blog/[...slug].astro) — no clash
+ * because the static "page" segment is more specific than the [...slug] catch-all.
+ */
+export async function getStaticPaths() {
+  const allPosts = await getSortedPosts();
+  const totalPages = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
+
+  const paths = [];
+  for (let page = 2; page <= totalPages; page++) {
+    const start = (page - 1) * POSTS_PER_PAGE;
+    paths.push({
+      params: { page: String(page) },
+      props: {
+        posts: allPosts.slice(start, start + POSTS_PER_PAGE),
+        currentPage: page,
+        totalPages,
+      },
+    });
+  }
+  return paths;
+}
+
+const { posts, currentPage, totalPages } = Astro.props;
+---
+
+<BaseLayout
+  title={`Blog — page ${currentPage}`}
+  description="News, tips, and updates."
+  path={`/blog/page/${currentPage}`}
+>
+  <BlogList posts={posts} currentPage={currentPage} totalPages={totalPages} />
+</BaseLayout>

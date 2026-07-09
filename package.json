@@ -7,10 +7,13 @@
     "node": ">=22.12.0"
   },
   "scripts": {
+    "predev": "node scripts/write-vercel-json.mjs",
     "dev": "astro dev",
+    "prebuild": "node scripts/write-vercel-json.mjs",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "vercel:config": "node scripts/write-vercel-json.mjs"
   },
   "dependencies": {
     "@astrojs/react": "latest",

@@ -1,0 +1,41 @@
+{
+  "title": "Financing",
+  "seo": {
+    "title": "Financing & Leasing",
+    "description": "Flexible financing and leasing options to get you into the right truck for your business."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "eyebrow": "Financing & leasing",
+      "title": "Flexible options that fit your business",
+      "subheadline": "Competitive rates, fast approvals, and terms built around your cash flow."
+    },
+    {
+      "type": "features",
+      "columns": 3,
+      "items": [
+        { "title": "Retail Financing", "body": "Own your equipment with terms that work for you.", "icon": "dollar" },
+        { "title": "Leasing", "body": "Lower monthly payments and flexible end-of-term options.", "icon": "truck" },
+        { "title": "Fast Approvals", "body": "Get a decision quickly so you can get back to work.", "icon": "bolt" }
+      ]
+    },
+    {
+      "type": "steps",
+      "background": "muted",
+      "title": "How financing works",
+      "items": [
+        { "title": "Apply", "body": "Submit a quick application online or in person." },
+        { "title": "Get approved", "body": "We match you with the right lender and terms." },
+        { "title": "Drive away", "body": "Sign, and take delivery of your truck." }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Ready to get started?",
+      "body": "Talk to our finance team about the best option for you.",
+      "ctas": [{ "label": "Apply Now", "href": "/contact", "style": "primary" }]
+    }
+  ]
+}

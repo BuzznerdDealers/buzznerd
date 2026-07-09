@@ -3,8 +3,8 @@
 This repo is a **reusable template** for building dealer brand sites. A new repo
 is created from it for each dealer, and **you (Claude Code) build that dealer's
 site from the designer's input** by writing content into flat files. It's an
-Astro static site deployed to Cloudflare Workers (with Static Assets). Read this
-whole file before making changes.
+Astro static site deployed to **Vercel**. Read this whole file before making
+changes.
 
 ## How to think about this template
 
@@ -27,8 +27,8 @@ whole file before making changes.
    brand colors, the list of pages/sections the designer wants).
 2. **Fill in `dealer.config.json`** with the real identity: name, slug, domain,
    `url`, brand colors, fonts, logo, contact details, `businessType`, SEO
-   defaults, and `remixOrigin`. This drives branding, SEO, and structured data
-   everywhere. Only set values you actually have.
+   defaults, and `remixOrigin`. This drives branding, SEO, structured data, and
+   the Vercel `/inventory/*` rewrite. Only set values you actually have.
 3. **Build the pages** by editing/creating `content/pages/*.json`. Compose each
    page from the section library (below). Match the designer's layout by
    choosing, ordering, and configuring sections. Replace the example pages
@@ -53,8 +53,9 @@ whole file before making changes.
    phone, colors, copy, links → `dealer.config.json` or `content/*`. Components
    read from those files.
 4. **Never edit `dist/`, `.astro/`, or `node_modules/`.** They are generated.
-5. **Never change `src/index.ts` (the Worker) routing** unless explicitly asked.
-   `/inventory/*` is proxied to Remix and must keep working.
+5. **Never hand-edit `vercel.json`.** It is generated from `dealer.config.json`
+   (`remixOrigin`) on every build. Change `remixOrigin` in config instead.
+   `/inventory/*` must keep rewriting to Remix; `/partials/*` must stay static.
 6. Prefer **editing content** over editing components. Most requests are content
    changes, not code changes.
 
@@ -80,29 +81,101 @@ whole file before making changes.
   pure HTML/CSS/JS at build time. No runtime server for brand pages.
 - **Content-driven & config-driven.** Pages are composed from an ordered list of
   reusable "sections". Layout changes = editing a JSON array, not writing code.
-- **Cloudflare Worker** (`src/index.ts`) proxies only `/inventory/*` to the
-  Remix commerce app so the domain serves both the static site and dynamic
-  inventory/checkout under one URL. This part is provided — don't modify it.
+- **Vercel** hosts the static site and rewrites `/inventory/*` to the Remix
+  commerce app (`dealer.remixOrigin` on Fly.io) so one domain serves marketing
+  pages and inventory/checkout. Remix pulls `/partials/*` (header, footer, CSS,
+  JS) from this site so chrome stays consistent. Do not add Cloudflare Workers.
 
 ## File map — where to change what
 
 | I want to change...                          | Edit this file |
 | -------------------------------------------- | -------------- |
 | Dealer name, logo, colors, fonts, domain, SEO defaults | `dealer.config.json` |
+| Remix inventory origin (proxy target)        | `dealer.config.json` (`remixOrigin`) — regenerates `vercel.json` |
 | Announcement bar / top utility bar           | `content/site.json` |
 | Main navigation menu (+ dropdowns, CTA)      | `content/nav.json` |
 | Footer columns and links                     | `content/footer.json` |
 | Content/sections of the homepage             | `content/pages/home.json` |
 | An existing page's content                   | `content/pages/<page>.json` |
 | Add a brand-new page                         | Create `content/pages/<slug>.json` (route is auto-created at `/<slug>`) + add to `content/nav.json` |
+| A nav link that 404s                         | The page file is missing — create `content/pages/<slug>.json`. Only `/inventory/*` is external (Remix); every other nav link needs a page file here |
 | Add a blog post                              | Create `content/blog/YYYY-MM-DD-slug.md` |
 | Add a new *type* of section                  | Create `src/components/sections/<Name>.astro` + register in `src/components/SectionRenderer.astro` |
-| Global styles / design tokens                | `src/styles/global.css` |
-| Inventory proxy / widget origin              | `dealer.config.json` (`remixOrigin`) — not the Worker |
+| Page/section styles                          | `src/styles/global.css` (it `@import`s `chrome.css`; don't put chrome rules here) |
+| `<head>` injections (analytics, pixels, meta)| `src/components/Head.astro` — reaches Remix via `/partials/head.html` |
+| Header / footer / topbar / nav **markup**    | `src/components/Header.astro`, `src/components/Footer.astro` — redesign freely per dealer |
+| Header/footer/widget **look** (served to Remix)| `src/styles/chrome.css` (self-contained chrome CSS; see partials note below) |
+| Header/footer/widget **JS** (mobile nav, floating button)| `src/scripts/chrome.js` |
+| A floating button / chat widget site-wide    | Markup in `Footer.astro`, CSS in `chrome.css`, JS in `chrome.js` |
 
 > Adding a page is just adding a JSON file to `content/pages/`. The route
 > `/<filename>` is generated automatically. Only `home.json` is special (it
 > renders at `/`).
+
+## Header / footer / chrome are a STARTING STRUCTURE — redesign them
+
+This template ships one example header (topbar + announcement + logo + nav +
+mobile menu) and one example footer. **Every dealer site is different.** You are
+expected to rewrite `Header.astro`, `Footer.astro`, `chrome.css`, and
+`chrome.js` to match the designer's layout — different nav style, mega-menu,
+sticky behavior, multi-row header, totally different footer, etc. Nothing about
+the current markup is fixed. Treat it like the example `content/` — a guideline
+to replace, not a spec to preserve.
+
+Keep dealer-specific text/links in `content/nav.json`, `content/footer.json`,
+and `content/site.json` (the components read from those). Structure and styling
+that don't exist yet → edit the components.
+
+## Remix chrome partials — keep the PLUMBING, change the DESIGN freely
+
+Remix (the shared inventory app) wraps `/inventory/*` pages with this dealer's
+header/footer so the chrome matches. It does that by fetching four files that
+this site builds automatically:
+
+| URL | Emitted by | What it contains |
+| --- | --- | --- |
+| `/partials/head.html`   | `src/pages/partials/head.html.ts`   | Renders whatever `Head.astro` is — dealer `<head>` injections (analytics, pixels, meta) |
+| `/partials/header.html` | `src/pages/partials/header.html.ts` | Renders whatever `Header.astro` currently is (fragment, no page shell) |
+| `/partials/footer.html` | `src/pages/partials/footer.html.ts` | Renders whatever `Footer.astro` currently is |
+| `/partials/styles.css`  | `src/pages/partials/styles.css.ts`  | Brand tokens + `chrome.css` (chrome-only CSS, **not** `global.css`) |
+| `/partials/scripts.js`  | `src/pages/partials/scripts.js.ts`  | `chrome.js` (mobile nav toggle, etc.) |
+
+### Where site-wide things go (so they reach Remix too)
+
+Anything a dealer wants on **every** page — including inventory/checkout — must
+live in a partial-backed place, not only in `BaseLayout`:
+
+| Dealer wants… | Put it in | Reaches Remix via |
+| --- | --- | --- |
+| Google Analytics / Meta pixel / verification / preconnect | `src/components/Head.astro` | `/partials/head.html` (embedded in `<head>`) |
+| Header/topbar/nav UI | `src/components/Header.astro` | `/partials/header.html` |
+| Footer UI, **floating button**, chat widget, end-of-body script | `src/components/Footer.astro` | `/partials/footer.html` |
+| Chrome/widget CSS | `src/styles/chrome.css` | `/partials/styles.css` |
+| Chrome/widget JS (mobile nav, floating-button behavior) | `src/scripts/chrome.js` | `/partials/scripts.js` |
+
+Rules that keep this portable to Remix:
+- Chrome/head must be **plain HTML + inline `<script>`/`<style>` (use `is:inline`) + vanilla JS**. No framework islands (`client:*`) — Remix can't hydrate them.
+- Inline scripts (analytics, pixels) only run because **Remix embeds the fragments server-side**. If Remix ever injected them via client `innerHTML`, scripts would not execute — so the Remix side MUST server-embed (it must anyway, for SEO).
+- `chrome.css` must be **self-contained**: Remix pages have no `global.css`. Style every header/footer/widget class in `chrome.css`. (`global.css` `@import`s `chrome.css`, so brand pages reuse the same rules — never duplicate chrome CSS in `global.css`.)
+
+**The design is fully yours; only the contract is fixed.** When you redesign the
+header/footer, the partials automatically emit your new markup/CSS/JS on the next
+deploy — you do NOT hand-write the partial output. What you must NOT do:
+
+1. Don't delete, rename, or move the four `src/pages/partials/*.ts` endpoint
+   files, and don't change their output URLs. That's the contract Remix depends on.
+2. Don't add `/partials/*` to the inventory rewrite in `vercel.json` — they must
+   stay static on Vercel (otherwise Remix would fetch itself → loop).
+3. Keep `chrome.css` **self-contained**: Remix pages do NOT load `global.css`, so
+   every style your header/footer need (resets, `.container`, buttons, fonts,
+   etc.) must live in `chrome.css`. If you add a class to the header/footer
+   markup, style it in `chrome.css`, not only in `global.css`.
+4. Keep `chrome.js` and the header markup consistent (e.g. if your mobile menu
+   uses different hooks than `data-menu-toggle`/`data-mobile-nav`, update both).
+
+Result: redesign the chrome however the dealer wants; Remix inventory pages pick
+up that exact header/footer after the next deploy (it may cache until the
+cache-invalidation webhook fires).
 
 ## The section system (this is what makes the template flexible)
 
@@ -178,9 +251,22 @@ Single source of truth for identity, branding, contact, and SEO. Its shape is
 validated by `dealer.config.schema.json`. Brand colors (`brand.primaryColor`,
 `brand.accentColor`) are injected as CSS variables — components use
 `var(--primary)`, `var(--accent)`, never hardcoded hex. Fill only the values you
-actually have from the designer.
+actually have from the designer. `remixOrigin` drives the Vercel inventory rewrite.
 
-### Blog frontmatter (`content/blog/*.md`)
+### Blog (`content/blog/*.md`)
+Drop a Markdown file in `content/blog/` and it appears automatically — the
+listing at `/blog` reads every non-draft post, newest first, and paginates.
+Post URLs are `/blog/<filename-without-date-is-kept>` (the file name is the
+slug). You never edit routing code to add a post.
+
+- Listing + pagination live in `src/pages/blog/index.astro` (page 1),
+  `src/pages/blog/page/[page].astro` (pages 2+), and `src/components/BlogList.astro`.
+- Posts-per-page is `POSTS_PER_PAGE` in `src/lib/blog.ts` (set low for the demo;
+  raise it for production). Post pages render from `src/pages/blog/[...slug].astro`.
+- To add a post: create `content/blog/YYYY-MM-DD-slug.md` with valid frontmatter.
+  To hide one: set `draft: true`.
+
+#### Blog frontmatter (`content/blog/*.md`)
 ```yaml
 ---
 title: string            # required
@@ -215,9 +301,8 @@ required field **fails the build** — it never ships a broken page.
 ```bash
 npm install        # install deps
 npm run dev        # local dev server at http://localhost:4321
-npm run build      # production build into dist/ (run before committing)
+npm run build      # writes vercel.json + production build into dist/
 npm run preview    # preview the built static output
-npx wrangler dev   # run the Worker + static assets together (tests /inventory proxy)
 ```
 
 ## Do / Don't quick reference
@@ -227,7 +312,12 @@ npx wrangler dev   # run the Worker + static assets together (tests /inventory p
 - DO create `content/pages/<slug>.json` for new pages and add them to nav.
 - DO build a new section component when the design needs one.
 - DO run `npm run build` before committing and fix any schema errors it reports.
+- DO redesign `Header.astro`/`Footer.astro`/`chrome.css`/`chrome.js` per dealer;
+  put header/footer styles in `chrome.css` (self-contained — Remix has no `global.css`).
+- DON'T delete/rename the `src/pages/partials/*.ts` endpoints or change their URLs
+  (that's the Remix contract), and DON'T rewrite the partial *output* by hand.
 - DON'T invent dealer data — use the designer's input; leave TODOs for gaps.
 - DON'T push/commit to `main`. DON'T merge your own PRs unless told to.
 - DON'T hardcode dealer data or one-off copy inside `src/components/*`.
-- DON'T edit `dist/`, `.astro/`, the Worker routing, or generated files.
+- DON'T edit `dist/`, `.astro/`, or hand-edit `vercel.json`.
+- DON'T add Cloudflare Workers / Wrangler — this template deploys to Vercel only.

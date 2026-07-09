@@ -1,0 +1,32 @@
+{
+  "title": "Careers",
+  "seo": {
+    "title": "Careers",
+    "description": "Join our team. Explore open roles in sales, service, and parts, and grow your career with us."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "eyebrow": "Careers",
+      "title": "Build your career with us",
+      "subheadline": "We're a family-owned team that's been growing since 1985. If you take pride in your work, we'd love to meet you."
+    },
+    {
+      "type": "features",
+      "title": "Why work here",
+      "columns": 3,
+      "items": [
+        { "title": "Competitive pay", "body": "Fair wages, bonuses, and room to grow.", "icon": "dollar" },
+        { "title": "Great benefits", "body": "Health coverage, paid time off, and retirement.", "icon": "shield" },
+        { "title": "Real training", "body": "Factory training and support to advance your skills.", "icon": "wrench" }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Ready to apply?",
+      "body": "Send us your details and we'll be in touch about open positions.",
+      "ctas": [{ "label": "Get in Touch", "href": "/contact", "style": "primary" }]
+    }
+  ]
+}

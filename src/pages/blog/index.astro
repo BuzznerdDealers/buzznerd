@@ -1,53 +1,14 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogList from "../../components/BlogList.astro";
+import { getSortedPosts, POSTS_PER_PAGE } from "../../lib/blog";
 
-const posts = (await getCollection("blog"))
-  .filter((p) => !p.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-
-const dateFmt = new Intl.DateTimeFormat("en-US", { dateStyle: "medium" });
+// Page 1 of the blog. Later pages live at /blog/page/2, /blog/page/3, …
+const allPosts = await getSortedPosts();
+const totalPages = Math.max(1, Math.ceil(allPosts.length / POSTS_PER_PAGE));
+const posts = allPosts.slice(0, POSTS_PER_PAGE);
 ---
 
 <BaseLayout title="Blog" description="News, tips, and updates." path="/blog">
-  <section class="page-header">
-    <div class="container">
-      <p class="eyebrow">Blog</p>
-      <h1>News & updates</h1>
-    </div>
-  </section>
-
-  <section class="section bg-default">
-    <div class="container">
-      {
-        posts.length === 0 ? (
-          <p>No posts yet. Check back soon.</p>
-        ) : (
-          <div class="grid" data-cols={3}>
-            {posts.map((post) => (
-              <article class="card blog-card">
-                {post.data.coverImage && (
-                  <a href={`/blog/${post.id}`} class="blog-card-media">
-                    <img src={post.data.coverImage.src} alt="" loading="lazy" />
-                  </a>
-                )}
-                <div class="blog-card-body">
-                  <time datetime={post.data.date.toISOString()}>
-                    {dateFmt.format(post.data.date)}
-                  </time>
-                  <h2>
-                    <a href={`/blog/${post.id}`}>{post.data.title}</a>
-                  </h2>
-                  <p>{post.data.excerpt}</p>
-                  <a class="blog-card-link" href={`/blog/${post.id}`}>
-                    Read more →
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-        )
-      }
-    </div>
-  </section>
+  <BlogList posts={posts} currentPage={1} totalPages={totalPages} />
 </BaseLayout>

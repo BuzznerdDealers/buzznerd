@@ -1,0 +1,27 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/inventory",
+      "destination": "https://a1.buzznerdrv.com/inventory"
+    },
+    {
+      "source": "/inventory/:path*",
+      "destination": "https://a1.buzznerdrv.com/inventory/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/partials/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, stale-while-revalidate=86400"
+        }
+      ]
+    }
+  ]
+}

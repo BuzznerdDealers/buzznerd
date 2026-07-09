@@ -108,17 +108,3 @@ function isActive(href: string) {
     {nav.cta && <a class="btn btn-primary" href={nav.cta.href}>{nav.cta.label}</a>}
   </nav>
 </header>
-
-<script is:inline>
-  (() => {
-    const toggle = document.querySelector("[data-menu-toggle]");
-    const menu = document.querySelector("[data-mobile-nav]");
-    if (!toggle || !menu) return;
-    toggle.addEventListener("click", () => {
-      const open = menu.hasAttribute("hidden");
-      if (open) menu.removeAttribute("hidden");
-      else menu.setAttribute("hidden", "");
-      toggle.setAttribute("aria-expanded", String(open));
-    });
-  })();
-</script>

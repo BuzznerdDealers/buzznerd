@@ -1,0 +1,34 @@
+{
+  "title": "Parts",
+  "seo": {
+    "title": "Genuine Parts",
+    "description": "Genuine OEM and aftermarket parts in stock, with nationwide shipping and expert support."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "eyebrow": "Parts department",
+      "title": "The right part, in stock and ready to ship",
+      "subheadline": "Genuine OEM and quality aftermarket parts, backed by people who know your equipment."
+    },
+    {
+      "type": "features",
+      "columns": 3,
+      "items": [
+        { "title": "Engine & Drivetrain", "body": "Filters, belts, gaskets, and components for every major make.", "icon": "gear" },
+        { "title": "Brakes & Suspension", "body": "Safety-critical parts that meet or exceed OEM spec.", "icon": "shield" },
+        { "title": "Electrical", "body": "Batteries, alternators, lighting, and wiring.", "icon": "bolt" },
+        { "title": "Filtration & Fluids", "body": "Oil, coolant, DEF, and the filters to match.", "icon": "leaf" },
+        { "title": "Maintenance Kits", "body": "Everything you need for a scheduled service in one box.", "icon": "wrench" },
+        { "title": "Hard-to-Find", "body": "Can't find it? We'll source it and ship it fast.", "icon": "truck" }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Need a part fast?",
+      "body": "Tell us your make, model, and VIN and we'll confirm availability.",
+      "ctas": [{ "label": "Request a Part", "href": "/contact", "style": "primary" }]
+    }
+  ]
+}
