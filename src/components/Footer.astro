@@ -1,6 +1,7 @@
 ---
 import { dealer, socialLinks } from "../config";
 import footer from "../../content/footer.json";
+import { version } from "../../content/version.json";
 
 const year = new Date().getFullYear();
 const socials = socialLinks();
@@ -61,5 +62,6 @@ const legal = `© ${year} ${dealer.name}. ${footer.legal || "All rights reserved
 
   <div class="container footer-bottom">
     <p>{legal}</p>
+    {version && <p class="footer-version">v{version}</p>}
   </div>
 </footer>

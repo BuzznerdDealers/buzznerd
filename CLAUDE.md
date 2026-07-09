@@ -58,16 +58,38 @@ changes.
    `/inventory/*` must keep rewriting to Remix; `/partials/*` must stay static.
 6. Prefer **editing content** over editing components. Most requests are content
    changes, not code changes.
+7. **Bump the site version on every change.** For any change you make (content,
+   component, style, config), also bump `version` in `content/version.json`
+   using semver. This shows in the footer (muted `vX.Y.Z`) so anyone can see
+   which build is live. See "Versioning" below. Do this whether you're on a new
+   branch or continuing on an existing one.
+
+## Versioning (bump on every change)
+
+`content/version.json` holds a single `version` string, rendered in the footer.
+**Every time you make a change, bump it** as part of the same commit/branch:
+
+- **Patch** (`1.0.0` → `1.0.1`): copy edits, content tweaks, small fixes.
+- **Minor** (`1.0.1` → `1.1.0`): new page, new section, new blog post, a
+  redesign of the header/footer, a notable feature.
+- **Major** (`1.1.0` → `2.0.0`): a full site rebuild / ground-up redesign.
+
+Rules:
+- Bump exactly once per change set (one branch / PR = one version bump).
+- If continuing work on an existing branch that already bumped this build, keep
+  bumping the patch/minor as you add more changes so the footer stays accurate.
+- Never lower the version. Only ever increase it.
 
 ## Workflow (how every change ships)
 
 ```
 1. git checkout -b change/<short-description>     # branch off main
 2. make the edit (usually a content/*.json file)
-3. npm run build                                  # must pass locally
-4. git commit + git push -u origin <branch>       # triggers a PREVIEW deploy
-5. Open a PR into main. Share the preview URL for review.
-6. A human reviews and merges the PR  -> PRODUCTION deploys automatically.
+3. bump version in content/version.json           # required on every change
+4. npm run build                                  # must pass locally
+5. git commit + git push -u origin <branch>       # triggers a PREVIEW deploy
+6. Open a PR into main. Share the preview URL for review.
+7. A human reviews and merges the PR  -> PRODUCTION deploys automatically.
 ```
 
 - Push to **any branch except main** = preview URL. Safe. Does not affect prod.
@@ -90,6 +112,7 @@ changes.
 
 | I want to change...                          | Edit this file |
 | -------------------------------------------- | -------------- |
+| Site version shown in footer (bump every change) | `content/version.json` |
 | Dealer name, logo, colors, fonts, domain, SEO defaults | `dealer.config.json` |
 | Remix inventory origin (proxy target)        | `dealer.config.json` (`remixOrigin`) — regenerates `vercel.json` |
 | Announcement bar / top utility bar           | `content/site.json` |
@@ -312,6 +335,7 @@ npm run preview    # preview the built static output
 - DO create `content/pages/<slug>.json` for new pages and add them to nav.
 - DO build a new section component when the design needs one.
 - DO run `npm run build` before committing and fix any schema errors it reports.
+- DO bump `version` in `content/version.json` (semver) on every change.
 - DO redesign `Header.astro`/`Footer.astro`/`chrome.css`/`chrome.js` per dealer;
   put header/footer styles in `chrome.css` (self-contained — Remix has no `global.css`).
 - DON'T delete/rename the `src/pages/partials/*.ts` endpoints or change their URLs

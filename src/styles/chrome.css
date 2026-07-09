@@ -309,9 +309,19 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: #94a3b8;
   font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 .footer-bottom p {
   margin: 0;
+}
+.footer-version {
+  color: #64748b;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
 }
 
 /* ---------- Responsive (chrome only) ---------- */
