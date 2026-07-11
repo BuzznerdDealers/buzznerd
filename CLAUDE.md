@@ -132,6 +132,8 @@ Rules:
 | Add a new *type* of section                  | Create `src/components/sections/<Name>.astro` + register in `src/components/SectionRenderer.astro` |
 | Page/section styles                          | `src/styles/global.css` (it `@import`s `chrome.css`; don't put chrome rules here) |
 | `<head>` injections (analytics, pixels, meta)| `src/components/Head.astro` — reaches Remix via `/partials/head.html` |
+| `llms.txt` / `llms-full.txt` (AI answer-engine files) | Auto-generated from config + content by `src/pages/llms.txt.ts` / `src/pages/llms-full.txt.ts` — don't hand-edit; they appear in `dist/` after `npm run build`. See "SEO & AIO" |
+| `robots.txt` / XML sitemap | `robots.txt` from `src/pages/robots.txt.ts`; `sitemap-index.xml`/`sitemap-0.xml` from `@astrojs/sitemap` (`astro.config.mjs`); `/sitemap.xml` alias from `redirects` in generated `vercel.json`. All auto-generated — see "SEO & AIO" |
 | Header / footer / topbar / nav **markup**    | `src/components/Header.astro`, `src/components/Footer.astro` — redesign freely per dealer |
 | Header/footer/widget **look** (served to Remix)| `src/styles/chrome.css` (self-contained chrome CSS; see partials note below) |
 | Header/footer/widget **JS** (mobile nav, floating button)| `src/scripts/chrome.js` |
@@ -320,9 +322,25 @@ required field **fails the build** — it never ships a broken page.
   FAQPage from any `faq` section, BlogPosting on posts. See `src/lib/schema.ts`.
   It's driven by `dealer.config.json`, so filling that in accurately improves
   both search and AI-answer-engine results.
-- `sitemap-index.xml`, `robots.txt`, and **`llms.txt`** (AI answer-engine
-  summary) are generated at build time from config + content. When you add
-  pages/posts, they appear automatically. Don't hand-maintain these.
+- **These SEO/AIO files are generated at build time — they are NOT source files,
+  so you won't see them in the repo tree; they only appear in `dist/` after
+  `npm run build` (and are served live on the deployed site).** When you add
+  pages/posts, they update automatically. Don't hand-maintain any of them:
+
+  | Served at | Emitted by | What it is |
+  | --- | --- | --- |
+  | `/sitemap-index.xml` (+ `/sitemap-0.xml`) | `@astrojs/sitemap` (`astro.config.mjs`) | Canonical XML sitemap. This is the entry point robots.txt points to and the one to submit to Search Console. `/inventory/*` is excluded (it lives in Remix). |
+  | `/sitemap.xml` | `redirects` in the generated `vercel.json` (`scripts/write-vercel-json.mjs`) | Convenience alias → 308 redirects to `/sitemap-index.xml`, so the classic name works too. Only active on Vercel. |
+  | `/robots.txt` | `src/pages/robots.txt.ts` | Allows all crawlers (incl. AI bots) + points to `/sitemap-index.xml`. |
+  | `/llms.txt` | `src/pages/llms.txt.ts` | AIO **index**: business details + one-line summaries and links for every page/post (llmstxt.org convention). |
+  | `/llms-full.txt` | `src/pages/llms-full.txt.ts` | AIO **full content**: the readable copy of every page (extracted from its sections) + every blog post's full body, in one file, so answer engines can ingest the whole site in one fetch. |
+
+- To verify them locally, run `npm run build` and look in `dist/` (e.g.
+  `dist/llms.txt`, `dist/llms-full.txt`, `dist/sitemap-index.xml`), or
+  `npm run preview` and hit the URLs. Don't commit anything from `dist/`.
+- `llms-full.txt` extracts text generically from each section (it skips styling/
+  asset keys like `icon`/`href`/`image`), so new section types and fields are
+  picked up automatically — no need to edit the generator when you add sections.
 - Keep headings semantic (one `<h1>` per page — heroes/pageHeaders provide it).
 
 ## Commands

@@ -13,6 +13,13 @@
       "destination": "https://a1.buzznerdrv.com/inventory/:path*"
     }
   ],
+  "redirects": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/partials/(.*)",

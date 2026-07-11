@@ -33,6 +33,16 @@ const vercel = {
       destination: `${remixOrigin}/inventory/:path*`,
     },
   ],
+  redirects: [
+    // @astrojs/sitemap emits sitemap-index.xml (the canonical entry point that
+    // robots.txt points to). Alias the conventional /sitemap.xml to it so
+    // crawlers and humans that look for the classic name still find it.
+    {
+      source: "/sitemap.xml",
+      destination: "/sitemap-index.xml",
+      permanent: true,
+    },
+  ],
   headers: [
     {
       source: "/partials/(.*)",
