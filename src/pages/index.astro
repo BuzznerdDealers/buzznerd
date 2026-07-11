@@ -1,9 +1,0 @@
----
-import { getEntry } from "astro:content";
-import PageLayout from "../layouts/PageLayout.astro";
-
-const entry = await getEntry("pages", "home");
-if (!entry) throw new Error("Missing content/pages/home.json");
----
-
-<PageLayout entry={entry} path="/" />

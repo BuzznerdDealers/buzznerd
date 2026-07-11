@@ -1,34 +1,472 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": null,
-  "rewrites": [
-    {
-      "source": "/inventory",
-      "destination": "https://inventory.buzznerd.com/inventory"
-    },
-    {
-      "source": "/inventory/:path*",
-      "destination": "https://inventory.buzznerd.com/inventory/:path*"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap-index.xml",
+      "source": "/commercial-dealership-website-modernization",
+      "destination": "/blog/commercial-dealership-website-modernization",
       "permanent": true
-    }
-  ],
-  "headers": [
+    },
     {
-      "source": "/partials/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=300, stale-while-revalidate=86400"
-        }
-      ]
+      "source": "/the-buzznerd-partnership",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/e-commerce",
+      "destination": "/ai-ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/ecommerce",
+      "destination": "/ai-ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/ai-e-commerce",
+      "destination": "/ai-ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/website",
+      "destination": "/ai-websites",
+      "permanent": true
+    },
+    {
+      "source": "/websites",
+      "destination": "/ai-websites",
+      "permanent": true
+    },
+    {
+      "source": "/website-design",
+      "destination": "/ai-websites",
+      "permanent": true
+    },
+    {
+      "source": "/web-design",
+      "destination": "/ai-websites",
+      "permanent": true
+    },
+    {
+      "source": "/marketing",
+      "destination": "/ai-driven-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/digital-marketing",
+      "destination": "/ai-driven-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/seo",
+      "destination": "/content-restructuring-for-aio",
+      "permanent": true
+    },
+    {
+      "source": "/integrations",
+      "destination": "/custom-workflows-integrations",
+      "permanent": true
+    },
+    {
+      "source": "/integration",
+      "destination": "/custom-workflows-integrations",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/ai-engine-for-dealership-websites-and-inventory-optimization",
+      "destination": "/ai-platform",
+      "permanent": true
+    },
+    {
+      "source": "/ai-engine",
+      "destination": "/ai-platform",
+      "permanent": true
+    },
+    {
+      "source": "/dealership-results-that-drive-sales-and-customer-conversion",
+      "destination": "/solutions",
+      "permanent": true
+    },
+    {
+      "source": "/results",
+      "destination": "/solutions",
+      "permanent": true
+    },
+    {
+      "source": "/dealership-industry-solutions-to-drive-sales-and-customer-conversion",
+      "destination": "/solutions",
+      "permanent": true
+    },
+    {
+      "source": "/dealership-solutions-to-drive-sales-and-increase-customer-conversion",
+      "destination": "/solutions",
+      "permanent": true
+    },
+    {
+      "source": "/sell-more-inventory",
+      "destination": "/ai-websites",
+      "permanent": true
+    },
+    {
+      "source": "/increase-lead-conversion",
+      "destination": "/ai-websites",
+      "permanent": true
+    },
+    {
+      "source": "/sales-tools-to-improve-sales-team-efficiency",
+      "destination": "/ai-platform",
+      "permanent": true
+    },
+    {
+      "source": "/sales-tools",
+      "destination": "/ai-platform",
+      "permanent": true
+    },
+    {
+      "source": "/ai-dealership-employee-portals",
+      "destination": "/ai-platform",
+      "permanent": true
+    },
+    {
+      "source": "/promotional-campaign-services",
+      "destination": "/ai-driven-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/connect-your-dealership",
+      "destination": "/custom-workflows-integrations",
+      "permanent": true
+    },
+    {
+      "source": "/ai-driven-marketing-services",
+      "destination": "/ai-driven-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-page-review",
+      "destination": "/ai-presence-score",
+      "permanent": true
+    },
+    {
+      "source": "/about-us-elementor",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/category/*",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/tag/*",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/author/*",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/page/*",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/ai-search-optimization-for-websites",
+      "destination": "/blog/ai-search-optimization-for-websites",
+      "permanent": true
+    },
+    {
+      "source": "/the-ai-era-has-arrived-is-your-dealership-website-ai-ready",
+      "destination": "/blog/the-ai-era-has-arrived-is-your-dealership-website-ai-ready",
+      "permanent": true
+    },
+    {
+      "source": "/arcadium-integration-for-dealership",
+      "destination": "/blog/arcadium-integration-for-dealership",
+      "permanent": true
+    },
+    {
+      "source": "/beyond-google-ai-search-dealerships",
+      "destination": "/blog/beyond-google-ai-search-dealerships",
+      "permanent": true
+    },
+    {
+      "source": "/how-commercial-truck-buyers-actually-search-its-not-like-car-buyers",
+      "destination": "/blog/how-commercial-truck-buyers-actually-search-its-not-like-car-buyers",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-dealership-website-modernization",
+      "destination": "/blog/commercial-dealership-website-modernization",
+      "permanent": true
+    },
+    {
+      "source": "/sometimes-you-just-need-a-talk-with-a-human",
+      "destination": "/blog/sometimes-you-just-need-a-talk-with-a-human",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-welcomes-new-vp-of-sales-david-fisher",
+      "destination": "/blog/buzznerd-welcomes-new-vp-of-sales-david-fisher",
+      "permanent": true
+    },
+    {
+      "source": "/nikki-molina-evolving-cgo",
+      "destination": "/blog/nikki-molina-evolving-cgo",
+      "permanent": true
+    },
+    {
+      "source": "/ever-heard-of-freediving-our-ceo-and-team-usa-needs-your-support",
+      "destination": "/blog/ever-heard-of-freediving-our-ceo-and-team-usa-needs-your-support",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-returns-to-karmak-for-a-4th-year",
+      "destination": "/blog/buzznerd-returns-to-karmak-for-a-4th-year",
+      "permanent": true
+    },
+    {
+      "source": "/beyond-code-cultivating-a-human-centric-ai-culture",
+      "destination": "/blog/beyond-code-cultivating-a-human-centric-ai-culture",
+      "permanent": true
+    },
+    {
+      "source": "/jerry-van-galder-to-speak-at-cvsns-the-seminar-on-ai-applications",
+      "destination": "/blog/jerry-van-galder-to-speak-at-cvsns-the-seminar-on-ai-applications",
+      "permanent": true
+    },
+    {
+      "source": "/lets-talk-technology-in-dallas-2024-hda-truck-pride-annual-conference",
+      "destination": "/blog/lets-talk-technology-in-dallas-2024-hda-truck-pride-annual-conference",
+      "permanent": true
+    },
+    {
+      "source": "/shaping-a-digital-future-elevating-customer-experiences-at-campbell-supply-company",
+      "destination": "/blog/shaping-a-digital-future-elevating-customer-experiences-at-campbell-supply-company",
+      "permanent": true
+    },
+    {
+      "source": "/2023-hda-truck-pride-conference-embracing-the-e-commerce-technology-journey-panel-discussion",
+      "destination": "/blog/2023-hda-truck-pride-conference-embracing-the-e-commerce-technology-journey-panel-discussion",
+      "permanent": true
+    },
+    {
+      "source": "/san-antonio-here-we-come-2023-uta-annual-conference",
+      "destination": "/blog/san-antonio-here-we-come-2023-uta-annual-conference",
+      "permanent": true
+    },
+    {
+      "source": "/top-benefits-of-using-a-dealership-crm-system-in-2023",
+      "destination": "/blog/top-benefits-of-using-a-dealership-crm-system-in-2023",
+      "permanent": true
+    },
+    {
+      "source": "/watermarks-on-your-inventory-images-we-can-help",
+      "destination": "/blog/watermarks-on-your-inventory-images-we-can-help",
+      "permanent": true
+    },
+    {
+      "source": "/thats-a-wrap-karmak-conference-expo-2023",
+      "destination": "/blog/thats-a-wrap-karmak-conference-expo-2023",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-returns-for-part-2-navigating-the-ecommerce-highway-with-hda-truck-pride",
+      "destination": "/blog/buzznerd-trucks-returns-for-part-2-navigating-the-ecommerce-highway-with-hda-truck-pride",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-at-karmak-conference-expo",
+      "destination": "/blog/buzznerd-at-karmak-conference-expo",
+      "permanent": true
+    },
+    {
+      "source": "/jerry-van-galder-owner-of-buzznerd-to-speak-about-ai-powered-e-commerce-at-hda-truck-pride-annual-meeting",
+      "destination": "/blog/jerry-van-galder-owner-of-buzznerd-to-speak-about-ai-powered-e-commerce-at-hda-truck-pride-annual-meeting",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-joins-the-used-truck-association-uta-to-help-trucking-industry-businesses-thrive",
+      "destination": "/blog/buzznerd-trucks-joins-the-used-truck-association-uta-to-help-trucking-industry-businesses-thrive",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-karmak-announce-first-integrated-e-commerce-with-karmak",
+      "destination": "/blog/buzznerd-karmak-announce-first-integrated-e-commerce-with-karmak",
+      "permanent": true
+    },
+    {
+      "source": "/supply-chain-woes-ease-trailer-orders-up-to-end-2022",
+      "destination": "/blog/supply-chain-woes-ease-trailer-orders-up-to-end-2022",
+      "permanent": true
+    },
+    {
+      "source": "/the-connection-between-ergonomics-productivity-and-safety-in-trucking",
+      "destination": "/blog/the-connection-between-ergonomics-productivity-and-safety-in-trucking",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-launches-kriete-truck-centers-ai-powered-digital-store-front-w-hubspot-crm",
+      "destination": "/blog/buzznerd-launches-kriete-truck-centers-ai-powered-digital-store-front-w-hubspot-crm",
+      "permanent": true
+    },
+    {
+      "source": "/a-different-perspective-on-clean-energy",
+      "destination": "/blog/a-different-perspective-on-clean-energy",
+      "permanent": true
+    },
+    {
+      "source": "/women-in-the-trucking-industry",
+      "destination": "/blog/women-in-the-trucking-industry",
+      "permanent": true
+    },
+    {
+      "source": "/big-news-buzznerd-becomes-an-approved-facebook-marketplace-chat-partner",
+      "destination": "/blog/big-news-buzznerd-becomes-an-approved-facebook-marketplace-chat-partner",
+      "permanent": true
+    },
+    {
+      "source": "/happy-holidays-from-buzznerd-trucks",
+      "destination": "/blog/happy-holidays-from-buzznerd-trucks",
+      "permanent": true
+    },
+    {
+      "source": "/transportation-funding-bill-part-of-congress-summer-agenda",
+      "destination": "/blog/transportation-funding-bill-part-of-congress-summer-agenda",
+      "permanent": true
+    },
+    {
+      "source": "/report-driver-turnover-hit-all-time-low-in-q1",
+      "destination": "/blog/report-driver-turnover-hit-all-time-low-in-q1",
+      "permanent": true
+    },
+    {
+      "source": "/mack-announces-active-steering-for-granite-models",
+      "destination": "/blog/mack-announces-active-steering-for-granite-models",
+      "permanent": true
+    },
+    {
+      "source": "/all-electric-peterbilt-579ev-now-available-for-order",
+      "destination": "/blog/all-electric-peterbilt-579ev-now-available-for-order",
+      "permanent": true
+    },
+    {
+      "source": "/vtna-pursues-intuitive-ai-to-improve-safety",
+      "destination": "/blog/vtna-pursues-intuitive-ai-to-improve-safety",
+      "permanent": true
+    },
+    {
+      "source": "/truck-drivers-could-be-among-the-first-in-line-to-get-covid-19-vaccine",
+      "destination": "/blog/truck-drivers-could-be-among-the-first-in-line-to-get-covid-19-vaccine",
+      "permanent": true
+    },
+    {
+      "source": "/enhanced-bendix-system-available-in-kenworth-models",
+      "destination": "/blog/enhanced-bendix-system-available-in-kenworth-models",
+      "permanent": true
+    },
+    {
+      "source": "/work-truck-maintenance-trends-and-technology",
+      "destination": "/blog/work-truck-maintenance-trends-and-technology",
+      "permanent": true
+    },
+    {
+      "source": "/women-in-trucking-ambassador-shares-passion-for-trucking",
+      "destination": "/blog/women-in-trucking-ambassador-shares-passion-for-trucking",
+      "permanent": true
+    },
+    {
+      "source": "/update-how-covid-19-is-affecting-facebook-marketplace-leads-for-commercial-truck-and-trailer-dealers",
+      "destination": "/blog/update-how-covid-19-is-affecting-facebook-marketplace-leads-for-commercial-truck-and-trailer-dealers",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-keep-your-customers-informed-during-covid-19",
+      "destination": "/blog/how-to-keep-your-customers-informed-during-covid-19",
+      "permanent": true
+    },
+    {
+      "source": "/how-covid-19-is-affecting-facebook-marketplace-leads-for-commercial-truck-and-trailer-dealers",
+      "destination": "/blog/how-covid-19-is-affecting-facebook-marketplace-leads-for-commercial-truck-and-trailer-dealers",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-at-atd-2020-show-a-huge-success",
+      "destination": "/blog/buzznerd-trucks-at-atd-2020-show-a-huge-success",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-attends-first-atd-show-2",
+      "destination": "/blog/buzznerd-trucks-attends-first-atd-show-2",
+      "permanent": true
+    },
+    {
+      "source": "/ada-lawsuits-against-dealers-are-on-the-rise-make-your-website-accessible-to-disabled-users",
+      "destination": "/blog/ada-lawsuits-against-dealers-are-on-the-rise-make-your-website-accessible-to-disabled-users",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-now-a-facebook-marketplace-listing-partner",
+      "destination": "/blog/buzznerd-trucks-now-a-facebook-marketplace-listing-partner",
+      "permanent": true
+    },
+    {
+      "source": "/salesman-spending-too-much-time-on-facebook-put-them-to-work-answering-facebook-chat-requests-coming-from-your-website",
+      "destination": "/blog/salesman-spending-too-much-time-on-facebook-put-them-to-work-answering-facebook-chat-requests-coming-from-your-website",
+      "permanent": true
+    },
+    {
+      "source": "/the-pros-and-cons-of-running-your-own-e-commerce-parts-store",
+      "destination": "/blog/the-pros-and-cons-of-running-your-own-e-commerce-parts-store",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-launches-new-kenworth-sales-co-website",
+      "destination": "/blog/buzznerd-trucks-launches-new-kenworth-sales-co-website",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-now-a-preferred-partner-of-truck-paper-sandhills-publishing",
+      "destination": "/blog/buzznerd-trucks-now-a-preferred-partner-of-truck-paper-sandhills-publishing",
+      "permanent": true
+    },
+    {
+      "source": "/diesel-technician-job-website-buzznerd-trucks-complete-solution-for-maintenance-talent-management",
+      "destination": "/blog/diesel-technician-job-website-buzznerd-trucks-complete-solution-for-maintenance-talent-management",
+      "permanent": true
+    },
+    {
+      "source": "/buzznerd-trucks-launches-first-trailer-websites-for-coast-hyundai-trailers-and-intermountain-trailer",
+      "destination": "/blog/buzznerd-trucks-launches-first-trailer-websites-for-coast-hyundai-trailers-and-intermountain-trailer",
+      "permanent": true
     }
   ]
 }

@@ -1,8 +1,4 @@
 node_modules/
-dist/
-.astro/
-.vercel/
-.env
-.env.*
-!.env.example
+build/
 .DS_Store
+.vercel/

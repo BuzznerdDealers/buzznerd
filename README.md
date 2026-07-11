@@ -1,121 +1,56 @@
-# BuzzNerd Dealer Site Template
+# Buzznerd.com — static marketing site
 
-A flexible, content-driven **Astro** template for dealer brand sites, deployed to
-**Vercel**. Clone it per dealer, fill in `dealer.config.json`, edit `content/`,
-and ship.
+Standard **static HTML/CSS/JS** implementation of the Buzznerd.com marketing site
+(AI solutions for truck, trailer, and equipment dealerships). No framework, no
+runtime build step — every page is plain HTML with inline styles, ported 1:1 from
+the design handoff (`Buzznerd *.dc.html` → the markup inside `<x-dc>`), with the
+`<helmet>` content baked verbatim into each `<head>`.
 
-- **No CMS, no database.** Content lives as flat files in Git (JSON + Markdown).
-- **Flexible pages.** Every page is composed from reusable sections — reorder,
-  add, or remove sections by editing a JSON array.
-- **SEO + AIO built in.** Meta tags, Open Graph, canonical, JSON-LD structured
-  data, `sitemap.xml`, `robots.txt`, and `llms.txt` are all generated for you.
-- **One URL for everything.** Vercel rewrites `/inventory/*` to the Remix
-  commerce app on Fly.io; everything else is static Astro. Remix pulls brand
-  header/footer partials so inventory looks consistent with the brand site.
-
-## Quick start (new dealer)
-
-1. **Create a repo from this template** (GitHub → "Use this template").
-2. **Fill in `dealer.config.json`** — name, slug, domain, colors, logo, contact,
-   SEO, and `remixOrigin`. This is the only file that is truly per-dealer.
-3. **Edit content** in `content/` — `nav.json`, `footer.json`, `site.json`, and
-   the pages under `content/pages/`.
-4. **Install & run locally:**
-   ```bash
-   npm install
-   npm run dev        # http://localhost:4321
-   ```
-5. **Deploy** — connect the repo to Vercel (see below).
-
-## Editing with Claude Code
-
-Open the repo and describe changes in plain English, e.g.:
-
-- "Change the hero headline on the homepage to …"
-- "Add a Financing page and put it in the nav after Services."
-- "Add a blog post about our summer service special."
-- "Change the primary brand color to #2d5a8e."
-
-Claude Code reads `CLAUDE.md` automatically and knows exactly which file to edit
-and how to ship it safely (feature branch → PR → preview → merge). It will
-**never** push to `main`.
-
-## Project structure
+## Structure
 
 ```
-dealer.config.json          Dealer identity, brand, contact, SEO (edit per dealer)
-dealer.config.schema.json   JSON Schema for the config (validation + autocomplete)
-vercel.json                 Generated from dealer.config (inventory rewrite) — do not hand-edit
-content/
-  nav.json                  Header navigation (+ dropdowns, CTA)
-  footer.json               Footer columns
-  site.json                 Announcement bar + top utility bar
-  pages/*.json              One file per page, composed of sections
-  blog/*.md                 Blog posts (validated frontmatter)
-src/
-  config.ts                 Typed loader/helpers for dealer.config.json
-  content.config.ts         Content collection schemas (pages, blog)
-  layouts/                  BaseLayout (SEO + brand tokens), PageLayout
-  components/
-    Header.astro, Footer.astro, Seo.astro, JsonLd.astro, Section.astro …
-    sections/               The flexible section library (hero, features, faq …)
-  lib/schema.ts             JSON-LD (structured data) builders
-  pages/                    Routes: index, [...slug], blog, robots.txt, llms.txt
-  components/Head.astro     <head> injections (analytics, pixels) — also at /partials/head.html
-  pages/partials/           head/header/footer/CSS/JS fragments for Remix chrome
-  styles/chrome.css         Chrome-only CSS, self-contained (also at /partials/styles.css)
-  scripts/chrome.js         Mobile nav / chrome JS (also at /partials/scripts.js)
-scripts/write-vercel-json.mjs  Regenerates vercel.json from remixOrigin
+/index.html                      # Home (/)
+/<route>/index.html              # 15 static pages (see routes below)
+/blog/index.html                 # blog index (category chips + featured + grid)
+/blog/<slug>/index.html          # 54 posts, per-post <head> + BlogPosting JSON-LD
+/assets/                         # images, logos, mascot art + site.js
+/sitemap.xml /robots.txt /llms.txt
+/vercel.json                     # static host: cleanUrls + 301 redirect map
 ```
 
-## Inventory + brand chrome (how it works)
+Routes: `/`, `/solutions`, `/products`, `/services`, `/ai-websites`,
+`/ai-ecommerce`, `/ai-platform`, `/ai-driven-marketing`,
+`/content-restructuring-for-aio`, `/custom-workflows-integrations`,
+`/ai-presence-score`, `/about-us`, `/careers`, `/contact`, `/blog`,
+`/blog/<slug>`, `/privacy`, `/terms`.
 
-1. **Static brand site** on Vercel serves marketing pages and five chrome partials:
-   - `/partials/head.html` — dealer `<head>` injections (analytics, pixels, meta)
-   - `/partials/header.html` — header/topbar/nav markup
-   - `/partials/footer.html` — footer markup (+ any floating button / widget)
-   - `/partials/styles.css` — self-contained chrome CSS + brand tokens
-   - `/partials/scripts.js` — mobile nav (and any other chrome JS)
-2. **`vercel.json`** rewrites `/inventory/*` to `dealer.remixOrigin` (Remix on Fly).
-   `/partials/*` is **not** rewritten — Remix fetches those from the Vercel CDN.
-3. **Remix** (SaaS, one-time change) looks up the dealer’s `brandSiteUrl`, fetches
-   and caches the partials, and **embeds them server-side**: `head.html` into
-   `<head>`, `header.html`/`footer.html` around its inventory content, plus the
-   CSS `<link>` and JS `<script>`. Server-embedding (not client `innerHTML`) is
-   required so inline analytics/pixel scripts run and pages stay SEO-friendly.
+## Behavior (vanilla JS — `/assets/site.js`)
 
-## Deployment
+- FAQ accordions are native `<details>/<summary>` (+ CSS `+`/`−` toggle).
+- Mega-menus open on hover (CSS only).
+- Demo/contact forms compose a `mailto:info@buzznerd.com` message and show an
+  inline success card.
+- Blog category chips filter the post grid.
+- In-page `#anchor` links smooth-scroll with a sticky-header offset.
 
-Deploys are handled by **Vercel’s Git integration** (connect the GitHub repo to a
-Vercel project). No GitHub Actions workflow is required.
+The prototype-only view-switcher pill and `support.js` are dropped; the design's
+`@media(max-width:768px)` responsive rules are preserved inline.
 
-- **Push to any branch except the production branch** → isolated **preview** deploy.
-- **Merge a PR into the production branch (`main`)** → **production** deploy to
-  the custom domain.
-- Set the production branch to `main` in Vercel, and branch-protect `main`
-  (require a PR) so production never changes from a direct push.
+## Deploy
 
-### Vercel project settings
+Fully static — serve the repo root as-is. `vercel.json` enables clean URLs and the
+legacy-URL 301 redirects (from the handoff `deploy/_redirects`).
 
-| Setting | Value |
-| ------- | ----- |
-| Framework Preset | Other |
-| Build command | `npm run build` (runs `prebuild` → writes `vercel.json`) |
-| Output directory | `dist` |
-| Node version | 22 (from `.nvmrc`) |
+## Authoring scripts (`/scripts`, require the design handoff bundle)
 
-`vercel.json` is generated from `dealer.config.json` on every build so the
-inventory rewrite always points at this dealer’s `remixOrigin`. Do not hand-edit
-it — change `remixOrigin` in `dealer.config.json` instead.
+These regenerate the HTML from the `.dc.html` design files; the built HTML is what
+ships, so they are not needed to deploy.
 
-Optional: add a Vercel Deploy Hook / notification that calls the Remix cache
-invalidation endpoint when the brand site redeploys, so header/footer updates
-show up immediately on inventory pages.
-
-## Adding a new section type
-
-1. Create `src/components/sections/MySection.astro`.
-2. Register it in `src/components/SectionRenderer.astro`.
-3. Use it by adding `{ "type": "mySection", ... }` to a page's `sections` array.
-
-See `CLAUDE.md` for the full section reference and content schemas.
+- `scripts/extract-dc.mjs` — renders each `.dc.html` with a React runtime (what the
+  design tool provides) so `<sc-if>/<sc-for>/{{…}}` resolve, then captures the
+  resolved DOM.
+- `scripts/build-site.mjs` — assembles the 16 static pages (verbatim head + cleaned
+  body; rewrites design-file links → routes and `assets/` → `/assets/`).
+- `scripts/build-blog.mjs` — generates `/blog` and the 54 `/blog/<slug>/` pages from
+  `blog/posts.js`, baking each post's title, canonical, OG/Twitter, and
+  BlogPosting + Breadcrumb JSON-LD into its `<head>`.

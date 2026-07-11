@@ -1,0 +1,32 @@
+# Buzznerd
+
+> Buzznerd builds AI-powered solutions for truck, trailer, and equipment dealerships: high-converting websites, online e-commerce, CRM/DMS integrations, AIO/GEO AI-search visibility, AI photo enhancement, AI Assistant, and channel-to-sale attribution. Seattle-based, rated 4.8 on Google, trusted by 700+ dealership rooftops. Approved OEM vendor. Integrates with Karmak and CDK plus major DMS/CRM systems.
+
+## Overview pages
+- [Solutions](https://www.buzznerd.com/solutions): Dealership problems, solved — websites, ecommerce, integrations, AI visibility, pricing, attribution.
+- [Products](https://www.buzznerd.com/products): AI Websites, AI E-Commerce, and the AI Platform.
+- [Services](https://www.buzznerd.com/services): AI-Driven Marketing, Content Restructuring for AIO, Custom Workflows & Integrations, AI Presence Score.
+
+## Products
+- [AI Websites](https://www.buzznerd.com/ai-websites): Lightning-fast, conversion-tuned dealership websites with real-time inventory sync.
+- [AI E-Commerce](https://www.buzznerd.com/ai-ecommerce): Sell vehicles, parts, and service online with digital deals, financing, and checkout. Works with Karmak and CDK + custom DMS and ERP integrations.
+- [AI Platform](https://www.buzznerd.com/ai-platform): AI Assistant, No-Touch CRM, Magic Flow listing upload, and channel-to-sale attribution.
+
+## Services
+- [AI-Driven Marketing](https://www.buzznerd.com/ai-driven-marketing): Campaigns built on live inventory.
+- [Content Restructuring for AIO](https://www.buzznerd.com/content-restructuring-for-aio): Content buyers, search, and AI understand.
+- [Custom Workflows & Integrations](https://www.buzznerd.com/custom-workflows-integrations): Connect DMS, CRM, and custom systems.
+- [AI Presence Score](https://www.buzznerd.com/ai-presence-score): Free assessment of how visible a dealership is to AI search.
+
+## Company
+- [About](https://www.buzznerd.com/about-us): Seattle-based builders, marketers, and AI engineers with 12+ years in dealership technology.
+- [Blog](https://www.buzznerd.com/blog): Guidance on dealership AI, AIO/GEO, and digital retailing.
+- [Contact](https://www.buzznerd.com/contact)
+- [Careers](https://www.buzznerd.com/careers)
+
+## Key facts
+- Rating: 4.8 on Google
+- Reach: 700+ dealership rooftops
+- Integrations: Karmak, CDK, Truck Paper, Machinery Trader, Google, Meta, Stripe, UTA
+- Dealership types: franchise, independent, commercial, fleet, truck, trailer, auto, powersports, boat, equipment
+- Location: Seattle, WA, United States
