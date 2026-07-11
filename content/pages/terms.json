@@ -1,0 +1,97 @@
+{
+  "title": "Terms of Service",
+  "seo": {
+    "title": "Terms of Service",
+    "description": "The terms that govern your use of Buzznerd’s websites, products, and services."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "title": "Terms of Service",
+      "subheadline": "The ground rules for using Buzznerd’s site, products, and services."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "body": "Last updated July 10, 2026\n\nThese Terms of Service (\"Terms\") govern your access to and use of the websites, products, and services provided by Buzznerd, LLC (\"Buzznerd,\" \"we,\" \"us,\" or \"our\"). By accessing our site or using our services, you agree to these Terms. If you do not agree, do not use our site or services. If you have signed a separate written agreement with Buzznerd (such as a master services agreement or order form), that agreement governs your paid services and controls to the extent it conflicts with these Terms."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "1. Who we are",
+      "body": "Buzznerd, LLC provides AI-enabled websites, e-commerce, marketing, and platform tools for dealerships. You can reach us at info@buzznerd.com."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "2. Use of our site and services",
+      "body": "You agree to use our site and services only for lawful purposes and in accordance with these Terms. You may not misuse the services, interfere with their operation, attempt to gain unauthorized access, or use them to infringe the rights of others."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "3. Accounts and eligibility",
+      "body": "Some services require an account or a service agreement. You are responsible for the accuracy of the information you provide and for maintaining the confidentiality of your account credentials and all activity under your account."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "4. Customer content and data",
+      "body": "You retain ownership of the content and data you or your dealership provide. You grant us the rights necessary to host, process, and display that content in order to provide the services. You are responsible for ensuring you have the rights to any content you submit."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "5. Intellectual property",
+      "body": "The site, services, software, and all related materials — including the Buzznerd name, logo, and trademarks — are owned by Buzznerd, LLC or its licensors and are protected by applicable law. Except as expressly permitted, you may not copy, modify, distribute, or create derivative works from them."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "6. Third-party services and integrations",
+      "body": "Our services may connect to third-party platforms and integrations. Your use of those services is governed by their own terms, and we are not responsible for third-party products or services."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "7. Fees",
+      "body": "Fees, billing, and payment terms for paid services are set out in the applicable order form or service agreement. Unless otherwise stated, fees are non-refundable."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "8. Disclaimers",
+      "body": "Our site and services are provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the services will be uninterrupted, error-free, or that any specific results will be achieved."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "9. Limitation of liability",
+      "body": "To the maximum extent permitted by law, Buzznerd, LLC will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, arising out of or related to your use of the site or services. Our total liability for any claim will not exceed the amount you paid us for the services giving rise to the claim in the twelve months before the claim."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "10. Indemnification",
+      "body": "You agree to indemnify and hold harmless Buzznerd, LLC and its affiliates from any claims, damages, or expenses arising out of your use of the services, your content, or your violation of these Terms."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "11. Termination",
+      "body": "We may suspend or terminate access to the site or services at any time if you violate these Terms or as otherwise set out in an applicable service agreement. Provisions that by their nature should survive termination will survive."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "12. Governing law",
+      "body": "These Terms are governed by the laws of the State in which Buzznerd, LLC is organized, without regard to conflict-of-laws principles."
+    },
+    {
+      "type": "richText",
+      "container": "narrow",
+      "title": "13. Changes to these Terms",
+      "body": "We may update these Terms from time to time. When we do, we will revise the \"Last updated\" date above. Your continued use of the site or services after changes take effect constitutes acceptance of the updated Terms."
+    }
+  ]
+}

@@ -14,6 +14,8 @@ import Locations from "./sections/Locations.astro";
 import Cta from "./sections/Cta.astro";
 import Contact from "./sections/Contact.astro";
 import Inventory from "./sections/Inventory.astro";
+import ProblemGrid from "./sections/ProblemGrid.astro";
+import BeforeAfter from "./sections/BeforeAfter.astro";
 
 /**
  * Registry mapping a section `type` (from content JSON) to its component.
@@ -36,6 +38,8 @@ const registry: Record<string, any> = {
   cta: Cta,
   contact: Contact,
   inventory: Inventory,
+  problemGrid: ProblemGrid,
+  beforeAfter: BeforeAfter,
 };
 
 interface Props {

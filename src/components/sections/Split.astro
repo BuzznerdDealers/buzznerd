@@ -10,6 +10,7 @@ interface Props {
   body?: string;
   image?: string;
   imageSide?: "left" | "right";
+  bullets?: string[];
   ctas?: Cta[];
 }
 
@@ -21,6 +22,7 @@ const {
   body,
   image,
   imageSide = "right",
+  bullets = [],
   ctas = [],
 } = Astro.props;
 
@@ -30,9 +32,14 @@ const paragraphs = body ? body.split(/\n\n+/).filter(Boolean) : [];
 <Section id={id} background={background}>
   <div class:list={["split", imageSide === "left" && "split-reverse"]}>
     <div class="split-copy">
-      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      {eyebrow && <p class="eyebrow eyebrow-bolt">{eyebrow}</p>}
       {title && <h2>{title}</h2>}
       {paragraphs.map((p) => <p class="split-text">{p}</p>)}
+      {bullets.length > 0 && (
+        <ul class="split-bullets">
+          {bullets.map((b) => <li>{b}</li>)}
+        </ul>
+      )}
       <Buttons ctas={ctas} />
     </div>
     <div class="split-media">

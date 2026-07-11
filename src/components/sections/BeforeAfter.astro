@@ -1,0 +1,50 @@
+---
+import Section from "../Section.astro";
+import Buttons, { type Cta } from "../Buttons.astro";
+
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  beforeImage: string;
+  afterImage: string;
+  beforeLabel?: string;
+  afterLabel?: string;
+  ctas?: Cta[];
+}
+
+const {
+  id,
+  background = "default",
+  eyebrow,
+  title,
+  description,
+  beforeImage,
+  afterImage,
+  beforeLabel = "Before",
+  afterLabel = "After",
+  ctas = [],
+} = Astro.props;
+---
+
+<Section
+  id={id}
+  background={background}
+  eyebrow={eyebrow}
+  title={title}
+  description={description}
+>
+  <div class="beforeafter">
+    <figure class="ba-panel">
+      <img src={beforeImage} alt={beforeLabel} loading="lazy" />
+      <figcaption class="ba-label ba-before">{beforeLabel}</figcaption>
+    </figure>
+    <figure class="ba-panel">
+      <img src={afterImage} alt={afterLabel} loading="lazy" />
+      <figcaption class="ba-label ba-after"><span class="bolt" aria-hidden="true">⚡</span>{afterLabel}</figcaption>
+    </figure>
+  </div>
+  {ctas.length > 0 && <div class="ba-cta"><Buttons ctas={ctas} /></div>}
+</Section>

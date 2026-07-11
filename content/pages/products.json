@@ -1,0 +1,138 @@
+{
+  "title": "Products",
+  "seo": {
+    "title": "Products | AI Websites, E-Commerce & the AI Platform",
+    "description": "Three products, one AI-charged dealership. Buzznerd AI Websites generate leads, AI E-Commerce sells parts & products 24/7 nationwide, and the AI Platform works your leads while you sleep — all running on the same AI and your live inventory."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "layout": "center",
+      "eyebrow": "⚡ Three products. One AI-charged dealership.",
+      "headline": "Three products. One AI-charged dealership.",
+      "subheadline": "A website that generates leads, ecommerce that sells 24/7, and an AI platform that works your leads while you sleep. Each runs on the same AI and your live inventory — start with one, add the rest when you're ready.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" },
+        { "label": "Explore products ↓", "href": "#products", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "products",
+      "eyebrow": "The lineup",
+      "title": "Three products, one platform",
+      "description": "Every product runs on the same AI and your live inventory. Start with one and add the rest whenever you're ready.",
+      "columns": 3,
+      "items": [
+        { "emoji": "🌐", "title": "AI Websites", "body": "Lead-generating dealership websites.", "href": "/ai-websites", "linkLabel": "Explore AI Websites" },
+        { "emoji": "🛒", "title": "AI E-Commerce", "body": "Sell parts & products 24/7 nationwide.", "href": "/ai-ecommerce", "linkLabel": "Explore AI E-Commerce" },
+        { "emoji": "⚡", "title": "AI Platform", "body": "Assistant, No-Touch CRM, Magic Flow & attribution.", "href": "/ai-platform", "linkLabel": "Explore the AI Platform" }
+      ]
+    },
+    {
+      "type": "split",
+      "background": "muted",
+      "eyebrow": "🌐 01 · AI Websites",
+      "title": "Build a smarter dealership website.",
+      "body": "Lightning-fast, conversion-tuned sites that pull inventory in real time and turn browsers into booked appointments — built for speed, SEO and AI answer engines.",
+      "image": "/assets/buzznerd-hero-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "Real-time inventory sync from your feed or DMS",
+        "Mobile-first, accessibility & Core-Web-Vitals ready",
+        "Lead forms, chat and financing built in"
+      ],
+      "ctas": [
+        { "label": "Explore AI Websites →", "href": "/ai-websites", "style": "primary" }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "🛒 02 · AI E-Commerce",
+      "title": "Sell parts & products 24/7 nationwide.",
+      "body": "A storefront built for dealership complexity — checkout that closes while the counter is dark, with account pricing, shipping rules and secure payments.",
+      "image": "/assets/buzznerd-mascot-charged.png",
+      "imageSide": "left",
+      "bullets": [
+        "Parts & accessories storefront with Stripe checkout",
+        "Account-based pricing and customer workflows",
+        "Works with Karmak and CDK + custom DMS/ERP"
+      ],
+      "ctas": [
+        { "label": "Explore AI E-Commerce →", "href": "/ai-ecommerce", "style": "primary" }
+      ]
+    },
+    {
+      "type": "split",
+      "background": "muted",
+      "eyebrow": "⚡ 03 · AI Platform",
+      "title": "AI that works your leads while you sleep.",
+      "body": "The AI under everything Buzznerd builds — answering leads after hours, ranking your morning follow-ups, building listings from a photo, and tracing every channel to the sold unit.",
+      "image": "/assets/workflows-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "AI Assistant + No-Touch CRM morning digest",
+        "Magic Flow photo-to-listing in about a minute",
+        "Channel-to-sale attribution, not vanity metrics"
+      ],
+      "ctas": [
+        { "label": "Explore the AI Platform →", "href": "/ai-platform", "style": "primary" }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "One connected platform",
+      "title": "Buy one. They all speak the same language.",
+      "body": "Every product shares one inventory feed, one customer record and one AI. Leads from the website flow into the platform, ecommerce orders land in the same place, and attribution ties it all back to the sold unit — no double entry, no data silos.",
+      "image": "/assets/growth-hero.png",
+      "imageSide": "left",
+      "ctas": [
+        { "label": "Have a specific problem? See Solutions →", "href": "/solutions", "style": "secondary" }
+      ]
+    },
+    {
+      "type": "features",
+      "background": "muted",
+      "eyebrow": "🏆 Approved OEM Vendor",
+      "title": "An OEM-grade platform.",
+      "description": "Buzznerd provides OEM-grade websites — built and vetted to the standards OEM programs demand, from brand compliance to dealer-network scale.",
+      "columns": 2,
+      "items": [
+        { "emoji": "🏷", "title": "OEM brand & compliance standards, built in", "body": "Built and vetted to the standards OEM programs demand." },
+        { "emoji": "🏢", "title": "Scales from one rooftop to a dealer network", "body": "One platform that grows from a single store to an entire dealer network." }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "One partner, any dealership",
+      "title": "OEM? Contact us.",
+      "body": "We build to OEM program standards — from brand compliance to dealer-network scale. Let's talk about your program.",
+      "ctas": [
+        { "label": "OEM? Contact us →", "href": "/contact", "style": "primary" }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "One partner, any dealership",
+      "title": "Buzznerd products, answered",
+      "items": [
+        { "question": "Which product should I start with?", "answer": "Most dealers start with an AI Website — it's the front door where leads come in. Add AI E-Commerce and the AI Platform whenever you're ready; all three run on the same AI and your live inventory, so nothing gets rebuilt later." },
+        { "question": "Do the three products work together?", "answer": "Yes. Every product shares one inventory feed, one customer record and one AI. Website leads flow into the platform, ecommerce orders land in the same place, and channel-to-sale attribution ties it all back to the sold unit — no double entry, no data silos." },
+        { "question": "What systems does Buzznerd integrate with?", "answer": "Buzznerd works with Karmak, CDK and major DMS/CRM platforms, pulls inventory and market data from marketplaces like Truck Paper and Machinery Trader, and connects to Google, Meta and Stripe. Custom DMS and ERP integrations are available." },
+        { "question": "Can I sell parts and products online nationwide?", "answer": "Yes. AI E-Commerce is a storefront built for dealership complexity — 24/7 nationwide selling with account-based pricing, shipping rules and secure Stripe checkout that closes deals while the counter is dark." },
+        { "question": "What is the AI Platform?", "answer": "The AI Platform is the AI under everything Buzznerd builds — answering leads after hours, handing reps a ranked No-Touch CRM morning digest, building listings from a photo with Magic Flow, and tracing every channel to the sold unit." },
+        { "question": "How do I see how my dealership shows up in AI search?", "answer": "Run the free AI Presence Score to see exactly how AI engines describe your dealership — and where you're missing. It's free at /ai-presence-score." }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "See it running on your inventory",
+      "body": "Book a 20-minute demo and we'll show you exactly which solutions will move the needle for your store.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" },
+        { "label": "Back to home", "href": "/", "style": "secondary" }
+      ]
+    }
+  ]
+}

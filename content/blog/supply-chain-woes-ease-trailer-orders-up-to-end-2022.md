@@ -1,0 +1,25 @@
+---
+title: "Supply Chain Woes Ease, Trailer Orders Up to End 2022"
+date: 2022-12-14
+author: "Buzznerd Team"
+excerpt: "A look at easing supply-chain pressure and the uptick in trailer orders closing out 2022."
+tags: ["Industry"]
+draft: false
+---
+_Net trailer orders surge as OEMs regain confidence heading into 2023._
+
+![Supply Chain Woes Ease, Trailer Orders Up to End 2022](https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2022/12/Supply-Chain-Woes-Ease-Trailer-Orders.jpg)
+
+While supply-chain hiccups continue to throw kinks into the system here and there, more and more trailer manufacturers are finding things easing up. This is good news, as orderboards show a big uptick in net trailer orders from fleet managers.
+
+ACT Research recently reported an increase of about 82% in net trailer orders from September to October of 2022. Compared to 2021, orders are 168% higher in the same period. More orderboards are opening for 2023, and this positive shift signals it may be much easier to get a trailer order placed and in the works going into the new year.
+
+### OEMs feeling more stable
+
+Part of the reason for the upward trend is the easing of supply-chain challenges. OEMs had been hesitant to accept new orders in recent years because COVID-19 disruptions made it difficult to predict the availability of materials and labor. As logistics networks overcame those challenges and found innovative solutions to bottlenecks and slowdowns, OEMs grew more confident — opening orderboards and giving fleet managers more confidence in ordering new equipment.
+
+### If you're considering a trailer order
+
+If you're a fleet manager currently considering placing a trailer order, one piece of advice is to get in early and stay in line. As more trucking companies place orders now, there will be fewer opportunities to take someone else's place — wait times will grow in the coming months, and pulling an order based on wait times only extends the time to completion.
+
+The pandemic shuffled everything around for manufacturers, trucking managers, and suppliers, but as things return to normal it's a good idea to get your mindset back into pre-pandemic thinking. There will likely continue to be small pandemic-related disruptions for years. For now, though, orders are running hot — so don't wait to get yours placed, and stay the course once those wheels are in motion.

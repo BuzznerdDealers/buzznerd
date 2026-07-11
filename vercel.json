@@ -6,11 +6,11 @@
   "rewrites": [
     {
       "source": "/inventory",
-      "destination": "https://a1.buzznerdrv.com/inventory"
+      "destination": "https://inventory.buzznerd.com/inventory"
     },
     {
       "source": "/inventory/:path*",
-      "destination": "https://a1.buzznerdrv.com/inventory/:path*"
+      "destination": "https://inventory.buzznerd.com/inventory/:path*"
     }
   ],
   "redirects": [

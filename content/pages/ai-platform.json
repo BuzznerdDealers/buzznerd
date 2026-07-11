@@ -1,0 +1,108 @@
+{
+  "title": "AI Platform",
+  "seo": {
+    "title": "AI Platform | After-Hours AI, No-Touch CRM, Magic Listings & Attribution",
+    "description": "The AI platform under everything Buzznerd builds: AI Assistant answers leads after hours, No-Touch CRM hands reps a ranked morning digest, Magic Flow builds listings from photos, and attribution traces every channel to the sold unit."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "layout": "center",
+      "eyebrow": "⚡ AI Platform",
+      "headline": "AI that works your leads while you sleep.",
+      "subheadline": "Four connected systems under everything Buzznerd builds: AI answers buyers after hours, your reps get a ranked morning digest instead of CRM filing, listings build themselves from photos, and every sale traces back to the channel that drove it.",
+      "ctas": [
+        { "label": "Schedule a demo", "href": "/contact", "style": "primary" }
+      ]
+    },
+    {
+      "type": "split",
+      "id": "assistant",
+      "eyebrow": "AI Assistant",
+      "title": "Every lead answered — even at 11:48 PM.",
+      "body": "When your team is offline, AI answers inbound texts, emails, and web chats on the same channel the buyer used — then hands your rep a warm briefing when they sign in.",
+      "image": "/assets/buzznerd-mascot-charged.png",
+      "imageSide": "right",
+      "bullets": [
+        "Same-channel replies — SMS, email, and web chat",
+        "Warm-handoff brief: what was asked, answered, and still owed",
+        "Hard guardrails — pricing and trade values stay human-only"
+      ]
+    },
+    {
+      "type": "split",
+      "background": "muted",
+      "eyebrow": "No-Touch CRM",
+      "title": "Follow-up without the filing.",
+      "body": "Assembled overnight from every conversation, storefront visit, and price change: a ranked digest of the few things actually worth your rep's time — in their inbox at 7:00 AM. Nothing to log, nothing to file. Act on it or dismiss it; we track the rest.",
+      "image": "/assets/workflows-character.png",
+      "imageSide": "left",
+      "bullets": [
+        "Ranked by real buying signals, not recency",
+        "Every card explains WHY it's on the list",
+        "Plays nice with the CRM you already run"
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "Magic Flow",
+      "title": "Photos in. Full listing out.",
+      "body": "Snap a unit on the lot and AI builds the entire product page in one read — title, description, specs, FAQs, and best-for tags. You confirm what it found and set the price; it suggests a range from comparable units, but never prices for you.",
+      "image": "/assets/buzznerd-hero-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "One photo read builds every section of the page",
+        "AI proposes, you confirm — nothing publishes unchecked",
+        "Price guidance from comps — the price stays yours"
+      ]
+    },
+    {
+      "type": "split",
+      "id": "attribution",
+      "background": "muted",
+      "eyebrow": "Channel-to-sale attribution",
+      "title": "Every sale traced to its channel.",
+      "body": "Most tools stop at the lead. Buzznerd tags every share, call, and inquiry with its channel and closes the loop at the sale — so you know which marketing moves metal, not just which gets clicks.",
+      "image": "/assets/growth-hero.png",
+      "imageSide": "left",
+      "bullets": [
+        "One channel taxonomy across shares, leads, and sales",
+        "Tracked phone numbers — calls count, not just clicks",
+        "Per-channel visitors → leads → sold units, per listing"
+      ]
+    },
+    {
+      "type": "features",
+      "eyebrow": "Built on trust",
+      "title": "Guardrails that keep AI honest",
+      "columns": 3,
+      "items": [
+        { "emoji": "🔒", "title": "Money stays human", "body": "The AI never quotes prices, promises delivery, or values a trade. Those are locked to your people, always." },
+        { "emoji": "✅", "title": "Honest by design", "body": "AI actions are marked as AI. Buyers always know whether they're talking to your assistant or your salesperson." },
+        { "emoji": "🏢", "title": "Your data, your dealership", "body": "Conversations, leads, and sale outcomes belong to your dealership — not a rep's personal phone." }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "The AI Platform, answered",
+      "items": [
+        { "question": "What is the Buzznerd AI Platform?", "answer": "The AI under everything Buzznerd builds — the AI Assistant answers leads after hours, No-Touch CRM hands reps a ranked morning digest, Magic Flow builds listings from photos, and attribution traces every channel to the sold unit." },
+        { "question": "Does the AI Assistant replace my salespeople?", "answer": "No. It covers inbound questions when no salesperson is available and reads each buyer's intent and readiness, then hands your team a warm brief. Prices, delivery promises, and trade values always stay human-only." },
+        { "question": "What is the No-Touch CRM?", "answer": "A ranked morning digest — not a data-entry CRM. It assembles your hottest follow-ups overnight with replies pre-drafted, so reps act instead of filing. It also plays nice with the CRM you already run." },
+        { "question": "How fast can Magic Flow list a unit?", "answer": "About a minute. Snap photos on the lot and Magic Flow builds the title, description, specs, and FAQs. You confirm what it found and set the price — including comp-based price guidance." },
+        { "question": "Can I see which marketing channel actually sells units?", "answer": "Yes. Channel-to-sale attribution ties every lead and sale back to the channel that produced it — real sold-unit results, not vanity metrics." }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Put AI on the night shift.",
+      "body": "After-hours coverage, no-touch follow-up, magic listings, and channel-to-sale attribution — one platform.",
+      "ctas": [
+        { "label": "Schedule a demo", "href": "/contact", "style": "primary" },
+        { "label": "Explore AI Websites", "href": "/ai-websites", "style": "secondary" }
+      ]
+    }
+  ]
+}

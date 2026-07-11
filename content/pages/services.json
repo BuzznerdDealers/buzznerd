@@ -1,45 +1,138 @@
 {
   "title": "Services",
   "seo": {
-    "title": "Service & Repair",
-    "description": "Factory-trained technicians, a fully equipped shop, and fast turnaround to keep your trucks running."
+    "title": "Services | Marketing, Content for AIO, Integrations & AI Presence Score",
+    "description": "Buzznerd services put the platform to work: AI-driven marketing built on live inventory, content restructured for AI search, custom DMS/CRM workflows, and a free AI Presence Score that shows how AI sees your dealership."
   },
   "sections": [
     {
-      "type": "pageHeader",
-      "eyebrow": "Service & repair",
-      "title": "Expert service that keeps you moving",
-      "subheadline": "From routine maintenance to major repairs, our certified technicians have you covered."
-    },
-    {
-      "type": "features",
-      "columns": 3,
-      "items": [
-        { "title": "Preventive Maintenance", "body": "Oil changes, inspections, and scheduled service to prevent costly downtime.", "icon": "wrench" },
-        { "title": "Engine & Drivetrain", "body": "Diagnostics and repair for engines, transmissions, and drivetrains.", "icon": "gear" },
-        { "title": "DPF & Emissions", "body": "Cleaning and service to keep you compliant and efficient.", "icon": "leaf" },
-        { "title": "Brakes & Suspension", "body": "Safety-critical repairs done right the first time.", "icon": "shield" },
-        { "title": "Electrical & Diagnostics", "body": "Advanced diagnostics to find and fix issues fast.", "icon": "bolt" },
-        { "title": "Roadside & Mobile", "body": "24/7 support to get you back on the road.", "icon": "truck" }
+      "type": "hero",
+      "layout": "center",
+      "eyebrow": "Services",
+      "headline": "Put your platform to work.",
+      "subheadline": "Products give you the platform. Services put it to work — marketing built on your live inventory, content rebuilt for AI search, custom integrations across your systems, and a free look at how AI sees your dealership.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" },
+        { "label": "Explore services ↓", "href": "#services", "style": "ghost" }
       ]
     },
     {
-      "type": "steps",
+      "type": "split",
+      "id": "services",
+      "eyebrow": "📣 AI-Driven Marketing",
+      "title": "Marketing built on your live inventory.",
+      "body": "Higher-intent traffic from Google Ads, Meta remarketing and landing pages tied to real units — so spend follows what's on your lot and every campaign is measurable.",
+      "image": "/assets/growth-hero.png",
+      "imageSide": "right",
+      "bullets": [
+        "Campaigns connected to live inventory & parts",
+        "Google Ads & Meta remarketing that follow demand",
+        "Measurable performance, tied back to sold units"
+      ],
+      "ctas": [
+        { "label": "Explore AI-Driven Marketing →", "href": "/ai-driven-marketing", "style": "secondary" }
+      ]
+    },
+    {
+      "type": "split",
       "background": "muted",
-      "title": "How service works",
+      "eyebrow": "📝 Content Restructuring for AIO",
+      "title": "Content buyers, search & AI understand.",
+      "body": "We rebuild weak, outdated or thin dealership content so it performs across traditional search, AI answer engines and the pages your customers actually read.",
+      "image": "/assets/content-restructuring-character.png",
+      "imageSide": "left",
+      "bullets": [
+        "Answer-ready structure AI can quote & cite",
+        "Rewrites thin pages into real, useful content",
+        "Works for search, AI & human readers at once"
+      ],
+      "ctas": [
+        { "label": "Explore Content for AIO →", "href": "/content-restructuring-for-aio", "style": "secondary" }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "🔌 Custom Workflows & Integrations",
+      "title": "Connect your dealership systems.",
+      "body": "We connect websites, inventory providers, CRM, DMS, ecommerce and marketing platforms — with custom workflows built around how your dealership actually operates.",
+      "image": "/assets/workflows-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "Works with Karmak and CDK + custom DMS/ERP",
+        "Sync inventory, leads & customer records",
+        "Custom workflows around your operations"
+      ],
+      "ctas": [
+        { "label": "Explore Workflows & Integrations →", "href": "/custom-workflows-integrations", "style": "secondary" }
+      ]
+    },
+    {
+      "type": "split",
+      "background": "muted",
+      "eyebrow": "🎯 AI Presence Score",
+      "title": "See how AI sees your dealership.",
+      "body": "A free audit that shows how visible you are to ChatGPT, Gemini, Perplexity and Google AI Overviews — scored across AEO, AIO, SEO and GEO in about 30 seconds.",
+      "image": "/assets/presence-score-character.png",
+      "imageSide": "left",
+      "bullets": [
+        "Free — results in about 30 seconds",
+        "Scored across AEO, AIO, SEO & GEO",
+        "Full report emailed to you"
+      ],
+      "ctas": [
+        { "label": "Get your free score →", "href": "/ai-presence-score", "style": "secondary" }
+      ]
+    },
+    {
+      "type": "richText",
+      "title": "The platform does the heavy lifting. We do the rest.",
+      "body": "Buzznerd services run on the same AI, inventory and customer data as your products — so marketing targets real units, content feeds the same AI answering your leads, and every integration writes back to one record. Start with any service, on your existing site or a Buzznerd one.",
+      "container": "narrow",
+      "ctas": [
+        { "label": "See the products →", "href": "/products", "style": "secondary" },
+        { "label": "Have a problem? See Solutions →", "href": "/solutions", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Buzznerd services, answered",
       "items": [
-        { "title": "Book", "body": "Schedule online or call any location." },
-        { "title": "Diagnose", "body": "Our techs inspect and give you a clear estimate." },
-        { "title": "Repair", "body": "We fix it right, with genuine parts." },
-        { "title": "Roll out", "body": "Back on the road, fast." }
+        {
+          "question": "What services does Buzznerd offer?",
+          "answer": "Four core services: AI-Driven Marketing built on your live inventory, Content Restructuring for AIO so buyers and AI understand your pages, Custom Workflows & Integrations that connect your DMS, CRM and systems, and a free AI Presence Score that shows how AI search sees your dealership."
+        },
+        {
+          "question": "What is AI-Driven Marketing?",
+          "answer": "Dealership advertising built around live inventory and measurable performance — Google Ads, Meta remarketing and landing pages tied to real units, so spend follows what's actually on your lot and every campaign is traceable to results."
+        },
+        {
+          "question": "What is Content Restructuring for AIO?",
+          "answer": "It takes weak, outdated or thin dealership content and rebuilds it so it performs across traditional search, AI answer engines and customer-facing pages — the same structure that helps AI cite and recommend your dealership."
+        },
+        {
+          "question": "Can Buzznerd connect to my DMS and CRM?",
+          "answer": "Yes. We build custom workflows and integrations that connect websites, inventory providers, CRM, DMS, ecommerce and marketing platforms — working with Karmak and CDK plus custom DMS and ERP integrations."
+        },
+        {
+          "question": "How much does an AI Presence Score cost?",
+          "answer": "It's free. The AI Presence Score runs in about 30 seconds and emails you a full report scored across AEO, AIO, SEO and GEO."
+        },
+        {
+          "question": "Do I need a Buzznerd website to use these services?",
+          "answer": "No. Buzznerd services can work on your existing site and systems. They run best alongside a Buzznerd AI Website and the AI Platform, but marketing, content, integrations and the AI Presence Score can all start independently."
+        }
       ]
     },
     {
       "type": "cta",
       "background": "primary",
-      "title": "Need service now?",
-      "body": "Get in touch and we'll get you scheduled.",
-      "ctas": [{ "label": "Schedule Service", "href": "/contact", "style": "primary" }]
+      "title": "Let's put it to work for your store",
+      "body": "Book a 20-minute demo and we'll show you which services will move the needle — or run your free AI Presence Score right now.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" },
+        { "label": "Get your AI Presence Score", "href": "/ai-presence-score", "style": "secondary" }
+      ]
     }
   ]
 }

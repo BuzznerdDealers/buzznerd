@@ -1,0 +1,53 @@
+---
+import Section from "../Section.astro";
+
+interface Item {
+  emoji?: string;
+  problem: string;
+  solution: string;
+  href?: string;
+}
+
+interface Props {
+  id?: string;
+  background?: "default" | "muted" | "dark" | "primary";
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  columns?: 2 | 3 | 4 | 5;
+  items: Item[];
+}
+
+const {
+  id,
+  background = "muted",
+  eyebrow,
+  title,
+  description,
+  columns = 5,
+  items = [],
+} = Astro.props;
+---
+
+<Section
+  id={id}
+  background={background}
+  eyebrow={eyebrow}
+  title={title}
+  description={description}
+>
+  <div class="problem-grid" data-cols={columns}>
+    {
+      items.map((item) => {
+        const Tag = item.href ? "a" : "div";
+        return (
+          <Tag class="problem-card" href={item.href}>
+            {item.emoji && <span class="problem-emoji" aria-hidden="true">{item.emoji}</span>}
+            <span class="problem-label">{item.problem}</span>
+            <strong class="problem-solution">{item.solution}</strong>
+          </Tag>
+        );
+      })
+    }
+  </div>
+</Section>

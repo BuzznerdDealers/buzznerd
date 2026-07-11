@@ -1,0 +1,19 @@
+---
+title: "VTNA Pursues Intuitive AI to Improve Safety"
+date: 2020-11-13
+author: "Abigail"
+excerpt: "Volvo Trucks North America and Perceptive Automata are prototyping an intuitive AI that acts like a second set of eyes — predicting whether people, bikes, and cars will enter a truck's path."
+tags: ["Industry"]
+draft: false
+---
+_Volvo and Perceptive Automata are testing AI that predicts what pedestrians and cyclists will do next._
+
+![VTNA Pursues Intuitive AI to Improve Safety](https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/Winter-Mountains-Instagram-Post-1024x1024-1.png)
+
+Volvo Trucks North America (VTNA) and Boston-based Perceptive Automata are pursuing a new prototype intuitive AI system that acts like a second set of eyes. By using software developed for automated vehicles, this intuitive AI system can figure out if people, bicycles, and cars will enter the path of the truck.
+
+Sensors are becoming a common part of tractor-trailer safety systems, giving drivers information about areas they can't see around their truck. However, all these sensors can do is detect the presence of an object. This new AI gathers information from those sensors, figures out what the objects are, and assesses their likely path of movement.
+
+For example, if you see a person facing the road next to a curb, you can guess that they will try to cross the street. This system can make the same sort of judgment by determining the person's position and motion. From there, it warns the driver and informs other safety systems of a possible collision. This both helps the driver locate hazards and activates systems like automatic braking in more situations where an impact is likely to occur. The software can identify and determine the actions of pedestrians, cyclists, and vehicles.
+
+Volvo and Perceptive Automata demonstrated proof-of-concept software at the headquarters of DHE Freight in Ontario, California. There is no word yet on when this system will come to market.

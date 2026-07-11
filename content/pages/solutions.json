@@ -1,0 +1,239 @@
+{
+  "title": "Solutions",
+  "seo": {
+    "title": "Dealership Problems, Solved",
+    "description": "Cold leads, listings that take hours, ad spend you can't trace, AI recommending the dealer down the road — solved. Buzznerd builds AI websites, ecommerce and DMS/CRM integrations, plus the Magic 8 AEO/AIO/SEO/GEO system, for 700+ dealership rooftops."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "layout": "center",
+      "eyebrow": "Solutions overview",
+      "headline": "The problems every dealership fights. Solved.",
+      "subheadline": "Leads that go cold, listings that take forever, marketing dollars you can't trace, AI that recommends the dealer down the road. Here are the real headaches we hear from dealers every week — and exactly how Buzznerd fixes each one.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" },
+        { "label": "Explore solutions ↓", "href": "#websites", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "problemGrid",
+      "eyebrow": "Problem → solution",
+      "title": "One partner, any dealership",
+      "description": "The real headaches we hear from dealers every week — and exactly how Buzznerd fixes each one.",
+      "background": "muted",
+      "columns": 5,
+      "items": [
+        { "emoji": "🌐", "problem": "No leads from the site", "solution": "Conversion-tuned websites", "href": "#websites" },
+        { "emoji": "💬", "problem": "Leads go cold after hours", "solution": "24/7 AI lead coverage", "href": "#leads" },
+        { "emoji": "🛒", "problem": "Can't deal online", "solution": "Parts & products storefront", "href": "#ecommerce" },
+        { "emoji": "📋", "problem": "Follow-up falls through", "solution": "No-Touch CRM digest", "href": "#crm" },
+        { "emoji": "🔌", "problem": "Tools don't talk", "solution": "DMS & CRM integrations", "href": "#integrations" },
+        { "emoji": "⏱", "problem": "Listings take hours", "solution": "Magic Flow photo listings", "href": "#listings" },
+        { "emoji": "🔎", "problem": "Invisible to AI", "solution": "AIO / GEO visibility", "href": "#aio" },
+        { "emoji": "📸", "problem": "Weak photos", "solution": "AI photo enhancement", "href": "#photos" },
+        { "emoji": "📊", "problem": "Can't trace ROI", "solution": "Channel-to-sale attribution", "href": "#attribution" },
+        { "emoji": "🏆", "problem": "OEM grade", "solution": "Built to OEM program standards", "href": "#oem" }
+      ]
+    },
+    {
+      "type": "split",
+      "id": "websites",
+      "eyebrow": "Conversion-tuned websites",
+      "title": "“Our site gets traffic but no leads.”",
+      "body": "How we fix it: A lightning-fast, conversion-tuned site that pulls inventory in real time and turns browsers into booked appointments — built for your brand, engineered to sell.",
+      "image": "/assets/buzznerd-hero-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "Automated inventory sync from your feed or DMS",
+        "Mobile-first, accessibility- and Core-Web-Vitals-ready",
+        "Lead forms, chat, and financing built in"
+      ]
+    },
+    {
+      "type": "split",
+      "id": "ecommerce",
+      "eyebrow": "Parts & products storefront",
+      "title": "“Buyers want to deal online — we can't.”",
+      "body": "How we fix it: Sell parts and products online with a storefront built for dealership complexity — checkout that closes while the counter is dark.",
+      "imageSide": "left",
+      "bullets": [
+        "Parts & accessories storefront with secure checkout",
+        "Account-based pricing and customer workflows",
+        "Shipping with UPS, FedEx & USPS — 24/7 nationwide"
+      ]
+    },
+    {
+      "type": "split",
+      "id": "integrations",
+      "eyebrow": "DMS & CRM integrations",
+      "title": "“Our tools don't talk, so we do double work.”",
+      "body": "How we fix it: We plug into the tools you already run and sync leads, inventory, and deals across your entire stack — no double entry, no data silos.",
+      "image": "/assets/workflows-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "Works with Karmak, CDK, and major DMS/CRM platforms",
+        "Inventory pulled from Truck Paper, Machinery Trader & more",
+        "Leads routed to the right rep in seconds"
+      ]
+    },
+    {
+      "type": "split",
+      "id": "aio",
+      "eyebrow": "AIO / GEO visibility",
+      "title": "“AI recommends the dealer down the road, not us.”",
+      "body": "How we fix it: Buyers ask AI before they ask you. We make your inventory, reviews, and pages machine-readable so ChatGPT, Google AI, and Gemini recommend you first.",
+      "image": "/assets/presence-score-character.png",
+      "imageSide": "left",
+      "bullets": [
+        "Structured data tuned for AI answer engines",
+        "Review & reputation signals that AI trusts",
+        "Free AI visibility audit to see where you stand"
+      ]
+    },
+    {
+      "type": "split",
+      "id": "leads",
+      "eyebrow": "24/7 AI lead coverage",
+      "title": "“Leads come in after hours and go cold.”",
+      "body": "How we fix it: 24/7 AI Assistant that answers and understands each buyer's intent and readiness — handing your team buyers who are ready to talk, not tire-kickers.",
+      "imageSide": "right",
+      "bullets": [
+        "Answers spec, pricing, and availability instantly",
+        "Reads each buyer's intent and readiness around the clock",
+        "Hands warm leads straight to your No-Touch CRM"
+      ]
+    },
+    {
+      "type": "split",
+      "id": "crm",
+      "eyebrow": "No-Touch CRM digest",
+      "title": "“My reps won't file anything in the CRM.”",
+      "body": "How we fix it: Stop asking them to. Our No-Touch CRM assembles a ranked morning digest overnight — hottest lead first, reply pre-drafted, nothing to log. Reps act on it or dismiss it; we track the rest.",
+      "imageSide": "left",
+      "bullets": [
+        "Ranked digest in their inbox at 7:00 AM",
+        "AI-drafted replies — send as-is or edit",
+        "Zero data entry — follow-up gets tracked anyway",
+        "Plays nice with the CRM you already run"
+      ],
+      "ctas": [
+        { "label": "Learn more about the AI Platform →", "href": "/ai-platform", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "split",
+      "id": "photos",
+      "eyebrow": "AI photo enhancement",
+      "title": "“Our photos don't do the units justice.”",
+      "body": "How we fix it: Snap a unit anywhere — a gravel lot, harsh sun, a cluttered fence line. Our AI wipes the background and drops it into a clean, branded showroom with your logo on the wall.",
+      "imageSide": "right",
+      "bullets": [
+        "Instant background replacement, any photo",
+        "Consistent, branded backdrop across your inventory",
+        "Batch your whole lot in minutes, not days"
+      ]
+    },
+    {
+      "type": "beforeAfter",
+      "background": "muted",
+      "eyebrow": "AI photo enhancement",
+      "title": "Showroom photos, from any lot shot",
+      "description": "Snap a unit anywhere and our AI wipes the clutter and drops it into a clean, branded backdrop.",
+      "beforeImage": "/assets/photos/before-side.jpg",
+      "afterImage": "/assets/photos/after-side.png",
+      "beforeLabel": "Before",
+      "afterLabel": "After"
+    },
+    {
+      "type": "split",
+      "id": "listings",
+      "eyebrow": "Magic Flow photo listings",
+      "title": "“Getting a unit listed takes half a day.”",
+      "body": "How we fix it: Snap photos on the lot and Magic Flow builds the whole listing in about a minute — title, description, specs, and FAQs. You confirm what it found and set the price; the unit's live before you're back inside.",
+      "image": "/assets/buzznerd-mascot-charged.png",
+      "imageSide": "left",
+      "bullets": [
+        "One photo read builds the entire product page",
+        "AI proposes, you confirm — nothing publishes unchecked",
+        "Price guidance from comps — the price stays yours"
+      ],
+      "ctas": [
+        { "label": "Learn more about the AI Platform →", "href": "/ai-platform", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "split",
+      "id": "pricing",
+      "eyebrow": "Price gauge",
+      "title": "“I never know if a unit's priced right.”",
+      "body": "How we fix it: As you list, Buzznerd finds real comps from online marketplaces and nearby competing dealers, then builds a price gauge showing where your unit sits — low, market, and high. You get a defensible starting point in seconds and set the final number yourself.",
+      "imageSide": "right",
+      "bullets": [
+        "Finds comparable units across marketplaces and nearby competing dealers",
+        "Builds a low–market–high price gauge with a suggested number",
+        "Guidance never auto-prices — you stay in control of every unit"
+      ],
+      "ctas": [
+        { "label": "Learn more about the AI Platform →", "href": "/ai-platform", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "split",
+      "id": "attribution",
+      "eyebrow": "Channel-to-sale attribution",
+      "title": "“We don't know which marketing actually sells units.”",
+      "body": "How we fix it: Most tools stop at the lead. We track each channel all the way to the sold unit — so you can shift your marketing budget to what actually moves metal.",
+      "image": "/assets/growth-hero.png",
+      "imageSide": "left",
+      "bullets": [
+        "Channel-to-sale attribution, not vanity metrics",
+        "ROI dashboards built for GMs and owners",
+        "AI budget recommendations every month"
+      ]
+    },
+    {
+      "type": "features",
+      "id": "oem",
+      "background": "muted",
+      "eyebrow": "OEM grade",
+      "title": "An OEM-grade platform.",
+      "description": "Buzznerd provides OEM-grade websites — built and vetted to the standards OEM programs demand, from brand compliance to dealer-network scale.",
+      "columns": 3,
+      "items": [
+        { "emoji": "✓", "title": "Approved OEM Vendor", "body": "Vetted and approved to work within OEM programs." },
+        { "emoji": "🏷", "title": "OEM brand & compliance standards, built in", "body": "Brand compliance and program requirements baked into every build." },
+        { "emoji": "🏢", "title": "Scales from one rooftop to a dealer network", "body": "The same platform serves a single store or an entire dealer group." }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "dark",
+      "title": "An OEM-grade platform, built to program standards",
+      "body": "Running an OEM program? We'll walk you through brand compliance and dealer-network scale.",
+      "ctas": [
+        { "label": "OEM? Contact us →", "href": "/contact", "style": "primary" }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Dealership problems, answered",
+      "items": [
+        { "question": "Which solution should my dealership start with?", "answer": "Start with the problem costing you the most. Most dealers begin with a conversion-tuned website or after-hours AI Assistant coverage — every solution runs on the same platform, so you can add the rest anytime." },
+        { "question": "Does Buzznerd work with my DMS and CRM?", "answer": "Yes. Buzznerd works with Karmak and CDK plus custom DMS and ERP integrations, and syncs inventory, leads, and customer records across your systems." },
+        { "question": "How does Buzznerd get my dealership recommended by AI?", "answer": "We ship structured data, answer-ready content, machine-readable inventory, and local signals together — so buyers find you in search and answer engines like ChatGPT and Gemini recommend you first." },
+        { "question": "Is Buzznerd built for OEM programs?", "answer": "Yes. Buzznerd provides OEM-grade websites built to the standards OEM programs demand, from brand compliance to dealer-network scale." }
+      ]
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "See it running on your inventory",
+      "body": "Book a 20-minute demo and we'll show you exactly which solutions will move the needle for your store.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" }
+      ]
+    }
+  ]
+}

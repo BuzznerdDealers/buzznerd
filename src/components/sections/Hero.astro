@@ -1,15 +1,24 @@
 ---
 import Buttons, { type Cta } from "../Buttons.astro";
 
+interface Rating {
+  stars?: string;
+  value?: string;
+  label?: string;
+}
+
 interface Props {
   eyebrow?: string;
   headline: string;
   subheadline?: string;
   backgroundImage?: string;
-  /** "split" (text + card), "center" (centered), or "image" (full-bleed bg). */
+  /** "split" (text + media/highlights), "center", or "image" (full-bleed bg). */
   layout?: "split" | "center" | "image";
   ctas?: Cta[];
   highlights?: { label: string; value: string }[];
+  media?: string;
+  rating?: Rating;
+  note?: string;
 }
 
 const {
@@ -20,27 +29,45 @@ const {
   layout = "split",
   ctas = [],
   highlights = [],
+  media,
+  rating,
+  note,
 } = Astro.props;
 
 const hasImage = layout === "image" && backgroundImage;
-const style = hasImage
-  ? `--hero-image: url('${backgroundImage}')`
-  : undefined;
+const style = hasImage ? `--hero-image: url('${backgroundImage}')` : undefined;
 ---
 
-<section class:list={["hero", `hero-${layout}`]} style={style} data-has-image={hasImage ? "true" : "false"}>
+<section
+  class:list={["hero", `hero-${layout}`]}
+  style={style}
+  data-has-image={hasImage ? "true" : "false"}
+>
   <div class="container hero-inner">
     <div class="hero-copy">
-      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      {eyebrow && <p class="eyebrow eyebrow-bolt">{eyebrow}</p>}
       <h1>{headline}</h1>
       {subheadline && <p class="hero-sub">{subheadline}</p>}
       <Buttons ctas={ctas} />
+      {
+        rating && (
+          <div class="hero-rating">
+            {rating.stars && <span class="hero-stars">{rating.stars}</span>}
+            <span>
+              {rating.value && <strong>{rating.value}</strong>} {rating.label}
+            </span>
+          </div>
+        )
+      }
+      {note && <p class="hero-note">{note}</p>}
     </div>
 
     {
       layout === "split" && (
-        <div class="hero-aside" aria-hidden={highlights.length ? "false" : "true"}>
-          {highlights.length > 0 ? (
+        <div class="hero-aside">
+          {media ? (
+            <img src={media} alt="" class="hero-media" loading="eager" />
+          ) : highlights.length > 0 ? (
             <div class="hero-highlights">
               {highlights.map((h) => (
                 <div class="hero-highlight">

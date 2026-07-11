@@ -1,32 +1,48 @@
 {
   "title": "Careers",
   "seo": {
-    "title": "Careers",
-    "description": "Join our team. Explore open roles in sales, service, and parts, and grow your career with us."
+    "title": "Careers at Buzznerd | Join the Team",
+    "description": "We're always looking for talented, tech-driven nerds to join the team. Contact us to learn what working at Buzznerd is like and to inquire about open positions."
   },
   "sections": [
     {
-      "type": "pageHeader",
+      "type": "hero",
+      "layout": "center",
       "eyebrow": "Careers",
-      "title": "Build your career with us",
-      "subheadline": "We're a family-owned team that's been growing since 1985. If you take pride in your work, we'd love to meet you."
+      "headline": "Come be a nerd",
+      "subheadline": "We're always looking for talented, tech-driven nerds to join the team. Contact us to learn more about what working at Buzznerd is like — and to inquire about any open positions.",
+      "ctas": [
+        { "label": "I'm interested in…", "href": "/contact", "style": "primary" }
+      ]
     },
     {
       "type": "features",
-      "title": "Why work here",
+      "eyebrow": "Why Buzznerd",
+      "title": "What it's like to work here",
       "columns": 3,
+      "align": "center",
       "items": [
-        { "title": "Competitive pay", "body": "Fair wages, bonuses, and room to grow.", "icon": "dollar" },
-        { "title": "Great benefits", "body": "Health coverage, paid time off, and retirement.", "icon": "shield" },
-        { "title": "Real training", "body": "Factory training and support to advance your skills.", "icon": "wrench" }
+        { "emoji": "💡", "title": "Work on real AI", "body": "Ship products that power 700+ dealership rooftops — not slideware." },
+        { "emoji": "🌲", "title": "Seattle roots, remote-friendly", "body": "A small, senior team that answers the phone and sweats the details." },
+        { "emoji": "🚀", "title": "Room to grow", "body": "Wear many hats, own your work, and grow as fast as you can learn." }
       ]
+    },
+    {
+      "type": "richText",
+      "background": "muted",
+      "container": "narrow",
+      "title": "No open-role requirement",
+      "body": "If you're a great nerd, we want to hear from you. Reach out and tell us what you're interested in — we'll review and get back to you within one business day."
     },
     {
       "type": "cta",
       "background": "primary",
-      "title": "Ready to apply?",
-      "body": "Send us your details and we'll be in touch about open positions.",
-      "ctas": [{ "label": "Get in Touch", "href": "/contact", "style": "primary" }]
+      "title": "Think you'd be a great nerd?",
+      "body": "Tell us what you're interested in and inquire about open positions. We'll get back to you within one business day.",
+      "ctas": [
+        { "label": "Get in touch", "href": "/contact", "style": "primary" },
+        { "label": "Email us", "href": "mailto:info@buzznerd.com", "style": "secondary" }
+      ]
     }
   ]
 }

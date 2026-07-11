@@ -6,7 +6,7 @@ import { getCollection } from "astro:content";
  * production (9–12 is typical). New posts in content/blog/*.md appear
  * automatically — nothing else to wire up.
  */
-export const POSTS_PER_PAGE = 2;
+export const POSTS_PER_PAGE = 9;
 
 /** All non-draft posts, newest first. */
 export async function getSortedPosts() {

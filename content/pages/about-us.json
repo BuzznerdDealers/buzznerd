@@ -1,0 +1,128 @@
+{
+  "title": "About",
+  "seo": {
+    "title": "About Buzznerd — Builders, Marketers & AI Engineers for Dealerships",
+    "description": "Seattle-based builders, marketers, and AI engineers with deep dealership technology experience — we make marketing teams rock stars with the tech, content, and AI horsepower to do their best work."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "layout": "split",
+      "eyebrow": "Real humans behind the AI",
+      "headline": "Behind the AI are real humans.",
+      "subheadline": "Behind it all — the AI, the experience, the results — are real humans with names you'll know. Most of us have been here for years, and it shows: we answer the phone, we know your store, and we sweat the details so the tech actually works for your team.",
+      "note": "Builders, marketers, and AI engineers — obsessed with one thing: helping dealers sell more. Here's who we are.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" }
+      ],
+      "media": "/assets/buzznerd-team-heroes.png"
+    },
+    {
+      "type": "gallery",
+      "eyebrow": "Names you'll know",
+      "title": "Real people, on the other end of the phone",
+      "columns": 3,
+      "items": [
+        { "image": "/assets/jerry-van-galder.jpg", "alt": "Jerry Van Galder", "caption": "Jerry Van Galder" },
+        { "image": "/assets/nikki-molina.png", "alt": "Nikki Molina", "caption": "Nikki Molina" },
+        { "image": "/assets/dave-fisher.jpeg", "alt": "Dave Fisher", "caption": "Dave Fisher" }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "🎸 Got a marketing team?",
+      "title": "We make them rock stars",
+      "body": "We hand your marketing team the tech, content, and AI horsepower to do their best work — so your people focus on what they do best while the platform does the heavy lifting.",
+      "image": "/assets/buzznerd-mascot-charged.png",
+      "imageSide": "right",
+      "ctas": [
+        { "label": "How we'd fit your team", "href": "/contact", "style": "ghost" }
+      ]
+    },
+    {
+      "type": "split",
+      "background": "muted",
+      "eyebrow": "Where we came from",
+      "title": "Big-tech talent, pointed at trucking.",
+      "body": "Those humans are based in Seattle — one of the fastest-growing technology hubs in the country. We hired from a talent pool that's hard to match, then pointed all of it at one industry: yours.\n\nWe started by building websites for heavy-truck dealers the big vendors didn't understand. Today the platform powers 700+ dealership rooftops across the country.",
+      "image": "/assets/buzznerd-hero-character.png",
+      "imageSide": "left",
+      "bullets": [
+        "Daimler Trucks",
+        "Microsoft",
+        "Expedia",
+        "AT&T",
+        "Heavy truck marketing"
+      ]
+    },
+    {
+      "type": "features",
+      "eyebrow": "Our playbook",
+      "title": "Three things, done extremely well.",
+      "description": "All that background boils down to a simple playbook we run for every store: strategy first, technology built lean, and marketing that's actually measured.",
+      "columns": 3,
+      "items": [
+        { "emoji": "🎯", "title": "Strategy & Consulting", "body": "We identify the pain points in your digital customer experience, then build the plan that brings in — and keeps — more business." },
+        { "emoji": "⚡", "title": "Superior Technologies", "body": "Industry-leading tools kept lean, functional, and usable — with agile development that lets us make changes for clients on the fly." },
+        { "emoji": "📣", "title": "Bulletproof Marketing", "body": "Countless hours of testing what actually works for dealerships. We haven't had a dissatisfied client yet — and don't plan on it." }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "4.8 on Google",
+      "title": "What dealers say about working with us",
+      "items": [
+        { "quote": "Buzznerd helped us break into a market we had difficulty tackling on our own… they helped us hit the ground running with a marketing plan and a fully functional website. What I like most is their commitment to customer service and how receptive they are to new ideas.", "author": "Kenworth Dealership Group", "role": "Dealership marketing team" },
+        { "quote": "An exceptional partner for our website development. Incredibly responsive and innovative — their expertise and forward-thinking ideas took our site to the next level and exceeded our expectations.", "author": "Freightliner Dealership Group", "role": "Dealership marketing team" }
+      ]
+    },
+    {
+      "type": "split",
+      "background": "muted",
+      "eyebrow": "After launch",
+      "title": "Support that doesn't disappear after launch.",
+      "body": "The relationship doesn't end when your site goes live. Real humans stay on the line, every request is tracked, and you hear back fast.",
+      "image": "/assets/workflows-character.png",
+      "imageSide": "right",
+      "bullets": [
+        "Real people answer — no offshore call tree",
+        "Every request tracked in our ticket system, start to finish",
+        "Reply within one business day — usually much faster"
+      ]
+    },
+    {
+      "type": "testimonials",
+      "title": "Support they can count on",
+      "items": [
+        { "quote": "The team is prompt, communicative, and proactive. Their ticket system makes tracking website updates seamless and has taken a huge workload off our plate.", "author": "Kenworth Dealer", "role": "Dealership partner" }
+      ]
+    },
+    {
+      "type": "split",
+      "eyebrow": "See it for yourself",
+      "title": "We'll walk your current setup with you.",
+      "body": "20 minutes, no slides. Meet the team, see the platform, and get straight answers on what we'd do for your store.",
+      "image": "/assets/growth-hero.png",
+      "imageSide": "left",
+      "bullets": [
+        "Live review of your current setup",
+        "Straight answers on pricing",
+        "Reply within one business day"
+      ],
+      "ctas": [
+        { "label": "Request my demo", "href": "/contact", "style": "primary" }
+      ],
+      "note": "No spam, no obligation. We only use this to schedule your demo."
+    },
+    {
+      "type": "cta",
+      "background": "primary",
+      "title": "Ready to make your team rock stars?",
+      "body": "One partner for your whole stack — and real humans on the other end of the phone.",
+      "ctas": [
+        { "label": "Book a demo", "href": "/contact", "style": "primary" },
+        { "label": "Explore solutions", "href": "/solutions", "style": "secondary" }
+      ]
+    }
+  ]
+}

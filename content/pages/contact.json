@@ -1,37 +1,36 @@
 {
   "title": "Contact",
   "seo": {
-    "title": "Contact Us",
-    "description": "Get in touch with our sales, service, and parts teams. Multiple locations to serve you."
+    "title": "Contact",
+    "description": "Talk to Buzznerd about AI websites, e-commerce, and the AI platform — for dealerships, OEM programs, and partners. Reply within one business day."
   },
   "sections": [
     {
-      "type": "pageHeader",
-      "eyebrow": "Get in touch",
-      "title": "We're here to help",
-      "subheadline": "Reach out about sales, service, parts, or financing — we'll get back to you fast."
+      "type": "hero",
+      "layout": "center",
+      "eyebrow": "⚡ Contact",
+      "headline": "Tell us what you're working on.",
+      "subheadline": "Dealership, OEM program, or partnership — we'll get back to you within one business day.",
+      "ctas": [
+        { "label": "Book a demo", "href": "https://calendar.app.google/9eHvZH3M3S9DM6wUA", "style": "primary" }
+      ]
+    },
+    {
+      "type": "features",
+      "background": "muted",
+      "eyebrow": "Who we work with",
+      "title": "Reach out about",
+      "columns": 3,
+      "items": [
+        { "emoji": "🏢", "title": "Dealerships", "body": "Websites, e-commerce, and the AI platform — from one rooftop to a group." },
+        { "emoji": "🏆", "title": "OEM programs", "body": "OEM-grade websites, built and vetted to program standards. Ask about our approved-vendor experience." },
+        { "emoji": "🤝", "title": "Partnerships", "body": "Integrations, marketplaces, and agency partners." }
+      ]
     },
     {
       "type": "contact",
       "showForm": true,
       "showDetails": true
-    },
-    {
-      "type": "locations",
-      "background": "muted",
-      "title": "Our locations",
-      "items": [
-        {
-          "name": "Main Location",
-          "address": "1234 Highway Dr",
-          "city": "Salt Lake City",
-          "state": "UT",
-          "zip": "84101",
-          "phone": "+1 (800) 555-0100",
-          "hours": "Mon–Fri 7am–6pm, Sat 8am–2pm",
-          "mapUrl": "https://maps.google.com/?q=1234+Highway+Dr+Salt+Lake+City+UT"
-        }
-      ]
     }
   ]
 }

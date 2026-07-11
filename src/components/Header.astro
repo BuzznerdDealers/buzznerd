@@ -1,52 +1,17 @@
 ---
-import { dealer, socialLinks } from "../config";
+import { dealer } from "../config";
 import nav from "../../content/nav.json";
-import site from "../../content/site.json";
 
 const currentPath = Astro.url.pathname;
-const topbar = site.topbar ?? { enabled: false };
-const announcement = site.announcement ?? { enabled: false };
-const socials = socialLinks();
 
 function isActive(href: string) {
-  if (href === "/") return currentPath === "/";
-  return currentPath === href || currentPath.startsWith(href + "/");
+  const base = href.split("#")[0];
+  if (base === "/") return currentPath === "/";
+  return currentPath === base || currentPath.startsWith(base + "/");
 }
 ---
 
-{
-  announcement.enabled && announcement.text && (
-    <div class="announcement">
-      <a href={announcement.href || "#"}>{announcement.text}</a>
-    </div>
-  )
-}
-
-{
-  topbar.enabled && (
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <p class="topbar-message">{topbar.message}</p>
-        <div class="topbar-right">
-          {topbar.links?.map((l: any) => <a href={l.href}>{l.label}</a>)}
-          {topbar.showPhone && dealer.contact?.phone && (
-            <a class="topbar-phone" href={`tel:${dealer.contact.phone.replace(/[^+\d]/g, "")}`}>
-              {dealer.contact.phone}
-            </a>
-          )}
-          {topbar.showSocial &&
-            socials.map((s) => (
-              <a class="topbar-social" href={s.url} aria-label={s.network} target="_blank" rel="noopener">
-                {s.network[0].toUpperCase()}
-              </a>
-            ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-<header class="site-header">
+<header class="site-header" data-bz-header>
   <div class="container header-inner">
     <a class="brand" href="/" aria-label={`${dealer.name} home`}>
       {
@@ -61,20 +26,40 @@ function isActive(href: string) {
     <nav class="desktop-nav" aria-label="Primary">
       {
         nav.items.map((item: any) =>
-          item.children?.length ? (
-            <div class="nav-dropdown">
-              <a href={item.href} class:list={[isActive(item.href) && "active"]}>
+          item.mega?.links?.length ? (
+            <div class="nav-item has-mega">
+              <a
+                href={item.href}
+                class:list={["nav-link", isActive(item.href) && "active"]}
+                aria-haspopup="true"
+              >
                 {item.label}
                 <span class="caret" aria-hidden="true">▾</span>
               </a>
-              <div class="dropdown-menu">
-                {item.children.map((child: any) => (
-                  <a href={child.href}>{child.label}</a>
-                ))}
+              <div class="mega" data-cols={item.mega.columns ?? 2}>
+                <div class="mega-grid" data-cols={item.mega.columns ?? 2}>
+                  {item.mega.links.map((l: any) => (
+                    <a class="mega-link" href={l.href}>
+                      {l.emoji && <span class="mega-emoji" aria-hidden="true">{l.emoji}</span>}
+                      <span class="mega-copy">
+                        <strong>{l.label}</strong>
+                        {l.desc && <span class="mega-desc">{l.desc}</span>}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+                {item.mega.footer && (
+                  <a class="mega-footer" href={item.mega.footer.href}>
+                    {item.mega.footer.label}
+                  </a>
+                )}
               </div>
             </div>
           ) : (
-            <a href={item.href} class:list={[isActive(item.href) && "active"]}>
+            <a
+              href={item.href}
+              class:list={["nav-link", isActive(item.href) && "active"]}
+            >
               {item.label}
             </a>
           ),
@@ -83,8 +68,21 @@ function isActive(href: string) {
     </nav>
 
     <div class="header-actions">
-      {nav.cta && <a class="btn btn-primary header-cta" href={nav.cta.href}>{nav.cta.label}</a>}
-      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+      {nav.textLink && (
+        <a class="nav-textlink" href={nav.textLink.href}>{nav.textLink.label}</a>
+      )}
+      {nav.cta && (
+        <a class="btn btn-primary header-cta" href={nav.cta.href}>
+          <span class="bolt" aria-hidden="true">⚡</span>{nav.cta.label}
+        </a>
+      )}
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        data-menu-toggle
+      >
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -92,19 +90,28 @@ function isActive(href: string) {
 
   <nav class="mobile-nav" aria-label="Mobile" data-mobile-nav hidden>
     {
-      nav.items.map((item: any) => (
-        <>
+      nav.items.map((item: any) =>
+        item.mega?.links?.length ? (
+          <details class="mobile-group">
+            <summary>{item.label}</summary>
+            <div class="mobile-sub">
+              {item.mega.links.map((l: any) => (
+                <a href={l.href}>
+                  {l.emoji && <span aria-hidden="true">{l.emoji} </span>}
+                  {l.label}
+                </a>
+              ))}
+              {item.mega.footer && <a href={item.mega.footer.href}>{item.mega.footer.label}</a>}
+            </div>
+          </details>
+        ) : (
           <a href={item.href} class:list={[isActive(item.href) && "active"]}>
             {item.label}
           </a>
-          {item.children?.map((child: any) => (
-            <a href={child.href} class="mobile-sublink">
-              {child.label}
-            </a>
-          ))}
-        </>
-      ))
+        ),
+      )
     }
+    {nav.textLink && <a href={nav.textLink.href}>{nav.textLink.label}</a>}
     {nav.cta && <a class="btn btn-primary" href={nav.cta.href}>{nav.cta.label}</a>}
   </nav>
 </header>

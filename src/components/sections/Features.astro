@@ -6,7 +6,9 @@ interface FeatureItem {
   title: string;
   body?: string;
   icon?: string;
+  emoji?: string;
   href?: string;
+  linkLabel?: string;
 }
 
 interface Props {
@@ -15,6 +17,7 @@ interface Props {
   eyebrow?: string;
   title?: string;
   description?: string;
+  align?: "left" | "center";
   columns?: 2 | 3 | 4;
   items: FeatureItem[];
 }
@@ -25,27 +28,36 @@ const {
   eyebrow,
   title,
   description,
+  align = "center",
   columns = 3,
   items = [],
 } = Astro.props;
-
-const Wrapper = "div";
 ---
 
-<Section id={id} background={background} eyebrow={eyebrow} title={title} description={description}>
+<Section
+  id={id}
+  background={background}
+  eyebrow={eyebrow}
+  title={title}
+  description={description}
+  align={align}
+>
   <div class="grid" data-cols={columns}>
     {
       items.map((item) => {
-        const Tag = item.href ? "a" : Wrapper;
+        const Tag = item.href ? "a" : "div";
         return (
           <Tag class="card feature-card" href={item.href}>
-            {item.icon && (
-              <span class="feature-icon">
-                <Icon name={item.icon} />
+            {(item.emoji || item.icon) && (
+              <span class:list={["feature-icon", item.emoji && "is-emoji"]}>
+                {item.emoji ? item.emoji : <Icon name={item.icon} />}
               </span>
             )}
             <h3>{item.title}</h3>
             {item.body && <p>{item.body}</p>}
+            {item.href && (
+              <span class="feature-link">{item.linkLabel || "Learn more"} →</span>
+            )}
           </Tag>
         );
       })
