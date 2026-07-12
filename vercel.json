@@ -179,22 +179,22 @@
       "permanent": true
     },
     {
-      "source": "/category/*",
+      "source": "/category/:path*",
       "destination": "/blog",
       "permanent": true
     },
     {
-      "source": "/tag/*",
+      "source": "/tag/:path*",
       "destination": "/blog",
       "permanent": true
     },
     {
-      "source": "/author/*",
+      "source": "/author/:path*",
       "destination": "/blog",
       "permanent": true
     },
     {
-      "source": "/blog/page/*",
+      "source": "/blog/page/:path*",
       "destination": "/blog",
       "permanent": true
     },
@@ -221,11 +221,6 @@
     {
       "source": "/how-commercial-truck-buyers-actually-search-its-not-like-car-buyers",
       "destination": "/blog/how-commercial-truck-buyers-actually-search-its-not-like-car-buyers",
-      "permanent": true
-    },
-    {
-      "source": "/commercial-dealership-website-modernization",
-      "destination": "/blog/commercial-dealership-website-modernization",
       "permanent": true
     },
     {
