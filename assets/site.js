@@ -63,12 +63,20 @@
   });
 
   // Before/after thumbnail pickers — swap which image pair is shown.
+  // Each pair also carries a data-*-srcset (responsive WebP widths), which
+  // we swap in alongside src so the image stays responsive after picking.
   document.querySelectorAll("[data-ba-thumb]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var container = document.querySelector("[data-ba]");
       if (!container) return;
-      container.querySelector("[data-ba-before]").src = btn.getAttribute("data-before");
-      container.querySelector("[data-ba-after]").src = btn.getAttribute("data-after");
+      var beforeImg = container.querySelector("[data-ba-before]");
+      var afterImg = container.querySelector("[data-ba-after]");
+      beforeImg.src = btn.getAttribute("data-before");
+      afterImg.src = btn.getAttribute("data-after");
+      var beforeSrcset = btn.getAttribute("data-before-srcset");
+      var afterSrcset = btn.getAttribute("data-after-srcset");
+      if (beforeSrcset) beforeImg.srcset = beforeSrcset;
+      if (afterSrcset) afterImg.srcset = afterSrcset;
       document.querySelectorAll("[data-ba-thumb]").forEach(function (el) {
         el.style.borderColor = "rgba(12,19,34,.1)";
       });
