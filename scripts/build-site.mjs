@@ -145,7 +145,7 @@ function writePage(route, head, body) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/assets/buzznerd-logo-trim.png">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
 ${FONTS}
 ${head}
 </head>
