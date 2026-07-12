@@ -5,11 +5,17 @@
   "type": "module",
   "description": "Buzznerd.com — standard static HTML/CSS/JS marketing site ported 1:1 from the design handoff.",
   "scripts": {
+    "setup:fonts": "node scripts/setup-fonts.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs",
     "build:pages": "node scripts/extract-dc.mjs && node scripts/build-site.mjs",
     "build:blog": "node scripts/build-blog.mjs"
   },
   "devDependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.2.9",
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.6",
+    "image-size": "^2.0.2",
     "node-html-parser": "^7.0.1",
-    "playwright-core": "^1.56.0"
+    "playwright-core": "^1.56.0",
+    "sharp": "^0.34.5"
   }
 }

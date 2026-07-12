@@ -41,22 +41,22 @@ function addMissingImageDimensions(html) {
   );
 }
 
-// Loaded async (media=print swap-to-all, NO preload) so the font CSS request
-// never blocks first paint and doesn't get bumped to high fetch-priority —
-// Lighthouse's network-dependency-tree/render-blocking audits still count a
-// *preloaded* stylesheet against the critical path even with media=print, so
-// the preload hint is deliberately omitted here.
-// display=optional (not swap): if the font isn't already cached, the browser
-// uses the fallback for this page view and never swaps later — swap was
-// causing a real layout shift (CLS) when Bricolage Grotesque's metrics
-// differ from the fallback and the big hero headline re-wraps on swap-in.
-const FONT_URL =
-  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=optional";
-const FONTS =
-  '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
-  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
-  `<link rel="stylesheet" href="${FONT_URL}" media="print" onload="this.media='all'">\n` +
-  `<noscript><link rel="stylesheet" href="${FONT_URL}"></noscript>`;
+// Fonts are SELF-HOSTED (assets/fonts/*.woff2, copied by scripts/setup-fonts.mjs)
+// — no fonts.googleapis.com / fonts.gstatic.com request at all, which is the
+// only way to fully clear Lighthouse's render-blocking + critical-chain font
+// flags (the media=print + display=optional Google Fonts approach still left
+// the cross-origin css2 -> woff2 chain in the LCP dependency tree).
+//   - Variable wght woff2 covers every weight the design uses.
+//   - Preloaded same-origin (crossorigin required even same-origin — fonts
+//     are always CORS-fetched) so they arrive ASAP.
+//   - font-display:optional guarantees zero layout shift (the browser never
+//     swaps the font in after first paint), so it can't reintroduce CLS.
+const FONTS = `<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/bricolage-grotesque.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans.woff2" crossorigin>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600 800;font-display:optional;src:url(/assets/fonts/bricolage-grotesque.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 700;font-display:optional;src:url(/assets/fonts/plus-jakarta-sans.woff2) format('woff2')}
+</style>`;
 
 const LINK_MAP = {
   "Buzznerd Home.dc.html": "/",
@@ -206,6 +206,11 @@ function buildHead(file) {
     if (t === "script") {
       if ((n.getAttribute("type") || "").includes("ld+json")) out.push(n.toString());
     } else if (["title", "meta", "link", "style"].includes(t)) {
+      // Drop the design's own Google Fonts <link>s (a render-blocking
+      // stylesheet + preconnects) — fonts are self-hosted now (see FONTS),
+      // so these external requests would only re-add the render-blocking flag.
+      const href = n.getAttribute("href") || "";
+      if (t === "link" && /fonts\.(googleapis|gstatic)\.com/.test(href)) continue;
       out.push(n.toString());
     }
   }
