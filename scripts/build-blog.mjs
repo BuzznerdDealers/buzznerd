@@ -12,13 +12,12 @@ import { imageSize } from "image-size";
 const DC = "/tmp/claude-0/-home-user-astra-start/921c426a-a779-5f68-a225-af3123476db7/scratchpad/zip7/design_handoff_buzznerd_site";
 const ROOT = "/home/user/astra-start";
 const SITE = "https://www.buzznerd.com";
-// Async font loading — see build-site.mjs for why (render-blocking fix).
+// Async font loading, no preload, display=optional — see build-site.mjs for why.
 const FONT_URL =
-  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap";
+  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=optional";
 const FONTS =
   '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
   '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
-  `<link rel="preload" as="style" href="${FONT_URL}">\n` +
   `<link rel="stylesheet" href="${FONT_URL}" media="print" onload="this.media='all'">\n` +
   `<noscript><link rel="stylesheet" href="${FONT_URL}"></noscript>`;
 

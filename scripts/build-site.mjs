@@ -41,16 +41,20 @@ function addMissingImageDimensions(html) {
   );
 }
 
-// Loaded async (preload + media=print swap-to-all) so the font CSS request
-// never blocks first paint — it was flagged by Lighthouse as render-blocking.
-// display=swap in the URL already lets text render in a fallback font while
-// the webfont downloads, once the stylesheet itself has applied.
+// Loaded async (media=print swap-to-all, NO preload) so the font CSS request
+// never blocks first paint and doesn't get bumped to high fetch-priority —
+// Lighthouse's network-dependency-tree/render-blocking audits still count a
+// *preloaded* stylesheet against the critical path even with media=print, so
+// the preload hint is deliberately omitted here.
+// display=optional (not swap): if the font isn't already cached, the browser
+// uses the fallback for this page view and never swaps later — swap was
+// causing a real layout shift (CLS) when Bricolage Grotesque's metrics
+// differ from the fallback and the big hero headline re-wraps on swap-in.
 const FONT_URL =
-  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap";
+  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=optional";
 const FONTS =
   '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
   '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
-  `<link rel="preload" as="style" href="${FONT_URL}">\n` +
   `<link rel="stylesheet" href="${FONT_URL}" media="print" onload="this.media='all'">\n` +
   `<noscript><link rel="stylesheet" href="${FONT_URL}"></noscript>`;
 
@@ -99,18 +103,71 @@ function rewriteLinks(html) {
     return `href="${route}${anchor}"`;
   });
 }
-// Photographic "after" PNGs (no alpha) were converted to JPEG by
-// scripts/optimize-images.mjs for proper photographic compression — keep
-// generated HTML in sync whenever it's rebuilt from the cached extraction.
-const PNG_TO_JPG_RENAME = ["after-frontqtr.png", "after-frontqtr2.png", "after-side.png"];
+const ASSETS_DIR = join(ROOT, "assets");
 
+// scripts/optimize-images.mjs converts several assets to a different format
+// in place (photographic PNGs -> JPEG, logos/hero/header-logo -> WebP) for
+// proper compression. Rather than hardcode which files changed extension,
+// detect it from the filesystem: if assets/X.webp (or .jpg) exists but the
+// path's original extension doesn't, rewrite the reference. Self-healing
+// whenever optimize-images.mjs's conversion list changes.
 function rewriteAssets(html) {
   html = html
     .replace(/(src=")assets\//g, "$1/assets/")
     .replace(/(srcset=")assets\//g, "$1/assets/")
     .replace(/((?:data-before|data-after)=")assets\//g, "$1/assets/");
-  for (const png of PNG_TO_JPG_RENAME) {
-    html = html.split(png).join(png.replace(/\.png$/, ".jpg"));
+  html = html.replace(
+    /(\/assets\/[\w./-]+?)\.(png|jpe?g)\b/g,
+    (full, base, ext) => {
+      if (existsSync(join(ROOT, `${base}.${ext}`))) return full; // original still present
+      for (const newExt of ["webp", "jpg"]) {
+        if (existsSync(join(ROOT, `${base}.${newExt}`))) return `${base}.${newExt}`;
+      }
+      return full;
+    },
+  );
+  return html;
+}
+
+/**
+ * Before/after photo pairs (Home + Solutions) get real responsive images:
+ * scripts/optimize-images.mjs generates <name>-640w.webp and <name>-1000w.webp
+ * for each. A single desktop-sized (1000w) image was still "larger than
+ * needed" on PageSpeed's mobile run, which renders these at ~623px CSS width,
+ * not the ~900px desktop container width — so mobile needs to fetch the
+ * smaller variant via srcset, not just a smaller *file* of the same shot.
+ */
+const RESPONSIVE_PHOTOS = [
+  "before-frontqtr",
+  "before-frontqtr2",
+  "before-side",
+  "after-frontqtr",
+  "after-frontqtr2",
+  "after-side",
+];
+const RESPONSIVE_SIZES = '(max-width: 768px) 92vw, 900px';
+function srcsetFor(base) {
+  return `/assets/photos/${base}-640w.webp 640w, /assets/photos/${base}-1000w.webp 1000w`;
+}
+function addResponsivePhotos(html) {
+  for (const base of RESPONSIVE_PHOTOS) {
+    if (!existsSync(join(ASSETS_DIR, "photos", `${base}-1000w.webp`))) continue;
+    const fallback = `/assets/photos/${base}-1000w.webp`;
+    const srcset = srcsetFor(base);
+    // Main slider / illustration <img> tags (data-ba-before/data-ba-after or plain <img>).
+    html = html.replace(
+      new RegExp(`(<img\\s[^>]*)src="/assets/photos/${base}\\.(?:jpg|jpeg|png)"([^>]*>)`, "g"),
+      (full, pre, post) => {
+        if (/srcset=/.test(pre) || /srcset=/.test(post)) return full;
+        return `${pre}src="${fallback}" srcset="${srcset}" sizes="${RESPONSIVE_SIZES}"${post}`;
+      },
+    );
+    // Thumbnail-picker buttons: carry the srcset alongside data-before/data-after
+    // so assets/site.js can keep the swapped-in image responsive too.
+    html = html.replace(
+      new RegExp(`data-(before|after)="/assets/photos/${base}\\.(?:jpg|jpeg|png)"`, "g"),
+      (full, which) => `data-${which}="${fallback}" data-${which}-srcset="${srcset}"`,
+    );
   }
   return html;
 }
@@ -174,6 +231,7 @@ function cleanBody(comp) {
     .replace(/\s+data-sc-name="[^"]*"/g, "")
     .replace(/\s+data-dc-[a-z-]+="[^"]*"/g, "");
   html = rewriteAssets(rewriteLinks(html));
+  html = addResponsivePhotos(html);
   html = addMissingImageDimensions(html);
   return html;
 }

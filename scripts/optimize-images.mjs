@@ -18,12 +18,18 @@ import { join, extname, basename } from "node:path";
 const ROOT = "/home/user/astra-start";
 const ASSETS = join(ROOT, "assets");
 
-// Photographic PNGs with no alpha channel -> convert to JPEG (same basename).
-// Exported so build-site.mjs can rewrite references in generated HTML.
-export const PHOTO_PNG_TO_JPG = [
-  "photos/after-frontqtr.png",
-  "photos/after-frontqtr2.png",
-  "photos/after-side.png",
+// Before/after pairs get real responsive images: two WebP widths (640w for
+// mobile, 1000w for desktop) via srcset. A single 1000w-sized file was still
+// "larger than needed" on PageSpeed's mobile run, which renders these at
+// ~623px CSS width, not the ~900px desktop container width.
+// Exported so build-site.mjs knows which base names to rewrite to srcset.
+export const RESPONSIVE_PHOTOS = [
+  "photos/before-frontqtr",
+  "photos/before-frontqtr2",
+  "photos/before-side",
+  "photos/after-frontqtr",
+  "photos/after-frontqtr2",
+  "photos/after-side",
 ];
 
 async function resizeInPlace(rel, { width, height, quality = 80, format } = {}) {
@@ -45,40 +51,72 @@ async function resizeInPlace(rel, { width, height, quality = 80, format } = {}) 
   );
 }
 
-async function convertPngPhotoToJpg(rel) {
+async function makeResponsiveWebp(baseRel) {
+  const base = join(ASSETS, baseRel);
+  const existing = ["jpg", "jpeg", "png"].map((e) => `${base}.${e}`).find((f) => existsSync(f));
+  if (!existing) {
+    console.log(`${baseRel}: no source found (already converted?), skipping`);
+    return;
+  }
+  const before = statSync(existing).size;
+  const src = sharp(existing);
+  const sizes = [
+    [640, `${base}-640w.webp`],
+    [1000, `${base}-1000w.webp`],
+  ];
+  let totalAfter = 0;
+  for (const [width, outPath] of sizes) {
+    const buf = await src.clone().resize({ width, withoutEnlargement: true }).webp({ quality: 78 }).toBuffer();
+    const fs = await import("node:fs");
+    fs.writeFileSync(outPath, buf);
+    totalAfter += buf.length;
+  }
+  unlinkSync(existing);
+  console.log(
+    `${baseRel}: ${(before / 1024).toFixed(0)}KB -> 640w+1000w WebP, ${(totalAfter / 1024).toFixed(0)}KB combined (${basename(existing)} -> WebP)`,
+  );
+}
+
+// Convert a PNG/JPEG to WebP in place (same basename, new extension) —
+// smaller than either at equivalent quality, and keeps alpha if present.
+// Exported so build-site.mjs can rewrite references for the fixed set below.
+export const WEBP_CONVERTED = ["buzznerd-logo-trim.png", "buzznerd-hero-character.png"];
+
+async function convertToWebp(rel, { resize } = {}) {
   const file = join(ASSETS, rel);
   if (!existsSync(file)) {
     console.log(`${rel}: already converted, skipping`);
     return;
   }
   const before = statSync(file).size;
-  const buf = await sharp(file)
-    .resize({ width: 1000, withoutEnlargement: true, fit: "inside" })
-    .jpeg({ quality: 80, mozjpeg: true })
-    .toBuffer();
-  const jpgPath = file.replace(/\.png$/i, ".jpg");
+  let img = sharp(file);
+  if (resize) img = img.resize({ ...resize, withoutEnlargement: true });
+  const buf = await img.webp({ quality: 82 }).toBuffer();
+  const outPath = file.replace(/\.(png|jpe?g)$/i, ".webp");
   const fs = await import("node:fs");
-  fs.writeFileSync(jpgPath, buf);
+  fs.writeFileSync(outPath, buf);
   unlinkSync(file);
-  console.log(`${rel} -> ${basename(jpgPath)}: ${(before / 1024).toFixed(0)}KB -> ${(buf.length / 1024).toFixed(0)}KB (PNG->JPEG)`);
+  console.log(`${rel} -> ${basename(outPath)}: ${(before / 1024).toFixed(0)}KB -> ${(buf.length / 1024).toFixed(0)}KB`);
 }
 
 async function main() {
   // OEM + integration logos: displayed at 34-48px tall, max-width 150-200px.
-  // Target height 150px (~3x max display height) preserves crispness with
-  // generous retina headroom while cutting oversized source dimensions.
+  // Tightened from an earlier 150px-height pass (still flagged as "larger
+  // than needed" on mobile) to 100px (~2-2.5x max display height) + WebP.
   const logoFiles = readdirSync(ASSETS).filter((f) => /^logo-/.test(f) && /\.(png|jpg|jpeg)$/i.test(f));
   for (const f of logoFiles) {
-    await resizeInPlace(f, { height: 150, quality: 82 });
+    await convertToWebp(f, { resize: { height: 100 } });
   }
   // Header/footer brand logo: shown on every page at 36-40px tall.
-  await resizeInPlace("buzznerd-logo-trim.png", { height: 150, quality: 85 });
+  await convertToWebp("buzznerd-logo-trim.png", { resize: { height: 120 } });
 
-  // Before/after photo-enhancement shots: displayed max-width ~900px.
-  await resizeInPlace("photos/before-frontqtr.jpg", { width: 1000, quality: 80 });
-  await resizeInPlace("photos/before-frontqtr2.jpg", { width: 1000, quality: 80 });
-  await resizeInPlace("photos/before-side.jpg", { width: 1000, quality: 80 });
-  for (const rel of PHOTO_PNG_TO_JPG) await convertPngPhotoToJpg(rel);
+  // Hero mascot (Home, the LCP element — fetchpriority=high): format-only
+  // conversion, already close to its ~560px display size.
+  await convertToWebp("buzznerd-hero-character.png");
+
+  // Before/after photo-enhancement shots: two responsive WebP widths so
+  // mobile (~623px rendered) doesn't download the desktop (~900px) size.
+  for (const base of RESPONSIVE_PHOTOS) await makeResponsiveWebp(base);
 
   // Team photo (about-us): displayed in a 440px-tall card.
   await resizeInPlace("dave-fisher.jpeg", { width: 700, quality: 80 });
@@ -87,7 +125,6 @@ async function main() {
   // known usage) — just recompress with palette quantization, no resize.
   const illustrations = [
     "buzznerd-mascot-charged.png",
-    "buzznerd-hero-character.png",
     "buzznerd-team-heroes.png",
     "growth-hero.png",
     "workflows-character.png",
@@ -95,6 +132,7 @@ async function main() {
     "presence-score-character.png",
   ];
   for (const f of illustrations) {
+    if (!existsSync(join(ASSETS, f))) continue; // already processed
     const meta = await sharp(join(ASSETS, f)).metadata();
     await resizeInPlace(f, { width: meta.width, quality: 82 }); // recompress only
   }
