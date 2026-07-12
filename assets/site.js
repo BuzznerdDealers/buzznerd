@@ -45,6 +45,37 @@
     });
   });
 
+  // Before/after photo slider (home page). It's a real <input type="range">
+  // stretched invisibly over the images (opacity:0), so mouse, touch, and
+  // keyboard dragging all work natively — we just need to react to its
+  // "input" event and update the clip-path + handle position, exactly like
+  // the design's onSlide handler.
+  document.querySelectorAll("[data-ba]").forEach(function (root) {
+    var before = root.querySelector("[data-ba-before]");
+    var handle = root.querySelector("[data-ba-handle]");
+    var range = root.querySelector('input[type="range"]');
+    if (!before || !handle || !range) return;
+    range.addEventListener("input", function () {
+      var v = range.value;
+      before.style.clipPath = "inset(0 " + (100 - v) + "% 0 0)";
+      handle.style.left = v + "%";
+    });
+  });
+
+  // Before/after thumbnail pickers — swap which image pair is shown.
+  document.querySelectorAll("[data-ba-thumb]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var container = document.querySelector("[data-ba]");
+      if (!container) return;
+      container.querySelector("[data-ba-before]").src = btn.getAttribute("data-before");
+      container.querySelector("[data-ba-after]").src = btn.getAttribute("data-after");
+      document.querySelectorAll("[data-ba-thumb]").forEach(function (el) {
+        el.style.borderColor = "rgba(12,19,34,.1)";
+      });
+      btn.style.borderColor = "#2B7BFF";
+    });
+  });
+
   // Blog category chip filter (blog index only).
   var chips = document.querySelectorAll("[data-bz-chip]");
   if (chips.length) {

@@ -62,7 +62,33 @@ function rewriteLinks(html) {
   });
 }
 function rewriteAssets(html) {
-  return html.replace(/(src=")assets\//g, "$1/assets/").replace(/(srcset=")assets\//g, "$1/assets/");
+  return html
+    .replace(/(src=")assets\//g, "$1/assets/")
+    .replace(/(srcset=")assets\//g, "$1/assets/")
+    .replace(/((?:data-before|data-after)=")assets\//g, "$1/assets/");
+}
+
+/**
+ * The "Find a location" widget (AI Websites page) is fully React-state-driven
+ * (brand/service filters recompute the location list, map pins, and active
+ * chips) — none of that survives static-DOM extraction (React never writes
+ * onClick handlers into the DOM). Replace its rendered markup with an empty
+ * mount point; assets/location-finder.js renders and drives it client-side
+ * from the same data/logic as the design's data-dc-script.
+ */
+function mountLocationFinder(page) {
+  for (const div of page.querySelectorAll("div")) {
+    const style = div.getAttribute("style") || "";
+    if (style.includes("grid-template-columns") && div.text.includes("Find a location")) {
+      const mount = parse(
+        '<div id="loc-finder" style="margin-top:40px;background:#fff;border:1px solid rgba(12,19,34,.08);border-radius:28px;overflow:hidden;display:grid;grid-template-columns:352px 1fr;box-shadow:0 24px 60px -30px rgba(12,19,34,.4);min-height:600px"></div>',
+      );
+      div.replaceWith(mount);
+      return true;
+    }
+  }
+  console.warn("mountLocationFinder: widget container not found");
+  return false;
 }
 
 function buildHead(file) {
@@ -93,6 +119,7 @@ function cleanBody(comp) {
     if (p && p !== page && p.remove) p.remove();
   });
   page.querySelectorAll("script").forEach((s) => s.remove());
+  if (comp === "ai-websites") mountLocationFinder(page);
   let html = page.outerHTML;
   html = html
     .replace(/\s+data-dc-tpl="[^"]*"/g, "")
@@ -103,9 +130,16 @@ function cleanBody(comp) {
   return html;
 }
 
+// Page-specific extra scripts, keyed by route, for widgets that need more
+// than the shared assets/site.js (e.g. the AI Websites location finder).
+const EXTRA_SCRIPTS = {
+  "/ai-websites": ['<script src="/assets/location-finder.js" defer></script>'],
+};
+
 function writePage(route, head, body) {
   const dir = route === "/" ? ROOT : `${ROOT}${route}`;
   mkdirSync(dir, { recursive: true });
+  const extra = (EXTRA_SCRIPTS[route] || []).join("\n");
   const doc = `<!doctype html>
 <html lang="en">
 <head>
@@ -117,7 +151,7 @@ ${head}
 </head>
 <body>
 ${body}
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js" defer></script>${extra ? "\n" + extra : ""}
 </body>
 </html>
 `;
