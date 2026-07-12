@@ -12,14 +12,13 @@ import { imageSize } from "image-size";
 const DC = "/tmp/claude-0/-home-user-astra-start/921c426a-a779-5f68-a225-af3123476db7/scratchpad/zip7/design_handoff_buzznerd_site";
 const ROOT = "/home/user/astra-start";
 const SITE = "https://www.buzznerd.com";
-// Async font loading, no preload, display=optional — see build-site.mjs for why.
-const FONT_URL =
-  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=optional";
-const FONTS =
-  '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
-  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
-  `<link rel="stylesheet" href="${FONT_URL}" media="print" onload="this.media='all'">\n` +
-  `<noscript><link rel="stylesheet" href="${FONT_URL}"></noscript>`;
+// Self-hosted fonts — see build-site.mjs for the full rationale.
+const FONTS = `<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/bricolage-grotesque.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans.woff2" crossorigin>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600 800;font-display:optional;src:url(/assets/fonts/bricolage-grotesque.woff2) format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 700;font-display:optional;src:url(/assets/fonts/plus-jakarta-sans.woff2) format('woff2')}
+</style>`;
 
 // ---- posts data ----
 const win = {};
@@ -44,7 +43,12 @@ function indexHead() {
     if (!n.tagName) continue;
     const t = n.tagName.toLowerCase();
     if (t === "script") { if ((n.getAttribute("type") || "").includes("ld+json")) out.push(n.toString()); }
-    else if (["title", "meta", "link", "style"].includes(t)) out.push(n.toString());
+    else if (["title", "meta", "link", "style"].includes(t)) {
+      // Drop the design's Google Fonts links — fonts are self-hosted (see FONTS).
+      const href = n.getAttribute("href") || "";
+      if (t === "link" && /fonts\.(googleapis|gstatic)\.com/.test(href)) continue;
+      out.push(n.toString());
+    }
   }
   return out.join("\n");
 }
