@@ -6,15 +6,53 @@
  * Output: static .html at the repo root (clean routes), /assets copied separately.
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { join } from "node:path";
 import { parse } from "node-html-parser";
+import { imageSize } from "image-size";
 
 const DC = "/tmp/claude-0/-home-user-astra-start/921c426a-a779-5f68-a225-af3123476db7/scratchpad/zip7/design_handoff_buzznerd_site";
 const ROOT = "/home/user/astra-start";
 
+/**
+ * Several local images (mascot/character illustrations, mainly) render with
+ * CSS `width:100%;height:auto` and no width/height HTML attributes — so the
+ * browser has no intrinsic aspect ratio to reserve space with until the image
+ * downloads, which Lighthouse flags as a layout-shift (CLS) culprit. Adding
+ * the real width/height attributes fixes this without changing how anything
+ * renders (the CSS still governs final size; the attributes only seed the
+ * browser's initial space reservation).
+ */
+function addMissingImageDimensions(html) {
+  return html.replace(
+    /<img\s+((?:(?!width=|height=)[^>])*?)src="(\/assets\/[^"]+\.(?:png|jpe?g))"((?:(?!width=|height=)[^>])*?)>/gi,
+    (full, pre, src, post) => {
+      if (/\bwidth=/.test(pre) || /\bwidth=/.test(post) || /\bheight=/.test(pre) || /\bheight=/.test(post)) {
+        return full; // already has explicit dimensions somewhere in the tag
+      }
+      const file = join(ROOT, src);
+      if (!existsSync(file)) return full;
+      try {
+        const { width, height } = imageSize(readFileSync(file));
+        return `<img ${pre}src="${src}"${post} width="${width}" height="${height}">`;
+      } catch {
+        return full;
+      }
+    },
+  );
+}
+
+// Loaded async (preload + media=print swap-to-all) so the font CSS request
+// never blocks first paint — it was flagged by Lighthouse as render-blocking.
+// display=swap in the URL already lets text render in a fallback font while
+// the webfont downloads, once the stylesheet itself has applied.
+const FONT_URL =
+  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap";
 const FONTS =
   '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
   '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
-  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">';
+  `<link rel="preload" as="style" href="${FONT_URL}">\n` +
+  `<link rel="stylesheet" href="${FONT_URL}" media="print" onload="this.media='all'">\n` +
+  `<noscript><link rel="stylesheet" href="${FONT_URL}"></noscript>`;
 
 const LINK_MAP = {
   "Buzznerd Home.dc.html": "/",
@@ -61,11 +99,20 @@ function rewriteLinks(html) {
     return `href="${route}${anchor}"`;
   });
 }
+// Photographic "after" PNGs (no alpha) were converted to JPEG by
+// scripts/optimize-images.mjs for proper photographic compression — keep
+// generated HTML in sync whenever it's rebuilt from the cached extraction.
+const PNG_TO_JPG_RENAME = ["after-frontqtr.png", "after-frontqtr2.png", "after-side.png"];
+
 function rewriteAssets(html) {
-  return html
+  html = html
     .replace(/(src=")assets\//g, "$1/assets/")
     .replace(/(srcset=")assets\//g, "$1/assets/")
     .replace(/((?:data-before|data-after)=")assets\//g, "$1/assets/");
+  for (const png of PNG_TO_JPG_RENAME) {
+    html = html.split(png).join(png.replace(/\.png$/, ".jpg"));
+  }
+  return html;
 }
 
 /**
@@ -127,6 +174,7 @@ function cleanBody(comp) {
     .replace(/\s+data-sc-name="[^"]*"/g, "")
     .replace(/\s+data-dc-[a-z-]+="[^"]*"/g, "");
   html = rewriteAssets(rewriteLinks(html));
+  html = addMissingImageDimensions(html);
   return html;
 }
 

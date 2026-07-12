@@ -4,16 +4,23 @@
  * shared chrome (header/footer) from the built static pages. Per-post <head>
  * (title, canonical, OG/Twitter, BlogPosting + Breadcrumb JSON-LD) is baked in.
  */
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { join } from "node:path";
 import { parse } from "node-html-parser";
+import { imageSize } from "image-size";
 
 const DC = "/tmp/claude-0/-home-user-astra-start/921c426a-a779-5f68-a225-af3123476db7/scratchpad/zip7/design_handoff_buzznerd_site";
 const ROOT = "/home/user/astra-start";
 const SITE = "https://www.buzznerd.com";
+// Async font loading — see build-site.mjs for why (render-blocking fix).
+const FONT_URL =
+  "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap";
 const FONTS =
   '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
   '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
-  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">';
+  `<link rel="preload" as="style" href="${FONT_URL}">\n` +
+  `<link rel="stylesheet" href="${FONT_URL}" media="print" onload="this.media='all'">\n` +
+  `<noscript><link rel="stylesheet" href="${FONT_URL}"></noscript>`;
 
 // ---- posts data ----
 const win = {};
@@ -22,8 +29,8 @@ const POSTS = win.BZ_POSTS;
 
 // ---- shared chrome from an already-built static page ----
 const solutions = readFileSync(`${ROOT}/solutions/index.html`, "utf8");
-const HEADER = solutions.match(/<header[\s\S]*?<\/header>/i)[0];
-const FOOTER = solutions.match(/<footer[\s\S]*?<\/footer>/i)[0];
+const HEADER = addMissingImageDimensions(solutions.match(/<header[\s\S]*?<\/header>/i)[0]);
+const FOOTER = addMissingImageDimensions(solutions.match(/<footer[\s\S]*?<\/footer>/i)[0]);
 
 // ---- helmet/style helpers ----
 function styleBlock(file) {
@@ -88,8 +95,31 @@ function rewriteLinks(html) {
     `href="${LINK_MAP[decodeURIComponent(file)] ?? "/"}${anchor}"`);
 }
 
+// Same fix as build-site.mjs: seed intrinsic aspect ratio for local images
+// that render with CSS width/height:auto, so the browser reserves space
+// before the image loads (avoids a Lighthouse CLS flag). No-ops on the
+// remote CloudFront post images, which aren't in /assets/.
+function addMissingImageDimensions(html) {
+  return html.replace(
+    /<img\s+((?:(?!width=|height=)[^>])*?)src="(\/assets\/[^"]+\.(?:png|jpe?g))"((?:(?!width=|height=)[^>])*?)>/gi,
+    (full, pre, src, post) => {
+      if (/\bwidth=/.test(pre) || /\bwidth=/.test(post) || /\bheight=/.test(pre) || /\bheight=/.test(post)) {
+        return full;
+      }
+      const file = join(ROOT, src);
+      if (!existsSync(file)) return full;
+      try {
+        const { width, height } = imageSize(readFileSync(file));
+        return `<img ${pre}src="${src}"${post} width="${width}" height="${height}">`;
+      } catch {
+        return full;
+      }
+    },
+  );
+}
+
 function docWrap(head, body) {
-  body = rewriteLinks(body);
+  body = addMissingImageDimensions(rewriteLinks(body));
   return `<!doctype html>
 <html lang="en">
 <head>
