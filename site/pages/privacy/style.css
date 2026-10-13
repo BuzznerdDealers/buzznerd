@@ -1,0 +1,18 @@
+/* privacy: a centred legal column, the clauses in one white card. */
+[data-bz-node="hero-row"], [data-bz-node="pp-row"] { max-width: 860px; margin-inline: auto; }
+[data-bz-node="hero"] .bz-block { padding-block: 0; }
+[data-bz-node="hero-lede"] p { margin-top: var(--space-4) !important; }
+[data-bz-node="hero-updated"] p { font-size: 13.5px !important; font-weight: 600 !important; color: var(--muted) !important; margin-top: var(--space-4) !important; }
+[data-bz-node="pp-col"] { border-radius: var(--radius-modal); }
+[data-bz-node="pp-col"] .bz-block { padding-block: 0; }
+[data-bz-node="pp-col"] .bz-prose { max-width: none; }
+[data-bz-node="pp-col"] h2 { font-size: 24px; letter-spacing: -.01em; margin: 34px 0 12px; }
+[data-bz-node="pp-col"] .bz-text p { font-size: 15.5px !important; line-height: 1.65 !important; color: var(--ink-soft) !important; margin: 0 0 14px; }
+[data-bz-node="pp-col"] .bz-text strong { color: var(--ink); }
+/* Clause 1's bullets: a plain dotted list, label and description on one line. */
+[data-bz-node="pp-l1"] .bz-grid { gap: 8px; margin-bottom: 14px; }
+[data-bz-node="pp-l1"] .bz-feature { padding-left: 22px; }
+[data-bz-node="pp-l1"] .bz-feature::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--ink-soft); top: 10px; left: 6px; }
+[data-bz-node="pp-l1"] :is(.bz-feature__t, .bz-feature__d) { display: inline; font-size: 15.5px; line-height: 1.65; }
+[data-bz-node="pp-l1"] .bz-feature__d { color: var(--ink-soft); }
+[data-bz-node="pp-l1"] .bz-feature__t::after { content: ' — '; font-weight: 500; }

@@ -1,0 +1,241 @@
+[
+  {
+    "slug": "home",
+    "title": "Home",
+    "description": "Buzznerd builds AI-powered dealership websites, ecommerce, CRM/DMS integrations, AIO/GEO search visibility, photo enhancement, and sales attribution. Rated 4.8 on Google by franchise, independent, commercial, fleet, and truck dealers.",
+    "path": "/",
+    "out": "index.html",
+    "dir": "home",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": [
+        "dealership website",
+        "AI dealership marketing",
+        "automotive AI",
+        "AIO",
+        "GEO",
+        "generative engine optimization",
+        "answer engine optimization",
+        "dealership SEO",
+        "dealer ecommerce",
+        "CRM DMS integration",
+        "commercial truck dealer marketing",
+        "fleet dealership website"
+      ]
+    }
+  },
+  {
+    "slug": "solutions",
+    "title": "Dealership Problems, Solved — AI Websites, Ecommerce, Integrations & the Magic 8 AIO/GEO System",
+    "description": "Cold leads, listings that take hours, ad spend you can't trace, AI recommending the dealer down the road — solved. Buzznerd builds AI websites, ecommerce and DMS/CRM integrations, plus the Magic 8 AEO/AIO/SEO/GEO system, for 700+ dealership rooftops.",
+    "path": "/solutions",
+    "out": "solutions/index.html",
+    "dir": "solutions",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "products",
+    "title": "Buzznerd Products — AI Websites, AI E-Commerce & the AI Platform for Dealerships",
+    "description": "Three products, one AI-charged dealership. Buzznerd AI Websites generate leads, AI E-Commerce sells parts & products 24/7 nationwide, and the AI Platform works your leads while you sleep — all running on the same AI and your live inventory.",
+    "path": "/products",
+    "out": "products/index.html",
+    "dir": "products",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "services",
+    "title": "Buzznerd Services — AI-Driven Marketing, Content for AIO, Integrations & AI Presence Score",
+    "description": "Buzznerd services put the platform to work: AI-driven marketing built on live inventory, content restructured for AI search, custom DMS/CRM workflows, and a free AI Presence Score that shows how AI sees your dealership.",
+    "path": "/services",
+    "out": "services/index.html",
+    "dir": "services",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "ai-websites",
+    "title": "AI Websites | AI Dealership Websites Built for Lead Generation",
+    "description": "Buzznerd builds AI-enabled websites for commercial truck, trailer, equipment, parts, and multi-location dealerships — smarter inventory discovery, more qualified leads, and long-term growth.",
+    "path": "/ai-websites",
+    "out": "ai-websites/index.html",
+    "dir": "ai-websites",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "ai-ecommerce",
+    "title": "AI E-Commerce | Sell Parts & Products Online, 24/7 Nationwide",
+    "description": "Buzznerd AI E-Commerce helps dealerships sell parts, products, and inventory online — account pricing, shipping rules, Stripe payments, and DMS connectivity, built for commercial and equipment sales.",
+    "path": "/ai-ecommerce",
+    "out": "ai-ecommerce/index.html",
+    "dir": "ai-ecommerce",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "ai-platform",
+    "title": "AI Platform | After-Hours AI, No-Touch CRM, Magic Listings & Attribution",
+    "description": "The AI platform under everything Buzznerd builds: AI Assistant answers leads after hours, No-Touch CRM hands reps a ranked morning digest, Magic Flow builds listings from photos, and attribution traces every channel to the sold unit.",
+    "path": "/ai-platform",
+    "out": "ai-platform/index.html",
+    "dir": "ai-platform",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "ai-driven-marketing",
+    "title": "AI-Driven Marketing | Higher-Intent Traffic for Dealerships",
+    "description": "Smarter dealership marketing built around live inventory, parts, landing pages, and measurable performance — Google Ads, Meta remarketing, and campaigns connected to what's actually on your lot.",
+    "path": "/ai-driven-marketing",
+    "out": "ai-driven-marketing/index.html",
+    "dir": "ai-driven-marketing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "content-restructuring-for-aio",
+    "title": "Content Restructuring for AIO | Content Buyers, Search & AI Understand",
+    "description": "Buzznerd restructures weak, outdated, or thin dealership content so it performs across traditional search, AI search, and customer-facing pages.",
+    "path": "/content-restructuring-for-aio",
+    "out": "content-restructuring-for-aio/index.html",
+    "dir": "content-restructuring-for-aio",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "custom-workflows-integrations",
+    "title": "Custom Workflows & Integrations | Connect Your Dealership Systems",
+    "description": "Buzznerd connects websites, inventory providers, CRM, DMS, e-commerce, and marketing platforms — and builds custom workflows around dealership operations.",
+    "path": "/custom-workflows-integrations",
+    "out": "custom-workflows-integrations/index.html",
+    "dir": "custom-workflows-integrations",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "ai-presence-score",
+    "title": "Free AI Presence Score for Commercial Dealerships",
+    "description": "See how visible your commercial truck, trailer, equipment, or parts dealership is to ChatGPT, Gemini, Perplexity, and Google AI Overviews — in about 30 seconds. Free preliminary AI Presence Score, no obligation.",
+    "path": "/ai-presence-score",
+    "out": "ai-presence-score/index.html",
+    "dir": "ai-presence-score",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "about-us",
+    "title": "About Buzznerd | Builders, Marketers & AI Engineers for Dealerships",
+    "description": "Seattle-based builders, marketers, and AI engineers with deep dealership technology experience — we make marketing teams rock stars with the tech, content, and AI horsepower to do their best work.",
+    "path": "/about-us",
+    "out": "about-us/index.html",
+    "dir": "about-us",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "careers",
+    "title": "Careers at Buzznerd | Join the Team",
+    "description": "We're always looking for talented, tech-driven nerds to join the team. Contact us to learn what working at Buzznerd is like and to inquire about open positions.",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "dir": "careers",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "contact",
+    "title": "Contact Buzznerd | Dealerships, OEM Programs & Partnerships",
+    "description": "Talk to Buzznerd about AI websites, e-commerce, and the AI platform — for dealerships, OEM programs, and partners. Reply within one business day.",
+    "path": "/contact",
+    "out": "contact/index.html",
+    "dir": "contact",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    }
+  },
+  {
+    "slug": "privacy",
+    "title": "Privacy Policy",
+    "description": "How Buzznerd, LLC collects, uses, and protects your information across buzznerd.com and our products and services.",
+    "path": "/privacy",
+    "out": "privacy/index.html",
+    "dir": "privacy",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    },
+    "group": "legal"
+  },
+  {
+    "slug": "terms",
+    "title": "Terms of Service",
+    "description": "The terms that govern your use of Buzznerd’s websites, products, and services.",
+    "path": "/terms",
+    "out": "terms/index.html",
+    "dir": "terms",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false,
+      "keywords": []
+    },
+    "group": "legal"
+  }
+]

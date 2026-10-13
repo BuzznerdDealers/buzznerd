@@ -1,0 +1,501 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Drive higher-intent traffic to your inventory.",
+                    "headingLevel": 1,
+                    "eyebrow": "AI-Driven Marketing"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Smarter campaigns built around live inventory, parts, customer behavior, and measurable performance — attracting qualified buyers to the right units, pages, and departments."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Google Ads · Meta remarketing · Landing pages · Attribution"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Featured unit campaign",
+                    "meta": "LIVE",
+                    "title": "2022 Sleeper Cab · $78,900",
+                    "rows": [
+                      {
+                        "label": "Ad → its own landing page",
+                        "value": "View unit",
+                        "accent": true
+                      },
+                      {
+                        "label": "Google Ads",
+                        "value": "214 clicks · 11 leads",
+                        "accent": false
+                      },
+                      {
+                        "label": "Meta remarketing",
+                        "value": "96 clicks · 5 leads",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Unit sold → campaign auto-pauses. No wasted spend."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "services",
+          "eyebrow": "Services",
+          "heading": "Full-funnel, done for you.",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🔍",
+              "title": "Google Ads Management",
+              "kicker": "",
+              "body": "Campaigns managed around what's actually in stock — not a generic keyword list.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "♾️",
+              "title": "Meta Remarketing",
+              "kicker": "",
+              "body": "Bring back the buyers who looked at a unit and left — with the units they looked at.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🚛",
+              "title": "Inventory & Parts Campaigns",
+              "kicker": "",
+              "body": "Featured units, department promotions, and parts specials — promoted from live data.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🧲",
+              "title": "Landing Page Strategy",
+              "kicker": "",
+              "body": "Every campaign gets a strong destination — inventory promos, parts specials, finance offers.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🎨",
+              "title": "Campaign Creative",
+              "kicker": "",
+              "body": "Ad creative built for dealers — real units and real offers, not stock-photo filler.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "📊",
+              "title": "Performance Tracking",
+              "kicker": "",
+              "body": "Conversion-focused reporting tied to dealership activity — leads and sold units, not vanity clicks.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "connected",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "connected-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "connected-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "connected-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "connected-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "connected-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Product-based campaigns work better when they're connected.",
+                            "headingLevel": 2,
+                            "eyebrow": "Connected campaigns"
+                          }
+                        },
+                        {
+                          "id": "connected-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Campaigns built on your live data — so ads always point at real, in-stock inventory and current offers."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "connected-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "connected-chips",
+                          "type": "list",
+                          "props": {
+                            "columns": 3,
+                            "items": [
+                              {
+                                "label": "Live inventory"
+                              },
+                              {
+                                "label": "Featured units"
+                              },
+                              {
+                                "label": "Aged inventory"
+                              },
+                              {
+                                "label": "High-margin products"
+                              },
+                              {
+                                "label": "Overstock parts"
+                              },
+                              {
+                                "label": "Seasonal parts"
+                              },
+                              {
+                                "label": "Popular categories"
+                              },
+                              {
+                                "label": "New arrivals"
+                              },
+                              {
+                                "label": "Campaign landing pages"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "benefits-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "benefits-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "benefits-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Marketing connected to dealership activity.",
+                    "headingLevel": 2,
+                    "eyebrow": "Dealer benefits"
+                  }
+                },
+                {
+                  "id": "benefits-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Better traffic, better destinations, and reporting that ties spend to what actually happened on your lot."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "benefits-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "ink",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "benefits-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "AI-Driven Marketing helps dealers",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "benefits-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Drive better traffic to the right pages"
+                      },
+                      {
+                        "label": "Promote real inventory and offers"
+                      },
+                      {
+                        "label": "Improve campaign destinations"
+                      },
+                      {
+                        "label": "Google Ads + Meta remarketing, managed"
+                      },
+                      {
+                        "label": "Track performance clearly, down to the sale"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "benefits-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Frequently asked questions.",
+          "faqs": [
+            {
+              "q": "How is Buzznerd marketing different from a normal ad agency?",
+              "a": "Buzznerd builds campaigns around your live inventory instead of a generic keyword list. Ads, remarketing, and landing pages reflect what's actually on your lot, and performance is measured all the way to the sale."
+            },
+            {
+              "q": "Which marketing channels does Buzznerd manage?",
+              "a": "Buzznerd manages Google Ads, Meta remarketing, email campaigns, social promotions, and inventory-connected landing pages — all tied to your live inventory and product data."
+            },
+            {
+              "q": "Can Buzznerd tie marketing spend to actual sales?",
+              "a": "Yes. Channel-to-sale attribution connects each lead and sale back to the channel that drove it, so you can see which campaigns produce real deals rather than just clicks."
+            },
+            {
+              "q": "Do I need a Buzznerd website to use the marketing service?",
+              "a": "Marketing works best alongside a Buzznerd website and the AI platform because campaigns run on live inventory data, but we'll discuss options for your current setup during a demo."
+            },
+            {
+              "q": "How do campaigns stay current with my inventory?",
+              "a": "Campaigns are connected to live inventory, parts, and product data, so as units sell or arrive, the ads and landing pages reflect what's actually available."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Drive higher-intent traffic.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Campaigns built on your live inventory — measured all the way to the sale.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      },
+                      {
+                        "ctaId": "see-attribution"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. We'll review how you're marketing today, show you where spend is leaking, and walk you through what a connected campaign would look like on your units.",
+          "checklist": [
+            {
+              "label": "Live review of your current marketing"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

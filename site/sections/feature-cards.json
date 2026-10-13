@@ -1,0 +1,183 @@
+{
+  "version": 2,
+  "id": "feature-cards",
+  "name": "Feature cards",
+  "props": [
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Jump-link id",
+      "default": ""
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": ""
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": ""
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Card width (of 12)",
+      "default": 4,
+      "description": "4 = three across, 3 = four across, 6 = two across."
+    },
+    {
+      "key": "cards",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "icon",
+          "type": "text",
+          "label": "Icon (emoji)"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "kicker",
+          "type": "text",
+          "label": "Kicker"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Body"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "css": "[data-bz-node=\"fc-grid\"] { margin-top: var(--space-5); }\n[data-bz-node^=\"fc-card\"] { display: flex; flex-direction: column; }\n[data-bz-node^=\"fc-card\"]:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }\n[data-bz-section=\"feature-cards\"] [data-bz-node^=\"fc-icon\"] p { width: 50px; height: 50px; border-radius: 14px; background: var(--accent-tint); display: grid; place-items: center; font-size: 24px; line-height: 1; }\n[data-bz-node^=\"fc-kicker\"] p { font: 700 12.5px/1.3 var(--font-body) !important; letter-spacing: .06em; text-transform: uppercase; color: var(--accent) !important; }\n[data-bz-node^=\"fc-link\"] { margin-top: auto; }\n[data-bz-node^=\"fc-link\"] p { font-size: 15px; }\n@media (max-width: 1100px) { [data-bz-node=\"fc-grid\"] > .bz-col { grid-column: span 6; } }\n@media (max-width: 640px) { [data-bz-node=\"fc-grid\"] > .bz-col { grid-column: 1 / -1; } }\n",
+  "nodes": [
+    {
+      "id": "fc",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "fc-head",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "fc-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "fc-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fc-grid",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "fc-card",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "repeat": "cards",
+                "background": "card",
+                "padding": 6
+              },
+              "children": [
+                {
+                  "id": "fc-icon",
+                  "type": "text",
+                  "props": {
+                    "text": "{{icon}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fc-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "fc-kicker",
+                  "type": "text",
+                  "props": {
+                    "text": "{{kicker}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fc-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fc-link",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{url}}\">{{linkLabel}}</a>",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

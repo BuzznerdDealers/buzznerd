@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "id": "integrations-strip",
+  "name": "Integrations logo strip",
+  "props": [
+    {
+      "key": "label",
+      "type": "text",
+      "label": "Label",
+      "default": "Integrates with the platforms dealers rely on"
+    },
+    {
+      "key": "logos",
+      "type": "list",
+      "label": "Logos",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Logo"
+        }
+      ]
+    }
+  ],
+  "css": "[data-bz-node=\"integ\"] { background: var(--card); border-block: 1px solid var(--line-soft); }\n[data-bz-node=\"integ\"] .bz-eyebrow { color: var(--muted); font: 600 13.5px/1.4 var(--font-body); letter-spacing: .06em; margin-bottom: var(--space-5); }\n[data-bz-node=\"integ\"] .bz-logos { border: 0; padding: 0; justify-content: center; gap: 28px 56px; }\n[data-bz-node=\"integ\"] .bz-logo img { height: 34px; width: auto; max-width: 150px; object-fit: contain; filter: grayscale(1); opacity: .62; transition: filter .2s ease, opacity .2s ease; }\n[data-bz-node=\"integ\"] .bz-logo img:hover { filter: none; opacity: 1; }\n/* Marquee state, switched on by the component script. Without it — in the\n   editor and with JS off — the logos are a centred, wrapping row. */\n[data-bz-node=\"integ\"] .is-marquee-host { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }\n[data-bz-node=\"integ\"] .bz-logos.is-marquee { flex-wrap: nowrap; justify-content: flex-start; width: max-content; animation: bz-marquee 42s linear infinite; }\n[data-bz-node=\"integ\"] .is-marquee-host:hover .bz-logos.is-marquee { animation-play-state: paused; }\n@keyframes bz-marquee { from { transform: translateX(0) } to { transform: translateX(-50%) } }\n@media (prefers-reduced-motion: reduce) { [data-bz-node=\"integ\"] .bz-logos.is-marquee { animation: none; } }\n",
+  "js": "/* Integrations strip: turn the wrapping logo row into a continuous marquee.\n   The un-enhanced row is the editor's and the no-JS layout; this only adds the\n   motion, and not at all when the visitor prefers reduced motion. */\n(function () {\n  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;\n  document.querySelectorAll('[data-bz-section=\"integrations-strip\"] .bz-logos').forEach(function (row) {\n    if (row.classList.contains('is-marquee')) return;\n    Array.prototype.slice.call(row.children).forEach(function (logo) {\n      var copy = logo.cloneNode(true);\n      copy.setAttribute('aria-hidden', 'true');\n      copy.querySelectorAll('img').forEach(function (img) { img.alt = ''; });\n      row.appendChild(copy);\n    });\n    row.parentNode.classList.add('is-marquee-host');\n    row.classList.add('is-marquee');\n  });\n})();\n",
+  "nodes": [
+    {
+      "id": "integ",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "paddingY": 5,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "integ-logos",
+          "type": "logoStrip",
+          "props": {
+            "heading": "{{label}}",
+            "logos": "{{logos}}"
+          }
+        }
+      ]
+    }
+  ]
+}

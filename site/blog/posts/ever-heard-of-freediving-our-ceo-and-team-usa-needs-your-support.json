@@ -1,0 +1,81 @@
+{
+  "slug": "ever-heard-of-freediving-our-ceo-and-team-usa-needs-your-support",
+  "title": "Ever Heard of Freediving? Our CEO and Team USA Needs Your Support",
+  "date": "2025-05-29",
+  "description": "Jerry Van Galder is representing Team USA in freediving. Here's the story — and how you can cheer them on.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2025/05/image3-rotated.jpeg",
+  "status": "published",
+  "keywords": [
+    "Company"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Company</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Chief Buzznerd Jerry Van Galder made the 2025 US Freediving Team — and broke three continental records."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Ever hear of freediving? You might have seen recent documentaries on Netflix, or watched “The Big Blue” back in the day. It's an incredible sport that consists of diving on a single breath. Sounds scary and challenging — but with the proper training and dedication, it can be done. Freediving isn't new; people have done it for millennia through spearfishing, sponge harvesting, and military work.\n\nModern competitive freediving isn't new either — it's been around for 30-plus years with internationally regulated events and records. You might be surprised to learn that our Chief Buzznerd, Jerry Van Galder, is a competitive freediver who recently made the 2025 US Freediving Team."
+      }
+    },
+    {
+      "id": "quote-2",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-2-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-2-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>I'm beyond excited to represent the United States as a member of the 2025 US Freediving Depth team. I owe a lot to our team here at Buzznerd and our clients to be able to dedicate the time and resources to do this. Freediving was just an interest a few years ago, but it didn't take long to fall in love with it and pursue something I never thought possible. — Jerry Van Galder, Chief Buzznerd</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Jerry also recently broke three Masters (M1) Continental Records, bringing all of the North American M1 records back into the hands of the United States. With M1 World Record goals in sight, he and Team USA need your help.\n\nThe freediving community is large, especially internationally, and to stay competitive Team USA needs support with costs covering travel, equipment, and more. The US Freediving Federation is a non-profit (501c3), so your donation may be tax deductible — please consult a qualified advisor. Thank you in advance for any help you can provide."
+      }
+    },
+    {
+      "id": "cta-4",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "support-team-usa",
+            "label": "Support Team USA →"
+          }
+        ]
+      }
+    }
+  ]
+}

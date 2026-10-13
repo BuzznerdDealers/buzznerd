@@ -1,0 +1,660 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Go 24/7 nationwide with AI e-commerce.",
+                    "headingLevel": 1,
+                    "eyebrow": "AI E-Commerce"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Why limit parts sales to physical locations? Sell parts, products, and inventory online through a platform built for the complexity of commercial and equipment sales — specs, account pricing, shipping rules, and customer workflows, without forcing your products into a basic retail model."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/ai-platform\">Powered by the Buzznerd AI Platform</a>"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "parts.yourdealership.com",
+                    "meta": "🛒 Cart · 3",
+                    "title": "Parts catalog",
+                    "rows": [
+                      {
+                        "label": "Brake Drum 16.5\"",
+                        "value": "$129 · your price $104",
+                        "accent": true
+                      },
+                      {
+                        "label": "Air Filter Kit",
+                        "value": "$64 · in stock",
+                        "accent": false
+                      }
+                    ],
+                    "note": "Ships via UPS · FedEx · USPS → Checkout"
+                  }
+                },
+                {
+                  "id": "hero-chip",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "chip",
+                    "tag": "⚡ Order #4127 · 2:41 AM",
+                    "title": "Parts sold while you slept"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "integrations-strip",
+        "values": {
+          "label": "Integrates with the platforms dealers rely on",
+          "logos": [
+            {
+              "name": "Karmak",
+              "image": {
+                "src": "/assets/logo-karmak.webp",
+                "alt": "Karmak",
+                "width": 184,
+                "height": 34
+              }
+            },
+            {
+              "name": "CDK",
+              "image": {
+                "src": "/assets/logo-cdk.webp",
+                "alt": "CDK",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Google Partner",
+              "image": {
+                "src": "/assets/logo-google-g.webp",
+                "alt": "Google Partner",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Truck Paper",
+              "image": {
+                "src": "/assets/logo-truckpaper.webp",
+                "alt": "Truck Paper",
+                "width": 246,
+                "height": 52
+              }
+            },
+            {
+              "name": "Meta",
+              "image": {
+                "src": "/assets/logo-meta.webp",
+                "alt": "Meta",
+                "width": 445,
+                "height": 100
+              }
+            },
+            {
+              "name": "Machinery Trader",
+              "image": {
+                "src": "/assets/logo-machinerytrader.webp",
+                "alt": "Machinery Trader",
+                "width": 440,
+                "height": 100
+              }
+            },
+            {
+              "name": "Arcadium",
+              "image": {
+                "src": "/assets/logo-arcadium.webp",
+                "alt": "Arcadium",
+                "width": 192,
+                "height": 100
+              }
+            },
+            {
+              "name": "Stripe",
+              "image": {
+                "src": "/assets/logo-stripe-clean.webp",
+                "alt": "Stripe",
+                "width": 231,
+                "height": 100
+              }
+            },
+            {
+              "name": "Trnsact",
+              "image": {
+                "src": "/assets/logo-trnsact.svg",
+                "alt": "Trnsact",
+                "width": 160,
+                "height": 48
+              }
+            },
+            {
+              "name": "Equipment Funding Solutions",
+              "image": {
+                "src": "/assets/logo-efunding.webp",
+                "alt": "Equipment Funding Solutions",
+                "width": 131,
+                "height": 100
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "how",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "how-it-works",
+          "eyebrow": "How it works",
+          "heading": "From your DMS to a buyer's door.",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🔗",
+              "title": "Connect your systems",
+              "kicker": "Step 1",
+              "body": "Karmak, CDK, or your inventory feed — your parts and products sync in automatically.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "✨",
+              "title": "AI builds your catalog",
+              "kicker": "Step 2",
+              "body": "Titles, descriptions, categories, and search-friendly product pages — generated, not typed.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "📦",
+              "title": "Orders ship nationwide",
+              "kicker": "Step 3",
+              "body": "Stripe checkout and tax, shipping rules with UPS, FedEx & USPS — 24/7, while your counter's closed.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "listings",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "listings-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "listings-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "listings-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Getting products online shouldn't take all day.",
+                    "headingLevel": 2,
+                    "eyebrow": "AI-assisted product listings"
+                  }
+                },
+                {
+                  "id": "listings-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Buzznerd helps create cleaner product titles, descriptions, categories, tags, FAQs, and search-friendly product pages — so your catalog grows without the manual grind."
+                  }
+                },
+                {
+                  "id": "listings-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "listings-card",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "background": "card",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "listings-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "Everything you need to go 24/7 nationwide",
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Parts & product catalog management"
+                      },
+                      {
+                        "label": "AI-generated titles & descriptions"
+                      },
+                      {
+                        "label": "Tags & categories"
+                      },
+                      {
+                        "label": "Account-based pricing"
+                      },
+                      {
+                        "label": "Customer account workflows"
+                      },
+                      {
+                        "label": "Stripe Payments & Stripe Tax setup"
+                      },
+                      {
+                        "label": "Shipping with UPS, FedEx & USPS"
+                      },
+                      {
+                        "label": "Shipping & fulfillment rules"
+                      },
+                      {
+                        "label": "E-commerce landing pages"
+                      },
+                      {
+                        "label": "Search-friendly product pages"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connected",
+      "type": "section",
+      "props": {
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "connected-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "connected-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "connected-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "connected-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "connected-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Connect e-commerce with marketing & DMS.",
+                            "headingLevel": 2,
+                            "eyebrow": "Connected commerce"
+                          }
+                        },
+                        {
+                          "id": "connected-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Your products, synced to your systems and promoted everywhere buyers look — with campaigns connected to live inventory, parts, and product data."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "connected-tags",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "connected-chips",
+                          "type": "text",
+                          "props": {
+                            "text": "Google Ads · Meta remarketing · Email campaigns · Social promotions · Monthly parts flyers · Product landing pages · Featured category campaigns · Product & inventory syncing · <strong>Karmak · CDK DMS</strong>",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "benefits-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "benefits-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "benefits-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your parts counter, open around the clock.",
+                    "headingLevel": 2,
+                    "eyebrow": "Dealer benefits"
+                  }
+                },
+                {
+                  "id": "benefits-body",
+                  "type": "text",
+                  "props": {
+                    "text": "More products online, less manual entry, and a parts department that grows while your doors are closed."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "benefits-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "ink",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "benefits-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "AI E-Commerce helps dealers",
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Get more parts & products online"
+                      },
+                      {
+                        "label": "Reduce manual product entry"
+                      },
+                      {
+                        "label": "Improve product content"
+                      },
+                      {
+                        "label": "Help customers find products faster"
+                      },
+                      {
+                        "label": "Support account pricing & dealer workflows"
+                      },
+                      {
+                        "label": "Grow the parts department with landing pages & campaigns"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "benefits-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Frequently asked questions.",
+          "faqs": [
+            {
+              "q": "Can I sell parts online with account-based pricing?",
+              "a": "Yes. Buzznerd AI E-Commerce supports account-based pricing and customer-specific workflows, so your online store reflects the pricing each customer sees rather than forcing a single retail price."
+            },
+            {
+              "q": "How does Buzznerd handle payments, tax, and shipping?",
+              "a": "Buzznerd sets up Stripe Payments and Stripe Tax, plus shipping with multiple providers including UPS, FedEx, and USPS, along with shipping and fulfillment rules built for parts and equipment sales."
+            },
+            {
+              "q": "Does e-commerce connect to my DMS and inventory system?",
+              "a": "Yes. Buzznerd connects online products to your DMS and inventory systems — including Karmak and CDK, plus custom DMS and ERP integrations — and syncs product and inventory data so campaigns run on live data."
+            },
+            {
+              "q": "Can Buzznerd help create the product listings?",
+              "a": "Yes. Buzznerd helps generate cleaner product titles, descriptions, categories, tags, FAQs, product details, and search-friendly product pages, so getting products online takes far less manual work."
+            },
+            {
+              "q": "How does e-commerce connect to marketing?",
+              "a": "Buzznerd connects e-commerce products to Google Ads, Meta remarketing, email campaigns, social promotions, monthly parts flyers, product landing pages, and featured category campaigns — all tied to live inventory and product data."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "AI e-commerce built around your dealership.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Support parts and product sales from one connected platform.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "launch-ecommerce"
+                      },
+                      {
+                        "ctaId": "explore-ai-websites"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. We'll review how you sell parts today, show you where sales are leaking online, and walk you through what selling 24/7 would take.",
+          "checklist": [
+            {
+              "label": "Live review of how you sell parts today"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+/* contact: the three audience/perk items read as cards, the middle one dark. */
+[data-bz-node="contact-list"] .bz-grid { gap: 14px; }
+[data-bz-node="contact-list"] .bz-feature { background: var(--card); border: 1px solid var(--line-soft); border-radius: var(--radius-card); padding: 18px 20px 18px 70px; }
+[data-bz-node="contact-list"] .bz-feature::before { left: 20px; top: 20px; width: 36px; height: 36px; border-radius: 10px; font-size: 17px; }
+[data-bz-node="contact-list"] .bz-feature:nth-child(2) { background: var(--ink); border-color: var(--ink); }
+[data-bz-node="contact-list"] .bz-feature:nth-child(2)::before { background: var(--volt); }
+[data-bz-node="contact-list"] .bz-feature:nth-child(2) .bz-feature__t { color: var(--card); }
+[data-bz-node="contact-list"] .bz-feature:nth-child(2) .bz-feature__d { color: color-mix(in srgb, var(--card) 72%, var(--ink)); }
+[data-bz-node="contact-card"] { border-radius: var(--radius-modal); box-shadow: 0 30px 80px -40px color-mix(in srgb, var(--ink) 30%, transparent); }
+[data-bz-node="contact-note"] p { font-size: 13.5px !important; color: var(--muted) !important; }

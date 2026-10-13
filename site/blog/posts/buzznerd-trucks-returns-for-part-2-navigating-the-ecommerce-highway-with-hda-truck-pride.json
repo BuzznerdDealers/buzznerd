@@ -1,0 +1,68 @@
+{
+  "slug": "buzznerd-trucks-returns-for-part-2-navigating-the-ecommerce-highway-with-hda-truck-pride",
+  "title": "Navigating the eCommerce Highway with HDA Truck Pride (Part 2)",
+  "date": "2023-09-26",
+  "description": "Jerry Van Galder returns for Part 2 of the HDA Truck Pride webinar on parts e-commerce.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/09/TruckParts_HDA-Webinar.jpeg",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Part two of the HDA Truck Pride eCommerce webinar series — real strategies and success stories."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Jerry Van Galder from Buzznerd is teaming up with some fantastic folks for the upcoming HDA Truck Pride webinar — part two of their eCommerce webinar series. Here's a quick peek at what they'll dive into:"
+      }
+    },
+    {
+      "id": "list-2",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Tackling the big “unknowns” in eCommerce and carving out a winning strategy"
+          },
+          {
+            "label": "Sharing real-deal success stories and lessons learned from various digital journeys"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "The panel lineup: Jerry from Buzznerd, Blake Barson (Opticat &amp; JNPSoft), Wendy Sorquist (Blaine Brothers), Tim Gray (Potter Webster Company), and Zach Dunbar (Cargo Heavy Duty), moderated by Laura Hewitt from HDA. We're honored to partner with HDA Truck Pride and look forward to helping their membership learn and grow their online business."
+      }
+    },
+    {
+      "id": "cta-4",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Grow your online business →"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "contact",
+      "type": "section",
+      "props": {
+        "anchor": "contact",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "contact-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tell us what you're working on.",
+                    "headingLevel": 1,
+                    "eyebrow": "Contact us"
+                  }
+                },
+                {
+                  "id": "contact-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Dealership, OEM program, or partnership — we'll get back to you within one business day."
+                  }
+                },
+                {
+                  "id": "contact-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Dealerships",
+                        "desc": "Websites, e-commerce, and the AI platform — from one rooftop to a group."
+                      },
+                      {
+                        "label": "OEM programs",
+                        "desc": "OEM-grade websites, built and vetted to program standards. Ask about our approved-vendor experience."
+                      },
+                      {
+                        "label": "Partnerships",
+                        "desc": "Integrations, marketplaces, and agency partners."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact"
+                  }
+                },
+                {
+                  "id": "contact-note",
+                  "type": "text",
+                  "props": {
+                    "text": "No spam, no obligation. We only use this to reply to you.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

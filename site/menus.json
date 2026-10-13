@@ -1,0 +1,290 @@
+{
+  "version": 3,
+  "menus": [
+    {
+      "id": "main",
+      "name": "Main navigation",
+      "items": [
+        {
+          "id": "solutions",
+          "label": "Solutions",
+          "type": "page",
+          "ref": "solutions",
+          "children": [
+            {
+              "id": "sol-websites",
+              "label": "🌐 Conversion-tuned websites",
+              "type": "url",
+              "url": "/solutions#websites"
+            },
+            {
+              "id": "sol-agents",
+              "label": "💬 24/7 AI lead coverage",
+              "type": "url",
+              "url": "/solutions#agents"
+            },
+            {
+              "id": "sol-ecommerce",
+              "label": "🛒 Parts & products storefront",
+              "type": "url",
+              "url": "/solutions#ecommerce"
+            },
+            {
+              "id": "sol-followup",
+              "label": "📋 No-Touch CRM digest",
+              "type": "url",
+              "url": "/solutions#followup"
+            },
+            {
+              "id": "sol-integrations",
+              "label": "🔌 DMS & CRM integrations",
+              "type": "url",
+              "url": "/solutions#integrations"
+            },
+            {
+              "id": "sol-listings",
+              "label": "⏱ Magic Flow photo listings",
+              "type": "url",
+              "url": "/solutions#listings"
+            },
+            {
+              "id": "sol-geo",
+              "label": "🔎 AIO / GEO visibility",
+              "type": "url",
+              "url": "/solutions#geo"
+            },
+            {
+              "id": "sol-photos",
+              "label": "📸 AI photo enhancement",
+              "type": "url",
+              "url": "/solutions#photos"
+            },
+            {
+              "id": "sol-attribution",
+              "label": "📊 Channel-to-sale attribution",
+              "type": "url",
+              "url": "/solutions#attribution"
+            },
+            {
+              "id": "sol-oem",
+              "label": "🏆 Built to OEM program standards",
+              "type": "url",
+              "url": "/solutions#oem"
+            },
+            {
+              "id": "sol-all",
+              "label": "See all solutions →",
+              "type": "page",
+              "ref": "solutions"
+            }
+          ]
+        },
+        {
+          "id": "products",
+          "label": "Products",
+          "type": "page",
+          "ref": "products",
+          "children": [
+            {
+              "id": "prod-websites",
+              "label": "🌐 AI Websites",
+              "type": "page",
+              "ref": "ai-websites"
+            },
+            {
+              "id": "prod-ecommerce",
+              "label": "🛒 AI E-Commerce",
+              "type": "page",
+              "ref": "ai-ecommerce"
+            },
+            {
+              "id": "prod-platform",
+              "label": "⚡ AI Platform",
+              "type": "page",
+              "ref": "ai-platform"
+            }
+          ]
+        },
+        {
+          "id": "services",
+          "label": "Services",
+          "type": "page",
+          "ref": "services",
+          "children": [
+            {
+              "id": "svc-marketing",
+              "label": "📣 AI-Driven Marketing",
+              "type": "page",
+              "ref": "ai-driven-marketing"
+            },
+            {
+              "id": "svc-aio",
+              "label": "📝 Content Restructuring for AIO",
+              "type": "page",
+              "ref": "content-restructuring-for-aio"
+            },
+            {
+              "id": "svc-workflows",
+              "label": "🔌 Custom Workflows & Integrations",
+              "type": "page",
+              "ref": "custom-workflows-integrations"
+            },
+            {
+              "id": "svc-score",
+              "label": "🎯 AI Presence Score",
+              "type": "page",
+              "ref": "ai-presence-score"
+            }
+          ]
+        },
+        {
+          "id": "blog",
+          "label": "Blog",
+          "type": "url",
+          "url": "/blog"
+        },
+        {
+          "id": "about",
+          "label": "About",
+          "type": "page",
+          "ref": "about-us"
+        }
+      ]
+    },
+    {
+      "id": "footer-products",
+      "name": "Footer — Products",
+      "items": [
+        {
+          "id": "fp-websites",
+          "label": "AI Websites",
+          "type": "page",
+          "ref": "ai-websites"
+        },
+        {
+          "id": "fp-ecommerce",
+          "label": "AI E-Commerce",
+          "type": "page",
+          "ref": "ai-ecommerce"
+        },
+        {
+          "id": "fp-platform",
+          "label": "AI Platform",
+          "type": "page",
+          "ref": "ai-platform"
+        },
+        {
+          "id": "fp-solutions",
+          "label": "Solutions overview",
+          "type": "page",
+          "ref": "solutions"
+        }
+      ]
+    },
+    {
+      "id": "footer-services",
+      "name": "Footer — Services",
+      "items": [
+        {
+          "id": "fs-marketing",
+          "label": "AI-Driven Marketing",
+          "type": "page",
+          "ref": "ai-driven-marketing"
+        },
+        {
+          "id": "fs-aio",
+          "label": "Content for AIO",
+          "type": "page",
+          "ref": "content-restructuring-for-aio"
+        },
+        {
+          "id": "fs-workflows",
+          "label": "Workflows & Integrations",
+          "type": "page",
+          "ref": "custom-workflows-integrations"
+        },
+        {
+          "id": "fs-score",
+          "label": "AI Presence Score",
+          "type": "page",
+          "ref": "ai-presence-score"
+        }
+      ]
+    },
+    {
+      "id": "footer-company",
+      "name": "Footer — Company",
+      "items": [
+        {
+          "id": "fc-about",
+          "label": "About",
+          "type": "page",
+          "ref": "about-us"
+        },
+        {
+          "id": "fc-blog",
+          "label": "Blog",
+          "type": "url",
+          "url": "/blog"
+        },
+        {
+          "id": "fc-careers",
+          "label": "Careers",
+          "type": "page",
+          "ref": "careers"
+        },
+        {
+          "id": "fc-contact",
+          "label": "Contact",
+          "type": "page",
+          "ref": "contact"
+        },
+        {
+          "id": "fc-support",
+          "label": "Support",
+          "type": "url",
+          "url": "https://buzznerd.freshdesk.com",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "items": [
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "type": "url",
+          "url": "https://www.instagram.com/buzznerdtrucks/",
+          "newTab": true
+        },
+        {
+          "id": "facebook",
+          "label": "Facebook",
+          "type": "url",
+          "url": "https://www.facebook.com/buzznerdtrucks/",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal",
+      "items": [
+        {
+          "id": "privacy",
+          "label": "Privacy",
+          "type": "page",
+          "ref": "privacy"
+        },
+        {
+          "id": "terms",
+          "label": "Terms",
+          "type": "page",
+          "ref": "terms"
+        }
+      ]
+    }
+  ]
+}

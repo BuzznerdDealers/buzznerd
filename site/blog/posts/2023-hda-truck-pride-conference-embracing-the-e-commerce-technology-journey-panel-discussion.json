@@ -1,0 +1,85 @@
+{
+  "slug": "2023-hda-truck-pride-conference-embracing-the-e-commerce-technology-journey-panel-discussion",
+  "title": "Embracing the E-Commerce Technology Journey",
+  "date": "2024-02-08",
+  "description": "Watch the 2023 HDA Truck Pride panel on navigating the e-commerce technology journey for parts and service.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2024/02/Screen-Shot-2024-02-08-at-11.46.40-AM.png",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A panel from the 2023 HDA Truck Pride Conference on e-commerce in heavy-duty trucking."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "We're excited to invite you to watch the panel discussion prerecorded at the 2023 HDA Truck Pride Conference, featuring our Chief Buzznerd, Jerry Van Galder, and other industry experts. This session dives deep into the evolving world of e-commerce within the heavy-duty trucking industry, covering critical topics designed to enhance your online presence and customer engagement."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Key Discussion Highlights",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Loyalty programs — strategies that reward repeat business and build long-term brand connection"
+          },
+          {
+            "label": "Expanding your audience reach — tapping into new markets and maximizing visibility"
+          },
+          {
+            "label": "Efficient e-commerce site development — the real time and resources to launch, concept to live"
+          },
+          {
+            "label": "PPC campaign success — how deep industry knowledge sharpens targeting and conversion"
+          },
+          {
+            "label": "...and future e-commerce trends heavy-duty trucking businesses should prepare for"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-4",
+      "type": "text",
+      "props": {
+        "text": "Whether you're launching a new online store or optimizing existing efforts, this panel is packed with practical advice to elevate your e-commerce strategy."
+      }
+    },
+    {
+      "id": "cta-5",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "explore-ai-ecommerce",
+            "label": "Explore AI E-Commerce →"
+          }
+        ]
+      }
+    }
+  ]
+}

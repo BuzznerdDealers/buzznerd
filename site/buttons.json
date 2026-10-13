@@ -1,0 +1,269 @@
+[
+  {
+    "id": "book-demo",
+    "label": "Book a demo",
+    "url": "/contact",
+    "formId": "book-demo",
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-demo",
+    "label": "Schedule a demo",
+    "url": "/contact",
+    "formId": "book-demo",
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "talk-to-sales",
+    "label": "Talk to sales",
+    "url": "/contact",
+    "style": "secondary",
+    "intent": "contact-sales",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "visibility-audit",
+    "label": "Get an AI visibility audit →",
+    "url": "/contact",
+    "formId": "book-demo",
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-roi",
+    "label": "See your true ROI →",
+    "url": "/contact",
+    "formId": "book-demo",
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "launch-ecommerce",
+    "label": "Launch AI-powered e-commerce",
+    "url": "/contact",
+    "formId": "book-demo",
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "fit-your-team",
+    "label": "How we'd fit your team →",
+    "url": "/contact",
+    "formId": "book-demo",
+    "style": "link",
+    "intent": "book-demo",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "book-visibility-demo",
+    "label": "Book a visibility demo →",
+    "url": "https://calendar.app.google/9eHvZH3M3S9DM6wUA",
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "presence-score",
+    "label": "Get your AI Presence Score",
+    "url": "/ai-presence-score",
+    "style": "link",
+    "intent": "presence-score",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "free-score",
+    "label": "Get your free score →",
+    "url": "/ai-presence-score",
+    "style": "primary",
+    "intent": "presence-score",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-ai-websites",
+    "label": "Explore AI Websites",
+    "url": "/ai-websites",
+    "style": "secondary",
+    "intent": "explore-product",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-ai-ecommerce",
+    "label": "Explore AI E-Commerce",
+    "url": "/ai-ecommerce",
+    "style": "secondary",
+    "intent": "explore-product",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-ai-platform",
+    "label": "Explore the AI Platform",
+    "url": "/ai-platform",
+    "style": "secondary",
+    "intent": "explore-product",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-marketing",
+    "label": "Explore AI-Driven Marketing →",
+    "url": "/ai-driven-marketing",
+    "style": "link",
+    "intent": "explore-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-aio",
+    "label": "Explore Content for AIO →",
+    "url": "/content-restructuring-for-aio",
+    "style": "link",
+    "intent": "explore-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-workflows",
+    "label": "Explore Workflows & Integrations →",
+    "url": "/custom-workflows-integrations",
+    "style": "link",
+    "intent": "explore-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-solutions",
+    "label": "Explore solutions",
+    "url": "/solutions",
+    "style": "secondary",
+    "intent": "explore-solutions",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-solutions",
+    "label": "Have a specific problem? See Solutions →",
+    "url": "/solutions",
+    "style": "link",
+    "intent": "explore-solutions",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-products",
+    "label": "See the products →",
+    "url": "/products",
+    "style": "link",
+    "intent": "explore-product",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-platform",
+    "label": "See the full platform →",
+    "url": "/ai-platform",
+    "style": "primary",
+    "intent": "explore-product",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-attribution",
+    "label": "See attribution",
+    "url": "/ai-platform#attribution",
+    "style": "secondary",
+    "intent": "explore-product",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-aio-service",
+    "label": "See our AIO service",
+    "url": "/content-restructuring-for-aio",
+    "style": "secondary",
+    "intent": "explore-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "oem-contact",
+    "label": "OEM? Contact us →",
+    "url": "/contact?oem=1",
+    "style": "link",
+    "intent": "contact-oem",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "back-home",
+    "label": "Back to home",
+    "url": "/",
+    "style": "secondary",
+    "intent": "home",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "jump-products",
+    "label": "Explore products ↓",
+    "url": "#products",
+    "style": "secondary",
+    "intent": "jump",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "jump-services",
+    "label": "Explore services ↓",
+    "url": "#services",
+    "style": "secondary",
+    "intent": "jump",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "jump-solutions",
+    "label": "Explore solutions ↓",
+    "url": "#websites",
+    "style": "secondary",
+    "intent": "jump",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "support",
+    "label": "Support",
+    "url": "https://buzznerd.freshdesk.com",
+    "style": "link",
+    "intent": "support",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "support-team-usa",
+    "label": "Support Team USA →",
+    "url": "https://gofund.me/fd948bf3",
+    "style": "primary",
+    "intent": "external-link",
+    "newTab": true,
+    "active": true
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "slug": "jerry-van-galder-owner-of-buzznerd-to-speak-about-ai-powered-e-commerce-at-hda-truck-pride-annual-meeting",
+  "title": "Jerry Van Galder to Speak About AI-Powered E-Commerce at HDA Truck Pride",
+  "date": "2023-04-10",
+  "description": "Buzznerd's owner speaks about AI-powered e-commerce solutions at the HDA Truck Pride annual meeting.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/04/admin-ajax.png",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Strategies to grow your customer base, build loyalty, and increase revenue through e-commerce."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Jerry Van Galder, owner of Buzznerd, will speak at the HDA Truck Pride annual meeting, taking place April 12–16 in Aurora, Colorado — an event expected to draw many trucking-industry professionals.\n\nVan Galder's talk will focus on e-commerce and how businesses can use it to increase their customer base, build loyalty, and grow revenue, offering insights and strategies for optimizing operations and reaching a larger audience. With over 20 years in the e-commerce industry, he's well-versed in helping businesses succeed through innovative AI-powered solutions."
+      }
+    },
+    {
+      "id": "quote-2",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-2-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-2-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>AI-powered e-commerce has become a critical part of doing business in the modern world, and I look forward to sharing strategies that can help trucking companies grow their customer base, build loyalty, and increase revenue. — Jerry Van Galder</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Van Galder will also man a booth throughout the conference, where attendees can stop by to ask questions and learn more about Buzznerd's AI-powered e-commerce and website solutions."
+      }
+    },
+    {
+      "id": "cta-4",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Learn more →"
+          }
+        ]
+      }
+    }
+  ]
+}

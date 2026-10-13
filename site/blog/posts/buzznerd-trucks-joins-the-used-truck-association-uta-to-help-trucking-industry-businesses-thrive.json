@@ -1,0 +1,81 @@
+{
+  "slug": "buzznerd-trucks-joins-the-used-truck-association-uta-to-help-trucking-industry-businesses-thrive",
+  "title": "Buzznerd Joins the Used Truck Association (UTA)",
+  "date": "2023-03-24",
+  "description": "Buzznerd joins the UTA to help trucking-industry businesses thrive with AI technology and marketing.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/03/uta_logo_nw.png",
+  "status": "published",
+  "keywords": [
+    "Company"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Company</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "An associate membership to bring AI-powered marketing to the used-truck industry."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Buzznerd, an AI technology &amp; marketing company that specializes in helping trucking-industry businesses achieve their online goals, is excited to announce that it has joined the Used Truck Association (UTA) as an associate member. As part of the UTA, Buzznerd will be able to provide its AI-powered marketing solutions to trucking businesses and help them reach new customers and grow.\n\nThe UTA is a non-profit that serves the used-truck industry with education, networking, and industry-specific news. By joining, Buzznerd will connect with other members and learn more about the needs and challenges trucking businesses face."
+      }
+    },
+    {
+      "id": "quote-2",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-2-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-2-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>We believe our 15-plus years of expertise in this industry can help these businesses reach new customers and grow, and we look forward to working with UTA members to achieve their online goals. — Jerry Van Galder, Chief Buzznerd</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "With the rise of e-commerce and the growing importance of digital marketing, establishing an online presence has never been more important for trucking businesses. Joining the UTA is an important step in helping them succeed in today's competitive digital landscape."
+      }
+    },
+    {
+      "id": "cta-4",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Achieve your online goals →"
+          }
+        ]
+      }
+    }
+  ]
+}

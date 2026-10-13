@@ -1,0 +1,12 @@
+/* Custom Workflows & Integrations: the connected-systems mock and the integration chips. */
+[data-bz-node="hero-panel"] .uip__rows { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+[data-bz-node="hero-panel"] .uip__row { justify-content: center; border: 1px solid var(--line-soft); }
+[data-bz-node="hero-panel"] .uip__l { color: var(--ink); }
+
+[data-bz-node="connect-chips"] .bz-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+[data-bz-node="connect-chips"] .bz-feature { padding: 11px 18px; border-radius: var(--radius-chip); background: var(--paper); border: 1px solid var(--line-soft); }
+[data-bz-node="connect-chips"] .bz-feature::before { display: none; }
+[data-bz-node="connect-chips"] .bz-feature__t { margin: 0; font-size: 15px; }
+[data-bz-node="connect-chips"] .bz-feature:last-child { background: var(--volt); border-color: var(--volt); }
+
+[data-bz-node="ben-img"] { margin-top: var(--space-5); max-width: 460px; }

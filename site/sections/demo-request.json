@@ -1,0 +1,154 @@
+{
+  "version": 2,
+  "id": "demo-request",
+  "name": "Demo request",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Book a demo"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "We'll walk your current setup with you."
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": "20 minutes, no slides. We'll walk your actual site and show you where leads are leaking — and what fixing it looks like."
+    },
+    {
+      "key": "checklist",
+      "type": "list",
+      "label": "Checklist",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Item"
+        }
+      ],
+      "default": [
+        {
+          "label": "Live review of your current setup"
+        },
+        {
+          "label": "Straight answers on pricing"
+        },
+        {
+          "label": "Reply within one business day"
+        }
+      ]
+    },
+    {
+      "key": "note",
+      "type": "text",
+      "label": "Note under the form",
+      "default": "No spam, no obligation. We only use this to schedule your demo."
+    }
+  ],
+  "css": "[data-bz-node=\"dr-card\"] { border-radius: var(--radius-modal); box-shadow: 0 30px 80px -40px color-mix(in srgb, var(--ink) 30%, transparent); }\n[data-bz-node^=\"dr-check\"] { padding-block: 6px !important; }\n[data-bz-node^=\"dr-check\"] p { position: relative; padding-left: 34px; font-weight: 600 !important; color: var(--ink) !important; font-size: 15.5px; }\n[data-bz-node^=\"dr-check\"] p::before { content: '✓'; position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font: 800 12px/1 var(--font-body); }\n[data-bz-node=\"dr-body\"] + [data-bz-node^=\"dr-check\"] { margin-top: var(--space-3); }\n[data-bz-node=\"dr-note\"] p { font-size: 13px !important; color: var(--muted) !important; text-align: center; }\n@media (max-width: 640px) { [data-bz-node=\"dr-card\"] { padding: var(--space-5) !important; } }\n/* The design shows placeholders only; the labels stay for screen readers. */\n[data-bz-node=\"dr-form\"] .bz-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }\n[data-bz-node=\"dr-card\"] > .bz-block, [data-bz-node=\"dr-card\"] .bz-row { position: relative; }\n",
+  "nodes": [
+    {
+      "id": "dr",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "contact"
+      },
+      "children": [
+        {
+          "id": "dr-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "dr-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "dr-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "dr-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "dr-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{heading}}",
+                            "eyebrow": "{{eyebrow}}",
+                            "headingLevel": 2
+                          }
+                        },
+                        {
+                          "id": "dr-body",
+                          "type": "text",
+                          "props": {
+                            "text": "{{body}}"
+                          }
+                        },
+                        {
+                          "id": "dr-check",
+                          "type": "text",
+                          "props": {
+                            "text": "{{label}}",
+                            "width": "full",
+                            "repeat": "checklist"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "dr-formcol",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "dr-form",
+                          "type": "form",
+                          "props": {
+                            "formId": "book-demo"
+                          }
+                        },
+                        {
+                          "id": "dr-note",
+                          "type": "text",
+                          "props": {
+                            "text": "{{note}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

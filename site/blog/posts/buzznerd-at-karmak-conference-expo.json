@@ -1,0 +1,82 @@
+{
+  "slug": "buzznerd-at-karmak-conference-expo",
+  "title": "Buzznerd Returns for the 3rd Time to Karmak Conference & Expo 2023!",
+  "date": "2023-09-25",
+  "description": "Our third consecutive appearance at the renowned Karmak Conference & Expo.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/09/Karmac-1024x536.png",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Booth 223 at St. Louis Union Station — AI-powered e-commerce, integrated with Karmak."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "It's that time of year again! We're excited to announce our third consecutive attendance at the renowned Karmak Conference &amp; Expo, taking place at the historic St. Louis Union Station from October 3rd–5th, 2023."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Location Details",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Venue: St. Louis Union Station"
+          },
+          {
+            "label": "Address: 1820 Market Street, St. Louis, MO 63103"
+          },
+          {
+            "label": "Dates: October 3–5, 2023"
+          },
+          {
+            "label": "Buzznerd Booth: 223"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-4",
+      "type": "text",
+      "props": {
+        "text": "Buzznerd will be in full force, showcasing our cutting-edge AI-powered e-commerce solutions seamlessly integrated with the Karmak business system. Whether you're familiar with our offerings or new to them, visiting our booth will give you a firsthand look at the future of trucking e-commerce. Let's connect, discuss, and explore how our solutions can propel your business to new heights. St. Louis, here we come!"
+      }
+    },
+    {
+      "id": "cta-5",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "explore-ai-ecommerce",
+            "label": "See what we build →"
+          }
+        ]
+      }
+    }
+  ]
+}

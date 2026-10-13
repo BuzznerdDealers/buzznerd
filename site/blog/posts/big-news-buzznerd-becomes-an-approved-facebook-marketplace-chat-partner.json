@@ -1,0 +1,82 @@
+{
+  "slug": "big-news-buzznerd-becomes-an-approved-facebook-marketplace-chat-partner",
+  "title": "BIG NEWS: Buzznerd Becomes an Approved Facebook Marketplace Chat Partner!",
+  "date": "2020-12-22",
+  "description": "Buzznerd is now an approved Facebook Marketplace Chat Partner — unlocking a broad range of solutions to advertise your business, sell more trucks, and engage customers more efficiently.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/C-_Users_Noter_Desktop_fb-marketplace-conversation1.png",
+  "status": "published",
+  "keywords": [
+    "Product"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Product</strong> · 2 min read · By Abigail"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A new way to advertise, sell more trucks, and engage buyers on Facebook Marketplace."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "As an advertising and digital partner for the trucking industry, we always strived to set benchmarks by helping our clients scale success. We're adding a new feather to our cap with being an approved Facebook Marketplace Chat Partner.\n\nThis association with Facebook Marketplace has enabled us to offer a broad range of solutions to help you advertise your business, sell more trucks, and engage with customers more efficiently. Starting with campaign management to offline conversions, we can now do it all for you.\n\nWhat's more in the store? With Facebook Marketplace Chat Partnership and our Buzznerd Rapid Response Service, we make it a point to deliver results and solutions quickly, easily, and effectively."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Our Buzznerd Rapid Response service includes:",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "1. Facebook Messenger monitoring to handle leads right when they come in. We answer any questions and can scrub them before forwarding so you get only the best, qualified leads."
+          },
+          {
+            "label": "2. We log every message and keep it in a spreadsheet for you. This includes customer info, truck details, etc."
+          },
+          {
+            "label": "3. Monthly audit reports showing you what of your inventory is meeting Facebook Marketplace requirements."
+          },
+          {
+            "label": "4. Monthly reports on our performance (response time to messages) and how many calls your inventory received along with messages."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-4",
+      "type": "text",
+      "props": {
+        "text": "In addition to the above you'll get increased brand exposure on Facebook, native Facebook remarketing, and we've even seen dealers up their inventory game and get motivated to get inventory uploaded.\n\nWait no more and get on this train — let's get you going!"
+      }
+    },
+    {
+      "id": "cta-5",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Contact us today →"
+          }
+        ]
+      }
+    }
+  ]
+}

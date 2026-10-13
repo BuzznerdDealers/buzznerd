@@ -1,0 +1,152 @@
+{
+  "slug": "beyond-code-cultivating-a-human-centric-ai-culture",
+  "title": "Beyond Code: Cultivating a Human-Centric AI Culture",
+  "date": "2024-06-13",
+  "description": "Reflections on building an AI culture that keeps humans — and human judgment — at the center.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2024/06/Buzznerds-Human-Centricv-AI.webp",
+  "status": "published",
+  "keywords": [
+    "Artificial Intelligence"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Artificial Intelligence</strong> · 2 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Successful AI integration goes far beyond code — it's about empowering people."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "The recent “Beyond the Algorithm: Cultivating a Culture That Embraces AI” seminar left me pondering the evolving relationship between humans and artificial intelligence. While the power of algorithms is undeniable, it's clear that a truly successful AI integration goes far beyond code. It's about nurturing a human-centric AI culture that empowers individuals and organizations to thrive in this new era."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "The Human Imperative in an AI-Driven World",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "A recurring theme throughout the seminar was the urgency of adaptation. The world is changing rapidly, and AI is a catalyst for disruption across industries. To remain relevant, we must evolve. Embracing AI isn't about replacing humans; it's about unlocking our full potential. As the speaker aptly put it, “If you aren't planning to put yourself out of business, someone else will.”"
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Human-Centric AI: Our Superpowers Unleashed",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "As AI takes over routine tasks, our uniquely human skills become even more valuable. The seminar emphasized cultivating our human-centric AI superpowers:"
+      }
+    },
+    {
+      "id": "list-6",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Ideation — generating creative solutions to complex problems"
+          },
+          {
+            "label": "Innovation — turning ideas into tangible results"
+          },
+          {
+            "label": "Intuition — making informed decisions based on experience and gut"
+          },
+          {
+            "label": "Inspiration — motivating ourselves and others to achieve greatness"
+          },
+          {
+            "label": "Intelligence — applying knowledge to navigate the AI landscape"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-7",
+      "type": "text",
+      "props": {
+        "text": "By harnessing these skills, we can work in synergy with AI — becoming not just users of technology but its masters."
+      }
+    },
+    {
+      "id": "h-8",
+      "type": "heading",
+      "props": {
+        "text": "Leadership Reimagined: Empowering the Human Element",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-9",
+      "type": "text",
+      "props": {
+        "text": "In a human-centric AI culture, leadership takes on a new dimension. It's about empowering individuals to contribute their unique talents and fostering an environment where everyone feels valued. True leaders understand that AI is a tool to amplify human potential, not replace it."
+      }
+    },
+    {
+      "id": "h-10",
+      "type": "heading",
+      "props": {
+        "text": "Building a Culture of Collaboration and Purpose",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-11",
+      "type": "text",
+      "props": {
+        "text": "Culture is the bedrock for success in the AI age. To thrive, organizations need a human-centric AI culture built on purpose (why the organization exists), values (principles that shape decisions), vision (an inspiring picture of the future), and mission (a clear roadmap that adapts as the AI landscape shifts)."
+      }
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "The Path Forward: Beyond Code to Human Flourishing",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "AI's true power lies in enhancing the human experience. By embracing a human-centric AI culture, we can unlock a future where technology catalyzes human flourishing. Let's go beyond code and cultivate a world where AI amplifies our humanity, not diminishes it."
+      }
+    },
+    {
+      "id": "cta-14",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Talk AI strategy with us →"
+          }
+        ]
+      }
+    }
+  ]
+}

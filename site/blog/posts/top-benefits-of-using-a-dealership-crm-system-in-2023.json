@@ -1,0 +1,103 @@
+{
+  "slug": "top-benefits-of-using-a-dealership-crm-system-in-2023",
+  "title": "Top Benefits of Using a Dealership CRM System",
+  "date": "2023-11-03",
+  "description": "Exploring how a CRM improves dealership operations and customer relationships — and what to look for in one.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/11/Salesforce_logo_PNG1-1024x576.png",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 2 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A CRM isn't a luxury — it's how modern dealerships keep close ties with customers while juggling everything else."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "If you're exploring ways to improve your dealership operations and customer relationships, a Customer Relationship Management (CRM) system could be your answer. Here are the key advantages of a dealership CRM:"
+      }
+    },
+    {
+      "id": "list-2",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Deepened customer relationships — tailored, consistent interactions across every touchpoint"
+          },
+          {
+            "label": "Boosted sales performance — efficient lead management and predictive forecasting"
+          },
+          {
+            "label": "Elevated customer service — quick issue resolution from full customer histories, and feedback capture"
+          },
+          {
+            "label": "Effective marketing — pinpointed campaigns with measurable ROI"
+          },
+          {
+            "label": "A unified data repository — one platform, shared across departments"
+          },
+          {
+            "label": "Automation for efficiency — streamlined workflows and fewer manual-entry errors"
+          },
+          {
+            "label": "Comprehensive analytics — dashboards for data-driven decisions and early trend spotting"
+          },
+          {
+            "label": "Ready for growth — flexible, adaptable, and customizable to your operation"
+          },
+          {
+            "label": "Stay connected anywhere — cloud access with real-time syncing"
+          },
+          {
+            "label": "Top-notch data security — secure central storage and role-based access"
+          },
+          {
+            "label": "Economical operations — efficient resource allocation and lower overhead"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-3",
+      "type": "heading",
+      "props": {
+        "text": "Maximizing the Potential With Inventory Integration",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-4",
+      "type": "text",
+      "props": {
+        "text": "While CRM systems excel at managing customer relationships, many dealerships unlock their full potential only when integrated with inventory management. By connecting customer behavior and purchase patterns with stock levels, dealerships can ensure timely order fulfillment, predict future demand, and tailor marketing. Having inventory in the CRM makes it a true dealership CRM.\n\nIn the digital age, a dealership CRM isn't just a luxury; it's a necessity. Here at Buzznerd, we integrate with the best dealership CRMs out there — Salesforce, Arcadium, Microsoft Dynamics 365, and HubSpot. Have a CRM that's not on this list, or want to learn more about these integrations?"
+      }
+    },
+    {
+      "id": "cta-5",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Talk CRM integration →"
+          }
+        ]
+      }
+    }
+  ]
+}

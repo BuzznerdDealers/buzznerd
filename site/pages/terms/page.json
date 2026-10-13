@@ -1,0 +1,304 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Terms of Service.",
+                    "headingLevel": 1,
+                    "eyebrow": "Legal"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "The ground rules for using Buzznerd’s site, products, and services."
+                  }
+                },
+                {
+                  "id": "hero-updated",
+                  "type": "text",
+                  "props": {
+                    "text": "Last updated July 10, 2026"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tos-body",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "tos-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "tos-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "tos-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "These Terms of Service (\"Terms\") govern your access to and use of the websites, products, and services provided by Buzznerd, LLC (\"Buzznerd,\" \"we,\" \"us,\" or \"our\"). By accessing our site or using our services, you agree to these Terms. If you do not agree, do not use our site or services. <strong>If you have signed a separate written agreement with Buzznerd (such as a master services agreement or order form), that agreement governs your paid services and controls to the extent it conflicts with these Terms.</strong>",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "1. Who we are",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Buzznerd, LLC provides AI-enabled websites, e-commerce, marketing, and platform tools for dealerships. You can reach us at <a href=\"mailto:info@buzznerd.com\">info@buzznerd.com</a>.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "2. Use of our site and services",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "You agree to use our site and services only for lawful purposes and in accordance with these Terms. You may not misuse the services, interfere with their operation, attempt to gain unauthorized access, or use them to infringe the rights of others.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "3. Accounts and eligibility",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Some services require an account or a service agreement. You are responsible for the accuracy of the information you provide and for maintaining the confidentiality of your account credentials and all activity under your account.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h4",
+                  "type": "heading",
+                  "props": {
+                    "text": "4. Customer content and data",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "You retain ownership of the content and data you or your dealership provide. You grant us the rights necessary to host, process, and display that content in order to provide the services. You are responsible for ensuring you have the rights to any content you submit.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h5",
+                  "type": "heading",
+                  "props": {
+                    "text": "5. Intellectual property",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t5",
+                  "type": "text",
+                  "props": {
+                    "text": "The site, services, software, and all related materials — including the Buzznerd name, logo, and trademarks — are owned by Buzznerd, LLC or its licensors and are protected by applicable law. Except as expressly permitted, you may not copy, modify, distribute, or create derivative works from them.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h6",
+                  "type": "heading",
+                  "props": {
+                    "text": "6. Third-party services and integrations",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t6",
+                  "type": "text",
+                  "props": {
+                    "text": "Our services may connect to third-party platforms and integrations. Your use of those services is governed by their own terms, and we are not responsible for third-party products or services.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h7",
+                  "type": "heading",
+                  "props": {
+                    "text": "7. Fees",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t7",
+                  "type": "text",
+                  "props": {
+                    "text": "Fees, billing, and payment terms for paid services are set out in the applicable order form or service agreement. Unless otherwise stated, fees are non-refundable.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h8",
+                  "type": "heading",
+                  "props": {
+                    "text": "8. Disclaimers",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t8",
+                  "type": "text",
+                  "props": {
+                    "text": "Our site and services are provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the services will be uninterrupted, error-free, or that any specific results will be achieved.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h9",
+                  "type": "heading",
+                  "props": {
+                    "text": "9. Limitation of liability",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t9",
+                  "type": "text",
+                  "props": {
+                    "text": "To the maximum extent permitted by law, Buzznerd, LLC will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, arising out of or related to your use of the site or services. Our total liability for any claim will not exceed the amount you paid us for the services giving rise to the claim in the twelve months before the claim.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h10",
+                  "type": "heading",
+                  "props": {
+                    "text": "10. Indemnification",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t10",
+                  "type": "text",
+                  "props": {
+                    "text": "You agree to indemnify and hold harmless Buzznerd, LLC and its affiliates from any claims, damages, or expenses arising out of your use of the services, your content, or your violation of these Terms.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h11",
+                  "type": "heading",
+                  "props": {
+                    "text": "11. Termination",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t11",
+                  "type": "text",
+                  "props": {
+                    "text": "We may suspend or terminate access to the site or services at any time if you violate these Terms or as otherwise set out in an applicable service agreement. Provisions that by their nature should survive termination will survive.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h12",
+                  "type": "heading",
+                  "props": {
+                    "text": "12. Governing law",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t12",
+                  "type": "text",
+                  "props": {
+                    "text": "These Terms are governed by the laws of the State in which Buzznerd, LLC is organized, without regard to conflict-of-laws principles.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-h13",
+                  "type": "heading",
+                  "props": {
+                    "text": "13. Changes to these Terms",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "tos-t13",
+                  "type": "text",
+                  "props": {
+                    "text": "We may update these Terms from time to time. When we do, we will revise the \"Last updated\" date above. Your continued use of the site or services after changes take effect constitutes acceptance of the updated Terms.",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "tos-contact",
+                  "type": "text",
+                  "props": {
+                    "text": "Questions about this policy? Contact <strong>Buzznerd, LLC</strong> at <a href=\"mailto:info@buzznerd.com\">info@buzznerd.com</a>.",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "version": 2,
+  "id": "default",
+  "name": "Site template",
+  "conditions": [
+    {
+      "type": "entireSite",
+      "ref": null
+    }
+  ],
+  "js": "/* Keep the footer copyright year current. */\n(function () {\n  var node = document.querySelector('[data-bz-node=\"footer-copy\"] p');\n  if (node) node.innerHTML = node.innerHTML.replace(/\\u00a9\\s*\\d{4}/, '\\u00a9 ' + new Date().getFullYear());\n})();\n",
+  "nodes": [
+    {
+      "id": "header",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 3,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "header-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "header-brand",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "logo",
+                  "type": "logo",
+                  "props": {
+                    "image": {
+                      "src": "/assets/buzznerd-logo-trim.webp",
+                      "alt": "Buzznerd",
+                      "width": 553,
+                      "height": 120
+                    },
+                    "url": "/",
+                    "height": 38
+                  }
+                }
+              ]
+            },
+            {
+              "id": "header-nav",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "main-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "main",
+                    "layout": "horizontal",
+                    "align": "center",
+                    "collapseOnMobile": true,
+                    "depth": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "header-cta",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "header-buttons",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "presence-score"
+                      },
+                      {
+                        "ctaId": "book-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+/* terms: a centred legal column, the clauses in one white card. */
+[data-bz-node="hero-row"], [data-bz-node="tos-row"] { max-width: 860px; margin-inline: auto; }
+[data-bz-node="hero"] .bz-block { padding-block: 0; }
+[data-bz-node="hero-lede"] p { margin-top: var(--space-4) !important; }
+[data-bz-node="hero-updated"] p { font-size: 13.5px !important; font-weight: 600 !important; color: var(--muted) !important; margin-top: var(--space-4) !important; }
+[data-bz-node="tos-col"] { border-radius: var(--radius-modal); }
+[data-bz-node="tos-col"] .bz-block { padding-block: 0; }
+[data-bz-node="tos-col"] .bz-prose { max-width: none; }
+[data-bz-node="tos-col"] h2 { font-size: 24px; letter-spacing: -.01em; margin: 34px 0 12px; }
+[data-bz-node="tos-col"] .bz-text p { font-size: 15.5px !important; line-height: 1.65 !important; color: var(--ink-soft) !important; margin: 0 0 14px; }
+[data-bz-node="tos-col"] .bz-text strong { color: var(--ink); }

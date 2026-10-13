@@ -1,0 +1,1428 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "The problems every dealership fights. Solved.",
+                    "headingLevel": 1,
+                    "eyebrow": "Solutions",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Leads that go cold, listings that take forever, marketing dollars you can't trace, AI that recommends the dealer down the road. Here are the real headaches we hear from dealers every week — and exactly how Buzznerd fixes each one.",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      },
+                      {
+                        "ctaId": "jump-solutions"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chips",
+      "type": "section",
+      "props": {
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "chips-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "chips-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "chips-links",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"#websites\">🌐 No leads from the site</a> <a href=\"#ecommerce\">🛒 Can't deal online</a> <a href=\"#integrations\">🔌 Tools don't talk</a> <a href=\"#geo\">🔎 Invisible to AI</a> <a href=\"#oem\">🏆 OEM grade</a> <a href=\"#agents\">💬 Leads go cold</a> <a href=\"#photos\">📸 Weak photos</a> <a href=\"#attribution\">📊 Can't trace ROI</a> <a href=\"#followup\">📋 Follow-up falls through</a> <a href=\"#listings\">⏱ Listings take hours</a> <a href=\"#pricing\">📊 Priced wrong</a>",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-websites",
+      "type": "section",
+      "props": {
+        "anchor": "websites",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "ws-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ws-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ws-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“Our site gets traffic but no leads.”",
+                    "headingLevel": 2,
+                    "eyebrow": "🌐"
+                  }
+                },
+                {
+                  "id": "ws-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> A lightning-fast, conversion-tuned site that pulls inventory in real time and turns browsers into booked appointments — built for your brand, engineered to sell."
+                  }
+                },
+                {
+                  "id": "ws-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Automated inventory sync from your feed or DMS"
+                      },
+                      {
+                        "label": "Mobile-first, accessibility- and Core-Web-Vitals-ready"
+                      },
+                      {
+                        "label": "Lead forms, chat, and financing built in"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ws-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card",
+                "padding": 6
+              },
+              "children": [
+                {
+                  "id": "ws-tag",
+                  "type": "text",
+                  "props": {
+                    "text": "yourdealership.com · site health"
+                  }
+                },
+                {
+                  "id": "ws-scores",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "91",
+                        "label": "Performance"
+                      },
+                      {
+                        "value": "96",
+                        "label": "Accessibility"
+                      },
+                      {
+                        "value": "100",
+                        "label": "Best Practices"
+                      },
+                      {
+                        "value": "100",
+                        "label": "SEO"
+                      },
+                      {
+                        "value": "3/3",
+                        "label": "Agentic Browsing"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ws-note",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡ All new Buzznerd sites ship on our new platform tuned for speed, accessibility, SEO — and AEO for AI agents."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-ecommerce",
+      "type": "section",
+      "props": {
+        "anchor": "ecommerce",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "ec-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "ec-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ec-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Checkout",
+                    "meta": "🛒 2 items",
+                    "rows": [
+                      {
+                        "label": "Brake Drum 16.5\" · Your price $104 · in stock ✓",
+                        "value": "$104",
+                        "accent": false
+                      },
+                      {
+                        "label": "Air Filter Kit · Ships UPS Ground",
+                        "value": "$64",
+                        "accent": false
+                      },
+                      {
+                        "label": "💳 •••• 4242",
+                        "value": "🔒 Secure checkout",
+                        "accent": false
+                      },
+                      {
+                        "label": "Total",
+                        "value": "$168",
+                        "accent": true
+                      }
+                    ],
+                    "note": "Place order ⚡"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ec-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ec-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“Buyers want to deal online — we can't.”",
+                    "headingLevel": 2,
+                    "eyebrow": "🛒"
+                  }
+                },
+                {
+                  "id": "ec-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> Sell parts and products online with a storefront built for dealership complexity — checkout that closes while the counter is dark."
+                  }
+                },
+                {
+                  "id": "ec-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Parts & accessories storefront with secure checkout"
+                      },
+                      {
+                        "label": "Account-based pricing and customer workflows"
+                      },
+                      {
+                        "label": "Shipping with UPS, FedEx & USPS — 24/7 nationwide"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-integrations",
+      "type": "section",
+      "props": {
+        "anchor": "integrations",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "in-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "in-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "in-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“Our tools don't talk, so we do double work.”",
+                    "headingLevel": 2,
+                    "eyebrow": "🔌"
+                  }
+                },
+                {
+                  "id": "in-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> We plug into the tools you already run and sync leads, inventory, and deals across your entire stack — no double entry, no data silos."
+                  }
+                },
+                {
+                  "id": "in-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Works with Karmak, CDK, and major DMS/CRM platforms"
+                      },
+                      {
+                        "label": "Inventory pulled from Truck Paper, Machinery Trader & more"
+                      },
+                      {
+                        "label": "Leads routed to the right rep in seconds"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "in-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card",
+                "padding": 6
+              },
+              "children": [
+                {
+                  "id": "in-hub",
+                  "type": "logoStrip",
+                  "props": {
+                    "logos": [
+                      {
+                        "name": "Karmak"
+                      },
+                      {
+                        "name": "CDK"
+                      },
+                      {
+                        "name": "Truck Paper"
+                      },
+                      {
+                        "name": "Google"
+                      },
+                      {
+                        "name": "Meta"
+                      },
+                      {
+                        "name": "Stripe"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-geo",
+      "type": "section",
+      "props": {
+        "anchor": "geo",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "geo-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "geo-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "geo-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet",
+                    "reverseStacked": true
+                  },
+                  "children": [
+                    {
+                      "id": "geo-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "geo-panel",
+                          "type": "ui-panel",
+                          "props": {
+                            "tone": "dark",
+                            "tag": "New",
+                            "title": "\"Best work-truck dealer near me?\"",
+                            "rows": [
+                              {
+                                "label": "⚡ Recommended",
+                                "value": "",
+                                "accent": true
+                              }
+                            ],
+                            "note": "Your dealership — 40+ units in stock, top-rated, same-day delivery."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "geo-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "geo-q",
+                          "type": "heading",
+                          "props": {
+                            "text": "“AI recommends the dealer down the road, not us.”",
+                            "headingLevel": 2,
+                            "eyebrow": "🔎"
+                          }
+                        },
+                        {
+                          "id": "geo-body",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>How we fix it:</strong> Buyers ask AI before they ask you. We make your inventory, reviews, and pages machine-readable so ChatGPT, Google AI, and Gemini recommend you first."
+                          }
+                        },
+                        {
+                          "id": "geo-fixes",
+                          "type": "list",
+                          "props": {
+                            "columns": 1,
+                            "items": [
+                              {
+                                "label": "Structured data tuned for AI answer engines"
+                              },
+                              {
+                                "label": "Review & reputation signals that AI trusts"
+                              },
+                              {
+                                "label": "Free AI visibility audit to see where you stand"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-agents",
+      "type": "section",
+      "props": {
+        "anchor": "agents",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "ag-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ag-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ag-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“Leads come in after hours and go cold.”",
+                    "headingLevel": 2,
+                    "eyebrow": "💬"
+                  }
+                },
+                {
+                  "id": "ag-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> 24/7 AI Assistant that answers and understands each buyer's intent and readiness — handing your team buyers who are ready to talk, not tire-kickers."
+                  }
+                },
+                {
+                  "id": "ag-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Answers spec, pricing, and availability instantly"
+                      },
+                      {
+                        "label": "Reads each buyer's intent and readiness around the clock"
+                      },
+                      {
+                        "label": "Hands warm leads straight to your No-Touch CRM"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ag-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ag-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Email thread",
+                    "meta": "11:48 PM",
+                    "rows": [
+                      {
+                        "label": "Interested in the 2022 sleeper cab. Do you take trade-ins?",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "“Absolutely — we'd be happy to look at your trade. When are you hoping to buy?”",
+                        "value": "✦ AI Assistant · after hours",
+                        "accent": true
+                      },
+                      {
+                        "label": "In the next couple weeks 👍",
+                        "value": "",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Trade + timeline captured · warm lead handed to your team at 8 AM"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-followup",
+      "type": "section",
+      "props": {
+        "anchor": "followup",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "fu-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "fu-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fu-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Morning digest",
+                    "meta": "7:00 AM",
+                    "title": "Morning, Tina — 3 things worth your time.",
+                    "rows": [
+                      {
+                        "label": "1 · Joe asked about the LT625 overnight",
+                        "value": "Send as-is · Edit first",
+                        "accent": true
+                      },
+                      {
+                        "label": "✦ Reply drafted — financing terms + walkaround offer",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "2 · Price drop on a unit 3 buyers viewed",
+                        "value": "Notify all three? One tap.",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Nothing here needs filing — act or dismiss."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fu-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fu-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“My reps won't file anything in the CRM.”",
+                    "headingLevel": 2,
+                    "eyebrow": "📋"
+                  }
+                },
+                {
+                  "id": "fu-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> Stop asking them to. Our No-Touch CRM assembles a ranked morning digest overnight — hottest lead first, reply pre-drafted, nothing to log. Reps act on it or dismiss it; we track the rest."
+                  }
+                },
+                {
+                  "id": "fu-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Ranked digest in their inbox at 7:00 AM"
+                      },
+                      {
+                        "label": "AI-drafted replies — send as-is or edit"
+                      },
+                      {
+                        "label": "Zero data entry — follow-up gets tracked anyway"
+                      },
+                      {
+                        "label": "Plays nice with the CRM you already run"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "fu-more",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/ai-platform#crm\">Learn more about the AI Platform →</a>"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-photos",
+      "type": "section",
+      "props": {
+        "anchor": "photos",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "ph-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "ph-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ph-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/photos/after-frontqtr-1000w.webp",
+                      "alt": "AI-enhanced dealership photo",
+                      "width": 1000,
+                      "height": 750
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ph-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ph-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“Our photos don't do the units justice.”",
+                    "headingLevel": 2,
+                    "eyebrow": "📸"
+                  }
+                },
+                {
+                  "id": "ph-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> Snap a unit anywhere — a gravel lot, harsh sun, a cluttered fence line. Our AI wipes the background and drops it into a clean, branded showroom with your logo on the wall."
+                  }
+                },
+                {
+                  "id": "ph-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Instant background replacement, any photo"
+                      },
+                      {
+                        "label": "Consistent, branded backdrop across your inventory"
+                      },
+                      {
+                        "label": "Batch your whole lot in minutes, not days"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-listings",
+      "type": "section",
+      "props": {
+        "anchor": "listings",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "li-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "li-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "li-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“Getting a unit listed takes half a day.”",
+                    "headingLevel": 2,
+                    "eyebrow": "⏱"
+                  }
+                },
+                {
+                  "id": "li-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> Snap photos on the lot and Magic Flow builds the whole listing in about a minute — title, description, specs, and FAQs. You confirm what it found and set the price; the unit's live before you're back inside."
+                  }
+                },
+                {
+                  "id": "li-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "One photo read builds the entire product page"
+                      },
+                      {
+                        "label": "AI proposes, you confirm — nothing publishes unchecked"
+                      },
+                      {
+                        "label": "Price guidance from comps — the price stays yours"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "li-more",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/ai-platform#magic\">Learn more about the AI Platform →</a>"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "li-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "li-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "📸 3 photos uploaded → listing built",
+                    "meta": "~1 min",
+                    "title": "🛻 🔧 → AI reads the photos and writes the page",
+                    "rows": [
+                      {
+                        "label": "Title",
+                        "value": "2022 Sleeper Cab · 6×4 ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Specs",
+                        "value": "9 detected ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Description + FAQs",
+                        "value": "Written ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Price — yours to set",
+                        "value": "Comps: $74–82k",
+                        "accent": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-pricing",
+      "type": "section",
+      "props": {
+        "anchor": "pricing",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "pr-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "pr-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "pr-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "📊 2022 Sleeper Cab · price gauge",
+                    "meta": "7 comps",
+                    "rows": [
+                      {
+                        "label": "Marketplaces · 4 similar",
+                        "value": "$72k–$81k",
+                        "accent": false
+                      },
+                      {
+                        "label": "Nearby dealers · 3 similar",
+                        "value": "$75k–$84k",
+                        "accent": false
+                      },
+                      {
+                        "label": "$70k low · $86k high",
+                        "value": "Suggested $78k",
+                        "accent": true
+                      }
+                    ],
+                    "note": "⚡ Guidance only — the final price is yours to set"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pr-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "pr-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“I never know if a unit's priced right.”",
+                    "headingLevel": 2,
+                    "eyebrow": "📊"
+                  }
+                },
+                {
+                  "id": "pr-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> As you list, Buzznerd finds real comps from online marketplaces and nearby competing dealers, then builds a price gauge showing where your unit sits — low, market, and high. You get a defensible starting point in seconds and set the final number yourself."
+                  }
+                },
+                {
+                  "id": "pr-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Finds comparable units across marketplaces and nearby competing dealers"
+                      },
+                      {
+                        "label": "Builds a low–market–high price gauge with a suggested number"
+                      },
+                      {
+                        "label": "Guidance never auto-prices — you stay in control of every unit"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "pr-more",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/ai-platform#magic\">Learn more about the AI Platform →</a>"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sol-attribution",
+      "type": "section",
+      "props": {
+        "anchor": "attribution",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "at-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "at-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "at-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "“We don't know which marketing actually sells units.”",
+                    "headingLevel": 2,
+                    "eyebrow": "📊"
+                  }
+                },
+                {
+                  "id": "at-body",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How we fix it:</strong> Most tools stop at the lead. We track each channel all the way to the <strong>sold unit</strong> — so you can shift your marketing budget to what actually moves metal."
+                  }
+                },
+                {
+                  "id": "at-fixes",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Channel-to-sale attribution, not vanity metrics"
+                      },
+                      {
+                        "label": "ROI dashboards built for GMs and owners"
+                      },
+                      {
+                        "label": "AI budget recommendations every month"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "at-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "at-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Channel → sold units",
+                    "meta": "last 30 days",
+                    "rows": [
+                      {
+                        "label": "Facebook",
+                        "value": "3 sold",
+                        "accent": true
+                      },
+                      {
+                        "label": "Meta Ads",
+                        "value": "2 sold",
+                        "accent": false
+                      },
+                      {
+                        "label": "Google Ads",
+                        "value": "1 sold",
+                        "accent": false
+                      },
+                      {
+                        "label": "Email",
+                        "value": "0",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Facebook drove 3 of your 6 sales — shift budget there."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oem",
+      "type": "section",
+      "props": {
+        "anchor": "oem",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "oem-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "oem-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "oem-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "oem-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 7
+                      },
+                      "children": [
+                        {
+                          "id": "oem-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "An OEM-grade platform.",
+                            "headingLevel": 2,
+                            "eyebrow": "OEM partnerships"
+                          }
+                        },
+                        {
+                          "id": "oem-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Buzznerd provides OEM-grade websites — built and vetted to the standards OEM programs demand, from brand compliance to dealer-network scale."
+                          }
+                        },
+                        {
+                          "id": "oem-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "oem-contact"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "oem-media",
+                      "type": "column",
+                      "props": {
+                        "span": 5
+                      },
+                      "children": [
+                        {
+                          "id": "oem-points",
+                          "type": "list",
+                          "props": {
+                            "columns": 1,
+                            "items": [
+                              {
+                                "label": "Approved OEM Vendor"
+                              },
+                              {
+                                "label": "OEM brand & compliance standards, built in"
+                              },
+                              {
+                                "label": "Scales from one rooftop to a dealer network"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "Built for every rooftop",
+          "heading": "One partner, any dealership",
+          "intro": "",
+          "span": 3,
+          "cards": [
+            {
+              "icon": "🚛",
+              "title": "Commercial & Truck",
+              "kicker": "",
+              "body": "Class 3–8, vocational, upfit",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🚚",
+              "title": "Fleet",
+              "kicker": "",
+              "body": "Volume buyers & accounts",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🏢",
+              "title": "Franchise",
+              "kicker": "",
+              "body": "OEM-compliant & branded",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🔑",
+              "title": "Independent",
+              "kicker": "",
+              "body": "Used, BHPH, specialty",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Dealership problems, answered",
+          "faqs": [
+            {
+              "q": "Which solution should my dealership start with?",
+              "a": "Start with the problem costing you the most. Most dealers begin with a conversion-tuned website or after-hours AI Assistant coverage — every solution runs on the same platform, so you can add the rest anytime."
+            },
+            {
+              "q": "Does Buzznerd work with my DMS and CRM?",
+              "a": "Yes. Buzznerd works with Karmak and CDK plus custom DMS and ERP integrations, and syncs inventory, leads, and customer records across your systems."
+            },
+            {
+              "q": "How does Buzznerd get my dealership recommended by AI?",
+              "a": "We ship structured data, answer-ready content, machine-readable inventory, and local signals together — so buyers find you in search and answer engines like ChatGPT and Gemini recommend you first."
+            },
+            {
+              "q": "Is Buzznerd built for OEM programs?",
+              "a": "Yes. Buzznerd provides OEM-grade websites built to the standards OEM programs demand, from brand compliance to dealer-network scale."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "See it running on your inventory",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Book a 20-minute demo and we'll show you exactly which solutions will move the needle for your store.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      },
+                      {
+                        "ctaId": "back-home"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Book a demo",
+          "heading": "We'll walk your current site with you.",
+          "body": "20 minutes, no slides. We'll review your current site live, show you where leads are leaking, and walk you through which solutions would move the needle.",
+          "checklist": [
+            {
+              "label": "Live review of your current site"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

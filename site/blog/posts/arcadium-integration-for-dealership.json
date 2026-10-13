@@ -1,0 +1,190 @@
+{
+  "slug": "arcadium-integration-for-dealership",
+  "title": "Arcadium Integration: 3 Powerful Ways Buzznerd Is Transforming Dealership Operations",
+  "date": "2025-10-28",
+  "description": "Our Arcadium integration connects your dealership website directly to your CRM and inventory: real-time sync, instant lead capture, and marketing automation — all in one connected ecosystem.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2025/10/arcadium-buzznerd-integration.png",
+  "status": "published",
+  "keywords": [
+    "Product"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Product</strong> · 3 min read · By Buzznerd Team"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Smarter websites for smarter dealerships."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "At Buzznerd, we believe your website should work for you, not the other way around. Our Arcadium Integration connects your dealership website directly to Arcadium, the trucking industry's leading CRM and inventory management platform. The result: real-time inventory visibility, instant lead tracking, and faster follow-ups, all within one connected ecosystem."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "How the Integration Works",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "h-3",
+      "type": "heading",
+      "props": {
+        "text": "1. Real-Time Inventory Sync",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-4",
+      "type": "text",
+      "props": {
+        "text": "Our integration automatically syncs listings from Arcadium to your Buzznerd-built website, updating unit details, photos, and specifications in real time. This eliminates manual uploads, minimizes errors, and ensures customers always see what's truly available — saving your team hours every week and reducing confusion for buyers."
+      }
+    },
+    {
+      "id": "h-5",
+      "type": "heading",
+      "props": {
+        "text": "2. Lead Capture That Goes Straight to Arcadium",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-6",
+      "type": "text",
+      "props": {
+        "text": "Every form submission from your website — sales inquiries, financing requests, and service forms — flows directly into your Arcadium CRM. No more downloading spreadsheets or manually entering lead data. Your sales team can respond faster, track engagement, and measure outcomes directly inside Arcadium."
+      }
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "3. Marketing & Newsletter Automation",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "For dealerships using marketing tools such as Mailchimp, this integration can also route signups from your website's forms directly into your marketing lists — the perfect way to nurture new leads while keeping your CRM and marketing systems aligned."
+      }
+    },
+    {
+      "id": "h-9",
+      "type": "heading",
+      "props": {
+        "text": "Why This Matters",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-10",
+      "type": "text",
+      "props": {
+        "text": "In the trucking industry, timing and trust are everything. When your website, CRM, and marketing tools all speak the same language, your dealership gains a major advantage."
+      }
+    },
+    {
+      "id": "list-11",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Accuracy builds confidence — customers see the latest inventory without you lifting a finger."
+          },
+          {
+            "label": "Speed drives sales — leads move from inquiry to CRM automatically, so your team can act immediately."
+          },
+          {
+            "label": "Automation creates alignment — marketing, sales, and leadership all operate from the same source of truth."
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "Proven and Already Powering Dealerships",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "This integration isn't a new experiment. It's already running successfully across multiple Buzznerd-built websites for leading dealership groups nationwide, delivering significant time savings, improved response times, increased engagement, and fewer missed opportunities."
+      }
+    },
+    {
+      "id": "quote-14",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-14-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-14-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>An exceptional partner for our website development. Incredibly responsive and innovative — their expertise and forward-thinking ideas took our site to the next level and exceeded our expectations.</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-15",
+      "type": "heading",
+      "props": {
+        "text": "Looking Ahead",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-16",
+      "type": "text",
+      "props": {
+        "text": "The Arcadium Integration is more than a feature — it's a foundation for smarter dealership operations. We're continuing to enhance how our websites connect to the systems dealerships rely on, from CRM data tracking to advanced analytics and marketing integrations."
+      }
+    },
+    {
+      "id": "cta-17",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Talk to us about activating Arcadium →"
+          }
+        ]
+      }
+    }
+  ]
+}

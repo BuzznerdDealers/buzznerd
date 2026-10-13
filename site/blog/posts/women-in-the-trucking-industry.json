@@ -1,0 +1,64 @@
+{
+  "slug": "women-in-the-trucking-industry",
+  "title": "Survey: 18% of Drivers Say Trucking Industry Is Unsafe for Women",
+  "date": "2022-02-11",
+  "description": "Survey findings on safety and inclusion for women in the trucking industry.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2022/02/suat2y909znvz771r8fhbqsurvey_pexels-cottonbro-__-720x516-sSREZ.png",
+  "status": "published",
+  "keywords": [
+    "Industry"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Industry</strong> · 2 min read · By Ajay Chandel"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Safety remains a top concern and a barrier to entry for women in trucking."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Trucking has a historical reputation as a profession dominated by men. Despite recent efforts to make inroads for women, the industry continues to be populated mostly by males. There are several reasons for this, but safety seems to be a continuing concern among women regarding barriers to entry."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Survey says",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Any experienced driver knows there are inherent dangers in trucking, but women tend to report feeling unsafe more than men, and continue to cite driver safety as a top concern in their daily professional lives. Recent surveys, including one from the Women in Trucking Association, found that as many as 60% of women in the industry reported feeling unsafe at work at least once in the past year, and 42% of respondents said they were aware of an incident involving a female driver who experienced sexual advances or harassment by a co-driver of the opposite sex.\n\nConversely, the same surveys revealed that at least 53% of respondents believe the trucking industry is safe for women. On a related note, 62.5% of respondents agreed with same-gender training programs as a way to attract more women to trucking."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Everyone needs to feel safe",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "Regardless of gender, drivers need to feel safe on the road. Driver-safety training needs to consider safe operation of the truck and cargo spaces, and safety at rest stops, while lodging, in the cab, and while loading and unloading cargo.\n\nIf these survey results indicate a trend, the industry needs to reevaluate its policies and recruitment strategy. Trucking isn't for everyone, but management should take the necessary steps to ensure workplace safety as much as it can. There will never be a time when trucking is without risk — for men or women — but reasonable changes can be made to accommodate the unique dangers faced by drivers who feel more challenged than others."
+      }
+    }
+  ]
+}
