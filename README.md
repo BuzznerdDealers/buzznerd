@@ -1,56 +1,151 @@
-# Buzznerd.com — static marketing site
+# Dealer site template
 
-Standard **static HTML/CSS/JS** implementation of the Buzznerd.com marketing site
-(AI solutions for truck, trailer, and equipment dealerships). No framework, no
-runtime build step — every page is plain HTML with inline styles, ported 1:1 from
-the design handoff (`Buzznerd *.dc.html` → the markup inside `<x-dc>`), with the
-`<helmet>` content baked verbatim into each `<head>`.
+The GitHub template every BuzzNerd dealer brand site is generated from, and the home of
+**the renderer** — the single implementation that turns site JSON into HTML.
 
-## Structure
+Framework-free and **zero runtime dependencies**. Node 20+. Site content is JSON node trees;
+`scripts/build.mjs` runs the renderer over them on Vercel to produce a fully static `dist/`.
+`/store/*` is proxied to the Remix inventory storefront.
+
+```bash
+npm install        # nothing to install
+npm run validate   # every site/ file against the renderer's rules   <- run this first
+npm test           # the renderer's own specs
+npm run build      # site/ -> dist/
+npm run check      # all three, in order
+npm run schemas    # regenerate renderer/block-schemas.json
+
+npm run validate -- --root ../some-dealer-repo    # check another repo against this renderer
+```
+
+## Documentation
+
+| Read this | For |
+|---|---|
+| [`CLAUDE.md`](./CLAUDE.md) | **Authoring guide.** How to build or edit a site here: the document model, what is writable, libraries vs. literals, navigation, behaviours, the design-handoff workflow |
+| [`../vendure/docs/07-block-model-reference.md`](../vendure/docs/07-block-model-reference.md) | **Complete reference.** Every block, prop and allowed value; the 8 behaviours and their parts; the 70 style fields; the token map; file shapes; validator rules; the build pipeline |
+| [`../vendure/docs/06-website-builder.md`](../vendure/docs/06-website-builder.md) | How the dashboard and Vendure drive this repo — provisioning, saves, publish, rollback, platform sync |
+| [`../vendure/docs/README.md`](../vendure/docs/README.md) | The rest of the platform |
+
+The authoritative machine-readable catalogue is **`renderer/block-schemas.json`**. Read it
+rather than guessing, and regenerate it with `npm run schemas` after changing a block.
+
+## Layout
 
 ```
-/index.html                      # Home (/)
-/<route>/index.html              # 15 static pages (see routes below)
-/blog/index.html                 # blog index (category chips + featured + grid)
-/blog/<slug>/index.html          # 54 posts, per-post <head> + BlogPosting JSON-LD
-/assets/                         # images, logos, mascot art + site.js
-/sitemap.xml /robots.txt /llms.txt
-/vercel.json                     # static host: cleanUrls + 301 redirect map
+renderer/                 THE RENDERER — the single source of truth for output  [platform-owned]
+  index.mjs                 public API; RENDERER_VERSION
+  nodes.mjs                 the node tree: parse, migrate, nesting rules
+  blocks.mjs                the block library — renderer + JSON Schema per block
+  block-schemas.json        generated catalogue, consumed by Vendure and the dashboard
+  behaviours.mjs            the 8 declarative behaviours and their part vocabularies
+  styles.mjs                per-node responsive style compilation
+  tokens.mjs                tokens.json -> CSS custom properties (+ scoped overrides)
+  templates.mjs             display conditions, contentArea splitting
+  menus.mjs forms.mjs widgets.mjs custom-widgets.mjs
+  ops.mjs                   patch operations — the AI's reply shape
+  validate.mjs              per-document validation against the block schemas
+  html.mjs shell.mjs document-assets.mjs component-props.mjs
+  blocks.css                token-driven component styles
+  client/widgets.js         behaviour binding, widget hydration, form logic and submit
+scripts/build.mjs         load JSON -> call the renderer -> write dist/       [platform-owned]
+scripts/validate.mjs      cross-file validation                              [platform-owned]
+ai/                       the AI contract, synced from the plugin            [platform-owned]
+vercel.json               build config, /store proxy rules, cache headers    [platform-owned]
+dealer.config.schema.json                                                    [platform-owned]
+
+site/                     YOURS — all content
+  pages.json              the page manifest
+  pages/<dir>/            page.json, and optional style.css / script.js
+  templates/<id>.json     chrome + layout, applied by display conditions
+  sections/<id>.json      designed components — a node tree with typed props
+  widgets/<id>.json       coded widgets — a Mustache-subset markup template
+  menus.json              named menus (v3)
+  buttons.json            the CTA library
+  forms/<id>.json         form definitions, including lead routing
+  tokens.json             the design system
+  tokens/<scope>.json     scoped brand overrides
+  blog/                   settings.json + posts/<slug>.json
+  custom-code.json        sitewide css/js + head/body slots
+  chrome/                 shared chrome helpers
+  reset.css
+public/                   YOURS — images, logos, fonts
+dealer.config.json        YOURS, except the identity fields the platform fills in
 ```
 
-Routes: `/`, `/solutions`, `/products`, `/services`, `/ai-websites`,
-`/ai-ecommerce`, `/ai-platform`, `/ai-driven-marketing`,
-`/content-restructuring-for-aio`, `/custom-workflows-integrations`,
-`/ai-presence-score`, `/about-us`, `/careers`, `/contact`, `/blog`,
-`/blog/<slug>`, `/privacy`, `/terms`.
+**Platform-owned paths are overwritten** when the platform syncs a repo forward, so an edit
+there is lost — and until it is lost, that dealer is running a renderer nobody else is. If
+something you need cannot be expressed in `site/`, that is a platform gap worth reporting.
 
-## Behavior (vanilla JS — `/assets/site.js`)
+## What the build emits
 
-- FAQ accordions are native `<details>/<summary>` (+ CSS `+`/`−` toggle).
-- Mega-menus open on hover (CSS only).
-- Demo/contact forms compose a `mailto:info@buzznerd.com` message and show an
-  inline success card.
-- Blog category chips filter the post grid.
-- In-page `#anchor` links smooth-scroll with a sticky-header offset.
+```
+dist/<path>/index.html          each page, wrapped in its resolved template
+dist/styles/                    tokens.css (+ scoped), reset.css, blocks.css, chrome.css
+dist/scripts/                   chrome.js, widgets.js, custom.js,
+                                templates/<id>.js, components/<id>.js, pages/<dir>.js
+dist/partials/                  the chrome bundle the Remix storefront fetches:
+                                header.html footer.html tokens.css reset.css blocks.css
+                                chrome.css chrome.js widgets.js fonts.txt manifest.json
+                                header--<templateId>.html, footer--<templateId>.html
+dist/sitemap.xml  robots.txt  llms.txt
+```
 
-The prototype-only view-switcher pill and `support.js` are dropped; the design's
-`@media(max-width:768px)` responsive rules are preserved inline.
+`dist/partials/*` is what makes inventory pages render inside the dealer's own header and
+footer. Vercel serves it with `Cache-Control: public, max-age=300,
+stale-while-revalidate=86400`.
 
-## Deploy
+## Page status
 
-Fully static — serve the repo root as-is. `vercel.json` enables clean URLs and the
-legacy-URL 301 redirects (from the handoff `deploy/_redirects`).
+`pages.json` entries carry a `status`:
 
-## Authoring scripts (`/scripts`, require the design handoff bundle)
+| status | emitted | indexed | in sitemap / llms.txt |
+|---|---|---|---|
+| `published` | yes | yes | yes |
+| `draft` | yes | no (`noindex,nofollow`) | no |
+| `archived` | no | — | — |
 
-These regenerate the HTML from the `.dc.html` design files; the built HTML is what
-ships, so they are not needed to deploy.
+Drafts are still built so preview deployments can show them.
 
-- `scripts/extract-dc.mjs` — renders each `.dc.html` with a React runtime (what the
-  design tool provides) so `<sc-if>/<sc-for>/{{…}}` resolve, then captures the
-  resolved DOM.
-- `scripts/build-site.mjs` — assembles the 16 static pages (verbatim head + cleaned
-  body; rewrites design-file links → routes and `assets/` → `/assets/`).
-- `scripts/build-blog.mjs` — generates `/blog` and the 54 `/blog/<slug>/` pages from
-  `blog/posts.js`, baking each post's title, canonical, OG/Twitter, and
-  BlogPosting + Breadcrumb JSON-LD into its `<head>`.
+## The parity rule
+
+`scripts/build.mjs` and the dashboard's editing canvas **import the same renderer**, so what
+a dealer sees while editing is what Vercel serves. That property holds only while all copies
+of the renderer agree.
+
+There are three copies, and they must stay identical:
+
+| Copy | Kept in sync by |
+|---|---|
+| `dealer-site-template/renderer/` | the source |
+| `dealer-dashboard/src/lib/website/renderer/` | `npm run renderer:sync -- --template ../dealer-site-template` |
+| `vendure/src/plugins/website-builder/renderer/block-catalogue.ts` | `npm run website-builder:sync-catalogue` |
+
+Both have `--check` variants that exit non-zero on drift. Drift between them presents as
+"the AI is unreliable" or "the canvas doesn't match the site", which is why it is a platform
+invariant rather than a convention.
+
+## How a dealer repo relates to this one
+
+A dealer repo is generated from this template **once**, as `dealer-<channelToken>`. Nothing
+about GitHub template generation updates it afterwards, so the plugin's
+`SiteRepoService.syncPlatformFiles()` pushes `renderer/`, `scripts/`, `ai/` and `vercel.json`
+forward on publish — deliberately bypassing the editor's write allowlist, the same way
+provisioning does. It never touches `site/`, `public/` or `dealer.config.json`.
+
+**A dealer repo therefore cannot be assumed current.** `dealer-ds-msxava3i` in this workspace
+is at renderer 4.7.0.
+
+## Connecting a repo you built here
+
+1. Push it to GitHub under the same owner as the platform's other dealer sites.
+2. Make sure `npm run validate` passes and `renderer/`, `scripts/build.mjs`,
+   `dealer.config.json` and `vercel.json` are present — the dashboard refuses a repo missing
+   any of them.
+3. In the dashboard, on the dealer's channel: **Website → Connect an existing repository**.
+4. The platform writes the channel's identity into `dealer.config.json`, creates the `draft`
+   branch the editor saves to, and reports renderer version drift.
+
+**Branches.** `draft` is what the editor writes and previews; `main` is production,
+fast-forwarded to `draft` on publish. Build your work on the default branch and let the
+platform create `draft` on connect.

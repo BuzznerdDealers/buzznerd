@@ -1,4 +1,17 @@
+# Dependencies
 node_modules/
-build/
-.DS_Store
+
+# Build output (npm run build writes dist/)
+dist/
+
+# Hosting / tooling
 .vercel/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
