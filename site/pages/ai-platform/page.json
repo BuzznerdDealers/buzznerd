@@ -587,6 +587,11 @@
               "a": "Yes. Channel-to-sale attribution ties every lead and sale back to the channel that produced it — real sold-unit results, not vanity metrics."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

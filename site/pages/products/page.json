@@ -381,6 +381,11 @@
               "a": "Run the free AI Presence Score. It scans your dealership and shows how you rank across AEO, AIO, SEO and GEO — the same Magic 8 signals Buzznerd optimizes."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

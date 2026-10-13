@@ -847,6 +847,11 @@
               "a": "Buzznerd is rated 4.8 out of 5 on Google, with multiple 5-star reviews from dealership marketing managers and principals praising our responsiveness, innovation, and results."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

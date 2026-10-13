@@ -805,6 +805,11 @@
               "a": "Yes. Book a 20-minute demo, no slides — we'll walk your actual site and show you where leads are leaking today and what a Buzznerd build would change."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

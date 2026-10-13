@@ -242,6 +242,11 @@
               "a": "No. Buzznerd services can work on your existing site and systems. They run best alongside a Buzznerd AI Website and the AI Platform, but marketing, content, integrations and the AI Presence Score can all start independently."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

@@ -318,6 +318,11 @@
               "a": "About 30 seconds. You'll see a preliminary score on screen, and we'll email the complete AI Presence Report with the details and the pages to prioritize."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

@@ -529,6 +529,11 @@
               "a": "A clean, connected data foundation is what AI tools build on. When your inventory, leads, and customer data are connected and accurate, AI-connected workflows and assistants can act on reliable information."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

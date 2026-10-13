@@ -560,6 +560,11 @@
               "a": "Buzznerd connects e-commerce products to Google Ads, Meta remarketing, email campaigns, social promotions, monthly parts flyers, product landing pages, and featured category campaigns — all tied to live inventory and product data."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

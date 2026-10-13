@@ -401,6 +401,11 @@
               "a": "Campaigns are connected to live inventory, parts, and product data, so as units sell or arrive, the ads and landing pages reflect what's actually available."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },

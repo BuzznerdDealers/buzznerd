@@ -471,6 +471,11 @@
               "a": "Yes. Clean structure, clear headings, and well-organized descriptions make it far more likely that AI answer engines understand your pages and name your dealership when buyers ask. You can also check where you stand with a free AI Presence Score."
             }
           ]
+        },
+        "snapshots": {
+          "faq-list": {
+            "items": []
+          }
         }
       }
     },
