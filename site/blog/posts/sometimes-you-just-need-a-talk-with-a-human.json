@@ -1,0 +1,260 @@
+{
+  "slug": "sometimes-you-just-need-a-talk-with-a-human",
+  "title": "Sometimes You Just Need a Talk With a Human",
+  "date": "2026-06-03",
+  "description": "AI handles the busywork — but the best dealership experiences still know exactly when to hand a buyer to a real person.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-03-at-3.21.19-PM.jpeg",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 3 min read · By Dave Fisher"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "There are moments when you don't need a software vendor — you need a true technology partner."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Technology is amazing. Artificial Intelligence can answer questions instantly, websites operate 24/7, and marketing platforms can automate thousands of customer interactions at once. Data can be analyzed faster than ever before. But sometimes, none of that automation matters.\n\nSometimes you have a complex question that doesn't fit neatly into a drop-down menu on a support ticket. Sometimes a critical website issue is actively affecting your business right now. And sometimes you just need advice, reassurance, or a conversation with someone who actually understands your industry. There are moments when you don't just need a software vendor — <strong>you need a true technology partner.</strong>"
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "The “Vendor” Roadblock Most Dealers Know Too Well",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Most dealership leaders have hit the same corporate roadblock with traditional technology vendors:"
+      }
+    },
+    {
+      "id": "list-4",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "You call for help, only to get routed through a labyrinth of automated phone menus."
+          },
+          {
+            "label": "You explain your situation to one rep, only to be transferred to another who knows nothing about your business."
+          },
+          {
+            "label": "Eventually the issue might get resolved, but you're left feeling like a number in a queue."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "That is the difference between a software vendor and a technology partner. A vendor provides software and leaves you to figure out the rest. At Buzznerd, we believe technology should strengthen relationships — not replace them."
+      }
+    },
+    {
+      "id": "h-6",
+      "type": "heading",
+      "props": {
+        "text": "Real People. Real Relationships. Real Partners.",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-7",
+      "type": "text",
+      "props": {
+        "text": "Behind great technology must stand great people. We don't just provide tools; we embed ourselves in your business goals. Every Buzznerd client is backed by a dedicated team of heavy-equipment and commercial-vehicle professionals genuinely invested in your long-term success. Our support model relies on three pillars:"
+      }
+    },
+    {
+      "id": "h-8",
+      "type": "heading",
+      "props": {
+        "text": "1. Dedicated Client Success Managers (CSMs)",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-9",
+      "type": "text",
+      "props": {
+        "text": "Our CSMs don't wait around for something to break. They work with your leadership as strategic consultants to understand your goals, identify new opportunities, and ensure you extract maximum ROI from your digital investments."
+      }
+    },
+    {
+      "id": "h-10",
+      "type": "heading",
+      "props": {
+        "text": "2. Technical Project Managers (TPMs)",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-11",
+      "type": "text",
+      "props": {
+        "text": "From website launches and AI implementations to complex integrations, our TPMs handle the heavy lifting — acting as your internal tech advocates so initiatives stay organized, transparent, and moving forward without burdening your staff."
+      }
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "3. Concierge Support",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "When you need assistance today — not next week — our Concierge Support team is ready. Urgent website updates, content changes, technical troubleshooting: you get immediate access to real people solving real problems in real time. No endless automated loops, and every request is tracked and never overlooked."
+      }
+    },
+    {
+      "id": "h-14",
+      "type": "heading",
+      "props": {
+        "text": "What Our Partners Notice Most",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "Clients appreciate our software, but their feedback consistently centers on something else: the people behind the technology and the trust built through partnership."
+      }
+    },
+    {
+      "id": "quote-16",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-16-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-16-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>My ongoing experience with Buzznerd Trucks continues to be exemplary.</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quote-17",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-17-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-17-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>They are responsive to their customers' needs and easy to work with.</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quote-18",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-18-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-18-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>These guys always have website edits done quickly, are good communicators, and are constantly bringing new ideas to the table.</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-19",
+      "type": "heading",
+      "props": {
+        "text": "Technology With a Human Touch",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-20",
+      "type": "text",
+      "props": {
+        "text": "AI, automation, and digital innovation are transforming the commercial truck, trailer, agricultural, and construction equipment industries. We embrace these tools — and we build them. But personal relationships still matter. The best technology doesn't replace people; it empowers them. No matter how advanced technology becomes, the best solutions will always begin with a real conversation. When that moment comes for your dealership, we're here to answer."
+      }
+    },
+    {
+      "id": "cta-21",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Talk to a human →"
+          }
+        ]
+      }
+    }
+  ]
+}

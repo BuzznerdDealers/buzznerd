@@ -1,0 +1,57 @@
+/* Solutions: the problem chips, the ten problem → fix rows, the OEM card. */
+
+/* Problem chips under the hero — one text block of in-page links drawn as pills. */
+[data-bz-node="chips-links"] p { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 1180px; margin-inline: auto; }
+[data-bz-node="chips-links"] a { display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: var(--radius-chip); background: var(--card); border: 1px solid var(--line-soft); color: var(--ink); font: 600 14.5px/1.2 var(--font-body); text-decoration: none; transition: border-color .18s ease, transform .18s ease; }
+[data-bz-node="chips-links"] a:hover { text-decoration: none; border-color: var(--accent); transform: translateY(-2px); }
+
+/* The quoted problem headings: the eyebrow is the emoji icon tile, not the ⚡ kicker. */
+[data-bz-node$="-q"] .bz-eyebrow { width: 52px; height: 52px; border-radius: 14px; background: var(--accent-tint); display: grid; place-items: center; font-size: 26px; letter-spacing: 0; margin-bottom: var(--space-4); }
+[data-bz-node$="-q"] .bz-eyebrow::before { content: none; }
+:is([data-bz-node="ec-q"], [data-bz-node="ag-q"], [data-bz-node="fu-q"]) .bz-eyebrow { background: color-mix(in srgb, var(--volt) 24%, var(--card)); }
+[data-bz-node="geo-q"] .bz-eyebrow { background: var(--volt); }
+[data-bz-node$="-q"] h2 { font-size: clamp(28px, 3.2vw, 40px); }
+
+/* The fix bullets are ⚡ bolts in the design, not ticks. */
+[data-bz-node$="-fixes"] .bz-feature { padding-left: 32px; }
+[data-bz-node$="-fixes"] .bz-feature::before { content: '⚡'; width: 20px; height: 22px; background: none; color: inherit; font: 15px/22px var(--font-body); top: 0; border-radius: 0; }
+[data-bz-node$="-fixes"] .bz-feature__t { font-weight: 500; }
+[data-bz-node$="-fixes"] .bz-grid { gap: var(--space-3); }
+
+/* Product mockups: the volt offset card behind each one. */
+:is([data-bz-node="ws-media"], [data-bz-node="in-media"]),
+:is([data-bz-node="ec-panel"], [data-bz-node="ag-panel"], [data-bz-node="fu-panel"], [data-bz-node="li-panel"], [data-bz-node="at-panel"]) .uip { box-shadow: 14px 16px 0 -2px var(--volt), 0 30px 70px -30px color-mix(in srgb, var(--ink) 35%, transparent); }
+[data-bz-node="pr-panel"] .uip { box-shadow: 14px 16px 0 -2px color-mix(in srgb, var(--accent) 30%, var(--card)), 0 30px 70px -30px color-mix(in srgb, var(--ink) 35%, transparent); }
+
+/* Site health card: score tiles plus a dark footer note. */
+[data-bz-node="ws-tag"] p { font: 600 13px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace !important; color: var(--muted) !important; }
+[data-bz-node="ws-scores"] .bz-stat { text-align: center; flex: 1 1 110px; }
+[data-bz-node="ws-scores"] .bz-stat__v { color: var(--accent) !important; }
+[data-bz-node="ws-note"] p { background: var(--ink); color: var(--card) !important; border-radius: 12px; padding: 12px 16px; font-size: 14px !important; font-weight: 600 !important; }
+
+/* Integrations hub: the platforms as pills around the Buzznerd bolt. */
+[data-bz-node="in-hub"] .bz-logos { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 120px; border: 0; padding: 24px 8px; justify-items: center; }
+[data-bz-node="in-hub"] .bz-logos::after { content: '⚡'; position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; font-size: 38px; background: var(--accent); box-shadow: 0 0 0 10px var(--accent-tint), var(--shadow-accent); }
+[data-bz-node="in-hub"] .bz-logo { padding: 10px 22px; border-radius: var(--radius-chip); background: var(--paper); border: 1px solid var(--line-soft); }
+[data-bz-node="in-hub"] .bz-logo__t { font: 700 14.5px/1.2 var(--font-body); color: var(--ink-soft); }
+
+/* After-hours email thread drawn as chat bubbles. */
+[data-bz-node="ag-panel"] .uip__row { flex-direction: column; align-items: flex-start; gap: 6px; max-width: 86%; }
+[data-bz-node="ag-panel"] .uip__row:not(.is-accent) { align-self: flex-end; background: var(--accent); }
+[data-bz-node="ag-panel"] .uip__row:not(.is-accent) .uip__l { color: var(--card); }
+[data-bz-node="ag-panel"] .uip__row.is-accent { background: var(--paper); border: 1px solid var(--line-soft); }
+[data-bz-node="ag-panel"] .uip__row.is-accent .uip__l { font-weight: 500; }
+[data-bz-node="ag-panel"] .uip__row.is-accent .uip__v { font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-align: left; }
+
+/* OEM card: proof points as boxed rows, the contact link as a volt pill. */
+[data-bz-node="oem-points"] .bz-grid { gap: 12px; }
+[data-bz-node="oem-points"] .bz-feature { padding: 16px 18px 16px 58px; border-radius: 14px; background: rgb(255 255 255 / .06); border: 1px solid rgb(255 255 255 / .12); }
+[data-bz-node="oem-points"] .bz-feature::before { left: 18px; top: 50%; translate: 0 -50%; width: 26px; height: 26px; border-radius: 8px; background: var(--volt); color: var(--ink); }
+[data-bz-node="oem-points"] .bz-feature__t { margin: 0; }
+[data-bz-node="oem-cta"] .bz-btn { background: var(--volt); color: var(--ink); padding: 16px 28px; box-shadow: 0 12px 30px color-mix(in srgb, var(--volt) 30%, transparent); }
+[data-bz-node="oem-cta"] .bz-btn:hover { text-decoration: none; transform: translateY(-2px); }
+
+@media (max-width: 640px) {
+  [data-bz-node="in-hub"] .bz-logos { gap: 20px 96px; }
+  [data-bz-node="in-hub"] .bz-logos::after { width: 64px; height: 64px; font-size: 28px; }
+}

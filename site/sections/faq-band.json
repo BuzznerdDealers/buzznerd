@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "id": "faq-band",
+  "name": "FAQ",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Questions dealers ask"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Frequently asked questions."
+    },
+    {
+      "key": "faqs",
+      "type": "list",
+      "label": "Questions",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "label": "Question"
+        },
+        {
+          "key": "a",
+          "type": "textarea",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "css": "[data-bz-node=\"faq-list\"] { margin-top: var(--space-4); }\n",
+  "nodes": [
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": "{{faqs}}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

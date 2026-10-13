@@ -1,0 +1,142 @@
+{
+  "slug": "ada-lawsuits-against-dealers-are-on-the-rise-make-your-website-accessible-to-disabled-users",
+  "title": "ADA Lawsuits Against Dealers Are On The Rise — Make Your Website Accessible to Disabled Users",
+  "date": "2019-12-02",
+  "description": "Website-accessibility lawsuits against dealerships are rising fast. Here's what web accessibility means, why it matters legally and ethically, and how to check where your site stands.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/accessible-browsing.jpg",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 3 min read · By Abigail"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Website accessibility is both the right thing to do and a growing legal risk for dealerships."
+      }
+    },
+    {
+      "id": "h-1",
+      "type": "heading",
+      "props": {
+        "text": "What Is Web Accessibility?",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-2",
+      "type": "text",
+      "props": {
+        "text": "Website accessibility is the effort to make websites easy for people with disabilities to use. An example of a web accessibility feature is making sure your content is formatted in a way that a screen reader (a device used by the visually impaired) can traverse and read aloud in a logical, understandable way. Another example is having alternative text for images describing what they are. The list of what makes a website accessible varies based on the different guidelines out there."
+      }
+    },
+    {
+      "id": "h-3",
+      "type": "heading",
+      "props": {
+        "text": "Why Should This Matter to You?",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-4",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "1. It's the right thing to do."
+          },
+          {
+            "label": "2. ADA lawsuits against dealers are on the rise."
+          }
+        ]
+      }
+    },
+    {
+      "id": "quote-5",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-5-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-5-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>Dealerships are being swept up in litigation brought by disabled plaintiffs in several states. Seyfarth, a law firm that tracks ADA-related litigation, projects more than 2,400 federal website lawsuits will be filed in 2019 — more than in each of the previous two years. Many of the cases end with financial settlements and commitments to improve accessibility online. (Automotive News)</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-6",
+      "type": "text",
+      "props": {
+        "text": "“Our advice to our clients is to promptly embark on this accessibility journey right away, because these lawsuits are not going away,” said Minh Vu, a partner at Seyfarth in Washington, D.C. Many retailers first receive demand letters from plaintiffs' lawyers before a lawsuit is filed, and some companies settle in response without waiting for the matter to progress to a lawsuit. Because those settlements happen out of court, there's no reliable way to know how many are happening or what the terms are.\n\nIt's a dilemma for dealers: while courts have held that business websites are subject to the ADA, the federal government has not adopted compliance regulations. That makes it hard to determine how much to spend on compliance."
+      }
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "Where Can I Find More Information?",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "WCAG 2 (Web Content Accessibility Guidelines) is by far the most common set of guidelines and is fairly exhaustive. There are different levels that can be obtained: A, AA, or AAA (AAA being the most stringent). NADA has also released a FAQ that answers dealers' most commonly asked questions."
+      }
+    },
+    {
+      "id": "h-9",
+      "type": "heading",
+      "props": {
+        "text": "How Do I Check My Website Accessibility?",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-10",
+      "type": "text",
+      "props": {
+        "text": "Email us at info@buzznerd.com or call us at 1-877-210-1457. We will perform an audit at no cost to you and send you a report."
+      }
+    },
+    {
+      "id": "cta-11",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Request a free accessibility audit →"
+          }
+        ]
+      }
+    }
+  ]
+}

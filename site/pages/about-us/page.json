@@ -1,0 +1,565 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Behind the AI are real humans.",
+                    "headingLevel": 1,
+                    "eyebrow": "About Buzznerd"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Behind it all — the AI, the experience, the results — are real humans with names you'll know. Most of us have been here for years, and it shows: we answer the phone, we know your store, and we sweat the details so the tech actually works for your team."
+                  }
+                },
+                {
+                  "id": "hero-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "Builders, marketers, and AI engineers — obsessed with one thing: helping dealers sell more. Here's who we are."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-photo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/dave-fisher.jpeg",
+                      "alt": "Dave Fisher, VP of Sales at Buzznerd",
+                      "width": 700,
+                      "height": 1244
+                    }
+                  }
+                },
+                {
+                  "id": "hero-card",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "⚡ Featured employee",
+                    "title": "Dave Fisher",
+                    "rows": [
+                      {
+                        "label": "VP of Sales",
+                        "value": "",
+                        "accent": true
+                      },
+                      {
+                        "label": "🥾 Hiking",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "🍖 BBQ",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "🦆 Oregon Ducks fan",
+                        "value": "",
+                        "accent": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rockstars",
+      "type": "section",
+      "props": {
+        "paddingY": 2
+      },
+      "children": [
+        {
+          "id": "rock-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "rock-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 5
+              },
+              "children": [
+                {
+                  "id": "rock-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 6,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "rock-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "rock-text",
+                          "type": "text",
+                          "props": {
+                            "text": "🎸 Got a marketing team? <strong>We make them rock stars</strong> — the tech, content, and AI horsepower to do their best work.",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "rock-action",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "rock-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "fit-your-team"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seattle",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "seattle-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "seattle-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "seattle-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "seattle-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "seattle-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Big-tech talent, pointed at trucking.",
+                            "headingLevel": 2,
+                            "eyebrow": "Built in Seattle"
+                          }
+                        },
+                        {
+                          "id": "seattle-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Those humans are based in Seattle — one of the fastest-growing technology hubs in the country. We hired from a talent pool that's hard to match, then pointed all of it at one industry: yours.\n\nWe started by building websites for heavy-truck dealers the big vendors didn't understand. Today the platform powers 700+ dealership rooftops across the country."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "seattle-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "seattle-label",
+                          "type": "text",
+                          "props": {
+                            "text": "Our team's background includes",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "seattle-chips",
+                          "type": "text",
+                          "props": {
+                            "text": "Daimler Trucks · Microsoft · Expedia · AT&T · <strong>Heavy truck marketing</strong>",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "how",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "How we work",
+          "heading": "Three things, done extremely well.",
+          "intro": "All that background boils down to a simple playbook we run for every store: strategy first, technology built lean, and marketing that's actually measured.",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🧭",
+              "title": "Strategy & Consulting",
+              "kicker": "",
+              "body": "We identify the pain points in your digital customer experience, then build the plan that brings in — and keeps — more business.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🛠️",
+              "title": "Superior Technologies",
+              "kicker": "",
+              "body": "Industry-leading tools kept lean, functional, and usable — with agile development that lets us make changes for clients on the fly.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🎯",
+              "title": "Bulletproof Marketing",
+              "kicker": "",
+              "body": "Countless hours of testing what actually works for dealerships. We haven't had a dissatisfied client yet — and don't plan on it.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "proof",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "proof-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "proof-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "proof-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "★★★★★ 4.8 on Google",
+                    "headingLevel": 2,
+                    "eyebrow": "Don't take our word for it",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "proof-quotes",
+                  "type": "testimonials",
+                  "props": {
+                    "items": [
+                      {
+                        "quote": "\"Buzznerd helped us break into a market we had difficulty tackling on our own… they helped us hit the ground running with a marketing plan and a fully functional website. What I like most is their commitment to customer service and how receptive they are to new ideas.\"",
+                        "name": "Director of IT",
+                        "role": "Kenworth Dealership Group"
+                      },
+                      {
+                        "quote": "\"An exceptional partner for our website development. Incredibly responsive and innovative — their expertise and forward-thinking ideas took our site to the next level and exceeded our expectations.\"",
+                        "name": "Freightliner Dealership Group"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "support-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "support-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "support-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "support-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "support-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Support that doesn't disappear after launch.",
+                            "headingLevel": 2,
+                            "eyebrow": "When you need us"
+                          }
+                        },
+                        {
+                          "id": "support-list",
+                          "type": "list",
+                          "props": {
+                            "columns": 1,
+                            "items": [
+                              {
+                                "label": "Real people answer — no offshore call tree"
+                              },
+                              {
+                                "label": "Every request tracked in our ticket system, start to finish"
+                              },
+                              {
+                                "label": "Reply within one business day — usually much faster"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "support-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "support-quote",
+                          "type": "testimonials",
+                          "props": {
+                            "items": [
+                              {
+                                "quote": "\"The team is prompt, communicative, and proactive. Their ticket system makes tracking website updates seamless and has taken a huge workload off our plate.\"",
+                                "name": "Kenworth Dealer",
+                                "role": "Google review"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to make your team rock stars?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "One partner for your whole stack — and real humans on the other end of the phone.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      },
+                      {
+                        "ctaId": "explore-solutions"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. Meet the team, see the platform, and get straight answers on what we'd do for your store.",
+          "checklist": [
+            {
+              "label": "Live review of your current setup"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

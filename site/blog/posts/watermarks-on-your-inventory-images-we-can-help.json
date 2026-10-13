@@ -1,0 +1,76 @@
+{
+  "slug": "watermarks-on-your-inventory-images-we-can-help",
+  "title": "Watermarks on Your Inventory Images? We Can Help.",
+  "date": "2023-10-10",
+  "description": "Our partnerships with key inventory platforms let us clean up watermarked images for a better buyer experience.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/10/8040814270.jpeg",
+  "status": "published",
+  "keywords": [
+    "Product"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Product</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A Buzznerd–Sandhills API integration that removes spreadsheet watermarks and keeps inventory in sync."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "The digital landscape is constantly evolving to provide the best user experiences possible. In this journey, our partnerships — particularly with key players like Sandhills (parent company of Truck Paper and Machinery Trader) — play a pivotal role."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Watermarks on your inventory images?",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "We've observed that certain inventory images now bear a ‘Crane’ watermark for those who upload inventory using a spreadsheet. We want to bring this to your attention and offer an opportunity to fix it with our Buzznerd–Sandhills API system."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Benefits of the Buzznerd–Sandhills API System",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "By adopting this automated solution, you no longer upload spreadsheets, and you ensure a seamless, consistent visual representation on your platform — effectively addressing the watermark issue. It also enhances reliability and guarantees timely website inventory updates.\n\nThe API integration involves a minimum monthly fee, but we're waiving the customary setup fees for existing and new clients. Our team is here to help with the Sandhills integration or any CRM/ERP integration questions."
+      }
+    },
+    {
+      "id": "cta-6",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Discuss inventory integrations →"
+          }
+        ]
+      }
+    }
+  ]
+}

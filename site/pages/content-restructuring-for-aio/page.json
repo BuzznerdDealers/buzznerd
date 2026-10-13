@@ -1,0 +1,580 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Content that buyers, Google, and AI all understand.",
+                    "headingLevel": 1,
+                    "eyebrow": "Content Restructuring for AIO"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Weak, thin, or poorly organized pages hold your dealership back everywhere at once. We restructure your content so it performs across traditional search, AI search, and the buyers actually reading it."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Search engines · AI platforms · Real buyers"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Before",
+                    "title": "One wall of text. No headings, no CTA."
+                  }
+                },
+                {
+                  "id": "hero-after",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "After",
+                    "rows": [
+                      {
+                        "label": "✓ Scannable",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "✓ Search-readable",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "✓ AI-readable",
+                        "value": "",
+                        "accent": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "improve",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "What we improve",
+          "heading": "From weak pages to working pages.",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "✍️",
+              "title": "Rewrite Weak Pages",
+              "kicker": "",
+              "body": "Outdated or thin content rewritten to say what your dealership actually offers.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🧱",
+              "title": "Structure & Headings",
+              "kicker": "",
+              "body": "Clear page flow and heading hierarchy — easy to scan, easy to index.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🏢",
+              "title": "Clarify Your Departments",
+              "kicker": "",
+              "body": "Sales, service, parts, and finance each explained so buyers know where to go.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🧲",
+              "title": "Stronger Calls to Action",
+              "kicker": "",
+              "body": "Every page ends somewhere — a quote, a call, an inquiry, not a dead end.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🔎",
+              "title": "Search-Engine Ready",
+              "kicker": "",
+              "body": "Content organized so Google understands what your dealership offers, page by page.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🤖",
+              "title": "AI-Platform Ready",
+              "kicker": "",
+              "body": "Structured so ChatGPT, Google AI, and Gemini can read, interpret, and recommend you.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pages",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "pages-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "pages-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "pages-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "pages-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "pages-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Every page that earns you business.",
+                            "headingLevel": 2,
+                            "eyebrow": "Key pages we support"
+                          }
+                        },
+                        {
+                          "id": "pages-body",
+                          "type": "text",
+                          "props": {
+                            "text": "We restructure the pages that matter most to buyers and to the engines that send them."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "pages-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "pages-chips",
+                          "type": "list",
+                          "props": {
+                            "columns": 3,
+                            "items": [
+                              {
+                                "label": "Sales pages"
+                              },
+                              {
+                                "label": "Service pages"
+                              },
+                              {
+                                "label": "Parts pages"
+                              },
+                              {
+                                "label": "Inventory pages"
+                              },
+                              {
+                                "label": "Location pages"
+                              },
+                              {
+                                "label": "Finance pages"
+                              },
+                              {
+                                "label": "Department pages"
+                              },
+                              {
+                                "label": "Campaign pages"
+                              },
+                              {
+                                "label": "Landing pages"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "done",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "done-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "done-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "done-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/content-restructuring-character.png",
+                      "alt": "Buzznerd content specialist reviewing a restructured page next to a mobile preview",
+                      "width": 734,
+                      "height": 560
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "done-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "done-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "We do the heavy lifting.",
+                    "headingLevel": 2,
+                    "eyebrow": "Done for you"
+                  }
+                },
+                {
+                  "id": "done-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Our team audits, rewrites, and restructures your pages so every one reads cleanly for buyers, search engines, and AI — while your staff stays focused on selling."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "ben-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ben-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "ben-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Better content, better buyers.",
+                    "headingLevel": 2,
+                    "eyebrow": "Dealer benefits"
+                  }
+                },
+                {
+                  "id": "ben-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Pages people can actually use convert better — and get cited by the engines buyers ask first."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ben-card",
+              "type": "column",
+              "props": {
+                "span": 5,
+                "background": "ink",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "ben-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "Content restructuring helps dealers",
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Improve search visibility"
+                      },
+                      {
+                        "label": "Improve AI discoverability"
+                      },
+                      {
+                        "label": "Make pages easier to understand"
+                      },
+                      {
+                        "label": "Strengthen inventory descriptions"
+                      },
+                      {
+                        "label": "Improve buyer confidence"
+                      },
+                      {
+                        "label": "Support better lead quality"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ben-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Frequently asked questions.",
+          "faqs": [
+            {
+              "q": "What is content restructuring for AIO?",
+              "a": "AIO means AI Optimization. Buzznerd restructures your dealership pages — headings, structure, descriptions, and formatting — so content is easy for buyers to read, easy for search engines to rank, and easy for AI answer engines like ChatGPT, Gemini, and Google AI to understand and cite."
+            },
+            {
+              "q": "Which pages does Buzznerd restructure?",
+              "a": "Buzznerd restructures the pages that earn business — sales, service, parts, inventory, location, finance, department, campaign, and landing pages."
+            },
+            {
+              "q": "Do I have to rewrite everything myself?",
+              "a": "No. Buzznerd's team audits, rewrites, and restructures your pages for you, so your staff stays focused on selling while your content gets stronger."
+            },
+            {
+              "q": "How is this different from normal SEO?",
+              "a": "Traditional SEO focuses on ranking in search. Content restructuring for AIO makes pages perform everywhere at once — readable for buyers, structured for search engines, and clear enough for AI platforms to recommend your dealership."
+            },
+            {
+              "q": "Will restructuring help me show up in AI answers?",
+              "a": "Yes. Clean structure, clear headings, and well-organized descriptions make it far more likely that AI answer engines understand your pages and name your dealership when buyers ask. You can also check where you stand with a free AI Presence Score."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Improve your dealership content.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Easy for customers to understand, easy for search engines to read, easy for AI to recommend.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      },
+                      {
+                        "ctaId": "explore-ai-websites"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-extra",
+                  "type": "text",
+                  "props": {
+                    "text": "Curious where you stand today? <a href=\"/ai-presence-score\">Get your free AI Presence Score →</a>",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. We'll walk a few of your real pages and show you exactly what we'd restructure — and why.",
+          "checklist": [
+            {
+              "label": "Live review of your current setup"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

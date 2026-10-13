@@ -1,0 +1,103 @@
+{
+  "slug": "jerry-van-galder-to-speak-at-cvsns-the-seminar-on-ai-applications",
+  "title": "Jerry Van Galder to Speak at CVSN's “The Seminar” on AI Applications",
+  "date": "2024-06-10",
+  "description": "Buzznerd's founder joins CVSN's “The Seminar” to talk real-world AI applications for commercial vehicle dealers.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2024/06/The-Seminar-2c-Logo-400x217-1.jpeg",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Our founder takes the stage on real-world AI use across the commercial vehicle aftermarket."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "The Commercial Vehicle Solutions Network (CVSN) is excited to announce “The Seminar,” an expanded in-person education event from July 11–14, 2024, at the Hyatt Regency DFW in Dallas, TX. The event builds on the success of the Distributor Training Expo (DTE) and offers comprehensive training for distributor employees, parts suppliers, and service technicians.\n\nA key highlight will be Jerry Van Galder, CEO of Buzznerd, who will speak on the transformative impact of artificial intelligence and share insights from his experience in the trucking industry."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "About “The Seminar”",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "“The Seminar” expands on DTE's success with new education tracks:"
+      }
+    },
+    {
+      "id": "list-4",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Distributor Training Expo (DTE) — sales training with 20–30 major suppliers"
+          },
+          {
+            "label": "GenFirst Certification — introductory aftermarket training"
+          },
+          {
+            "label": "GenNext Certification — advanced sales, finance, warehouse, and management"
+          },
+          {
+            "label": "Service Training (powered by Diesel Laptops)"
+          },
+          {
+            "label": "Karmak Fusion User Training"
+          },
+          {
+            "label": "Innovation Through Technology — for IT strategists and business owners"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-5",
+      "type": "heading",
+      "props": {
+        "text": "Innovation Through Technology Track",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-6",
+      "type": "text",
+      "props": {
+        "text": "This track addresses the rapidly evolving distribution environment and helps attendees implement the best technological opportunities for their companies. On Saturday, July 13th, Jerry Van Galder will discuss real-life AI usage across business sectors, alongside panels on ERP trends, social media, customer service, and logistics technology.\n\nCVSN manages all logistics for attendees, including airfare (up to $500), three nights of hotel, all meals, and three days of comprehensive training. “The Seminar” promises to be a key educational and networking event for the commercial vehicle aftermarket."
+      }
+    },
+    {
+      "id": "cta-7",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Talk AI with our team →"
+          }
+        ]
+      }
+    }
+  ]
+}

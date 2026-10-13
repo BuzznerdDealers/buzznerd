@@ -1,0 +1,480 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Three products. One AI-charged dealership.",
+                    "headingLevel": 1,
+                    "eyebrow": "Products",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "A website that generates leads, ecommerce that sells 24/7, and an AI platform that works your leads while you sleep. Each runs on the same AI and your live inventory — start with one, add the rest when you're ready.",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      },
+                      {
+                        "ctaId": "jump-products"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prod-grid",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "products",
+          "eyebrow": "",
+          "heading": "",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🌐",
+              "title": "Build a smarter dealership website.",
+              "kicker": "AI Websites",
+              "body": "Lightning-fast, conversion-tuned sites that pull inventory in real time and turn browsers into booked appointments — built for speed, SEO and AI answer engines.\n\nReal-time inventory sync from your feed or DMS\n\nMobile-first, accessibility & Core-Web-Vitals ready\n\nLead forms, chat and financing built in",
+              "linkLabel": "Explore AI Websites →",
+              "url": "/ai-websites"
+            },
+            {
+              "icon": "🛒",
+              "title": "Sell parts & products 24/7 nationwide.",
+              "kicker": "AI E-Commerce",
+              "body": "A storefront built for dealership complexity — checkout that closes while the counter is dark, with account pricing, shipping rules and secure payments.\n\nParts & accessories storefront with Stripe checkout\n\nAccount-based pricing and customer workflows\n\nWorks with Karmak and CDK + custom DMS/ERP",
+              "linkLabel": "Explore AI E-Commerce →",
+              "url": "/ai-ecommerce"
+            },
+            {
+              "icon": "⚡",
+              "title": "AI that works your leads while you sleep.",
+              "kicker": "AI Platform",
+              "body": "The AI under everything Buzznerd builds — answering leads after hours, ranking your morning follow-ups, building listings from a photo, and tracing every channel to the sold unit.\n\nAI Assistant + No-Touch CRM morning digest\n\nMagic Flow photo-to-listing in about a minute\n\nChannel-to-sale attribution, not vanity metrics",
+              "linkLabel": "Explore the AI Platform →",
+              "url": "/ai-platform"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "platform",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "platform-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "platform-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "platform-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "platform-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "platform-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Buy one. They all speak the same language.",
+                            "headingLevel": 2,
+                            "eyebrow": "One platform underneath"
+                          }
+                        },
+                        {
+                          "id": "platform-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Every product shares one inventory feed, one customer record and one AI. Leads from the website flow into the platform, ecommerce orders land in the same place, and attribution ties it all back to the sold unit — no double entry, no data silos."
+                          }
+                        },
+                        {
+                          "id": "platform-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "see-solutions"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "platform-media",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "platform-img",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/assets/buzznerd-mascot-charged.png",
+                              "alt": "Buzznerd superhero mascot, fully charged with lightning bolts",
+                              "width": 570,
+                              "height": 626
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oem",
+      "type": "section",
+      "props": {
+        "paddingY": 5,
+        "anchor": "oem"
+      },
+      "children": [
+        {
+          "id": "oem-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "oem-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "oem-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "oem-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 7
+                      },
+                      "children": [
+                        {
+                          "id": "oem-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "An OEM-grade platform.",
+                            "headingLevel": 2,
+                            "eyebrow": "OEM partnerships"
+                          }
+                        },
+                        {
+                          "id": "oem-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Buzznerd provides OEM-grade websites — built and vetted to the standards OEM programs demand, from brand compliance to dealer-network scale."
+                          }
+                        },
+                        {
+                          "id": "oem-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "oem-contact"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "oem-media",
+                      "type": "column",
+                      "props": {
+                        "span": 5
+                      },
+                      "children": [
+                        {
+                          "id": "oem-list",
+                          "type": "list",
+                          "props": {
+                            "columns": 1,
+                            "items": [
+                              {
+                                "label": "Approved OEM Vendor"
+                              },
+                              {
+                                "label": "OEM brand & compliance standards, built in"
+                              },
+                              {
+                                "label": "Scales from one rooftop to a dealer network"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "Built for every rooftop",
+          "heading": "One partner, any dealership",
+          "intro": "",
+          "span": 3,
+          "cards": [
+            {
+              "icon": "🚛",
+              "title": "Commercial & Truck",
+              "kicker": "",
+              "body": "Class 3–8, vocational, upfit",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🚚",
+              "title": "Fleet",
+              "kicker": "",
+              "body": "Volume buyers & accounts",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🏢",
+              "title": "Franchise",
+              "kicker": "",
+              "body": "OEM-compliant & branded",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🔑",
+              "title": "Independent",
+              "kicker": "",
+              "body": "Used, BHPH, specialty",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Buzznerd products, answered",
+          "faqs": [
+            {
+              "q": "Which product should I start with?",
+              "a": "Most dealers start with an AI Website — it's the front door where leads come in. Add AI E-Commerce and the AI Platform whenever you're ready; all three run on the same AI and your live inventory, so nothing gets rebuilt later."
+            },
+            {
+              "q": "Do the three products work together?",
+              "a": "Yes. Every product shares one inventory feed, one customer record and one AI. Website leads flow into the platform, ecommerce orders land in the same place, and channel-to-sale attribution ties it all back to the sold unit — no double entry, no data silos."
+            },
+            {
+              "q": "What systems does Buzznerd integrate with?",
+              "a": "Buzznerd works with Karmak, CDK and major DMS/CRM platforms, pulls inventory and market data from marketplaces like Truck Paper and Machinery Trader, and connects to Google, Meta and Stripe. Custom DMS and ERP integrations are available."
+            },
+            {
+              "q": "Can I sell parts and products online nationwide?",
+              "a": "Yes. AI E-Commerce is a storefront built for dealership complexity — 24/7 nationwide selling with account-based pricing, shipping rules and secure Stripe checkout that closes deals while the counter is dark."
+            },
+            {
+              "q": "What is the AI Platform?",
+              "a": "The AI Platform is the AI under everything Buzznerd builds — answering leads after hours, handing reps a ranked No-Touch CRM morning digest, building listings from a photo with Magic Flow, and tracing every channel to the sold unit."
+            },
+            {
+              "q": "How do I see how my dealership shows up in AI search?",
+              "a": "Run the free AI Presence Score. It scans your dealership and shows how you rank across AEO, AIO, SEO and GEO — the same Magic 8 signals Buzznerd optimizes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "See it running on your inventory",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Book a 20-minute demo and we'll show you exactly which solutions will move the needle for your store.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      },
+                      {
+                        "ctaId": "back-home"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Book a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. We'll walk your actual site and show you which solutions will move the needle for your store.",
+          "checklist": [
+            {
+              "label": "Live review of your current setup"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

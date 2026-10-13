@@ -1,0 +1,117 @@
+{
+  "slug": "the-pros-and-cons-of-running-your-own-e-commerce-parts-store",
+  "title": "The Pros and Cons of Running Your Own E-Commerce Parts Store",
+  "date": "2019-04-22",
+  "description": "Thinking about selling commercial truck, trailer, and equipment parts online? Here are the real pros — low overhead, 24/7 sales, metrics, SEO — and the cons to plan around.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/alliance.jpg",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 2 min read · By Abigail"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A candid look at what dealers gain — and what to plan for — when selling parts online."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "You're probably aware that there's a lot of dealer interest in getting parts inventory online. If you're interested in making commercial truck, trailer, and equipment parts available online to consumers for purchase, read on to learn about the pros and cons of an e-commerce parts store.\n\nE-commerce is a game changer for most industries, but it doesn't come without some issues. Here are some pros and cons of running a parts e-commerce online store."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Pros",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "1. Low overhead — gone are the days of expensive building leases and physical stores. With e-commerce, the only physical space you'll be paying for is disk space."
+          },
+          {
+            "label": "2. 24-hour sales — let the website sell for you. It doesn't replace a knowledgeable parts counterperson, but done right, you can retain customer service and profit from automated sales."
+          },
+          {
+            "label": "3. Sell anywhere — sell to customers anywhere in the world. Really."
+          },
+          {
+            "label": "4. Metrics — track your sales, best sellers, best customers, and more, with reports customized however and whenever you like."
+          },
+          {
+            "label": "5. Personalized online experience — enhance the returning-customer experience by showing them parts they've shown interest in or bought before."
+          },
+          {
+            "label": "6. Re-target and re-market — track people who browsed particular parts and market to them elsewhere, such as Facebook or LinkedIn."
+          },
+          {
+            "label": "7. Search engine optimization — all your parts data gets indexed and searchable on Google and Bing, bringing more traffic to your website."
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Cons",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-5",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "1. Site crash — this part of your business is dependent on your e-commerce site. If it's down, so is that revenue."
+          },
+          {
+            "label": "2. Refunds — issuing refunds can be a little trickier due to return-shipping needs."
+          },
+          {
+            "label": "3. Shipping — if you're going to fulfill your own orders, you still have to ship the parts."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-6",
+      "type": "text",
+      "props": {
+        "text": "As you can see, the pros outweigh the cons — but there's always more in the details. Contact us to learn more about e-commerce and whether an e-commerce solution is right for you."
+      }
+    },
+    {
+      "id": "cta-7",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Talk to us about e-commerce →"
+          }
+        ]
+      }
+    }
+  ]
+}

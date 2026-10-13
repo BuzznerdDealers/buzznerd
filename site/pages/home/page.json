@@ -1,0 +1,946 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built for the way your industry actually operates.",
+                    "headingLevel": 1,
+                    "eyebrow": "A Support & Growth Model"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Not all dealerships operate the same way — and your platform should reflect that. Our industry solutions support how you manage inventory, engage buyers, and increase sales while improving customer conversion."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-trust",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>★★★★★ 4.8</strong> on Google · Trusted by 700+ dealership rooftops"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/buzznerd-hero-character.webp",
+                      "alt": "Buzznerd mascot — a friendly superhero presenting a dealership platform with a truck, ecommerce, social, and app integrations",
+                      "width": 798,
+                      "height": 751
+                    }
+                  }
+                },
+                {
+                  "id": "hero-chip",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "chip",
+                    "tag": "⚡ AI Sales Assistant",
+                    "title": "3 hot leads captured"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "integrations-strip",
+        "values": {
+          "label": "Integrates with the platforms dealers rely on",
+          "logos": [
+            {
+              "name": "Karmak",
+              "image": {
+                "src": "/assets/logo-karmak.webp",
+                "alt": "Karmak",
+                "width": 184,
+                "height": 34
+              }
+            },
+            {
+              "name": "CDK",
+              "image": {
+                "src": "/assets/logo-cdk.webp",
+                "alt": "CDK",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Google Partner",
+              "image": {
+                "src": "/assets/logo-google-g.webp",
+                "alt": "Google Partner",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Truck Paper",
+              "image": {
+                "src": "/assets/logo-truckpaper.webp",
+                "alt": "Truck Paper",
+                "width": 246,
+                "height": 52
+              }
+            },
+            {
+              "name": "Meta",
+              "image": {
+                "src": "/assets/logo-meta.webp",
+                "alt": "Meta",
+                "width": 445,
+                "height": 100
+              }
+            },
+            {
+              "name": "Machinery Trader",
+              "image": {
+                "src": "/assets/logo-machinerytrader.webp",
+                "alt": "Machinery Trader",
+                "width": 440,
+                "height": 100
+              }
+            },
+            {
+              "name": "Arcadium",
+              "image": {
+                "src": "/assets/logo-arcadium.webp",
+                "alt": "Arcadium",
+                "width": 192,
+                "height": 100
+              }
+            },
+            {
+              "name": "Stripe",
+              "image": {
+                "src": "/assets/logo-stripe-clean.webp",
+                "alt": "Stripe",
+                "width": 231,
+                "height": 100
+              }
+            },
+            {
+              "name": "Trnsact",
+              "image": {
+                "src": "/assets/logo-trnsact.svg",
+                "alt": "Trnsact",
+                "width": 160,
+                "height": 48
+              }
+            },
+            {
+              "name": "Equipment Funding Solutions",
+              "image": {
+                "src": "/assets/logo-efunding.webp",
+                "alt": "Equipment Funding Solutions",
+                "width": 131,
+                "height": 100
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "solutions",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "solutions",
+          "eyebrow": "Solutions",
+          "heading": "Everything your dealership needs, charged by AI",
+          "intro": "<strong>Buzznerd is an AI platform for truck, trailer, and equipment dealerships.</strong> Built for every kind of dealership — from franchise and independent stores to commercial, fleet, and truck operations — we replace the patchwork of vendors with one connected platform so your site, inventory, and buyers all speak the same language.",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🌐",
+              "title": "AI Dealership Websites",
+              "body": "Lightning-fast, conversion-tuned sites that update inventory in real time and turn browsers into showroom appointments.",
+              "linkLabel": "Explore AI Websites →",
+              "url": "/ai-websites"
+            },
+            {
+              "icon": "🛒",
+              "title": "AI E-Commerce",
+              "body": "Sell vehicles, parts, and service online with digital deals, financing, and checkout that closes while you sleep.",
+              "linkLabel": "Explore AI E-Commerce →",
+              "url": "/ai-ecommerce"
+            },
+            {
+              "icon": "🔌",
+              "title": "CRM & DMS Integrations",
+              "body": "Plug into the tools you already run. We sync leads, inventory, and deals across your entire stack — no double entry.",
+              "linkLabel": "See integrations →",
+              "url": "/solutions#integrations"
+            },
+            {
+              "icon": "🔎",
+              "title": "AIO / GEO Visibility",
+              "body": "Get cited by ChatGPT, Google AI, and Gemini. We optimize your dealership to be the answer buyers' AI recommends.",
+              "linkLabel": "Explore AIO / GEO →",
+              "url": "/content-restructuring-for-aio"
+            },
+            {
+              "icon": "💬",
+              "title": "AI Assistant",
+              "body": "24/7 AI Assistant that answers questions and reads each buyer's intent and readiness — handing your team buyers who are ready to talk.",
+              "linkLabel": "Meet the AI Assistant →",
+              "url": "/ai-platform#assistant"
+            },
+            {
+              "icon": "📊",
+              "title": "Attribution Analytics",
+              "body": "See exactly which channels drive sold units. Real ROI dashboards, not vanity metrics — built for GMs.",
+              "linkLabel": "See attribution →",
+              "url": "/ai-platform#attribution"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "upload",
+      "type": "section",
+      "props": {
+        "anchor": "upload",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "upload-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "upload-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "upload-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "⚡ New listing — auto-generated",
+                    "meta": "2.4s",
+                    "title": "VIN photo → full listing",
+                    "rows": [
+                      {
+                        "label": "Trim",
+                        "value": "LT Series 6×4 Sleeper ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Drivetrain",
+                        "value": "A26 · 12.4L I6 ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Features",
+                        "value": "+ 18 detected ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "3 dealers nearby avg.",
+                        "value": "$142,000",
+                        "accent": false
+                      },
+                      {
+                        "label": "Suggested price",
+                        "value": "$137,900",
+                        "accent": true
+                      }
+                    ],
+                    "note": "Live market comparison — priced to the market the moment it's listed."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "upload-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "upload-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "List inventory in seconds, not hours",
+                    "headingLevel": 2,
+                    "eyebrow": "AI-Assisted Product Upload"
+                  }
+                },
+                {
+                  "id": "upload-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Drop in a VIN or a few photos and our AI does the typing. It fills the specs, prices against live competitor listings, and writes SEO- and AI-ready descriptions — so every unit goes live faster and ranks higher."
+                  }
+                },
+                {
+                  "id": "upload-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Zero manual spec entry",
+                        "desc": "VIN decode + photo recognition auto-fill every field."
+                      },
+                      {
+                        "label": "Live competitor price comparison",
+                        "desc": "Price each unit to the market the moment it's listed."
+                      },
+                      {
+                        "label": "Auto SEO & AIO listings",
+                        "desc": "Descriptions written to rank on Google and get cited by AI."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "geo-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "geo-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "geo-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "geo-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "geo-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Buyers ask AI before they ask you",
+                            "headingLevel": 2,
+                            "eyebrow": "The new front door"
+                          }
+                        },
+                        {
+                          "id": "geo-body",
+                          "type": "text",
+                          "props": {
+                            "text": "When someone asks an AI \"best truck dealer near me,\" your rooftop should be the answer. We make your inventory, reviews, and pages machine-readable so AI engines recommend you first."
+                          }
+                        },
+                        {
+                          "id": "geo-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "visibility-audit"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "geo-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "geo-panel",
+                          "type": "ui-panel",
+                          "props": {
+                            "tone": "dark",
+                            "tag": "🤖 AI Answer",
+                            "title": "\"What's the best dealership for a work truck near Dallas?\"",
+                            "rows": [
+                              {
+                                "label": "⚡ Recommended",
+                                "value": "Your Dealership",
+                                "accent": true
+                              }
+                            ],
+                            "note": "Based on inventory, reviews, and pricing, Your Dealership is a top choice — 40+ work trucks in stock with same-day delivery."
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photos",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "before-after",
+        "values": {
+          "anchor": "photos",
+          "eyebrow": "Photo & Background Enhancement",
+          "heading": "Showroom photos. No photo studio needed.",
+          "intro": "Snap a unit anywhere — a gravel lot, a back fence, harsh sun. Our AI wipes the clutter and drops it into a clean, branded backdrop with your logo on the wall. Drag the slider to see it.",
+          "pairs": [
+            {
+              "label": "Front three-quarter",
+              "before": {
+                "src": "/assets/photos/before-frontqtr-1000w.webp",
+                "alt": "Original lot photo of a truck, front three-quarter view",
+                "width": 1000,
+                "height": 750
+              },
+              "after": {
+                "src": "/assets/photos/after-frontqtr-1000w.webp",
+                "alt": "Enhanced photo of the same truck on a clean branded backdrop",
+                "width": 1000,
+                "height": 750
+              }
+            },
+            {
+              "label": "Side profile",
+              "before": {
+                "src": "/assets/photos/before-side-1000w.webp",
+                "alt": "Original lot photo of a truck, side profile",
+                "width": 1000,
+                "height": 750
+              },
+              "after": {
+                "src": "/assets/photos/after-side-1000w.webp",
+                "alt": "Enhanced side-profile photo on a branded backdrop",
+                "width": 1000,
+                "height": 750
+              }
+            },
+            {
+              "label": "Front three-quarter, second unit",
+              "before": {
+                "src": "/assets/photos/before-frontqtr2-1000w.webp",
+                "alt": "Original lot photo of a second truck",
+                "width": 1000,
+                "height": 750
+              },
+              "after": {
+                "src": "/assets/photos/after-frontqtr2-1000w.webp",
+                "alt": "Enhanced photo of the second truck on a branded backdrop",
+                "width": 1000,
+                "height": 750
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "attribution",
+      "type": "section",
+      "props": {
+        "anchor": "attribution",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "attr-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "attr-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "attr-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "attr-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "attr-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Follow the money to the sold line",
+                            "headingLevel": 2,
+                            "eyebrow": "Sales Attribution"
+                          }
+                        },
+                        {
+                          "id": "attr-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Most tools stop at the lead. We track each channel all the way to the sale — so you can see what actually moves metal and shift your marketing budget to what does."
+                          }
+                        },
+                        {
+                          "id": "attr-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "see-roi"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "attr-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "attr-panel",
+                          "type": "ui-panel",
+                          "props": {
+                            "tone": "dark",
+                            "tag": "Channel → Sold units",
+                            "meta": "last 30 days",
+                            "rows": [
+                              {
+                                "label": "⚡ AI Search (GEO)",
+                                "value": "182 leads · 41 sold · $1.9M",
+                                "accent": true
+                              },
+                              {
+                                "label": "Paid Search",
+                                "value": "420 leads · 22 sold · $980K",
+                                "accent": false
+                              },
+                              {
+                                "label": "Social",
+                                "value": "311 leads · 7 sold · $310K",
+                                "accent": false
+                              }
+                            ],
+                            "note": "⚡ Social drives leads but rarely sales — shift 20% of that budget to AI Search to gain ~8 sold units/mo."
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "reviews-head",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "reviews-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "reviews-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What dealers say about Buzznerd",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "reviews-rating",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>★★★★★ 4.8</strong> · Rated 4.8 on Google · 17+ reviews",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reviews-list",
+          "type": "testimonials",
+          "props": {
+            "items": [
+              {
+                "quote": "An exceptional partner for our website development. Incredibly responsive and innovative — in an industry where technology moves fast, their expertise and forward-thinking ideas took our site to the next level and exceeded our expectations. Highly recommend!",
+                "name": "Marketing Manager",
+                "role": "Freightliner Dealership Group",
+                "rating": 5
+              },
+              {
+                "quote": "As marketing manager at a busy trucking company, I need partners who deliver on time, every time. Nikki and Abigail are incredibly responsive and their work is top-notch — excellent service and communication. Couldn't ask for a better team. Highly recommend!",
+                "name": "Marketing Manager",
+                "role": "Demco Trailer Dealer",
+                "rating": 5
+              },
+              {
+                "quote": "Outstanding experience — the team is prompt, communicative, and proactive, always bringing new ideas to improve our systems. Their ticket system makes tracking website updates seamless and has taken a huge workload off our plate. Jerry and his team are amazing. Highly recommend!",
+                "name": "Marketing Manager",
+                "role": "Kenworth Dealer",
+                "rating": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bigquote",
+      "type": "section",
+      "props": {
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "bigquote-q",
+          "type": "testimonials",
+          "props": {
+            "items": [
+              {
+                "quote": "Buzznerd helped us elevate our website beyond expectations! Not only does our site have an updated, unique look, it also has everything needed on the backend to garner top-notch SEO results. Jerry, Nikki, & the rest of the Buzznerd team exceeded our expectations. They are creative, helpful, and responsive — we recommend their services to any dealership looking to take their site into the future.",
+                "name": "Commercial Truck Dealer",
+                "role": "Buzznerd website & SEO client",
+                "rating": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "type": "section",
+      "props": {
+        "anchor": "about",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "about-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "about-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "about-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "We make marketing teams rock stars",
+                    "headingLevel": 2,
+                    "eyebrow": "About Buzznerd"
+                  }
+                },
+                {
+                  "id": "about-body",
+                  "type": "text",
+                  "props": {
+                    "text": "We hand your marketing team the tech, content, and AI horsepower to do their best work. We're builders, marketers, and AI engineers obsessed with one thing: helping dealers sell more.\n\nAnd behind all of the AI magic are real humans who partner with you — answering the phone, learning your store, and sweating the details so the tech actually works for your team."
+                  }
+                },
+                {
+                  "id": "about-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "12 yrs",
+                        "label": "in dealership technology"
+                      },
+                      {
+                        "value": "1 partner",
+                        "label": "for your whole stack"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "about-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "about-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/buzznerd-team-heroes.png",
+                      "alt": "The Buzznerd team as superheroes — the crew behind your marketing",
+                      "width": 651,
+                      "height": 477
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "FAQ",
+          "heading": "Questions dealers ask us",
+          "faqs": [
+            {
+              "q": "What does Buzznerd do?",
+              "a": "Buzznerd is a technology company that provides AI solutions for truck, trailer and equipment dealerships — high-converting websites, online ecommerce, CRM & DMS integrations, AIO/GEO AI search visibility, AI photo & background enhancement, AI Assistant, and sales attribution analytics."
+            },
+            {
+              "q": "What types of dealerships do you work with?",
+              "a": "Every kind — franchise, independent, commercial, fleet, and truck and trailer dealers. Our platform scales from a single rooftop to large dealership groups. Auto, powersports, boat, or another kind of dealer? Why not — contact us."
+            },
+            {
+              "q": "What is AIO / GEO and why does it matter?",
+              "a": "AIO (AI Optimization) and GEO (Generative Engine Optimization) make your dealership the answer AI engines recommend. We structure your inventory, reviews, and pages so ChatGPT, Google AI, and Gemini cite your store when buyers ask for the best dealer near them."
+            },
+            {
+              "q": "Will you replace our existing marketing team?",
+              "a": "No. If you have a marketing team, we make them rock stars with the tech, content, and AI horsepower to do their best work. Everything we build is designed to make your existing team faster and more effective."
+            },
+            {
+              "q": "Which systems do you integrate with?",
+              "a": "The platforms dealers already rely on — including Karmak, CDK, and major DMS & CRM systems, inventory marketplaces like Truck Paper and Machinery Trader, and tools like Google, Facebook, and Stripe."
+            },
+            {
+              "q": "How is Buzznerd rated by dealers?",
+              "a": "Buzznerd is rated 4.8 out of 5 on Google, with multiple 5-star reviews from dealership marketing managers and principals praising our responsiveness, innovation, and results."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to charge up your dealership?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Book a 20-minute demo. We'll show you exactly where you're leaking leads — and how to plug it.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      },
+                      {
+                        "ctaId": "talk-to-sales"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Book a demo",
+          "heading": "We'll walk your current site with you.",
+          "body": "20 minutes, no slides. We'll review your current site live, show you where leads are leaking, and walk you through what Buzznerd would do differently.",
+          "checklist": [
+            {
+              "label": "Live review of your current site"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

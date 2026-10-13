@@ -1,0 +1,58 @@
+/* Products: centred hero, the three product cards, the platform and OEM cards, the dealership-type tiles. */
+/* Centred hero: no media column, so keep the headline to the design's measure. */
+[data-bz-node="hero-h"] h1 { max-width: 900px; margin-inline: auto; }
+
+/* The numbered product cards (feature-cards placement "prod-grid"): product name as the
+   kicker above the title, ⚡ bullet lines, a full-width dark button, a coloured
+   offset card behind each one and a 01/02/03 counter. */
+[data-bz-node="prod-grid"] [data-bz-node="fc"] { padding-top: 0; }
+[data-bz-node="prod-grid"] [data-bz-node="fc-head"] { display: none; }
+[data-bz-node="prod-grid"] [data-bz-node="fc-grid"] { margin-top: 0; counter-reset: bz-card; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"] { --bz-offset: color-mix(in srgb, var(--accent) 38%, var(--card)); position: relative; counter-increment: bz-card; box-shadow: var(--shadow-card), 12px 14px 0 -2px var(--bz-offset); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"]:nth-child(3n+2) { --bz-offset: var(--volt); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"]:nth-child(3n) { --bz-offset: var(--ink); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"]:hover { box-shadow: var(--shadow-lift), 12px 14px 0 -2px var(--bz-offset); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"]::after { content: counter(bz-card, decimal-leading-zero); position: absolute; top: calc(var(--bz-col-pad) + 18px); right: var(--bz-col-pad); font: 600 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .04em; color: var(--muted); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"]:nth-child(3n+2) [data-bz-node^="fc-icon"] p { background: color-mix(in srgb, var(--volt) 24%, var(--card)); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-card"]:nth-child(3n) [data-bz-node^="fc-icon"] p { background: var(--ink); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-icon"] { order: -2; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-kicker"] { order: -1; padding-top: var(--space-5) !important; padding-bottom: 0 !important; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-title"] { padding-top: 6px !important; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-title"] h3 { margin: 0; font-size: clamp(22px, 2vw, 26px); line-height: 1.15; letter-spacing: -.015em; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-body"] p + p { position: relative; padding-left: 30px; margin-top: 10px; font-size: 15px; font-weight: 500; color: var(--ink-soft); }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-body"] p:first-child { margin-bottom: 18px; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-body"] p + p::before { content: '⚡'; position: absolute; left: 0; top: 0; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-link"] { padding-top: var(--space-5) !important; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-link"] a { display: block; text-align: center; background: var(--ink); color: #fff; border-radius: var(--radius-chip); padding: 14px 20px; font: 700 15.5px/1.2 var(--font-body); text-decoration: none; transition: background-color .18s ease; }
+[data-bz-node="prod-grid"] [data-bz-node^="fc-link"] a:hover { background: var(--accent); }
+
+/* Light spotlight card: copy beside the charged mascot. Its links read as pills. */
+[data-bz-node="platform-img"] img { max-width: 300px; margin-inline: auto; border-radius: var(--radius-card); }
+[data-bz-node="platform-cta"] .bz-btn--link { background: var(--paper); color: var(--ink); border: 1px solid var(--line); padding: 13px 22px; font-size: 15px; }
+[data-bz-node="platform-cta"] .bz-btn--link:hover { text-decoration: none; transform: translateY(-2px); }
+
+/* OEM card: the contact link is the volt pill, the proof points are chips. */
+[data-bz-node="oem-cta"] .bz-btn--link { background: var(--volt); color: var(--ink); padding: 16px 28px; box-shadow: 0 12px 30px color-mix(in srgb, var(--volt) 30%, transparent); }
+[data-bz-node="oem-cta"] .bz-btn--link:hover { text-decoration: none; transform: translateY(-2px); }
+[data-bz-node="oem-list"] .bz-grid { gap: 12px; }
+[data-bz-node="oem-list"] .bz-feature { display: flex; align-items: center; min-height: 66px; padding: 14px 18px 14px 66px; border: 1px solid rgb(255 255 255 / .12); background: rgb(255 255 255 / .04); border-radius: 14px; }
+[data-bz-node="oem-list"] .bz-feature:not(:has(.bz-feature__d))::before { left: 18px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border-radius: 9px; background: var(--volt); color: var(--ink); font-size: 15px; }
+[data-bz-node="oem-list"] .bz-feature:nth-child(2)::before { content: '🏷'; }
+[data-bz-node="oem-list"] .bz-feature:nth-child(3)::before { content: '🏢'; }
+[data-bz-node="oem-list"] .bz-feature__t { margin: 0; font-size: 15px; }
+
+/* "One partner, any dealership": four compact tiles inside one white card. */
+[data-bz-node="types"] [data-bz-node="fc"] > .bz-container { position: relative; isolation: isolate; padding-block: var(--space-7); }
+[data-bz-node="types"] [data-bz-node="fc"] > .bz-container::before { content: ''; position: absolute; inset: 0 var(--space-4); z-index: -1; background: var(--card); border: 1px solid var(--line-soft); border-radius: var(--radius-modal); box-shadow: var(--shadow-card); }
+[data-bz-node="types"] [data-bz-node="fc-head"], [data-bz-node="types"] [data-bz-node="fc-grid"] { padding-inline: var(--space-7); }
+[data-bz-node="types"] [data-bz-node="fc-grid"] { margin-top: var(--space-4); }
+[data-bz-node="types"] [data-bz-node^="fc-card"] { --bz-col-pad: 22px; background: var(--paper); border: 0; box-shadow: none; text-align: center; }
+[data-bz-node="types"] [data-bz-node^="fc-card"]:hover { transform: none; box-shadow: none; }
+[data-bz-node="types"] [data-bz-node^="fc-card"] .bz-block { padding-block: 2px; }
+[data-bz-node="types"] [data-bz-section="feature-cards"] [data-bz-node^="fc-icon"] p,
+[data-bz-section="feature-cards"][data-bz-node="types"] [data-bz-node^="fc-icon"] p { width: auto; height: auto; background: none; font-size: 30px; }
+[data-bz-node="types"] [data-bz-node^="fc-title"] h3 { margin: 6px 0 0; font-size: 17px; }
+[data-bz-node="types"] .bz-block[data-bz-node^="fc-body"] .bz-text p { font-size: 14.5px; line-height: 1.45; }
+@media (max-width: 640px) {
+  [data-bz-node="types"] [data-bz-node="fc-head"], [data-bz-node="types"] [data-bz-node="fc-grid"] { padding-inline: var(--space-5); }
+}

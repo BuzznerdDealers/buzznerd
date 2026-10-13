@@ -1,0 +1,74 @@
+{
+  "id": "book-demo",
+  "name": "Book a demo",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "book-demo",
+  "submitLabel": "Request my demo",
+  "successMessage": "Got it — you're on the list. We'll reach out within one business day to schedule your walkthrough.",
+  "consent": {
+    "enabled": false
+  },
+  "fields": [
+    {
+      "id": "bd-name",
+      "type": "full_name",
+      "label": "Your name",
+      "required": true,
+      "placeholder": "Your name",
+      "width": "half"
+    },
+    {
+      "id": "bd-dealer",
+      "type": "single_line",
+      "label": "Dealership",
+      "required": false,
+      "placeholder": "Dealership",
+      "width": "half"
+    },
+    {
+      "id": "bd-email",
+      "type": "email",
+      "label": "Work email",
+      "required": true,
+      "placeholder": "Work email",
+      "width": "half"
+    },
+    {
+      "id": "bd-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "placeholder": "Phone",
+      "width": "half"
+    },
+    {
+      "id": "bd-message",
+      "type": "paragraph",
+      "label": "What would you like to see?",
+      "required": false,
+      "placeholder": "What would you like to see? (optional)"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-team",
+      "name": "Buzznerd team",
+      "rules": [],
+      "targetType": "email",
+      "email": "info@buzznerd.com",
+      "contactName": "Buzznerd team"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "c-default",
+      "name": "Default",
+      "rules": [],
+      "type": "message",
+      "message": "Got it — you're on the list. We'll reach out within one business day to schedule your walkthrough."
+    }
+  ]
+}

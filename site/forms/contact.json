@@ -1,0 +1,107 @@
+{
+  "id": "contact",
+  "name": "Contact us",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "contact",
+  "submitLabel": "Send message",
+  "successMessage": "Thanks — your message is in. We'll get back to you within one business day.",
+  "consent": {
+    "enabled": false
+  },
+  "fields": [
+    {
+      "id": "ct-topic",
+      "type": "dropdown",
+      "label": "I'm reaching out as…",
+      "required": true,
+      "options": [
+        {
+          "value": "dealership",
+          "label": "A dealership"
+        },
+        {
+          "value": "oem",
+          "label": "An OEM / program administrator"
+        },
+        {
+          "value": "partner",
+          "label": "A partner or vendor"
+        },
+        {
+          "value": "other",
+          "label": "Something else"
+        }
+      ]
+    },
+    {
+      "id": "ct-name",
+      "type": "full_name",
+      "label": "Your name",
+      "required": true,
+      "placeholder": "Your name",
+      "width": "half"
+    },
+    {
+      "id": "ct-dealer",
+      "type": "single_line",
+      "label": "Dealership",
+      "required": false,
+      "placeholder": "Dealership",
+      "width": "half"
+    },
+    {
+      "id": "ct-email",
+      "type": "email",
+      "label": "Work email",
+      "required": true,
+      "placeholder": "Work email",
+      "width": "half"
+    },
+    {
+      "id": "ct-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "placeholder": "Phone",
+      "width": "half"
+    },
+    {
+      "id": "ct-message",
+      "type": "paragraph",
+      "label": "How can we help?",
+      "required": false,
+      "placeholder": "How can we help?"
+    },
+    {
+      "id": "ct-oem",
+      "type": "single_line",
+      "label": "OEM referral",
+      "required": false,
+      "hidden": true,
+      "valueSource": "query",
+      "queryParam": "oem"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-team",
+      "name": "Buzznerd team",
+      "rules": [],
+      "targetType": "email",
+      "email": "info@buzznerd.com",
+      "contactName": "Buzznerd team"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "c-default",
+      "name": "Default",
+      "rules": [],
+      "type": "message",
+      "message": "Thanks — your message is in. We'll get back to you within one business day."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* AI Platform: the design's ⚡ bullets on the four feature splits, the product-UI
+   mocks' stacked rows, and the "stop doing / do instead" panel in the CRM card. */
+:is([data-bz-node="assistant-list"], [data-bz-node="crm-list"], [data-bz-node="magic-list"], [data-bz-node="attribution-list"]) .bz-feature::before { content: '⚡'; background: none; color: inherit; width: 22px; height: 22px; font-size: 16px; border-radius: 0; }
+:is([data-bz-node="assistant-list"], [data-bz-node="crm-list"], [data-bz-node="magic-list"], [data-bz-node="attribution-list"]) .bz-feature__t { font-weight: 500; color: var(--ink-soft); }
+:is([data-bz-node="hero-panel"], [data-bz-node="assistant-panel"]) .uip__row { flex-direction: column; align-items: flex-start; gap: 6px; }
+:is([data-bz-node="hero-panel"], [data-bz-node="assistant-panel"]) .uip__v { text-align: left; font-size: 13px; }
+[data-bz-node="assistant-panel"] .uip__v { color: var(--muted); letter-spacing: .04em; text-transform: uppercase; font-size: 11.5px; }
+[data-bz-node="crm-media"] .uip.uip { background: none; border: 0; padding: 0; box-shadow: none; }
+[data-bz-node="crm-media"] .uip__rows { gap: 4px; }
+[data-bz-node="crm-media"] .uip .uip__row { background: none; padding: 4px 0; }
+[data-bz-node="crm-stop"] { padding-bottom: var(--space-5); margin-bottom: var(--space-3); border-bottom: 1px solid color-mix(in srgb, var(--card) 12%, transparent); }
+[data-bz-node="crm-stop"] .uip .uip__l { text-decoration: line-through; color: color-mix(in srgb, var(--card) 45%, transparent); }
+[data-bz-node="crm-instead"] .uip .uip__row.is-accent { background: none; }
+[data-bz-node="crm-instead"] .uip .uip__row.is-accent .uip__l { color: var(--card); }

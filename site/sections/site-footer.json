@@ -1,0 +1,234 @@
+{
+  "version": 2,
+  "id": "site-footer",
+  "name": "Site footer",
+  "props": [
+    {
+      "key": "tagline",
+      "type": "textarea",
+      "label": "Tagline",
+      "default": "AI solutions for modern dealerships — websites, ecommerce, integrations, and AI visibility, fully charged."
+    },
+    {
+      "key": "place",
+      "type": "text",
+      "label": "Location line",
+      "default": "Seattle, WA · United States"
+    },
+    {
+      "key": "linkColumns",
+      "type": "list",
+      "label": "Link columns",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "menuId",
+          "type": "text",
+          "label": "Menu id"
+        }
+      ],
+      "default": [
+        {
+          "title": "Products",
+          "menuId": "footer-products"
+        },
+        {
+          "title": "Services",
+          "menuId": "footer-services"
+        },
+        {
+          "title": "Company",
+          "menuId": "footer-company"
+        }
+      ]
+    },
+    {
+      "key": "ctaHeading",
+      "type": "text",
+      "label": "Call-to-action heading",
+      "default": "Get started"
+    },
+    {
+      "key": "legal",
+      "type": "text",
+      "label": "Copyright line",
+      "default": "© 2026 Buzznerd™. All rights reserved."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "footer-band",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "footer-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "footer-brand",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "footer-logo",
+                  "type": "logo",
+                  "props": {
+                    "image": {
+                      "src": "/assets/buzznerd-logo-trim.webp",
+                      "alt": "Buzznerd",
+                      "width": 553,
+                      "height": 120
+                    },
+                    "url": "/",
+                    "height": 40
+                  }
+                },
+                {
+                  "id": "footer-tagline",
+                  "type": "text",
+                  "props": {
+                    "text": "{{tagline}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "footer-place",
+                  "type": "text",
+                  "props": {
+                    "text": "{{place}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "footer-social",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "social",
+                    "layout": "horizontal"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-col",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "linkColumns"
+              },
+              "children": [
+                {
+                  "id": "footer-col-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "footer-col-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "{{menuId}}",
+                    "layout": "vertical",
+                    "depth": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-start",
+              "type": "column",
+              "props": {
+                "span": 2
+              },
+              "children": [
+                {
+                  "id": "footer-start-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{ctaHeading}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "footer-start-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "footer-bottom",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "footer-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "footer-copy-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{legal}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-legal",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "footer-legal-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "legal",
+                    "layout": "horizontal",
+                    "align": "end"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

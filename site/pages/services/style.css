@@ -1,0 +1,36 @@
+/* Services: centred hero, the four service cards and the platform card. */
+/* Centred hero: no media column, so keep the headline to the design's measure. */
+[data-bz-node="hero-h"] h1 { max-width: 900px; margin-inline: auto; }
+
+/* The numbered product cards (feature-cards placement "svc-grid"): product name as the
+   kicker above the title, ⚡ bullet lines, a full-width dark button, a coloured
+   offset card behind each one and a 01/02/03 counter. */
+[data-bz-node="svc-grid"] [data-bz-node="fc"] { padding-top: 0; }
+[data-bz-node="svc-grid"] [data-bz-node="fc-head"] { display: none; }
+[data-bz-node="svc-grid"] [data-bz-node="fc-grid"] { margin-top: 0; counter-reset: bz-card; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"] { --bz-offset: color-mix(in srgb, var(--accent) 38%, var(--card)); position: relative; counter-increment: bz-card; box-shadow: var(--shadow-card), 12px 14px 0 -2px var(--bz-offset); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"]:nth-child(3n+2) { --bz-offset: var(--volt); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"]:nth-child(3n) { --bz-offset: var(--ink); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"]:hover { box-shadow: var(--shadow-lift), 12px 14px 0 -2px var(--bz-offset); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"]::after { content: counter(bz-card, decimal-leading-zero); position: absolute; top: calc(var(--bz-col-pad) + 18px); right: var(--bz-col-pad); font: 600 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .04em; color: var(--muted); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"]:nth-child(3n+2) [data-bz-node^="fc-icon"] p { background: color-mix(in srgb, var(--volt) 24%, var(--card)); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-card"]:nth-child(3n) [data-bz-node^="fc-icon"] p { background: var(--ink); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-icon"] { order: -2; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-kicker"] { order: -1; padding-top: var(--space-5) !important; padding-bottom: 0 !important; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-title"] { padding-top: 6px !important; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-title"] h3 { margin: 0; font-size: clamp(22px, 2vw, 26px); line-height: 1.15; letter-spacing: -.015em; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-body"] p + p { position: relative; padding-left: 30px; margin-top: 10px; font-size: 15px; font-weight: 500; color: var(--ink-soft); }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-body"] p:first-child { margin-bottom: 18px; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-body"] p + p::before { content: '⚡'; position: absolute; left: 0; top: 0; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-link"] { padding-top: var(--space-5) !important; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-link"] a { display: block; text-align: center; background: var(--ink); color: #fff; border-radius: var(--radius-chip); padding: 14px 20px; font: 700 15.5px/1.2 var(--font-body); text-decoration: none; transition: background-color .18s ease; }
+[data-bz-node="svc-grid"] [data-bz-node^="fc-link"] a:hover { background: var(--accent); }
+
+/* Light spotlight card: copy beside the charged mascot. Its links read as pills. */
+[data-bz-node="platform-img"] img { max-width: 300px; margin-inline: auto; border-radius: var(--radius-card); }
+[data-bz-node="platform-cta"] .bz-btn--link { background: var(--paper); color: var(--ink); border: 1px solid var(--line); padding: 13px 22px; font-size: 15px; }
+[data-bz-node="platform-cta"] .bz-btn--link:hover { text-decoration: none; transform: translateY(-2px); }
+
+/* CTA band: the AI Presence Score link sits beside "Book a demo" as the design's secondary pill. */
+[data-bz-node="cta-btns"] .bz-btn--link { background: rgb(255 255 255 / .1); color: #fff; border: 1px solid rgb(255 255 255 / .18); padding: 17px 32px; }
+[data-bz-node="cta-btns"] .bz-btn--link:hover { text-decoration: none; transform: translateY(-2px); }

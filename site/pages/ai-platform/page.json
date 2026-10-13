@@ -1,0 +1,687 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "AI that works your leads while you sleep.",
+                    "headingLevel": 1,
+                    "eyebrow": "The Buzznerd AI Platform"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Four connected systems under everything Buzznerd builds: AI answers buyers after hours, your reps get a ranked morning digest instead of CRM filing, listings build themselves from photos, and every sale traces back to the channel that drove it."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Included with Buzznerd AI Websites & E-Commerce"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Morning digest · 7:00 AM",
+                    "title": "Morning, Tina — 3 things worth your time.",
+                    "rows": [
+                      {
+                        "label": "1 · Joe asked about the LT625 overnight",
+                        "value": "",
+                        "accent": true
+                      },
+                      {
+                        "label": "✦ Reply drafted for you — financing terms + walkaround offer",
+                        "value": "Send as-is · Edit first",
+                        "accent": false
+                      },
+                      {
+                        "label": "2 · Price drop on a unit 3 buyers viewed",
+                        "value": "Notify all three? One tap.",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Nothing here needs filing — act or dismiss."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assistant",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "assistant"
+      },
+      "children": [
+        {
+          "id": "assistant-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "assistant-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "assistant-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Every lead answered — even at 11:48 PM.",
+                    "headingLevel": 2,
+                    "eyebrow": "AI Assistant"
+                  }
+                },
+                {
+                  "id": "assistant-body",
+                  "type": "text",
+                  "props": {
+                    "text": "When your team is offline, AI answers inbound texts, emails, and web chats on the same channel the buyer used — then hands your rep a warm briefing when they sign in."
+                  }
+                },
+                {
+                  "id": "assistant-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Same-channel replies — SMS, email, and web chat"
+                      },
+                      {
+                        "label": "Warm-handoff brief: what was asked, answered, and still owed"
+                      },
+                      {
+                        "label": "Hard guardrails — pricing and trade values stay human-only"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "assistant-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "assistant-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "SMS thread",
+                    "meta": "11:48 PM",
+                    "title": "“Is the 2022 sleeper cab still available? Can I see it Saturday?”",
+                    "rows": [
+                      {
+                        "label": "It is! Saturday works — we have 9:30 or 11:00 AM open for a walkaround. Which is better?",
+                        "value": "✦ AI Assistant · after hours",
+                        "accent": true
+                      }
+                    ],
+                    "note": "📋 Handoff brief ready for Tina at sign-in — booking pending, financing question owed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crm",
+      "type": "section",
+      "props": {
+        "anchor": "crm",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "crm-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "crm-media",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "ink",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "crm-stop",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "dark",
+                    "tag": "What your reps stop doing",
+                    "rows": [
+                      {
+                        "label": "Logging calls into the CRM"
+                      },
+                      {
+                        "label": "Updating deal stages"
+                      },
+                      {
+                        "label": "Digging for which lead to call first"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "crm-instead",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "dark",
+                    "tag": "What they do instead",
+                    "rows": [
+                      {
+                        "label": "✓ Open one ranked list each morning — hottest first, with the why",
+                        "accent": true
+                      },
+                      {
+                        "label": "✓ Send the AI-drafted reply as-is, or edit it first",
+                        "accent": true
+                      },
+                      {
+                        "label": "✓ Sell trucks",
+                        "accent": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "crm-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "crm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Follow-up without the filing.",
+                    "headingLevel": 2,
+                    "eyebrow": "No-Touch CRM"
+                  }
+                },
+                {
+                  "id": "crm-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Assembled overnight from every conversation, storefront visit, and price change: a ranked digest of the few things actually worth your rep's time — in their inbox at 7:00 AM. Nothing to log, nothing to file. Act on it or dismiss it; we track the rest."
+                  }
+                },
+                {
+                  "id": "crm-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Ranked by real buying signals, not recency"
+                      },
+                      {
+                        "label": "Every card explains WHY it's on the list"
+                      },
+                      {
+                        "label": "Plays nice with the CRM you already run"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magic",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "magic"
+      },
+      "children": [
+        {
+          "id": "magic-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "magic-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "magic-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Photos in. Full listing out.",
+                    "headingLevel": 2,
+                    "eyebrow": "Magic Flow"
+                  }
+                },
+                {
+                  "id": "magic-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Snap a unit on the lot and AI builds the entire product page in one read — title, description, specs, FAQs, and best-for tags. You confirm what it found and set the price; it suggests a range from comparable units, but never prices for you."
+                  }
+                },
+                {
+                  "id": "magic-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "One photo read builds every section of the page"
+                      },
+                      {
+                        "label": "AI proposes, you confirm — nothing publishes unchecked"
+                      },
+                      {
+                        "label": "Price guidance from comps — the price stays yours"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "magic-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "magic-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "📸 3 photos uploaded → listing built",
+                    "meta": "~1 min",
+                    "rows": [
+                      {
+                        "label": "Title",
+                        "value": "2022 Sleeper Cab · 6×4 ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Specs",
+                        "value": "9 detected ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Description + FAQs",
+                        "value": "Written ⚡",
+                        "accent": false
+                      },
+                      {
+                        "label": "Price — yours to set",
+                        "value": "Comps: $74–82k",
+                        "accent": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attribution",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "attribution"
+      },
+      "children": [
+        {
+          "id": "attribution-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "attribution-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "attribution-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Channel → sold units",
+                    "meta": "last 30 days",
+                    "rows": [
+                      {
+                        "label": "Facebook",
+                        "value": "3 sold",
+                        "accent": true
+                      },
+                      {
+                        "label": "Meta Ads",
+                        "value": "2 sold",
+                        "accent": false
+                      },
+                      {
+                        "label": "Google Ads",
+                        "value": "1 sold",
+                        "accent": false
+                      },
+                      {
+                        "label": "Email",
+                        "value": "0",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Facebook drove 3 of your 6 sales — shift budget there."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "attribution-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "attribution-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Every sale traced to its channel.",
+                    "headingLevel": 2,
+                    "eyebrow": "Attribution"
+                  }
+                },
+                {
+                  "id": "attribution-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Most tools stop at the lead. Buzznerd tags every share, call, and inquiry with its channel and closes the loop at the sale — so you know which marketing moves metal, not just which gets clicks."
+                  }
+                },
+                {
+                  "id": "attribution-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "One channel taxonomy across shares, leads, and sales"
+                      },
+                      {
+                        "label": "Tracked phone numbers — calls count, not just clicks"
+                      },
+                      {
+                        "label": "Per-channel visitors → leads → sold units, per listing"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "principles",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "",
+          "heading": "",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🔒",
+              "title": "Money stays human",
+              "kicker": "",
+              "body": "The AI never quotes prices, promises delivery, or values a trade. Those are locked to your people, always.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "✦",
+              "title": "Honest by design",
+              "kicker": "",
+              "body": "AI actions are marked as AI. Buyers always know whether they're talking to your assistant or your salesperson.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🗄️",
+              "title": "Your data, your dealership",
+              "kicker": "",
+              "body": "Conversations, leads, and sale outcomes belong to your dealership — not a rep's personal phone.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "The AI Platform, answered",
+          "faqs": [
+            {
+              "q": "What is the Buzznerd AI Platform?",
+              "a": "The AI under everything Buzznerd builds — the AI Assistant answers leads after hours, No-Touch CRM hands reps a ranked morning digest, Magic Flow builds listings from photos, and attribution traces every channel to the sold unit."
+            },
+            {
+              "q": "Does the AI Assistant replace my salespeople?",
+              "a": "No. It covers inbound questions when no salesperson is available and reads each buyer’s intent and readiness, then hands your team a warm brief. Prices, delivery promises, and trade values always stay human-only."
+            },
+            {
+              "q": "What is the No-Touch CRM?",
+              "a": "A ranked morning digest — not a data-entry CRM. It assembles your hottest follow-ups overnight with replies pre-drafted, so reps act instead of filing. It also plays nice with the CRM you already run."
+            },
+            {
+              "q": "How fast can Magic Flow list a unit?",
+              "a": "About a minute. Snap photos on the lot and Magic Flow builds the title, description, specs, and FAQs. You confirm what it found and set the price — including comp-based price guidance."
+            },
+            {
+              "q": "Can I see which marketing channel actually sells units?",
+              "a": "Yes. Channel-to-sale attribution ties every lead and sale back to the channel that produced it — real sold-unit results, not vanity metrics."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Put AI on the night shift.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "After-hours coverage, no-touch follow-up, magic listings, and channel-to-sale attribution — one platform.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      },
+                      {
+                        "ctaId": "explore-ai-websites"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. We'll review how leads and follow-up flow through your store today, show you where they're slipping, and walk you through what AI on the night shift would change.",
+          "checklist": [
+            {
+              "label": "Live review of your current follow-up"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

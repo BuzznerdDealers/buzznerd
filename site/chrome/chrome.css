@@ -1,0 +1,3 @@
+/* Shared chrome helpers. The Buzznerd header and footer are styled by the
+   default template's own CSS (site/templates/default.json) and the site design
+   layer (site/custom-code.json); both reach the storefront's /partials/chrome.css. */

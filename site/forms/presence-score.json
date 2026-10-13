@@ -1,0 +1,58 @@
+{
+  "id": "presence-score",
+  "name": "Get your AI Presence Score",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "presence-score",
+  "submitLabel": "Get my AI Presence Score →",
+  "successMessage": "Thanks — we're running your AI Presence scan now. We'll email your complete AI Presence Report with the details and the pages to prioritize.",
+  "consent": {
+    "enabled": false
+  },
+  "fields": [
+    {
+      "id": "ps-name",
+      "type": "full_name",
+      "label": "Your name",
+      "required": true,
+      "placeholder": "Your name",
+      "width": "half"
+    },
+    {
+      "id": "ps-email",
+      "type": "email",
+      "label": "Work email",
+      "required": true,
+      "placeholder": "you@dealership.com",
+      "width": "half"
+    },
+    {
+      "id": "ps-url",
+      "type": "single_line",
+      "label": "Your dealership website",
+      "required": true,
+      "placeholder": "https://yourdealership.com"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-team",
+      "name": "Buzznerd team",
+      "rules": [],
+      "targetType": "email",
+      "email": "info@buzznerd.com",
+      "contactName": "Buzznerd team"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "c-default",
+      "name": "Default",
+      "rules": [],
+      "type": "message",
+      "message": "Thanks — we're running your AI Presence scan now. We'll email your complete AI Presence Report with the details and the pages to prioritize."
+    }
+  ]
+}

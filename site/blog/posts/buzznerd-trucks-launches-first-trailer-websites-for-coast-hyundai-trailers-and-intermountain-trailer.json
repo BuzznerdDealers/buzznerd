@@ -1,0 +1,76 @@
+{
+  "slug": "buzznerd-trucks-launches-first-trailer-websites-for-coast-hyundai-trailers-and-intermountain-trailer",
+  "title": "Buzznerd Trucks Launches First Trailer Websites for Coast Hyundai Trailers and Intermountain Trailer",
+  "date": "2018-04-26",
+  "description": "Buzznerd's first trailer-dealer websites — Intermountain Trailer and Coast Hyundai Trailers — launch with automatic Truck Paper inventory sync, language translation, and interactive product pages.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/intermountain-trailer-feature.png",
+  "status": "published",
+  "keywords": [
+    "Case Study"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Case Study</strong> · 1 min read · By Abigail"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Two trailer-dealer sites with Truck Paper inventory sync, language translation, and interactive product pages."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Buzznerd Trucks is proud to announce the launch of our first trailer websites, Intermountain Trailer and Coast Hyundai Trailers. Both sites are automatically updated with inventory from Truck Paper!"
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Intermountaintrailer.com",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "With capabilities for language translation for their Spanish-speaking customers, Intermountaintrailer.com is a new breed of efficiency, ease-of-use, and style."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Coasthyundaitrailers.com",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "Clean and custom-styled but not overbearing, Coast Hyundai Trailers features interactive product pages that allow the customer to get the details they need."
+      }
+    },
+    {
+      "id": "cta-6",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Contact us for your trailer website needs →"
+          }
+        ]
+      }
+    }
+  ]
+}

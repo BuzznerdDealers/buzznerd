@@ -1,0 +1,142 @@
+{
+  "version": 2,
+  "id": "before-after",
+  "name": "Before / after photos",
+  "props": [
+    {
+      "key": "anchor",
+      "type": "text",
+      "label": "Jump-link id",
+      "default": "photos"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Photo & Background Enhancement"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Showroom photos. No photo studio needed."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro",
+      "default": ""
+    },
+    {
+      "key": "pairs",
+      "type": "list",
+      "label": "Photo pairs",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "before",
+          "type": "image",
+          "label": "Original photo"
+        },
+        {
+          "key": "after",
+          "type": "image",
+          "label": "Enhanced photo"
+        }
+      ]
+    }
+  ],
+  "css": "[data-bz-node=\"ba-grid\"] { margin-top: var(--space-5); }\n[data-bz-node^=\"ba-pair\"] { position: relative; }\n[data-bz-node^=\"ba-pair\"] .bz-block { padding-block: 0 var(--space-2); }\n[data-bz-node^=\"ba-after\"] .bz-figure, [data-bz-node^=\"ba-before\"] .bz-figure { position: relative; }\n[data-bz-node^=\"ba-after\"] .bz-figure::after, [data-bz-node^=\"ba-before\"] .bz-figure::after { position: absolute; left: 12px; top: 12px; padding: 5px 11px; border-radius: var(--radius-chip); font: 700 12px/1 var(--font-body); background: rgb(12 19 34 / .72); color: #fff; }\n[data-bz-node^=\"ba-after\"] .bz-figure::after { content: 'After ⚡'; background: var(--volt); color: var(--ink); }\n[data-bz-node^=\"ba-before\"] .bz-figure::after { content: 'Before'; }\n[data-bz-node^=\"ba-label\"] p { font-weight: 700 !important; color: var(--ink) !important; font-size: 15px; }\n/* Staged by the component script: one comparison stage, the pairs become pickers. */\n.ba-stage { position: relative; aspect-ratio: 4 / 3; max-width: 980px; margin: var(--space-6) auto 0; border-radius: var(--radius-modal); overflow: hidden; box-shadow: var(--shadow-lift); background: var(--ink); --ba: 50%; }\n.ba-stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }\n.ba-stage .ba-before { clip-path: inset(0 calc(100% - var(--ba)) 0 0); }\n.ba-handle { position: absolute; top: 0; bottom: 0; left: var(--ba); width: 3px; margin-left: -1.5px; background: #fff; pointer-events: none; }\n.ba-handle span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-weight: 800; color: var(--ink); box-shadow: 0 8px 24px rgb(0 0 0 / .3); }\n.ba-tag { position: absolute; top: 16px; padding: 7px 13px; border-radius: var(--radius-chip); font: 700 13px/1 var(--font-body); pointer-events: none; }\n.ba-tag--before { left: 16px; background: rgb(12 19 34 / .72); color: #fff; }\n.ba-tag--after { right: 16px; background: var(--volt); color: var(--ink); }\n.ba-range { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }\n[data-bz-section=\"before-after\"].is-staged [data-bz-node=\"ba-grid\"] { max-width: 520px; margin-inline: auto; }\n[data-bz-section=\"before-after\"].is-staged [data-bz-node^=\"ba-before\"], [data-bz-section=\"before-after\"].is-staged [data-bz-node^=\"ba-label\"] { display: none; }\n[data-bz-section=\"before-after\"].is-staged [data-bz-node^=\"ba-after\"] .bz-figure::after { content: none; }\n[data-bz-section=\"before-after\"].is-staged [data-bz-node^=\"ba-pair\"] { cursor: pointer; border-radius: 14px; outline: 3px solid transparent; outline-offset: 3px; opacity: .65; transition: opacity .2s ease, outline-color .2s ease; }\n[data-bz-section=\"before-after\"].is-staged [data-bz-node^=\"ba-pair\"].is-active { outline-color: var(--accent); opacity: 1; }\n@media (max-width: 640px) { [data-bz-section=\"before-after\"].is-staged [data-bz-node=\"ba-grid\"] > .bz-col { grid-column: span 4; } [data-bz-section=\"before-after\"].is-staged [data-bz-node=\"ba-grid\"] { grid-template-columns: repeat(12, 1fr); } }\n",
+  "js": "/* Before / after: build a drag-to-compare stage above the photo pairs.\n   Without this script (and on the Design canvas) each pair simply shows the\n   enhanced and original photos side by side, labelled. The stage is a real\n   range input stretched over the photos, so mouse, touch and keyboard all work. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"before-after\"]').forEach(function (root) {\n    var pairs = Array.prototype.slice.call(root.querySelectorAll('[data-bz-node^=\"ba-pair\"]'));\n    var grid = root.querySelector('[data-bz-node=\"ba-grid\"]');\n    if (!pairs.length || !grid) return;\n    var stage = document.createElement('div');\n    stage.className = 'ba-stage';\n    stage.innerHTML =\n      '<img class=\"ba-after\" alt=\"\" /><img class=\"ba-before\" alt=\"\" />' +\n      '<div class=\"ba-handle\" aria-hidden=\"true\"><span>\\u27F7</span></div>' +\n      '<span class=\"ba-tag ba-tag--before\">Before</span><span class=\"ba-tag ba-tag--after\">After \\u26A1</span>' +\n      '<input class=\"ba-range\" type=\"range\" min=\"0\" max=\"100\" value=\"50\" aria-label=\"Drag to compare the original and enhanced photo\" />';\n    grid.parentNode.insertBefore(stage, grid);\n    var after = stage.querySelector('.ba-after');\n    var before = stage.querySelector('.ba-before');\n    var range = stage.querySelector('.ba-range');\n    range.addEventListener('input', function () { stage.style.setProperty('--ba', range.value + '%'); });\n    function pick(i) {\n      var imgs = pairs[i].querySelectorAll('img');\n      if (imgs.length < 2) return;\n      after.src = imgs[0].currentSrc || imgs[0].src; after.alt = imgs[0].alt;\n      before.src = imgs[1].currentSrc || imgs[1].src; before.alt = imgs[1].alt;\n      pairs.forEach(function (p, j) { p.classList.toggle('is-active', i === j); p.setAttribute('aria-pressed', String(i === j)); });\n    }\n    pairs.forEach(function (p, i) {\n      p.setAttribute('role', 'button');\n      p.setAttribute('tabindex', '0');\n      p.setAttribute('aria-label', 'Show photo ' + (i + 1));\n      p.addEventListener('click', function () { pick(i); });\n      p.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(i); } });\n    });\n    pick(0);\n    root.classList.add('is-staged');\n  });\n})();\n",
+  "nodes": [
+    {
+      "id": "ba",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "anchor": "{{anchor}}"
+      },
+      "children": [
+        {
+          "id": "ba-head",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "ba-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ba-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "ba-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-grid",
+          "type": "row",
+          "props": {
+            "gap": 5
+          },
+          "children": [
+            {
+              "id": "ba-pair",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "pairs"
+              },
+              "children": [
+                {
+                  "id": "ba-after",
+                  "type": "image",
+                  "props": {
+                    "image": "{{after}}"
+                  }
+                },
+                {
+                  "id": "ba-before",
+                  "type": "image",
+                  "props": {
+                    "image": "{{before}}"
+                  }
+                },
+                {
+                  "id": "ba-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{label}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

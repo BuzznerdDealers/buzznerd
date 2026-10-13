@@ -1,0 +1,385 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Are you the commercial dealership AI recommends?",
+                    "headingLevel": 1,
+                    "eyebrow": "Free AI Presence Score",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Your next fleet or owner-operator buyer may not scroll search results — they ask ChatGPT, Gemini, Perplexity, and Google AI who to trust for trucks, trailers, equipment, and parts. See how visible your dealership is to AI, in about 30 seconds.",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hero-form-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "align": "end"
+              },
+              "children": [
+                {
+                  "id": "hero-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/presence-score-character.png",
+                      "alt": "Buzznerd AI presence hero character",
+                      "width": 218,
+                      "height": 456
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "hero-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "presence-score"
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Free preliminary scan · No obligation · No credit card",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-analyze",
+                  "type": "list",
+                  "props": {
+                    "heading": "What we analyze",
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "AI discoverability"
+                      },
+                      {
+                        "label": "Inventory & unit discovery"
+                      },
+                      {
+                        "label": "Parts & service pages"
+                      },
+                      {
+                        "label": "Local & authority signals"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-aside",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "story-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "story-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "story-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "story-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 7
+                      },
+                      "children": [
+                        {
+                          "id": "story-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "A customer asked ChatGPT. ChatGPT answered: WG Motors.",
+                            "headingLevel": 2,
+                            "eyebrow": "Real client success story"
+                          }
+                        },
+                        {
+                          "id": "story-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Shortly after we completed AI optimization on their website, WG Motors got a call: a brand-new customer had asked ChatGPT where to get DPF cleaning in the area — and ChatGPT recommended them."
+                          }
+                        },
+                        {
+                          "id": "story-quote",
+                          "type": "testimonials",
+                          "props": {
+                            "items": [
+                              {
+                                "quote": "A new customer contacted us to inquire about DPF cleaning after finding WG Motors through a ChatGPT search for services in the area. He proceeded to book with us the same week… with the potential for additional future business.",
+                                "name": "WG Motors",
+                                "role": "After their AI optimization with Buzznerd"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "story-media",
+                      "type": "column",
+                      "props": {
+                        "span": 5
+                      },
+                      "children": [
+                        {
+                          "id": "story-steps",
+                          "type": "list",
+                          "props": {
+                            "columns": 1,
+                            "items": [
+                              {
+                                "label": "💬 Asked ChatGPT",
+                                "desc": "\"DPF cleaning near me\""
+                              },
+                              {
+                                "label": "✦ AI recommended WG Motors",
+                                "desc": "Optimized site, easy for AI to cite"
+                              },
+                              {
+                                "label": "📅 Booked the same week",
+                                "desc": "New customer, zero ad spend"
+                              },
+                              {
+                                "label": "💵 ~$500 sale — and counting",
+                                "desc": "With repeat business potential"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checks",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "How the score works",
+          "heading": "Three checks. About 30 seconds. Zero jargon.",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🔎",
+              "title": "AI discovery",
+              "kicker": "",
+              "body": "Can ChatGPT, Gemini, Perplexity, and Google AI Overviews find, understand, and cite your dealership when buyers ask?",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🧩",
+              "title": "Structure & schema",
+              "kicker": "",
+              "body": "Is your inventory, service, and location content marked up and organized so AI can actually parse and quote it?",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🏅",
+              "title": "Authority & local trust",
+              "kicker": "",
+              "body": "Reviews, consistent business info, FAQs, and buyer-intent content — the trust signals AI weighs before recommending you.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Frequently asked questions.",
+          "faqs": [
+            {
+              "q": "What is an AI Presence Score?",
+              "a": "Your AI Presence Score is a quick, preliminary read on how visible your dealership is to AI. It highlights where you're strong, where you're being skipped, and the pages to improve so AI is more likely to recommend you."
+            },
+            {
+              "q": "Is the AI Presence Score really free?",
+              "a": "Yes. The preliminary AI Presence Score is free and comes with no obligation. Enter your name, email, and website URL and you'll get your results in about 30 seconds."
+            },
+            {
+              "q": "Why does AI visibility matter for my dealership?",
+              "a": "Fleet managers, owner-operators, and commercial buyers increasingly ask AI tools like ChatGPT, Gemini, Perplexity, and Google AI who to trust for trucks, trailers, equipment, and parts instead of scrolling search results. If AI can't understand or find your dealership, you're left out of those recommendations."
+            },
+            {
+              "q": "What do I do if my score is low?",
+              "a": "A low score means AI struggles to find, understand, or recommend your dealership. Buzznerd optimizes your website and content so AI can — you can book a visibility demo to walk through exactly what to fix."
+            },
+            {
+              "q": "How long does the scan take?",
+              "a": "About 30 seconds. You'll see a preliminary score on screen, and we'll email the complete AI Presence Report with the details and the pages to prioritize."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "accent",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Don't just check your score — climb it.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Buzznerd optimizes your site so AI finds, understands, and recommends your dealership. See exactly what we'd fix first.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-visibility-demo"
+                      },
+                      {
+                        "ctaId": "see-aio-service"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

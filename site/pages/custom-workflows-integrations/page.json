@@ -1,0 +1,629 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Connect your systems. Build around the way you operate.",
+                    "headingLevel": 1,
+                    "eyebrow": "Custom Workflows & Integrations"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Your team shouldn't enter the same information into three systems. We connect websites, inventory providers, CRM, DMS, e-commerce, and marketing platforms — and build custom workflows around your operation."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Karmak · CDK · Arcadium · Sandhills · Custom APIs"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "⚡ Connected systems",
+                    "meta": "in sync",
+                    "rows": [
+                      {
+                        "label": "Karmak",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "CDK",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "Sandhills",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "Arcadium",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "Your CRM",
+                        "value": "",
+                        "accent": false
+                      },
+                      {
+                        "label": "Custom API",
+                        "value": "",
+                        "accent": false
+                      }
+                    ],
+                    "note": "⚡ Enter it once. Every system stays in sync."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "integrations-strip",
+        "values": {
+          "label": "Integrates with the platforms dealers rely on",
+          "logos": [
+            {
+              "name": "Karmak",
+              "image": {
+                "src": "/assets/logo-karmak.webp",
+                "alt": "Karmak",
+                "width": 184,
+                "height": 34
+              }
+            },
+            {
+              "name": "CDK",
+              "image": {
+                "src": "/assets/logo-cdk.webp",
+                "alt": "CDK",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Google Partner",
+              "image": {
+                "src": "/assets/logo-google-g.webp",
+                "alt": "Google Partner",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Truck Paper",
+              "image": {
+                "src": "/assets/logo-truckpaper.webp",
+                "alt": "Truck Paper",
+                "width": 246,
+                "height": 52
+              }
+            },
+            {
+              "name": "Meta",
+              "image": {
+                "src": "/assets/logo-meta.webp",
+                "alt": "Meta",
+                "width": 445,
+                "height": 100
+              }
+            },
+            {
+              "name": "Machinery Trader",
+              "image": {
+                "src": "/assets/logo-machinerytrader.webp",
+                "alt": "Machinery Trader",
+                "width": 440,
+                "height": 100
+              }
+            },
+            {
+              "name": "Arcadium",
+              "image": {
+                "src": "/assets/logo-arcadium.webp",
+                "alt": "Arcadium",
+                "width": 192,
+                "height": 100
+              }
+            },
+            {
+              "name": "Stripe",
+              "image": {
+                "src": "/assets/logo-stripe-clean.webp",
+                "alt": "Stripe",
+                "width": 231,
+                "height": 100
+              }
+            },
+            {
+              "name": "Trnsact",
+              "image": {
+                "src": "/assets/logo-trnsact.svg",
+                "alt": "Trnsact",
+                "width": 160,
+                "height": 48
+              }
+            },
+            {
+              "name": "Equipment Funding Solutions",
+              "image": {
+                "src": "/assets/logo-efunding.webp",
+                "alt": "Equipment Funding Solutions",
+                "width": 131,
+                "height": 100
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "connect",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "connect-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "connect-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "card",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "connect-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "connect-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "connect-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "If it runs your dealership, we can connect it.",
+                            "headingLevel": 2,
+                            "eyebrow": "Integrations"
+                          }
+                        },
+                        {
+                          "id": "connect-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Inventory providers, DMS and CRM systems, e-commerce, marketing platforms, reporting tools, portals — and the custom data sources unique to your operation."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "connect-media",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "connect-chips",
+                          "type": "list",
+                          "props": {
+                            "columns": 3,
+                            "items": [
+                              {
+                                "label": "Sandhills / Truck Paper"
+                              },
+                              {
+                                "label": "Karmak"
+                              },
+                              {
+                                "label": "Arcadium"
+                              },
+                              {
+                                "label": "CDK Global"
+                              },
+                              {
+                                "label": "CRM platforms"
+                              },
+                              {
+                                "label": "DMS platforms"
+                              },
+                              {
+                                "label": "Inventory providers"
+                              },
+                              {
+                                "label": "E-commerce systems"
+                              },
+                              {
+                                "label": "Marketing platforms"
+                              },
+                              {
+                                "label": "Custom APIs"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflows",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "Custom workflows",
+          "heading": "Built around dealership-specific operations.",
+          "intro": "",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🔄",
+              "title": "Inventory & Product Syncing",
+              "kicker": "",
+              "body": "Units and parts flow from your source of record to every channel — automatically.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "📨",
+              "title": "Lead Routing",
+              "kicker": "",
+              "body": "Every inquiry lands with the right person, department, or location in seconds.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "👤",
+              "title": "Customer & Account Workflows",
+              "kicker": "",
+              "body": "Portals, account-based ordering, parts requests, and quote request systems.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "📊",
+              "title": "Reporting Dashboards",
+              "kicker": "",
+              "body": "Visibility across systems — one view instead of five logins.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🏢",
+              "title": "Multi-Location Processes",
+              "kicker": "",
+              "body": "Workflows that respect how your rooftops actually divide the work.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🤖",
+              "title": "AI-Connected Workflows",
+              "kicker": "",
+              "body": "A clean, connected data foundation that AI tools can actually build on.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "benefits",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "ben-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ben-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "ben-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Less double entry. More accuracy.",
+                    "headingLevel": 2,
+                    "eyebrow": "Dealer benefits"
+                  }
+                },
+                {
+                  "id": "ben-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Connected systems mean cleaner data, faster follow-up, and a team that spends its time selling instead of retyping."
+                  }
+                },
+                {
+                  "id": "ben-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/workflows-character.png",
+                      "alt": "Buzznerd integration specialist connecting a dealership's systems together",
+                      "width": 570,
+                      "height": 626
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ben-card",
+              "type": "column",
+              "props": {
+                "span": 5,
+                "background": "ink",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "ben-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "Workflows & integrations help dealers",
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Reduce duplicate data entry"
+                      },
+                      {
+                        "label": "Improve inventory accuracy"
+                      },
+                      {
+                        "label": "Route leads more efficiently"
+                      },
+                      {
+                        "label": "Connect website, CRM, DMS & e-commerce"
+                      },
+                      {
+                        "label": "Automate repetitive work"
+                      },
+                      {
+                        "label": "Strengthen the data foundation for AI tools"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ben-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Frequently asked questions.",
+          "faqs": [
+            {
+              "q": "Which systems can Buzznerd connect?",
+              "a": "Buzznerd connects your website, inventory providers, CRM, DMS, e-commerce, and marketing platforms — including Karmak and CDK, plus custom DMS and ERP integrations for other third-party systems."
+            },
+            {
+              "q": "Can Buzznerd build a workflow specific to how my dealership operates?",
+              "a": "Yes. Buzznerd builds custom workflows around your operations — inventory and product syncing, lead routing, customer and account workflows, reporting dashboards, and multi-location processes that respect how your rooftops divide the work."
+            },
+            {
+              "q": "Will connecting my systems reduce double data entry?",
+              "a": "Yes. Connected systems mean data flows from your source of record to every channel automatically, so your team spends less time retyping and more time selling, with cleaner, more accurate data."
+            },
+            {
+              "q": "Do I need Buzznerd's other products to use integrations?",
+              "a": "Integrations and workflows work best alongside a Buzznerd website, e-commerce, and the AI platform, but we'll discuss connecting your current systems during a demo."
+            },
+            {
+              "q": "How do integrations support AI tools?",
+              "a": "A clean, connected data foundation is what AI tools build on. When your inventory, leads, and customer data are connected and accurate, AI-connected workflows and assistants can act on reliable information."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Solve a dealership workflow problem.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us where the double entry hurts — we'll connect it.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      },
+                      {
+                        "ctaId": "explore-ai-platform"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. Bring your messiest workflow — we'll sketch how we'd connect it live on the call.",
+          "checklist": [
+            {
+              "label": "Live review of your current setup"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

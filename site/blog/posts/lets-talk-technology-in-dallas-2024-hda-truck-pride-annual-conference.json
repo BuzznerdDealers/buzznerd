@@ -1,0 +1,82 @@
+{
+  "slug": "lets-talk-technology-in-dallas-2024-hda-truck-pride-annual-conference",
+  "title": "Let's Talk Technology in Dallas! 2024 HDA Truck Pride Annual Conference",
+  "date": "2024-04-17",
+  "description": "Jerry Van Galder speaks at the 2024 HDA Truck Pride Annual Meeting in Dallas on dealership technology.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2024/04/HDA_Truck_Pride.png",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 1 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Jerry Van Galder speaks on new trends and technologies in the trucking and parts industry."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "We're pleased to announce that Jerry Van Galder, CEO and Founder of Buzznerd, will be speaking at the 2024 HDA Truck Pride Annual Meeting in hot and sunny Dallas, Texas. Mark your calendars for his sessions on Thursday and Friday."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Session Details",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Dates: Thursday & Friday"
+          },
+          {
+            "label": "Times: 2:00 PM and 4:00 PM"
+          },
+          {
+            "label": "Location: Grapevine Rooms 1 and 2"
+          },
+          {
+            "label": "Duration: 45 minutes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-4",
+      "type": "text",
+      "props": {
+        "text": "Jerry will share insights from his experience in the trucking and parts industry, focusing on new trends and technologies. These sessions are a great opportunity to gain valuable knowledge and engage with leading industry experts. We look forward to seeing you there!"
+      }
+    },
+    {
+      "id": "cta-5",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Meet us at the show →"
+          }
+        ]
+      }
+    }
+  ]
+}

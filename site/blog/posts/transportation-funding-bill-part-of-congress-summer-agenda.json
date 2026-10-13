@@ -1,0 +1,125 @@
+{
+  "slug": "transportation-funding-bill-part-of-congress-summer-agenda",
+  "title": "Transportation Funding Bill Part of Congress' Summer Agenda",
+  "date": "2020-12-08",
+  "description": "House lawmakers took up the yearly funding allocated for the U.S. DOT — including highway-program appropriations and a possible bump for trucking-safety oversight.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/shutterstock_264655757-1024x683__1_-removebg-preview.png",
+  "status": "published",
+  "keywords": [
+    "Industry"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Industry</strong> · 2 min read · By Abigail"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "What proposed DOT budgets and a highway-law renewal could mean for trucking."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "According to an article in Transport Topics published in June 2020, House Democrats plan to discuss the yearly funding allocated for the United States DOT this summer. Learn more about these debates and what effects governmental decisions have on the transportation industry."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "The 2021 Budget",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Housing, transportation, and urban development are all being considered for appropriations bills for the fiscal year 2021. The discussion in Congress will involve a possible 4% increase (from last year) in funding for the Federal Motor Carrier Safety Administration. This Administration is in charge of overseeing trucking policies."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "The Federal-Aid Highway Program",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "In addition, the debate will take place in the democrat-led House regarding a highway law that took effect in 2015. This law is due to expire on September 30th and updates are necessary."
+      }
+    },
+    {
+      "id": "quote-6",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-6-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-6-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>Transportation leaders recently unveiled a five-year, $494 billion measure that would provide $319 billion for the federal-aid highway program at the Federal Highway Administration. (Transport Topics, June 2020)</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "The Proposed DOT Budget",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-8",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Discretionary spending: $21.6 billion — a decrease of 13% from last year."
+          },
+          {
+            "label": "Mandatory contract authority and obligation limitations: $66.2 billion — an increase of 8% from last year."
+          },
+          {
+            "label": "Grants for infrastructure and freight: $1 billion."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-9",
+      "type": "text",
+      "props": {
+        "text": "Also on the agenda this summer in Washington is law enforcement legislation. Members in both the House and the Senate are considering changes in this area, with both political parties seeking to ensure equal protection for all citizens under the laws of our country."
+      }
+    }
+  ]
+}

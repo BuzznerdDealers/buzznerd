@@ -1,0 +1,38 @@
+{
+  "$schema": "./dealer.config.schema.json",
+  "contractVersion": "5.0.0",
+  "name": "Buzznerd",
+  "shortName": "Buzznerd",
+  "channelToken": "REPLACE_CHANNEL_TOKEN",
+  "domain": "REPLACE_CHANNEL_TOKEN.buzznerd.com",
+  "url": "https://REPLACE_CHANNEL_TOKEN.buzznerd.com",
+  "storefrontOrigin": "https://REPLACE_STOREFRONT_ORIGIN",
+  "storefrontPrefix": "store",
+  "logo": "/assets/buzznerd-logo-trim.webp",
+  "favicon": "/assets/favicon.png",
+  "analytics": {
+    "loaderUrl": null,
+    "loaderVersion": null
+  },
+  "business": {
+    "type": "Organization",
+    "legalName": "Buzznerd",
+    "phone": "",
+    "email": "info@buzznerd.com",
+    "streetAddress": "",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "postalCode": "",
+    "addressCountry": "US",
+    "priceRange": "$$",
+    "openingHours": []
+  },
+  "seo": {
+    "defaultTitle": "Buzznerd | AI Solutions for Car & Truck Dealerships — Websites, Ecommerce, AIO/GEO",
+    "titleTemplate": "%s | Buzznerd",
+    "defaultDescription": "Buzznerd builds AI-powered dealership websites, ecommerce, CRM/DMS integrations, AIO/GEO search visibility, photo enhancement, and sales attribution. Rated 4.8 on Google by franchise, independent, commercial, fleet, and truck dealers.",
+    "ogImage": "/assets/buzznerd-og.png",
+    "locale": "en_US",
+    "themeColor": "#0C1322"
+  }
+}

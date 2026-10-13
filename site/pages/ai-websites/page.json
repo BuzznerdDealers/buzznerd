@@ -1,0 +1,905 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Build a smarter dealership website.",
+                    "headingLevel": 1,
+                    "eyebrow": "AI Dealership Websites"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Your website should do more than look good. Buzznerd builds AI-enabled websites for truck, trailer, equipment, parts, and multi-location dealerships — a smarter foundation for inventory discovery, lead generation, and long-term growth."
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-note",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/ai-platform\">Powered by the Buzznerd AI Platform →</a>"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "hero-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "yourdealership.com",
+                    "title": "⚡ sleeper cab under $80k near Dallas",
+                    "rows": [
+                      {
+                        "label": "2022 Sleeper Cab",
+                        "value": "$78,900 · Dallas",
+                        "accent": false
+                      },
+                      {
+                        "label": "2021 Sleeper Cab",
+                        "value": "$74,500 · Fort Worth",
+                        "accent": false
+                      },
+                      {
+                        "label": "Interested in this unit?",
+                        "value": "Request a quote",
+                        "accent": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "hero-chip",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "chip",
+                    "tag": "⚡ New lead · Sales dept",
+                    "title": "Quote request routed"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "integrations-strip",
+        "values": {
+          "label": "Works with the platforms dealers rely on",
+          "logos": [
+            {
+              "name": "Karmak",
+              "image": {
+                "src": "/assets/logo-karmak.webp",
+                "alt": "Karmak",
+                "width": 184,
+                "height": 34
+              }
+            },
+            {
+              "name": "CDK",
+              "image": {
+                "src": "/assets/logo-cdk.webp",
+                "alt": "CDK",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Google Partner",
+              "image": {
+                "src": "/assets/logo-google-g.webp",
+                "alt": "Google Partner",
+                "width": 100,
+                "height": 100
+              }
+            },
+            {
+              "name": "Truck Paper",
+              "image": {
+                "src": "/assets/logo-truckpaper.webp",
+                "alt": "Truck Paper",
+                "width": 246,
+                "height": 52
+              }
+            },
+            {
+              "name": "Meta",
+              "image": {
+                "src": "/assets/logo-meta.webp",
+                "alt": "Meta",
+                "width": 445,
+                "height": 100
+              }
+            },
+            {
+              "name": "Machinery Trader",
+              "image": {
+                "src": "/assets/logo-machinerytrader.webp",
+                "alt": "Machinery Trader",
+                "width": 440,
+                "height": 100
+              }
+            },
+            {
+              "name": "Arcadium",
+              "image": {
+                "src": "/assets/logo-arcadium.webp",
+                "alt": "Arcadium",
+                "width": 192,
+                "height": 100
+              }
+            },
+            {
+              "name": "Stripe",
+              "image": {
+                "src": "/assets/logo-stripe-clean.webp",
+                "alt": "Stripe",
+                "width": 231,
+                "height": 100
+              }
+            },
+            {
+              "name": "Trnsact",
+              "image": {
+                "src": "/assets/logo-trnsact.svg",
+                "alt": "Trnsact",
+                "width": 160,
+                "height": 48
+              }
+            },
+            {
+              "name": "Equipment Funding Solutions",
+              "image": {
+                "src": "/assets/logo-efunding.webp",
+                "alt": "Equipment Funding Solutions",
+                "width": 131,
+                "height": 100
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "found",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "found",
+          "eyebrow": "Found everywhere buyers look",
+          "heading": "Buyers don't just Google anymore. Neither should your site.",
+          "intro": "Every Buzznerd website is built from the ground up to be found — in search, in map results, and in the AI answers buyers now ask before they ever click. SEO, AEO, GEO, and AIO aren't add-ons. They come standard.",
+          "span": 3,
+          "cards": [
+            {
+              "icon": "🔍",
+              "title": "SEO",
+              "kicker": "Search Engine Optimization",
+              "body": "Clean structure, fast pages, and inventory schema so Google ranks every unit and department.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "💬",
+              "title": "AEO",
+              "kicker": "Answer Engine Optimization",
+              "body": "Content shaped to be the answer when buyers ask ChatGPT, Gemini, or Google AI for a unit or service.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "📍",
+              "title": "GEO",
+              "kicker": "Generative / local visibility",
+              "body": "Location-aware pages so each rooftop shows up for \"near me\" searches and local AI recommendations.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "✦",
+              "title": "AIO",
+              "kicker": "AI Optimization",
+              "body": "A site AI engines can actually read and trust — so your dealership gets named, not skipped.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "story",
+      "type": "section",
+      "props": {
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "story-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "story-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "story-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "story-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "story-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "A customer asked ChatGPT. ChatGPT answered: WG Motors.",
+                            "headingLevel": 3,
+                            "eyebrow": "Real client success story"
+                          }
+                        },
+                        {
+                          "id": "story-body",
+                          "type": "text",
+                          "props": {
+                            "text": "Shortly after we completed AI optimization on their website, WG Motors got a call: a brand-new customer had asked ChatGPT where to get DPF cleaning in the area — and ChatGPT recommended them."
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "story-quote",
+                      "type": "column",
+                      "props": {
+                        "span": 6
+                      },
+                      "children": [
+                        {
+                          "id": "story-q",
+                          "type": "testimonials",
+                          "props": {
+                            "items": [
+                              {
+                                "quote": "A new customer contacted us to inquire about DPF cleaning after finding WG Motors through a ChatGPT search for services in the area. He proceeded to book with us the same week… with the potential for additional future business.",
+                                "name": "WG Motors",
+                                "role": "after their AI optimization with Buzznerd"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-cards",
+        "values": {
+          "anchor": "",
+          "eyebrow": "The Buzznerd AI Platform",
+          "heading": "AI-powered features that help your customers.",
+          "intro": "We take UX (User Experience) seriously. Every feature is built around the buyer — helping them find the right unit, get answers fast, and take the next step without friction.",
+          "span": 4,
+          "cards": [
+            {
+              "icon": "🔍",
+              "title": "Find the right unit fast",
+              "kicker": "",
+              "body": "Search that understands how buyers talk — \"sleeper cab under $80k near Dallas\" finds the right units, typos and all.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "📈",
+              "title": "Shows them what fits",
+              "kicker": "",
+              "body": "Surfaces the most relevant units and departments first, so buyers see what matters to them.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🎯",
+              "title": "Answers questions instantly",
+              "kicker": "",
+              "body": "An AI assistant answers buyer questions around the clock and hands warm leads to your team.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "✍️",
+              "title": "Clear, complete listings",
+              "kicker": "",
+              "body": "AI-written titles, descriptions, and specs give buyers everything they need to decide with confidence.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🧲",
+              "title": "Easy to take the next step",
+              "kicker": "",
+              "body": "Clear paths to inquire, finance, or book service on every page — from any department.",
+              "linkLabel": "",
+              "url": ""
+            },
+            {
+              "icon": "🔗",
+              "title": "Customer portal",
+              "kicker": "",
+              "body": "A personal account that keeps buyers coming back — saved inventory, messages with your team, and their inquiry history all in one place.",
+              "linkLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "behind",
+      "type": "section",
+      "props": {
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "behind-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "behind-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "behind-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 6,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "behind-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "behind-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Every lead flows into tools that help you close.",
+                            "headingLevel": 2,
+                            "eyebrow": "Behind the site"
+                          }
+                        },
+                        {
+                          "id": "behind-tools",
+                          "type": "text",
+                          "props": {
+                            "text": "💬 AI Assistant · 📋 No-Touch CRM · ✨ Magic Flow IMS · 📊 Attribution",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "behind-act",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "align": "end"
+                      },
+                      "children": [
+                        {
+                          "id": "behind-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "see-platform"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "brands-head",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "brands-headcol",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "brands-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "One site. Every brand you sell.",
+                    "headingLevel": 2,
+                    "eyebrow": "Multi-brand ready"
+                  }
+                },
+                {
+                  "id": "brands-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Most dealers carry more than one OEM. Buzznerd builds a single site with an interactive location finder — buyers filter by brand and the services they need, and get routed to the right rooftop. We also custom-build OEM spec'd brand pages on your site, so each manufacturer's inventory and identity gets its own dedicated home."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "brands-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "brands-filters",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "brands-filter-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "📍 Find a location",
+                    "title": "All · International · Freightliner · Kenworth · Volvo · Isuzu · Mack",
+                    "note": "Service bays · Parts counter · Drivers lounge · Financing · Truck rental · Body shop"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "brands-results",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "brands-loc-panel",
+                  "type": "ui-panel",
+                  "props": {
+                    "tone": "light",
+                    "tag": "Locations",
+                    "meta": "5 locations",
+                    "rows": [
+                      {
+                        "label": "Dallas, TX — International · Freightliner · Kenworth · Volvo · Mack",
+                        "value": "(214) 555-0101",
+                        "accent": true
+                      },
+                      {
+                        "label": "Fort Worth, TX — International · Freightliner · Kenworth",
+                        "value": "(817) 555-0102",
+                        "accent": false
+                      },
+                      {
+                        "label": "Oklahoma City, OK — International · Volvo · Isuzu",
+                        "value": "(405) 555-0148",
+                        "accent": false
+                      },
+                      {
+                        "label": "Tulsa, OK — Freightliner · Mack · Kenworth",
+                        "value": "(918) 555-0177",
+                        "accent": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leads",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "leads-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "leads-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "leads-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Every page is a lead path.",
+                    "headingLevel": 2,
+                    "eyebrow": "Built for lead generation"
+                  }
+                },
+                {
+                  "id": "leads-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Clear calls to action, easy forms, strong inventory pages, and department-specific lead paths — conversion is built in, not bolted on. And when your team is offline, AI coverage answers inbound questions so no lead goes cold overnight."
+                  }
+                },
+                {
+                  "id": "leads-paths",
+                  "type": "text",
+                  "props": {
+                    "text": "Request a quote · Contact sales · Schedule service · Parts inquiry · Finance inquiry · Trade-in request · Inventory interest · Location routing"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "leads-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "ink",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "leads-list",
+                  "type": "list",
+                  "props": {
+                    "heading": "What your dealership gets",
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Better inventory discovery"
+                      },
+                      {
+                        "label": "More qualified leads"
+                      },
+                      {
+                        "label": "A better mobile experience"
+                      },
+                      {
+                        "label": "Sales, parts, service & finance support"
+                      },
+                      {
+                        "label": "Stronger landing pages"
+                      },
+                      {
+                        "label": "Multi-location growth, connected to marketing"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "leads-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "growth-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "growth-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "growth-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your most valuable storefront.",
+                    "headingLevel": 2,
+                    "eyebrow": "Built for long-term growth"
+                  }
+                },
+                {
+                  "id": "growth-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Your website is the hub of everything you do online — and the more your inventory, leads, and sold units flow through it, the smarter discovery, ranking, and follow-up get. Results build season over season, not just at launch."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "growth-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "growth-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/assets/growth-hero.png",
+                      "alt": "Dealership sales growing year over year",
+                      "width": 520,
+                      "height": 469
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "eyebrow": "Questions dealers ask",
+          "heading": "Frequently asked questions.",
+          "faqs": [
+            {
+              "q": "Can Buzznerd build one website for a dealership that sells multiple brands?",
+              "a": "Yes. We build a single site with an interactive location finder, so buyers filter by OEM brand and the services they need and get routed to the right rooftop. We also custom-build OEM spec'd brand pages so each manufacturer's inventory and identity gets its own dedicated home."
+            },
+            {
+              "q": "Does a Buzznerd website connect to my existing DMS and tools?",
+              "a": "Yes. Buzznerd integrates with the platforms dealers already rely on — including Karmak and CDK — plus custom DMS and ERP integrations, so your inventory, leads, and sold units flow through one connected platform."
+            },
+            {
+              "q": "What does it mean that Buzznerd sites are optimized for AI?",
+              "a": "Every site is built for SEO, AEO (Answer Engine Optimization), GEO (local/generative visibility), and AIO (AI Optimization) — clean structure, inventory schema, and content shaped to be the answer when buyers ask ChatGPT, Gemini, or Google AI for a unit or service, so your dealership gets named, not skipped."
+            },
+            {
+              "q": "How does a Buzznerd website help me generate more leads?",
+              "a": "Every page is a lead path — clear calls to action, easy forms, strong inventory pages, and department-specific lead capture. An AI assistant answers buyer questions around the clock and hands warm leads to your team."
+            },
+            {
+              "q": "What types of dealerships does Buzznerd work with?",
+              "a": "Buzznerd builds AI-enabled websites for commercial truck, trailer, equipment, and parts dealerships, including multi-location and multi-brand operations. We power 700+ rooftops and hold a 4.8 rating on Google."
+            },
+            {
+              "q": "Can I see it on my own inventory before committing?",
+              "a": "Yes. Book a 20-minute demo, no slides — we'll walk your actual site and show you where leads are leaking today and what a Buzznerd build would change."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "A website built around your dealership.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "Inventory, departments, locations, and lead generation — one connected platform.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-demo"
+                      },
+                      {
+                        "ctaId": "explore-ai-ecommerce"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "demo-request",
+        "values": {
+          "eyebrow": "Schedule a demo",
+          "heading": "We'll walk your current setup with you.",
+          "body": "20 minutes, no slides. We'll walk your actual site and show you where leads are leaking — and what fixing it looks like.",
+          "checklist": [
+            {
+              "label": "Live review of your current setup"
+            },
+            {
+              "label": "Straight answers on pricing"
+            },
+            {
+              "label": "Reply within one business day"
+            }
+          ],
+          "note": "No spam, no obligation. We only use this to schedule your demo."
+        }
+      }
+    }
+  ]
+}

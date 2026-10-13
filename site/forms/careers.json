@@ -1,0 +1,98 @@
+{
+  "id": "careers",
+  "name": "Careers enquiry",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "careers",
+  "submitLabel": "Send message",
+  "successMessage": "Thanks for reaching out — we'll be in touch soon.",
+  "consent": {
+    "enabled": false
+  },
+  "fields": [
+    {
+      "id": "cr-topic",
+      "type": "dropdown",
+      "label": "I'm interested in…",
+      "required": true,
+      "options": [
+        {
+          "value": "engineering",
+          "label": "Engineering / development"
+        },
+        {
+          "value": "design-marketing",
+          "label": "Design / marketing"
+        },
+        {
+          "value": "client-success",
+          "label": "Client success / support"
+        },
+        {
+          "value": "general",
+          "label": "General — just saying hi"
+        }
+      ]
+    },
+    {
+      "id": "cr-name",
+      "type": "full_name",
+      "label": "Your name",
+      "required": true,
+      "placeholder": "Your name",
+      "width": "half"
+    },
+    {
+      "id": "cr-link",
+      "type": "single_line",
+      "label": "LinkedIn or portfolio",
+      "required": false,
+      "placeholder": "LinkedIn or portfolio",
+      "width": "half"
+    },
+    {
+      "id": "cr-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "Work email",
+      "width": "half"
+    },
+    {
+      "id": "cr-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "placeholder": "Phone",
+      "width": "half"
+    },
+    {
+      "id": "cr-message",
+      "type": "paragraph",
+      "label": "Tell us about yourself",
+      "required": false,
+      "placeholder": "Tell us about yourself — what you do, what you'd love to work on, and anything else we should know."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-team",
+      "name": "Buzznerd team",
+      "rules": [],
+      "targetType": "email",
+      "email": "info@buzznerd.com",
+      "contactName": "Buzznerd team"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "c-default",
+      "name": "Default",
+      "rules": [],
+      "type": "message",
+      "message": "Thanks for reaching out — we'll be in touch soon."
+    }
+  ]
+}

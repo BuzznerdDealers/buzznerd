@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "careers",
+      "type": "section",
+      "props": {
+        "anchor": "contact",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "careers-row",
+          "type": "row",
+          "props": {
+            "gap": 8,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "careers-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "careers-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Come be a nerd with us.",
+                    "headingLevel": 1,
+                    "eyebrow": "Careers"
+                  }
+                },
+                {
+                  "id": "careers-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "We're always looking for talented, tech-driven nerds to join the team. Contact us to learn more about what working at Buzznerd is like — and to inquire about any open positions."
+                  }
+                },
+                {
+                  "id": "careers-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Work on real AI",
+                        "desc": "Ship products that power 700+ dealership rooftops — not slideware."
+                      },
+                      {
+                        "label": "Seattle roots, remote-friendly",
+                        "desc": "A small, senior team that answers the phone and sweats the details."
+                      },
+                      {
+                        "label": "Room to grow",
+                        "desc": "Wear many hats, own your work, and grow as fast as you can learn."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "careers-card",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card",
+                "padding": 7
+              },
+              "children": [
+                {
+                  "id": "careers-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "careers"
+                  }
+                },
+                {
+                  "id": "careers-note",
+                  "type": "text",
+                  "props": {
+                    "text": "No open-role requirement — if you're a great nerd, we want to hear from you.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

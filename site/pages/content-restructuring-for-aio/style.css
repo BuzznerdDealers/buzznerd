@@ -1,0 +1,10 @@
+/* Content Restructuring for AIO: the before/after mock and the "key pages" chips. */
+[data-bz-node="hero-after"] { margin-top: var(--space-4); }
+[data-bz-node="hero-panel"] .uip { opacity: .85; }
+[data-bz-node="hero-panel"] .uip__tag { color: var(--muted); }
+
+[data-bz-node="pages-chips"] .bz-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+[data-bz-node="pages-chips"] .bz-feature { padding: 11px 18px; border-radius: var(--radius-chip); background: var(--paper); border: 1px solid var(--line-soft); }
+[data-bz-node="pages-chips"] .bz-feature::before { display: none; }
+[data-bz-node="pages-chips"] .bz-feature__t { margin: 0; font-size: 15px; }
+[data-bz-node="pages-chips"] .bz-feature:last-child { background: var(--volt); border-color: var(--volt); }

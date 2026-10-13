@@ -1,0 +1,147 @@
+{
+  "slug": "nikki-molina-evolving-cgo",
+  "title": "Evolving to Serve You Better: Nikki Molina Steps Into Chief Growth Officer Role",
+  "date": "2026-04-01",
+  "description": "Nikki Molina steps into the Chief Growth Officer role as Buzznerd continues to grow alongside its dealership partners.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/03/image0-e1773863267928.png",
+  "status": "published",
+  "keywords": [
+    "Company"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Company</strong> · 2 min read · By Nikki"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A dedicated focus on product, brand, and long-term client growth."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "At Buzznerd, our focus has always been to help our clients grow through better technology, smarter strategy, and continuous innovation. As our clients' needs evolve — and as AI, search, and digital experiences continue to change rapidly — we're evolving too. That's why we're excited to share an important update to our team structure."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Introducing Our Chief Growth Officer",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Nikki Molina has stepped into a new role as Chief Growth Officer (CGO) at Buzznerd. In this role, Nikki will focus on:"
+      }
+    },
+    {
+      "id": "list-4",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Developing and packaging new products and services"
+          },
+          {
+            "label": "Enhancing Buzznerd's marketing and brand strategy"
+          },
+          {
+            "label": "Driving innovation across AI, search, and digital experiences"
+          },
+          {
+            "label": "Identifying new opportunities to help our clients grow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "This shift allows us to be more proactive — not just supporting what exists today, but building what our clients will need next."
+      }
+    },
+    {
+      "id": "h-6",
+      "type": "heading",
+      "props": {
+        "text": "What This Means for Our Clients",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-7",
+      "type": "text",
+      "props": {
+        "text": "This transition is designed with one goal in mind: delivering more value to you. With a dedicated focus on growth and innovation, you can expect more strategic product offerings, continued improvements in AI-driven search performance, clearer marketing, and new opportunities to generate leads. Just as importantly, your day-to-day support stays consistent — your Client Success Manager, Technical Project Manager, and support team continue to manage your account."
+      }
+    },
+    {
+      "id": "h-8",
+      "type": "heading",
+      "props": {
+        "text": "A More Strategic Approach to Growth",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-9",
+      "type": "text",
+      "props": {
+        "text": "As the digital landscape shifts toward AI-driven discovery, simply having a website is no longer enough. Businesses need structured, AI-friendly content, clear authority in their space, and ongoing optimization for how customers actually search today. This new role ensures Buzznerd stays ahead of those changes — so our clients do too."
+      }
+    },
+    {
+      "id": "quote-10",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-10-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-10-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>Our goal has always been to stay ahead of where the industry is going, not just react to it. This role lets us be more intentional about building what our clients will need next. While I'll miss working as closely with clients day to day, I'm incredibly excited to support them in a bigger way — helping shape the solutions and strategies that drive their success. — Nikki Molina, CGO</em></strong>",
+                "width": "full"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta-11",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Grow with Buzznerd →"
+          }
+        ]
+      }
+    }
+  ]
+}

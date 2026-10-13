@@ -1,21 +1,17 @@
 {
-  "name": "buzznerd-site",
-  "version": "1.0.0",
+  "name": "dealer-site-template",
   "private": true,
   "type": "module",
-  "description": "Buzznerd.com — standard static HTML/CSS/JS marketing site ported 1:1 from the design handoff.",
-  "scripts": {
-    "setup:fonts": "node scripts/setup-fonts.mjs",
-    "optimize:images": "node scripts/optimize-images.mjs",
-    "build:pages": "node scripts/extract-dc.mjs && node scripts/build-site.mjs",
-    "build:blog": "node scripts/build-blog.mjs"
+  "version": "4.0.0",
+  "engines": {
+    "node": ">=20"
   },
-  "devDependencies": {
-    "@fontsource-variable/bricolage-grotesque": "^5.2.9",
-    "@fontsource-variable/plus-jakarta-sans": "^5.2.6",
-    "image-size": "^2.0.2",
-    "node-html-parser": "^7.0.1",
-    "playwright-core": "^1.56.0",
-    "sharp": "^0.34.5"
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs",
+    "schemas": "node scripts/export-schemas.mjs",
+    "test": "node --test renderer/renderer.spec.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run validate && npm test && npm run build"
   }
 }

@@ -1,0 +1,15 @@
+/* AI Websites: the WG Motors success-story quote, the chip lines and the card checklist. */
+[data-bz-node="story-h"] h3 { font-size: clamp(26px, 3vw, 36px); line-height: 1.1; letter-spacing: -.02em; }
+[data-bz-node="story-q"] .bz-quote { background: rgb(255 255 255 / .06); border: 0; border-left: 3px solid var(--accent); border-radius: 0 var(--radius-card) var(--radius-card) 0; box-shadow: none; }
+[data-bz-node="story-q"] .bz-stars { display: none; }
+[data-bz-node="story-q"] .bz-quote blockquote { font-style: italic; font-weight: 600; font-size: 17px; color: #fff; margin-bottom: var(--space-3); }
+[data-bz-node="story-q"] .bz-quote blockquote::before { content: '\201C'; }
+[data-bz-node="story-q"] .bz-quote blockquote::after { content: '\201D'; }
+[data-bz-node="story-q"] .bz-quote__n { color: color-mix(in srgb, #fff 80%, var(--ink)); }
+[data-bz-node="story-q"] .bz-quote__n::before { content: '— '; }
+[data-bz-node="story-q"] .bz-quote__r { color: color-mix(in srgb, #fff 62%, var(--ink)); }
+[data-bz-node="behind-tools"] p, [data-bz-node="leads-paths"] p { font-size: 15px; font-weight: 600; line-height: 1.9; }
+[data-bz-node="behind-act"] .bz-btns { justify-content: flex-end; }
+.bz-col [data-bz-node="leads-list"] h3 { margin: 0 0 var(--space-4); font-size: 22px; }
+@media (max-width: 900px) { [data-bz-node="behind-act"] .bz-btns { justify-content: flex-start; } }
+[data-bz-node="brands-loc-panel"] .uip__v { white-space: nowrap; }
