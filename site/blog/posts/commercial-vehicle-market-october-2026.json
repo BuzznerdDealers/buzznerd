@@ -1,0 +1,505 @@
+{
+  "slug": "commercial-vehicle-market-october-2026",
+  "title": "October Commercial Vehicle Market Pulse: Key Data Points Dealers Need Right Now",
+  "date": "2026-10-06",
+  "description": "Class 8 orders down 41% YoY in September. EPA 2027 engine surcharges of $8,000–$15,000 are locked in. Used inventory moving in 56 days. Here is what the October data means for commercial truck dealers.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/10/blog-buzznerd.png",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 11 min read · By Vandana K"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "What the numbers show heading into Q4 — and what buyers are thinking before they call."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "The commercial vehicle market is running in two directions at once. Order volume has pulled back sharply from the mid-year surge, used inventory is moving faster than it has in years, and a regulatory pricing shift is weeks away that will change what buyers can afford and when they need to act. None of these signals are moving the same way, and dealers who are reading only one of them are missing the full picture.\n\nThis is a data-first breakdown of what the numbers actually show heading into Q4 — not a forecast, not a prediction. What is happening right now, what it means for inventory, and what buyers are thinking about before they call a dealer."
+      }
+    },
+    {
+      "id": "img-2",
+      "type": "image",
+      "props": {
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/10/blog-buzznerd-1024x683.png",
+          "alt": "Commercial vehicle market October 2026",
+          "width": 1024,
+          "height": 683
+        },
+        "width": "prose"
+      }
+    },
+    {
+      "id": "quote-3",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-3-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-3-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>The buyers still in the market in Q4 are not casual shoppers. They are replacement buyers, pre-buy buyers, and fleet managers with fiscal year deadlines. Each group needs a different message and different information before they make contact.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Class 8 Orders: The September Drop and What It Actually Signals",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "September 2026 preliminary Class 8 net orders came in at 20,500–20,800 units, depending on the source — down 41–44% year-over-year and 9th consecutive month of annual declines, according to FTR Transportation Intelligence and ACT Research. That September figure sits well below the 10-year average for the month, which is 29,499 units.\n\nTaken alone, that number looks bad. In context, it tells a different story.\n\nThe earlier months of 2026 ran at historically unusual volumes. February hit 47,000+ units. June came in at 30,500–31,400, the second-highest June on record. Through August, year-to-date orders were up 111% compared to the same period in 2025. The September pullback is not a collapse in demand — it is what happens after a pre-buy surge exhausts the available ordering capacity. Most 2026 build slots filled months ago. Fleets that needed to get in front of EPA 2027 pricing already placed those orders.\n\nWhat is left in the market are buyers who could not or did not participate in the pre-buy, plus replacement buyers on standard fleet cycles. That is still a real buyer pool — just smaller than the spike that preceded it."
+      }
+    },
+    {
+      "id": "quote-6",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-6-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-6-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>2026 build slots are oversubscribed by approximately 35,000 units. The order volume decline is not a demand collapse — it is a production ceiling. Fleets that want 2026-spec engines at 2026 prices have largely already ordered.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "EPA 2027: The Price Increase That Is No Longer Theoretical",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "The EPA low-NOx rule takes effect January 1, 2027. It mandates an 85–87% reduction in nitrogen oxide emissions — from 200 milligrams per horsepower-hour down to 35. The rule is on schedule and confirmed. EPA rejected the trucking industry's request to delay the timeline.\n\nWhat that means for buyers ordering now:"
+      }
+    },
+    {
+      "id": "list-9",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Fully compliant engines: $10,000–$15,000 added to vehicle cost"
+          },
+          {
+            "label": "Non-conformance penalty (NCP) pathway: $6,000–$7,000 per engine — but with legal and warranty uncertainty attached"
+          },
+          {
+            "label": "2026 model year inventory without the surcharge: effectively sold out"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-10",
+      "type": "text",
+      "props": {
+        "text": "OEMs are split on how to handle it. Daimler Truck North America is going fully compliant with its Detroit Gen 6 engine and positioning regulatory certainty as the differentiator. Other manufacturers are leaning on the NCP pathway. Buyers are being asked to make a multi-year equipment decision based on regulations that have proposed amendments with no legal force until finalized.\n\nFor dealers, this is the most significant pricing conversation in a decade. A buyer placing an order in October 2026 is buying 2027 production. That unit carries the new engine cost. The window to avoid that cost is closed for Class 8. Dealers who can help buyers understand what that means for total cost of ownership — not just sticker price — are having a different and more productive conversation than dealers who are only quoting inventory."
+      }
+    },
+    {
+      "id": "quote-11",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-11-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-11-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>FTR Senior Analyst Dan Moyer stated that 'the large majority of engines next year' will face EPA 2027-related surcharges. Buyers who waited past the pre-buy window are now buying into a higher price structure, full stop.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "Used Commercial Vehicle Market: The Number That Actually Looks Good",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "While new Class 8 orders have cooled, the used commercial vehicle segment is moving faster than it has since before the supply-constrained years. Q2 2026 data from Work Truck Solutions shows used commercial vehicle days-to-turn at 56 days — down 9.7% quarter-over-quarter and improving year-over-year as well. Used inventory on dealer lots rose 7.4% quarterly, but that supply is being absorbed at pace.\n\nThe average mileage on used units sold in Q2 surged 30.8% quarter-over-quarter to 77,507 miles. That is a meaningful signal: buyers who were previously holding out for lower-mileage used inventory are now accepting higher-mileage units rather than paying the new-truck premium. The EPA 2027 price gap is already pulling buyers toward used, even at specs they might have passed on 18 months ago.\n\nFor dealers with late-model used commercial inventory, this is the strongest absorption environment in years. The buyers who could not get 2026 new production and do not want to absorb the 2027 surcharge are actively evaluating used. A used Class 7 or Class 8 that is well-documented, properly priced against current market comps, and visible across the platforms commercial buyers use is in a strong position right now."
+      }
+    },
+    {
+      "id": "h-14",
+      "type": "heading",
+      "props": {
+        "text": "What Used Buyers Are Looking For",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "The fleet managers and owner-operators now evaluating used inventory are doing so as a deliberate alternative to a higher-cost new purchase, not as a fallback. They want documentation — maintenance history, inspection records, condition disclosure — because they are justifying the used purchase internally against a new option. A used listing that answers those questions before a buyer has to ask converts faster than one that forces a phone call to get basic information."
+      }
+    },
+    {
+      "id": "h-16",
+      "type": "heading",
+      "props": {
+        "text": "Freight Rates: The Carrier-Side Signal That Affects Dealer Conversations",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-17",
+      "type": "text",
+      "props": {
+        "text": "Freight rates in October 2026 remain elevated relative to prior years. C.H. Robinson's October freight market update shows dry van and refrigerated truckload costs running approximately 30% above year-over-year levels, with refrigerated spot-market rates hitting a record $3.60 per mile during September. Flatbed rates are tracking approximately 28% above prior year.\n\nWhy this matters for commercial dealers: freight rate recovery directly affects carrier profitability, and carrier profitability is what unlocks equipment replacement decisions. Carriers who were deferring fleet investment during the 2023–2025 rate downturn are now operating in an environment where the math on a new unit looks different. Route guide failures — when preferred carriers reject shipments — have climbed back above 6%, signaling tightening capacity. Tight capacity with elevated rates is the environment that puts fleet replacement back on the table.\n\nThe nuance is that diesel prices are still elevated — exceeding $8 per gallon in some western markets — which is compressing the net improvement in carrier profitability even as linehaul rates rise. Dealers talking to carriers should expect buyers who are interested in new equipment but watching the fuel cost math closely. Fuel efficiency specs, idle reduction technology, and documented fuel economy data on the unit are more relevant to that buyer conversation than they were two years ago."
+      }
+    },
+    {
+      "id": "quote-18",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-18-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-18-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>Elevated freight rates improve carrier profitability and open the replacement decision window. High diesel prices compress that improvement. Dealers who can speak to fuel efficiency and total operating cost have an advantage in this environment.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-19",
+      "type": "heading",
+      "props": {
+        "text": "New Vehicle Days-to-Turn: The Q2 Baseline for Q4 Expectations",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-20",
+      "type": "text",
+      "props": {
+        "text": "New commercial vehicle days-to-turn as of Q2 2026 sat at 172 days — down 8.5% quarter-over-quarter and down 14.9% year-over-year. That is a meaningful improvement in pace from 2025 levels, driven by pre-buy demand pulling units off lots faster than normal seasonal patterns would suggest.\n\nWith the pre-buy phase now largely closed and September orders slowing, Q4 new vehicle velocity will depend on three things: how many replacement buyers are still actively evaluating, how quickly the fiscal year-end urgency from government and municipal fleet buyers materializes, and whether freight rate improvement continues to support carrier purchasing decisions through year-end.\n\nDealers whose new inventory has been sitting since before the summer surge should be looking at per-unit engagement data right now, not lot averages. A unit at 120 days on lot heading into Q4 is in a different situation than it was in March — the buyer pool has changed, the pricing context has changed, and the EPA conversation is now relevant to every prospect who asks about new versus used."
+      }
+    },
+    {
+      "id": "h-21",
+      "type": "heading",
+      "props": {
+        "text": "What the October Data Means for Dealer Marketing Right Now",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-22",
+      "type": "text",
+      "props": {
+        "text": "Three buyer types are still active in October and each one needs a different approach from a dealer:"
+      }
+    },
+    {
+      "id": "h-23",
+      "type": "heading",
+      "props": {
+        "text": "The EPA Pre-Buy Buyer Who Missed the Window",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-24",
+      "type": "text",
+      "props": {
+        "text": "This buyer knows about the price increase and is evaluating used inventory as an alternative or considering whether the 2027 engine surcharge is worth it for their application. They need pricing clarity and total cost comparison — not urgency messaging they have already heard. A listing that shows them documented condition and maintenance history alongside a realistic cost-per-mile context moves faster than one that just lists the price."
+      }
+    },
+    {
+      "id": "h-25",
+      "type": "heading",
+      "props": {
+        "text": "The Fiscal Year-End Government and Municipal Buyer",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-26",
+      "type": "text",
+      "props": {
+        "text": "Government and municipal fleet buyers have budget that expires December 31. That deadline is not flexible. These buyers are not shopping for the best deal — they are completing a purchase that has already been approved and funded. They need to find the right unit with the right documentation to justify the allocation. Dealers with vocational units — utility bodies, service trucks, specialty configurations — should have those units prominently listed with full spec detail and availability confirmation right now."
+      }
+    },
+    {
+      "id": "h-27",
+      "type": "heading",
+      "props": {
+        "text": "The Carrier or Fleet Manager Re-Evaluating After Rate Recovery",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-28",
+      "type": "text",
+      "props": {
+        "text": "This buyer deferred a replacement decision during the freight rate trough and is now reconsidering with improved but not fully recovered profitability. They are price-sensitive relative to EPA surcharges and highly attentive to fuel efficiency data. This is the buyer who compares three listings in detail before making a call. Dealers who have fuel economy documentation, verified service history, and clear spec listings for their used fleet inventory are the ones getting those calls."
+      }
+    },
+    {
+      "id": "quote-29",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-29-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-29-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>The buyers still active in October are not browsing. They are in an active evaluation with a specific timeline. Dealers who can answer the questions those buyers are already carrying — cost, spec, condition, availability — before the first phone call are the ones getting the inquiry.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-30",
+      "type": "heading",
+      "props": {
+        "text": "Is Your Inventory Positioned for the Buyers Who Are Actually in the Market?",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-31",
+      "type": "text",
+      "props": {
+        "text": "The October market is smaller than the spring surge but the buyers in it are more motivated. They have a deadline, a budget constraint, or a pricing window forcing a decision. A dealer whose listings give those buyers what they need to evaluate before contacting — full specs, verified condition, current pricing relative to market comps — is positioned to capture that demand. A dealer whose listings require a phone call to get basic answers is going to lose those inquiries to a competitor who made it easier.\n\nBook a 15-minute call with our team. We will review how your current inventory is showing up for the buyer segments active in Q4, identify which units need better listing structure, and show you what a commercial-specific digital presence looks like when it is doing the work buyers expect it to do. No pitch, no obligation — just a clear look at the gaps."
+      }
+    },
+    {
+      "id": "cta-32",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Book a 15-Minute Call →"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-33",
+      "type": "heading",
+      "props": {
+        "text": "FAQs",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "h-34",
+      "type": "heading",
+      "props": {
+        "text": "What are Class 8 truck order volumes in September 2026?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-35",
+      "type": "text",
+      "props": {
+        "text": "Preliminary September 2026 Class 8 net orders came in at 20,500–20,800 units according to FTR Transportation Intelligence and ACT Research. That represents a 41–44% decline year-over-year and marks the ninth consecutive month of annual declines. The figure sits below the 10-year September average of 29,499 units. The pullback follows the EPA 2027 pre-buy surge that peaked in the first half of 2026, when most available build slots were filled."
+      }
+    },
+    {
+      "id": "h-36",
+      "type": "heading",
+      "props": {
+        "text": "How much will EPA 2027 add to the cost of a new commercial truck?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-37",
+      "type": "text",
+      "props": {
+        "text": "Fully compliant EPA 2027 engines are expected to add $10,000–$15,000 to vehicle costs. The non-conformance penalty pathway offers a lower surcharge of $6,000–$7,000 per engine but carries legal and warranty uncertainty since the proposed amendments have no legal effect until finalized. Most 2026 model year inventory without these surcharges is already sold. Buyers ordering in Q4 2026 are ordering 2027 production and will face the new pricing structure."
+      }
+    },
+    {
+      "id": "h-38",
+      "type": "heading",
+      "props": {
+        "text": "How fast is used commercial vehicle inventory moving in 2026?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-39",
+      "type": "text",
+      "props": {
+        "text": "Used commercial vehicle days-to-turn improved to 56 days in Q2 2026, down 9.7% quarter-over-quarter. Average mileage on sold used units climbed to 77,507 miles — up 30.8% quarterly — indicating buyers are accepting higher-mileage units as the price gap between used and EPA 2027 new vehicles widens. Used inventory levels rose 7.4% quarterly but is being absorbed at a faster pace than recent years."
+      }
+    },
+    {
+      "id": "h-40",
+      "type": "heading",
+      "props": {
+        "text": "What do current freight rates mean for commercial truck dealers?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-41",
+      "type": "text",
+      "props": {
+        "text": "Truckload freight rates in October 2026 are running approximately 28–30% above year-over-year levels, with refrigerated spot rates hitting a record $3.60 per mile in September. Higher freight rates improve carrier profitability, which is the primary factor that unlocks fleet replacement decisions. Dealers should expect carrier buyers who are re-evaluating equipment decisions that were deferred during the 2023–2025 rate downturn, with particular focus on fuel efficiency and total operating cost."
+      }
+    },
+    {
+      "id": "h-42",
+      "type": "heading",
+      "props": {
+        "text": "Which commercial vehicle buyer segments are still active in Q4 2026?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-43",
+      "type": "text",
+      "props": {
+        "text": "Three buyer types remain active in Q4 2026. First, EPA pre-buy buyers who missed the 2026 ordering window and are now evaluating used inventory or weighing the 2027 surcharge against their application needs. Second, government and municipal fleet buyers with December 31 fiscal year-end budget deadlines who need to complete funded purchases before year close. Third, carriers and fleets who deferred replacement during the freight rate downturn and are now reconsidering as rates recover. Each group has a different decision driver and needs different information before making contact with a dealer."
+      }
+    },
+    {
+      "id": "h-44",
+      "type": "heading",
+      "props": {
+        "text": "Sources",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "list-45",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Logistics Management — Preliminary September 2026 Class 8 Orders"
+          },
+          {
+            "label": "Truck Parts and Service — August 2026 Class 8 Orders and 2027 Engine Outlook"
+          },
+          {
+            "label": "CCJ Digital — EPA Rejects 2027 NOx Rule Delay"
+          },
+          {
+            "label": "Fleet Owner — EPA 2027 NCPs and Q4 Ordering Strategy"
+          },
+          {
+            "label": "Overdrive Online — EPA 2027 Price Increases and Buying Timeline"
+          },
+          {
+            "label": "Work Truck Online — Q2 2026 Commercial Vehicle Market Data"
+          },
+          {
+            "label": "C.H. Robinson — October 2026 North America Truckload Freight Update"
+          }
+        ]
+      }
+    }
+  ]
+}

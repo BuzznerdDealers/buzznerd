@@ -1,0 +1,398 @@
+{
+  "slug": "aged-inventory-dealer-marketing-strategy-2026",
+  "title": "What an Increase in Aged Inventory Means for How Dealers Should Be Marketing Right Now",
+  "date": "2026-09-22",
+  "description": "Aged inventory is costing commercial truck dealers $32–$48 per unit per day in holding costs. Here is what the accumulation signals and how dealers should adjust their marketing strategy now.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/blog-buzznerd.png",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 10 min read · By Vandana K"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "What the accumulation signals, what it costs while you wait, and what actually moves aged units."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "A unit that has been sitting on the lot for 90 days is not just slow-moving inventory. It is a daily financial drain and a signal that something in the acquisition, pricing, or marketing process is misaligned with how buyers are currently evaluating commercial vehicles.\n\nAccording to NADA, commercial vehicle holding costs run between $32 and $48 per unit per day when you factor in floor plan interest, insurance, storage, and depreciation. A unit sitting for 90 days has already absorbed between $2,880 and $4,320 in carrying costs before a single negotiation begins. A dealer turning inventory every 21 days generates four to five times the gross profit per unit compared to one holding for 90 days or longer. That math is why aged inventory is not just a sales problem — it is a marketing problem that most dealers are solving too late and with the wrong tools."
+      }
+    },
+    {
+      "id": "img-2",
+      "type": "image",
+      "props": {
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/blog-buzznerd-1024x683.png",
+          "alt": "Aged commercial truck inventory on a dealer lot",
+          "width": 1024,
+          "height": 683
+        },
+        "width": "prose"
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "This article is not about liquidating aged units at a loss. It is about what the accumulation signals, what it costs while you wait, and what changes in marketing strategy and execution actually move aged commercial inventory before the floor plan math makes the decision for you."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Why Aged Inventory Accumulates in Commercial Dealerships",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "Aged inventory rarely builds up because of one bad decision. It typically reflects a combination of acquisition timing mismatches, reconditioning delays, and listing quality problems that compound over weeks.\n\nAcquisition mismatch is the most common root cause. A commercial buyer who needed a Class 6 refrigerated van in January is not the same buyer looking in April. Seasonal vocational demand, infrastructure project cycles, and fleet replacement schedules all affect when specific unit types move. Dealers who acquire inventory based on what sold well last quarter are often stocking into declining demand.\n\nReconditioning delays turn a 30-day hold into a 60-day hold without any change in the market. A unit that sits in the service queue for three weeks before it is listed loses three weeks of active marketing time. By the time it goes live, it is already approaching the threshold where buyers begin to question why it has not sold.\n\nListing quality problems are often invisible to the dealer but immediately visible to the buyer. Units listed with incomplete specs, low-quality photos, or missing service history create hesitation. A buyer comparing two similar units will always choose the one with more documentation and clearer condition disclosure — even if the underdocumented unit is priced lower."
+      }
+    },
+    {
+      "id": "quote-6",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-6-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-6-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>A dealer turning inventory every 21 days generates 4–5x the gross profit per unit compared to a dealer holding units for 90 days. Floor plan interest is not the only cost — opportunity cost compounds alongside it.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "The Floor Plan Math Most Dealers Do Not Run Until It Is Too Late",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "Floor plan financing in 2026 is running at approximately 9–11% APR for most commercial dealers, depending on credit relationship and manufacturer program participation. On a $60,000 used Class 7 unit, that translates to roughly $450–$550 per month in interest alone. Add insurance and storage and the monthly carrying cost reaches $600–$700 per unit.\n\nHere is what that looks like across time:"
+      }
+    },
+    {
+      "id": "list-9",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "30 days on lot: ~$600–$700 in carrying cost absorbed"
+          },
+          {
+            "label": "60 days on lot: ~$1,200–$1,400 in carrying cost absorbed"
+          },
+          {
+            "label": "90 days on lot: ~$1,800–$2,100 in carrying cost absorbed"
+          },
+          {
+            "label": "120 days on lot: ~$2,400–$2,800 in carrying cost absorbed — often approaching or exceeding reconditioning cost"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-10",
+      "type": "text",
+      "props": {
+        "text": "The unit that looked like a reasonable acquisition at $60,000 becomes harder to price competitively at day 90 because any meaningful discount now erases the margin that was supposed to justify the floor plan cost in the first place. Dealers who do not track per-unit carrying costs are often pricing aged units based on what they need to recover rather than what the market will support — which is how units end up sitting even longer."
+      }
+    },
+    {
+      "id": "h-11",
+      "type": "heading",
+      "props": {
+        "text": "How Buyers Read Aged Inventory — and Why Perception Compounds the Problem",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-12",
+      "type": "text",
+      "props": {
+        "text": "Commercial buyers — fleet managers, owner-operators, and procurement teams making multi-unit decisions — use days on lot as a proxy for unit quality even when that assumption is not warranted. A Class 8 sleeper that has been listed for 95 days triggers skepticism before any conversation happens. The buyer's first question is not 'what is the price?' — it is 'why hasn't this sold?'\n\nThat perception problem is not solved by cutting the price. Price reductions on aged units often accelerate the skepticism rather than converting buyers. A unit priced at $58,000 that drops to $54,000 after 90 days signals distress — not value. Buyers who were on the fence about the unit are now wondering what the seller knows that they do not.\n\nThe more effective approach is to change what the buyer sees before they check the listing date. That means updating the listing with fresh photos, expanded spec detail, documented service history, and in some cases a condition disclosure that proactively addresses the most likely buyer questions. A listing that answers objections before the buyer raises them converts at a higher rate than a listing with a lower price and the same thin information."
+      }
+    },
+    {
+      "id": "quote-13",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-13-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-13-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>Price reductions on aged units often accelerate buyer skepticism rather than converting hesitant buyers. Changing what the listing communicates is more effective than changing what it asks.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-14",
+      "type": "heading",
+      "props": {
+        "text": "The Reconditioning vs. Remarketing Decision",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "When a unit passes 60 days without an inquiry, the dealer faces a decision: invest in reconditioning to improve the unit's condition and listing, or invest in remarketing to increase its visibility and reach. Most dealers default to neither — they leave the listing unchanged and wait. Only about 5.8% of commercial dealers currently use any form of automation or systematic process to identify and act on aging inventory before it becomes a floor plan problem.\n\nThe reconditioning path makes sense when the unit has a documented condition issue that buyers can see — visible wear on a body, deferred maintenance that shows in an inspection, or photos that do not represent the unit's actual current state. Spending $800 on a detail, a brake job, and updated photos often recovers $2,000–$3,000 in perceived value and removes the most common objections before a buyer raises them.\n\nThe remarketing path makes sense when the unit's condition is not the issue — the problem is visibility and reach. A well-maintained unit listed only on the dealer's own website is competing against units syndicated across Commercial Truck Trader, Truck Paper, Machinery Trader, and industry platforms. Expanding where the listing appears and improving how it is described on those platforms is often more effective than reconditioning work on a unit that does not need it.\n\nThe mistake is conflating the two. A unit with a condition problem will not move faster because it is now listed on more platforms. A unit with a visibility problem will not move faster because it received a detail and new photos. Diagnosing which problem you are actually solving determines which investment generates a return."
+      }
+    },
+    {
+      "id": "h-16",
+      "type": "heading",
+      "props": {
+        "text": "Unit-by-Unit Marketing vs. Lot-Wide Marketing",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-17",
+      "type": "text",
+      "props": {
+        "text": "Dealers who track inventory performance by lot average — average days to turn for the whole lot — often miss the pattern that is costing them margin. A lot average of 45 days can hide a cluster of Class 8 sleepers at 85 days and a group of Class 5 vocational units at 18 days. The average looks acceptable; the problem inventory is not visible.\n\nUnit-by-unit marketing means treating each listing as its own marketing asset with its own performance data. How many views has this unit received in the last 14 days? How many inquiries? What is the ratio of views to contacts? A unit with 200 views and zero inquiries has a listing quality problem. A unit with 12 views and zero inquiries has a visibility problem. The intervention is different in each case.\n\nCommercial dealers who build a unit-by-unit review cadence — even a weekly 20-minute review of the 10 oldest units on the lot — catch aging inventory problems at 45 days instead of 90 days. At 45 days, the floor plan cost is still manageable. The pricing flexibility is still there. The buyer skepticism has not set in. The window to act is open."
+      }
+    },
+    {
+      "id": "h-18",
+      "type": "heading",
+      "props": {
+        "text": "What Aged Inventory in 2026 Is Actually Telling You",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-19",
+      "type": "text",
+      "props": {
+        "text": "New vehicle days supply in the US hit 82 days in mid-2026, up from the near-zero supply conditions of 2021–2022. For commercial dealers, the context is different from consumer auto — but the direction is the same. Inventory is sitting longer across the board. The commercial segment is not experiencing the same excess as the consumer market, but Class 8 used inventory days-to-turn have increased year-over-year as demand in that segment has softened.\n\nWhat this means for marketing is that the tactics that worked in a supply-constrained market — minimal listing detail, no price negotiation, buyers competing for units — do not work in a market with more supply than demand. Buyers who were willing to accept thin listings and no documentation in 2022 now have options. They will wait for the dealer who gives them enough information to make a decision without making a phone call to ask basic questions.\n\nThe dealers who are moving commercial inventory efficiently in 2026 are not necessarily the ones with the best units. They are the ones with the best listings — complete specs, documented history, clear condition disclosure, correct pricing relative to current market comps, and visibility across the platforms commercial buyers actually use to search. Aged inventory accumulation is often the gap between what a dealer believes buyers need to see and what buyers are actually requiring before they decide to make contact."
+      }
+    },
+    {
+      "id": "quote-20",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-20-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-20-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>The dealers moving commercial inventory efficiently in 2026 are not necessarily the ones with the best units. They are the ones with the best listings.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-21",
+      "type": "heading",
+      "props": {
+        "text": "Are Aged Units Costing Your Dealership More Than You Know?",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-22",
+      "type": "text",
+      "props": {
+        "text": "If your lot has units past 60 days, the floor plan math is already working against you — and the gap is usually not the unit itself. It is what the listing communicates, where it is visible, and whether buyers can find it through the platforms and AI tools they are actually using to research commercial equipment right now.\n\nBook a 15-minute call with our team. We will review your current inventory visibility, identify which units are underperforming in views and inquiries, and show you what changes in listing structure and platform reach typically do to days-to-turn. No pitch, no obligation — just a clear picture of where the gaps are."
+      }
+    },
+    {
+      "id": "cta-23",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Book a 15-Minute Call →"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-24",
+      "type": "heading",
+      "props": {
+        "text": "FAQs",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "h-25",
+      "type": "heading",
+      "props": {
+        "text": "What does aged inventory mean for a commercial truck dealer?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-26",
+      "type": "text",
+      "props": {
+        "text": "Aged inventory refers to commercial vehicles that have been on the lot longer than the dealer's target days-to-turn benchmark, typically beyond 60–90 days. For commercial dealers, aged inventory accumulates carrying costs including floor plan interest, insurance, storage, and depreciation that erode margin on every additional day the unit sits unsold."
+      }
+    },
+    {
+      "id": "h-27",
+      "type": "heading",
+      "props": {
+        "text": "How much does aged inventory cost per day in holding costs?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-28",
+      "type": "text",
+      "props": {
+        "text": "NADA benchmarks commercial vehicle holding costs at $32–$48 per unit per day, accounting for floor plan interest, insurance, storage, and depreciation. A unit sitting for 90 days has absorbed $2,880–$4,320 in carrying costs before any negotiation begins."
+      }
+    },
+    {
+      "id": "h-29",
+      "type": "heading",
+      "props": {
+        "text": "Why do commercial buyers become skeptical of aged inventory?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-30",
+      "type": "text",
+      "props": {
+        "text": "Fleet managers and commercial buyers use days on lot as a proxy for unit quality. A listing that has been available for 90+ days raises the question of why it has not sold, even if the unit is in good condition. This perception problem is not solved by price cuts — it is addressed by improving what the listing communicates before the buyer checks the listing date."
+      }
+    },
+    {
+      "id": "h-31",
+      "type": "heading",
+      "props": {
+        "text": "What is the difference between reconditioning and remarketing for aged inventory?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-32",
+      "type": "text",
+      "props": {
+        "text": "Reconditioning addresses a condition or presentation problem — worn components, outdated photos, deferred maintenance visible to buyers. Remarketing addresses a visibility or reach problem — the unit is in good condition but is not being seen by the right buyers on the right platforms. Diagnosing which problem the unit actually has determines which intervention generates a return."
+      }
+    },
+    {
+      "id": "h-33",
+      "type": "heading",
+      "props": {
+        "text": "How should commercial dealers track aged inventory performance?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-34",
+      "type": "text",
+      "props": {
+        "text": "Unit-by-unit tracking is more effective than lot averages. Each listing should be reviewed on its own view count, inquiry rate, and days on lot. A unit with high views and no inquiries has a listing quality problem. A unit with low views and no inquiries has a visibility problem. A weekly review of the oldest units on the lot catches aging problems at 45 days rather than 90."
+      }
+    },
+    {
+      "id": "h-35",
+      "type": "heading",
+      "props": {
+        "text": "Sources",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "list-36",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "NADA Guidelines — Holding Cost Benchmarks"
+          },
+          {
+            "label": "Kinetic Advantage — Floor Plan Financing Data 2026"
+          },
+          {
+            "label": "Visquanta — Inventory Perception Research"
+          },
+          {
+            "label": "AutoAlert — Dealer Analytics and Aging Inventory"
+          },
+          {
+            "label": "ClairvoCars — Commercial Dealer Automation Report"
+          },
+          {
+            "label": "Rework — Commercial Vehicle Days Supply Data"
+          }
+        ]
+      }
+    }
+  ]
+}

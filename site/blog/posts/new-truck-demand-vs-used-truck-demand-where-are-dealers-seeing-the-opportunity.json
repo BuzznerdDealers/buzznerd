@@ -1,0 +1,328 @@
+{
+  "slug": "new-truck-demand-vs-used-truck-demand-where-are-dealers-seeing-the-opportunity",
+  "title": "New Truck Demand vs. Used Truck Demand: Where Are Dealers Seeing the Opportunity?",
+  "date": "2026-09-14",
+  "description": "New vs used commercial truck demand in 2026 is telling two different stories simultaneously. Here is what the latest data reveals about where buyers are and where the opportunity sits for dealers carrying both.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/buzznerd_blog.png",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 9 min read · By Vandana K"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Two buyer populations, two demand patterns, one dealer lot."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "The new versus used commercial truck conversation in 2026 is not a simple either-or. Both segments are active. Both are generating revenue for dealers. But they are being driven by completely different buyer motivations, moving at different speeds, and rewarding dealers who understand those distinctions over those who treat their lot as a single undifferentiated inventory pool."
+      }
+    },
+    {
+      "id": "img-2",
+      "type": "image",
+      "props": {
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/buzznerd_blog-1024x683.png",
+          "alt": "New and used commercial trucks",
+          "width": 1024,
+          "height": 683
+        },
+        "width": "prose"
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "Q2 2026 data from Work Truck Solutions puts this split into sharp relief. New work truck and van sales per dealer rebounded 8.7% quarter over quarter, with Days to Turn dropping to 172 days from 188 days the prior quarter. At the same time, used commercial vehicles are turning over 10% faster than the prior quarter despite carrying significantly higher average mileage than in previous cycles. Two different buyer populations are driving two different demand patterns on the same dealer lot."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "The New Truck Buyer in 2026: Who Is Moving and Why",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "New commercial truck demand in 2026 is being driven by a specific buyer type. Business owners and operators with documented operational need, stable revenue, and access to financing are acquiring new inventory quickly. The data reflects this: new inventory volumes have held flat with no change quarter over quarter, yet sales velocity has improved and Days to Turn has compressed. Buyers are not waiting when the right unit is available.\n\nThe financial calculus for new truck buyers right now is shaped by a deadline. New Class 8 sleeper configurations have crossed $170,000 as a sustained baseline following tariff-driven cost increases of approximately $10,000. Buyers who are operationally ready and financially positioned are pulling forward purchases before further cost increases lock in. For dealers, this translates into a buyer who is motivated, moves quickly, and is less price-sensitive than the same buyer was eighteen months ago.\n\nNew on-lot inventory contracted 20.7% year over year through Q2 2026. That tighter supply environment is supporting per-unit margins for dealers who have new inventory available. The scarcity dynamic is real and it is working in dealers' favor in the near term, but it also means that new inventory acquisition strategy matters more than it did when supply was abundant."
+      }
+    },
+    {
+      "id": "quote-6",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-6-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-6-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>New truck buyers in 2026 are motivated by operational need and deadline pressure. They move fast when the inventory is there. The constraint for dealers is having the right units available, not finding willing buyers.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "The Used Truck Buyer in 2026: A Different Calculation Entirely",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "The used commercial truck buyer in 2026 is working with a fundamentally different set of priorities from the new truck buyer, and the gap between the two has widened considerably.\n\nThe price differential between new and used Class 8 trucks sits at 50 to 65%, with new sleepers at $170,000 to $200,000 and used equivalents at $54,000 to $61,000. For small businesses, owner-operators, and fleets managing tight capital allocation, that spread is the primary decision driver. A used 2019 to 2021 model year truck with 350,000 to 500,000 miles offers several more years of operational life at a fraction of new truck cost.\n\nBlack Book's Q2 2026 Medium and Heavy-Duty Truck Market Update describes the used market as increasingly structured around utilization-based turnover, with buyer focus concentrated on late-model, lower-mileage equipment and immediate deployability as the primary purchase criteria. The sharp depreciation cycle that characterized 2024 and early 2025 has largely eased, with pricing stabilizing across most segments.\n\nWhat is particularly notable in the Q2 data is that used commercial vehicles are turning faster despite carrying higher average mileage than in prior cycles. Work Truck Solutions CEO Aaron Johnson noted that fleet managers have been driving their work trucks and vans longer before cycling them into the secondary market. The result is higher-mileage trade-ins entering the used market at a point when buyers are still actively absorbing them."
+      }
+    },
+    {
+      "id": "quote-9",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-9-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-9-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>Used commercial truck buyers in 2026 are prioritizing deployability and cost over condition perfection. Higher-mileage inventory is turning faster than prior cycles because the price-to-value equation is compelling at current spreads versus new.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-10",
+      "type": "heading",
+      "props": {
+        "text": "Where the Two Markets Intersect and Create Complexity for Dealers",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-11",
+      "type": "text",
+      "props": {
+        "text": "Dealers carrying both new and used inventory face a specific challenge in 2026 that does not exist for single-segment operations. The buyer who arrives on the lot may be evaluating both segments simultaneously, working out whether the depreciation savings on a used unit outweigh the cost certainty and warranty coverage of a new one.\n\nJD Power's commercial truck market analysis notes that pent-up demand is transitioning into replacement activity while used truck metrics continue showing strength. These are not competing trends. They are complementary ones serving different buyer segments. The fleet operator with capital to deploy is buying new. The owner-operator or small fleet managing cash flow is buying used. Both are active. Both need to be served differently.\n\nThe operational implication is that new and used inventory should not be marketed the same way. New units should be positioned around operational readiness, specification precision, and cost certainty before further regulatory changes affect pricing. Used units should be positioned around total cost of ownership, deployability, and the specific applications where a well-maintained higher-mileage unit delivers strong value."
+      }
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "What the Data Says About Gross Profit Across Both Segments",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "Analysis of new versus used vehicle profitability in 2026 shows that used vehicles generate approximately $1,200 more gross profit per sale before considering costs. Used vehicle sales also carry no factory allocation constraints, meaning scale is limited only by acquisition capability and lot capacity rather than manufacturer supply.\n\nNew vehicle sales, by contrast, build service relationships that compound over time. Customers who purchase new vehicles are significantly more likely to return for service, which supports the parts and service revenue lines that provide more stable income across market cycles.\n\nDealers who are optimizing across both segments rather than treating new and used as separate businesses are finding that each supports the other. New sales generate future service customers. Used sales generate higher per-unit margins and faster turns. The combination, managed deliberately, produces a more resilient revenue profile than either segment alone."
+      }
+    },
+    {
+      "id": "h-14",
+      "type": "heading",
+      "props": {
+        "text": "How Buyers Are Researching Both Segments Online",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "The way buyers approach new versus used research online is meaningfully different, and dealers whose digital presence does not reflect that difference are losing engagement at the point of discovery.\n\nNew truck buyers are searching by specification, availability, and delivery timeline. They want to know what is on the lot, whether it matches their operational requirements, and when they can take delivery. A new unit listing that does not communicate specification detail clearly is a listing that does not make the shortlist.\n\nUsed truck buyers are evaluating condition signals, service history, mileage context, and value against current pricing. They are also more likely to be price-comparing across multiple platforms and marketplaces before landing on a dealer website. A used listing that presents only basic information and a phone number is asking the buyer to make a call to get the information they need to evaluate whether the call is worth making. Many will not.\n\nAaron Johnson's observation that dealers who leverage precise digital merchandising will find a receptive buyer base for higher-mileage vehicles is a direct statement about the role of online inventory presentation in used truck sales performance. The inventory turns faster when the listing does the work of justifying the value proposition before a buyer speaks to anyone."
+      }
+    },
+    {
+      "id": "h-16",
+      "type": "heading",
+      "props": {
+        "text": "The Opportunity Right Now",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-17",
+      "type": "text",
+      "props": {
+        "text": "Both segments are active and both are generating revenue for commercial dealers who are positioned correctly. The new truck opportunity is concentrated in buyers with deadline pressure and operational need who move quickly when inventory matches their specification. The used truck opportunity is broader, more price-driven, and increasingly competitive as buyers absorb higher-mileage inventory at a pace that rewards dealers who can present those units compellingly.\n\nThe dealers capturing the most of both segments are not running two separate operations. They are running one dealership with a clear understanding of who is buying each type of unit, what those buyers need to see before they make contact, and how to present both new and used inventory in a way that moves buyers from research to inquiry without unnecessary friction."
+      }
+    },
+    {
+      "id": "h-18",
+      "type": "heading",
+      "props": {
+        "text": "Is Your Inventory Presenting the Way Buyers Need to See It?",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-19",
+      "type": "text",
+      "props": {
+        "text": "Dealers who work with Buzznerd see an average 30 to 50% increase in qualified leads. If you are carrying both new and used inventory right now and want an honest look at how your listings are presenting to buyers online, what is working, and where the gaps are, book a 15-minute call. No pitch."
+      }
+    },
+    {
+      "id": "cta-20",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Book a 15-Minute Call →"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-21",
+      "type": "heading",
+      "props": {
+        "text": "FAQs",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "h-22",
+      "type": "heading",
+      "props": {
+        "text": "Is new or used commercial truck demand stronger in 2026?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-23",
+      "type": "text",
+      "props": {
+        "text": "Both segments are active in 2026 but for different reasons. New truck demand is being driven by buyers with operational urgency and financial positioning who are moving quickly before EPA 2027 cost increases. Used truck demand is being driven by the significant price differential between new and used, with used Class 8 units at $54,000 to $61,000 versus new equivalents at $170,000 to $200,000."
+      }
+    },
+    {
+      "id": "h-24",
+      "type": "heading",
+      "props": {
+        "text": "Why are used commercial trucks selling faster in 2026 despite higher mileage?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-25",
+      "type": "text",
+      "props": {
+        "text": "Fleet managers have been running vehicles longer before cycling them into the secondary market, resulting in higher-mileage trade-ins. Despite this, buyers are absorbing used commercial vehicles 10% faster quarter over quarter because the price-to-value equation at current spreads versus new truck costs is compelling."
+      }
+    },
+    {
+      "id": "h-26",
+      "type": "heading",
+      "props": {
+        "text": "What is the gross profit difference between new and used commercial truck sales?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-27",
+      "type": "text",
+      "props": {
+        "text": "Used vehicles generate approximately $1,200 more gross profit per sale before considering costs, with no factory allocation constraints limiting volume. New vehicle sales carry lower per-unit margins but build service relationships that compound over time."
+      }
+    },
+    {
+      "id": "h-28",
+      "type": "heading",
+      "props": {
+        "text": "How should commercial dealers present new versus used inventory online differently?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-29",
+      "type": "text",
+      "props": {
+        "text": "New truck listings should emphasize specification detail, availability, and delivery timeline. Used truck listings need to communicate condition signals, service history context, mileage justification, and value against current pricing."
+      }
+    },
+    {
+      "id": "h-30",
+      "type": "heading",
+      "props": {
+        "text": "Sources",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "list-31",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Work Truck Solutions Q2 2026 Commercial Vehicle Market Analysis (GlobeNewswire, NTEA)"
+          },
+          {
+            "label": "Black Book Q2 2026 Medium and Heavy-Duty Truck Market Update"
+          },
+          {
+            "label": "JD Power — 2026 Commercial Truck Market Opens Strong"
+          },
+          {
+            "label": "Truck Dispatch Experts — 2026 Truck Price Guide"
+          },
+          {
+            "label": "Best Selling Cars Blog — US Used Truck Market 2026"
+          },
+          {
+            "label": "Rework — New vs Used Vehicle Profitability 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
