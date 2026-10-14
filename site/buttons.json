@@ -16,7 +16,7 @@
     "formId": null,
     "style": "primary",
     "intent": "book-demo",
-    "newTab": false,
+    "newTab": true,
     "active": true
   },
   {
