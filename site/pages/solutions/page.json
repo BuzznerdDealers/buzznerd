@@ -1300,7 +1300,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "faq",
@@ -1334,7 +1335,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -1404,30 +1406,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Book a demo",
-          "heading": "We'll walk your current site with you.",
-          "body": "20 minutes, no slides. We'll review your current site live, show you where leads are leaking, and walk you through which solutions would move the needle.",
-          "checklist": [
-            {
-              "label": "Live review of your current site"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ],
-          "note": "No spam, no obligation. We only use this to schedule your demo."
-        }
-      }
     }
   ]
 }
