@@ -204,7 +204,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "how",
@@ -244,7 +245,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "listings",
@@ -566,7 +568,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -636,30 +639,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Schedule a demo",
-          "heading": "We'll walk your current setup with you.",
-          "body": "20 minutes, no slides. We'll review how you sell parts today, show you where sales are leaking online, and walk you through what selling 24/7 would take.",
-          "checklist": [
-            {
-              "label": "Live review of how you sell parts today"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ],
-          "note": "No spam, no obligation. We only use this to schedule your demo."
-        }
-      }
     }
   ]
 }
