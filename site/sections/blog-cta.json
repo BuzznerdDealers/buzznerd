@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "id": "blog-cta",
+  "name": "Blog demo band",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Put these ideas to work in your dealership."
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": "Book a 20-minute demo and we'll show you where you're leaking leads — and how to plug it."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "cta-card",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "background": "ink",
+                "padding": 9
+              },
+              "children": [
+                {
+                  "id": "cta-bolt",
+                  "type": "text",
+                  "props": {
+                    "text": "⚡",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btns",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "book-demo"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

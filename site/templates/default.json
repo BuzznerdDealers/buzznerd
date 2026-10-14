@@ -12,94 +12,11 @@
   "nodes": [
     {
       "id": "header",
-      "type": "section",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 3,
-        "background": "none"
-      },
-      "children": [
-        {
-          "id": "header-row",
-          "type": "row",
-          "props": {
-            "gap": 5,
-            "align": "center",
-            "stackOn": "never"
-          },
-          "children": [
-            {
-              "id": "header-brand",
-              "type": "column",
-              "props": {
-                "span": 2,
-                "align": "center"
-              },
-              "children": [
-                {
-                  "id": "logo",
-                  "type": "logo",
-                  "props": {
-                    "image": {
-                      "src": "/assets/buzznerd-logo-trim.webp",
-                      "alt": "Buzznerd",
-                      "width": 553,
-                      "height": 120
-                    },
-                    "url": "/",
-                    "height": 38
-                  }
-                }
-              ]
-            },
-            {
-              "id": "header-nav",
-              "type": "column",
-              "props": {
-                "span": 6,
-                "align": "center"
-              },
-              "children": [
-                {
-                  "id": "main-nav",
-                  "type": "menu",
-                  "props": {
-                    "menuId": "main",
-                    "layout": "horizontal",
-                    "align": "center",
-                    "collapseOnMobile": true,
-                    "depth": 2
-                  }
-                }
-              ]
-            },
-            {
-              "id": "header-cta",
-              "type": "column",
-              "props": {
-                "span": 4,
-                "align": "center"
-              },
-              "children": [
-                {
-                  "id": "header-buttons",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "presence-score"
-                      },
-                      {
-                        "ctaId": "book-demo"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
+        "sectionId": "site-header",
+        "values": {}
+      }
     },
     {
       "id": "content",

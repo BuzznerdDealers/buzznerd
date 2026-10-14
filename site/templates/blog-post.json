@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "id": "blog-post",
+  "name": "Blog post",
+  "conditions": [
+    {
+      "type": "allPosts",
+      "ref": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "header",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-header",
+        "values": {}
+      }
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "cta-inline",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-cta",
+        "values": {
+          "heading": "See it working on your own lot.",
+          "body": "Book a 20-minute demo and we'll show you where the leads are hiding."
+        }
+      }
+    },
+    {
+      "id": "more",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "width": "boxed"
+      },
+      "children": [
+        {
+          "id": "more-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "more-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "more-posts",
+                  "type": "postsList",
+                  "props": {
+                    "heading": "More from the blog",
+                    "headingLevel": 2,
+                    "count": 4,
+                    "showDates": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {}
+      }
+    }
+  ],
+  "js": "/* Single post: the handoff's article head. The build writes the post's date in\n   the masthead and its category, read time and author as one line of text in\n   the post's first block; this splits them into the tag + meta row and the\n   author row, and adds the way back to the index. Everything it touches is\n   already on the page and in order without it (the template's CSS orders it). */\n(function () {\n  var article = document.querySelector('main > article');\n  if (!article) return;\n  var base = location.pathname.replace(/\\/[^/]+\\/?$/, '') || '/blog';\n\n  var back = document.createElement('div');\n  back.className = 'bnb-back';\n  var backLink = document.createElement('a');\n  backLink.href = base;\n  backLink.textContent = '← Back to blog';\n  back.appendChild(backLink);\n  article.insertBefore(back, article.firstChild);\n\n  var meta = article.querySelector('[data-bz-node=\"post-meta\"] p');\n  var dateEl = article.querySelector('.bz-prose > .bz-eyebrow');\n  if (meta) {\n    var text = meta.textContent || '';\n    var cat = meta.querySelector('strong');\n    var read = (text.match(/(\\d+)\\s*min read/i) || [])[1];\n    var author = ((text.match(/\\bBy\\s+(.+)$/i) || [])[1] || '').trim();\n    var when = [dateEl ? dateEl.textContent.trim() : '', read ? read + ' min read' : ''].filter(Boolean).join(' · ');\n\n    meta.textContent = '';\n    if (cat) {\n      var tag = document.createElement('span');\n      tag.className = 'bnb-tag';\n      tag.textContent = cat.textContent;\n      meta.appendChild(tag);\n    }\n    var line = document.createElement('span');\n    line.textContent = when;\n    meta.appendChild(line);\n    article.classList.add('bnb-enhanced');\n\n    if (author) {\n      var row = document.createElement('div');\n      row.className = 'bnb-author';\n      var avatar = document.createElement('span');\n      avatar.className = 'bnb-author__avatar';\n      avatar.setAttribute('aria-hidden', 'true');\n      avatar.textContent = author.charAt(0).toUpperCase();\n      var who = document.createElement('div');\n      var name = document.createElement('strong');\n      name.textContent = author;\n      var org = document.createElement('span');\n      org.textContent = 'Buzznerd';\n      who.appendChild(name);\n      who.appendChild(org);\n      row.appendChild(avatar);\n      row.appendChild(who);\n      article.appendChild(row);\n    }\n  }\n\n  /* More from the blog: never the post being read. Four are listed and three\n     shown, so dropping this one leaves three. */\n  var here = location.pathname.replace(/\\/$/, '');\n  Array.prototype.forEach.call(document.querySelectorAll('[data-bz-node=\"more\"] a.bz-post'), function (card) {\n    if (card.pathname.replace(/\\/$/, '') === here) card.remove();\n  });\n\n  /* Keep the footer copyright year current (as the site template does). */\n  var copy = document.querySelector('[data-bz-node=\"footer-copy\"] p');\n  if (copy) copy.innerHTML = copy.innerHTML.replace(/©\\s*\\d{4}/, '© ' + new Date().getFullYear());\n})();\n",
+  "css": "/* Single post — the design handoff's article view. This is the Blog post\n   template's own stylesheet, so it loads on post pages and nowhere else.\n   The build composes a post as <main><article>: a masthead (date, title, cover)\n   followed by the post's own blocks. Flex `order` puts them in the handoff's\n   sequence — tag + meta, title, subtitle, author, cover, body — so the layout\n   is right before the script below runs, and without it. */\nmain > article { --bnb-text: color-mix(in srgb, var(--ink) 87%, var(--paper)); display: flex; flex-direction: column; padding: 56px 0 8px; color: var(--bnb-text); }\nmain > article > * { order: 6; }\nmain > article > .bz-block:not([data-bz-node]) { display: contents; }\nmain > article .bz-block { padding-block: 0; }\nmain > article .bz-container { box-sizing: border-box; width: 100%; max-width: 720px; margin-inline: auto; padding-inline: 28px; }\n\n/* Head: 820px column */\nmain > article > .bnb-back { order: 0; }\nmain > article > [data-bz-node=\"post-meta\"] { order: 1; }\nmain > article > .bz-block:not([data-bz-node]) > .bz-prose { order: 2; }\nmain > article > [data-bz-node=\"post-dek\"] { order: 3; }\nmain > article > .bnb-author { order: 4; }\nmain > article > .bz-block:not([data-bz-node]) > .bz-container:not(.bz-prose) { order: 5; }\n:is(main > article > .bnb-back, main > article > .bnb-author, main > article > [data-bz-node=\"post-meta\"] .bz-container, main > article > [data-bz-node=\"post-dek\"] .bz-container, main > article > .bz-block:not([data-bz-node]) > .bz-prose) { box-sizing: border-box; width: 100%; max-width: 820px; margin-inline: auto; padding-inline: 28px; }\nmain > article .bnb-back a { color: var(--muted); font: 700 13.5px/1.4 var(--font-body); text-decoration: none; }\nmain > article .bnb-back a:hover { color: var(--accent-dark); }\nmain > article > .bnb-back ~ [data-bz-node=\"post-meta\"] { margin-top: 22px; }\nmain > article [data-bz-node=\"post-meta\"] .bz-text p { margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 12px; font: 600 13.5px/1.4 var(--font-body); color: var(--muted); }\nmain > article [data-bz-node=\"post-meta\"] :is(strong, .bnb-tag) { display: inline-block; margin: 0; background: var(--accent-tint); color: var(--accent-dark); font: 700 12px/1.2 var(--font-body); letter-spacing: .05em; text-transform: uppercase; padding: 6px 12px; border-radius: var(--radius-chip); }\nmain > article.bnb-enhanced .bz-prose > .bz-eyebrow { display: none; }\nmain > article .bz-prose > .bz-eyebrow { margin: 18px 0 0; }\nmain > article h1 { font: 800 clamp(30px, 4vw, 52px)/1.05 var(--font-heading); letter-spacing: -.025em; color: var(--ink); margin: 18px 0 0; max-width: none; }\nmain > article [data-bz-node=\"post-dek\"] .bz-text p { font: 500 19.5px/1.5 var(--font-body); color: var(--ink-soft); margin: 18px 0 0; }\nmain > article .bz-prose { max-width: none; }\n.bnb-author { display: flex; align-items: center; gap: 12px; margin-top: 26px; padding-bottom: 6px; }\n.bnb-author__avatar { display: grid; place-items: center; flex: none; width: 42px; height: 42px; border-radius: 50%; background: var(--ink); color: var(--volt); font: 800 16px/1 var(--font-body); }\n.bnb-author > div > strong { display: block; font: 700 14.5px/1.3 var(--font-body); color: var(--ink); }\n.bnb-author > div > span { display: block; font: 600 12.5px/1.3 var(--font-body); color: var(--muted); }\n\n/* Cover: 940px */\nmain > article > .bz-block:not([data-bz-node]) > .bz-container:not(.bz-prose) { max-width: 940px; margin-top: 32px; margin-bottom: 44px; }\nmain > article > .bz-block:not([data-bz-node]) img { display: block; width: 100%; height: auto; max-height: 460px; object-fit: cover; border-radius: 22px; border: 1px solid var(--line-soft); box-shadow: 0 30px 70px -34px color-mix(in srgb, var(--ink) 40%, transparent); }\n\n/* Body: 720px reading column */\nmain > article .bz-text p { font: 400 17.5px/1.72 var(--font-body); color: var(--bnb-text); margin: 0 0 22px; }\nmain > article .bz-text strong { color: var(--ink); }\nmain > article .bz-text a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }\nmain > article .bz-headingblock h2 { font: 800 29px/1.12 var(--font-heading); letter-spacing: -.02em; color: var(--ink); margin: 38px 0 14px; }\nmain > article .bz-headingblock h3 { font: 700 22px/1.18 var(--font-heading); letter-spacing: -.01em; color: var(--ink); margin: 30px 0 12px; }\nmain > article .bz-headingblock h4 { font: 700 17.5px/1.35 var(--font-body); color: var(--ink); margin: 24px 0 8px; }\nmain > article .bz-block--list ul { display: grid; gap: 11px; margin: 0 0 22px; padding-left: 4px; }\nmain > article .bz-feature, main > article .bz-feature:not(:has(.bz-feature__d)) { position: relative; padding-left: 26px; }\nmain > article .bz-feature::before, main > article .bz-feature:not(:has(.bz-feature__d))::before { content: '\\25B8'; position: absolute; left: 0; top: 1px; width: auto; height: auto; display: block; background: none; border-radius: 0; color: var(--accent); font: 800 16.5px/1.6 var(--font-body); }\nmain > article .bz-block .bz-feature__t { font: 700 16.5px/1.6 var(--font-body); color: var(--ink); margin: 0; }\nmain > article .bz-block .bz-feature__d { font: 400 16.5px/1.6 var(--font-body); color: var(--bnb-text); margin: 0; }\nmain > article .bz-block--image { margin: 8px 0 26px; }\nmain > article .bz-block--image img { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line-soft); }\nmain > article .bz-block--buttons .bz-btns { margin: 12px 0 26px; }\nmain > article .bz-block--buttons .bz-btn--primary { background: var(--accent); color: #fff; font: 700 15.5px/1.2 var(--font-body); padding: 14px 26px; box-shadow: none; }\n/* Pull quotes (a paper column inside a row) */\nmain > article > .bz-row { box-sizing: border-box; width: 100%; max-width: 720px; margin: 8px auto 26px; padding-inline: 28px; }\nmain > article > .bz-row .bz-container { padding-inline: 0; }\nmain > article .bz-col--bg-paper { padding: 22px 26px; border-left: 4px solid var(--accent); border-radius: 0 14px 14px 0; background: color-mix(in srgb, var(--accent) 6%, var(--card)); }\nmain > article .bz-col--bg-paper .bz-text p { margin: 0; font: italic 600 18px/1.6 var(--font-body); color: var(--ink); }\nmain > article .bz-col--bg-paper .bz-text p + p { margin-top: 12px; }\n\n/* Inline demo card, in the reading column */\n[data-bz-node=\"cta-inline\"] > .bz-section { padding: 40px 0 0; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-row\"] { box-sizing: border-box; max-width: 720px; margin-inline: auto; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-card\"] { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 24px; align-items: center; text-align: left; padding: 40px; border-radius: 24px; background: var(--ink); }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-card\"]::before { content: ''; position: absolute; top: -50px; right: -20px; width: 260px; height: 200px; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 40%, transparent), transparent 70%); pointer-events: none; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-card\"] > * { position: relative; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-card\"] .bz-container { padding-inline: 0; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-bolt\"] { display: none; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-h\"] { grid-column: 1; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-h\"] h2 { font: 800 26px/1.1 var(--font-heading); letter-spacing: 0; color: #fff; text-align: left; max-width: none; margin: 0; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-body\"] { grid-column: 1; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-body\"] .bz-text { text-align: left; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-body\"] p { font: 500 15.5px/1.5 var(--font-body); color: color-mix(in srgb, #fff 72%, var(--ink)); max-width: 400px; margin: 10px 0 0 !important; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-btns\"] { grid-column: 2; grid-row: 1 / span 2; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-btns\"] .bz-center { text-align: left; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-btns\"] .bz-btns { margin: 0; justify-content: flex-start; }\n[data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-btns\"] .bz-btn { font-size: 16px; padding: 15px 28px; box-shadow: none; }\n\n/* More from the blog */\n[data-bz-node=\"more\"] { padding: 64px 0 90px; }\n[data-bz-node=\"more\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"more\"] .bz-container .bz-container { padding-inline: 0; }\n[data-bz-node=\"more\"] .bz-sechead { margin: 0 0 26px; }\n[data-bz-node=\"more\"] .bz-sechead h2 { font: 800 28px/1.15 var(--font-heading); letter-spacing: -.02em; margin: 0; }\n[data-bz-node=\"more\"] .bz-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }\n[data-bz-node=\"more\"] .bz-post { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line-soft); border-radius: var(--radius-card); overflow: hidden; text-decoration: none; color: var(--ink); transition: transform .22s cubic-bezier(.2,.7,.2,1), box-shadow .22s ease; }\n[data-bz-node=\"more\"] .bz-post:hover { transform: translateY(-6px); box-shadow: 0 22px 46px -24px color-mix(in srgb, var(--ink) 40%, transparent); border-color: var(--line-soft); }\n[data-bz-node=\"more\"] .bz-post:nth-child(n+4) { display: none; }\n[data-bz-node=\"more\"] .bz-post img { display: block; width: 100%; height: 150px; object-fit: cover; }\n[data-bz-node=\"more\"] .bz-card__body { padding: 20px 20px 22px; gap: 0; }\n[data-bz-node=\"more\"] .bz-card__m { font: 700 12px/1.3 var(--font-body); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }\n[data-bz-node=\"more\"] .bz-card__t { font: 700 17.5px/1.2 var(--font-heading); color: var(--ink); margin-top: 8px; }\n[data-bz-node=\"more\"] .bz-post__d { display: none; }\n\n@media (max-width: 900px) {\n  [data-bz-node=\"more\"] .bz-grid { grid-template-columns: repeat(2, 1fr); }\n}\n@media (max-width: 768px) {\n  main > article { padding-top: 36px; }\n  [data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-card\"] { padding: 28px 24px; }\n}\n@media (max-width: 639px) {\n  [data-bz-node=\"more\"] .bz-grid { grid-template-columns: 1fr; }\n  [data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-card\"] { grid-template-columns: 1fr; }\n  [data-bz-node=\"cta-inline\"] [data-bz-node=\"cta-btns\"] { grid-column: 1; grid-row: auto; margin-top: 22px; }\n}\n"
+}
