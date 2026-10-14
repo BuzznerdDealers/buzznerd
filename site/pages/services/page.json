@@ -108,7 +108,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "platform",
@@ -248,7 +249,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -318,29 +320,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Book a demo",
-          "heading": "Tell us what you want to move.",
-          "body": "20 minutes, no slides. We'll look at your current marketing, content and systems and show you which services will move the needle for your store.",
-          "checklist": [
-            {
-              "label": "Live review of your current setup"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ]
-        }
-      }
     }
   ]
 }
