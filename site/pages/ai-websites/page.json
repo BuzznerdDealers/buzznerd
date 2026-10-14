@@ -207,7 +207,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "found",
@@ -255,7 +256,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "story",
@@ -404,7 +406,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "behind",
@@ -417,77 +420,7 @@
           "id": "behind-wrap",
           "type": "row",
           "props": {},
-          "children": [
-            {
-              "id": "behind-card",
-              "type": "column",
-              "props": {
-                "span": 12,
-                "background": "ink",
-                "padding": 9
-              },
-              "children": [
-                {
-                  "id": "behind-row",
-                  "type": "row",
-                  "props": {
-                    "gap": 6,
-                    "align": "center",
-                    "stackOn": "tablet"
-                  },
-                  "children": [
-                    {
-                      "id": "behind-copy",
-                      "type": "column",
-                      "props": {
-                        "span": 8
-                      },
-                      "children": [
-                        {
-                          "id": "behind-h",
-                          "type": "heading",
-                          "props": {
-                            "text": "Every lead flows into tools that help you close.",
-                            "headingLevel": 2,
-                            "eyebrow": "Behind the site"
-                          }
-                        },
-                        {
-                          "id": "behind-tools",
-                          "type": "text",
-                          "props": {
-                            "text": "💬 AI Assistant · 📋 No-Touch CRM · ✨ Magic Flow IMS · 📊 Attribution",
-                            "width": "full"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "id": "behind-act",
-                      "type": "column",
-                      "props": {
-                        "span": 4,
-                        "align": "end"
-                      },
-                      "children": [
-                        {
-                          "id": "behind-cta",
-                          "type": "buttons",
-                          "props": {
-                            "items": [
-                              {
-                                "ctaId": "see-platform"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "children": []
         }
       ]
     },
@@ -811,7 +744,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -904,7 +838,8 @@
           ],
           "note": "No spam, no obligation. We only use this to schedule your demo."
         }
-      }
+      },
+      "children": []
     }
   ]
 }
