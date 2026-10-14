@@ -61,11 +61,11 @@
   {
     "id": "fit-your-team",
     "label": "How we'd fit your team →",
-    "url": "/contact",
-    "formId": "book-demo",
+    "url": "https://calendar.app.google/G8uHP22VXwfXTT1i7",
+    "formId": null,
     "style": "link",
     "intent": "book-demo",
-    "newTab": false,
+    "newTab": true,
     "active": true
   },
   {
