@@ -4,8 +4,14 @@
   "outputDirectory": "dist",
   "framework": null,
   "rewrites": [
-    { "source": "/import", "destination": "https://import.buzznerd.com/import" },
-    { "source": "/import/:path*", "destination": "https://import.buzznerd.com/import/:path*" },
+    {
+      "source": "/import",
+      "destination": "https://import.buzznerd.com/import"
+    },
+    {
+      "source": "/import/:path*",
+      "destination": "https://import.buzznerd.com/import/:path*"
+    },
     {
       "source": "/store",
       "destination": "https://jerry-s-dealership.buzznerdrv.com/store"
