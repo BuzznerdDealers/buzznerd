@@ -214,7 +214,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "connect",
@@ -389,7 +390,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "benefits",
@@ -535,7 +537,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -605,30 +608,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Schedule a demo",
-          "heading": "We'll walk your current setup with you.",
-          "body": "20 minutes, no slides. Bring your messiest workflow — we'll sketch how we'd connect it live on the call.",
-          "checklist": [
-            {
-              "label": "Live review of your current setup"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ],
-          "note": "No spam, no obligation. We only use this to schedule your demo."
-        }
-      }
     }
   ]
 }
