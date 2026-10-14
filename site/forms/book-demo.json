@@ -1,7 +1,7 @@
 {
   "id": "book-demo",
   "name": "Book a demo",
-  "status": "draft",
+  "status": "live",
   "surfaces": [
     "page"
   ],
@@ -71,5 +71,5 @@
       "message": "Got it — you're on the list. We'll reach out within one business day to schedule your walkthrough."
     }
   ],
-  "updatedAt": "2026-10-14T14:14:42.804Z"
+  "updatedAt": "2026-10-14T14:15:10.217Z"
 }
