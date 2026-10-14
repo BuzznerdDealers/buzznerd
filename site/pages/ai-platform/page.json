@@ -555,7 +555,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "faq",
@@ -593,7 +594,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -663,30 +665,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Schedule a demo",
-          "heading": "We'll walk your current setup with you.",
-          "body": "20 minutes, no slides. We'll review how leads and follow-up flow through your store today, show you where they're slipping, and walk you through what AI on the night shift would change.",
-          "checklist": [
-            {
-              "label": "Live review of your current follow-up"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ],
-          "note": "No spam, no obligation. We only use this to schedule your demo."
-        }
-      }
     }
   ]
 }
