@@ -23,29 +23,11 @@
               "children": []
             },
             {
-              "id": "sol-agents",
-              "label": "💬 24/7 AI lead coverage",
-              "type": "url",
-              "ref": null,
-              "url": "/solutions#agents",
-              "newTab": false,
-              "children": []
-            },
-            {
               "id": "sol-ecommerce",
               "label": "🛒 Parts & products storefront",
               "type": "url",
               "ref": null,
               "url": "/solutions#ecommerce",
-              "newTab": false,
-              "children": []
-            },
-            {
-              "id": "sol-followup",
-              "label": "📋 No-Touch CRM digest",
-              "type": "url",
-              "ref": null,
-              "url": "/solutions#followup",
               "newTab": false,
               "children": []
             },
