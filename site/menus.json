@@ -10,72 +10,107 @@
           "label": "Solutions",
           "type": "page",
           "ref": "solutions",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "sol-websites",
               "label": "🌐 Conversion-tuned websites",
               "type": "url",
-              "url": "/solutions#websites"
+              "ref": null,
+              "url": "/solutions#websites",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-agents",
               "label": "💬 24/7 AI lead coverage",
               "type": "url",
-              "url": "/solutions#agents"
+              "ref": null,
+              "url": "/solutions#agents",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-ecommerce",
               "label": "🛒 Parts & products storefront",
               "type": "url",
-              "url": "/solutions#ecommerce"
+              "ref": null,
+              "url": "/solutions#ecommerce",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-followup",
               "label": "📋 No-Touch CRM digest",
               "type": "url",
-              "url": "/solutions#followup"
+              "ref": null,
+              "url": "/solutions#followup",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-integrations",
               "label": "🔌 DMS & CRM integrations",
               "type": "url",
-              "url": "/solutions#integrations"
+              "ref": null,
+              "url": "/solutions#integrations",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-listings",
               "label": "⏱ Magic Flow photo listings",
               "type": "url",
-              "url": "/solutions#listings"
+              "ref": null,
+              "url": "/solutions#listings",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-geo",
               "label": "🔎 AIO / GEO visibility",
               "type": "url",
-              "url": "/solutions#geo"
+              "ref": null,
+              "url": "/solutions#geo",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-photos",
               "label": "📸 AI photo enhancement",
               "type": "url",
-              "url": "/solutions#photos"
+              "ref": null,
+              "url": "/solutions#photos",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-attribution",
               "label": "📊 Channel-to-sale attribution",
               "type": "url",
-              "url": "/solutions#attribution"
+              "ref": null,
+              "url": "/solutions#attribution",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-oem",
               "label": "🏆 Built to OEM program standards",
               "type": "url",
-              "url": "/solutions#oem"
+              "ref": null,
+              "url": "/solutions#oem",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "sol-all",
               "label": "See all solutions →",
               "type": "page",
-              "ref": "solutions"
+              "ref": "solutions",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -84,24 +119,26 @@
           "label": "Products",
           "type": "page",
           "ref": "products",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "prod-websites",
               "label": "🌐 AI Websites",
               "type": "page",
-              "ref": "ai-websites"
+              "ref": "ai-websites",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "prod-ecommerce",
               "label": "🛒 AI E-Commerce",
               "type": "page",
-              "ref": "ai-ecommerce"
-            },
-            {
-              "id": "prod-platform",
-              "label": "⚡ AI Platform",
-              "type": "page",
-              "ref": "ai-platform"
+              "ref": "ai-ecommerce",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -110,30 +147,44 @@
           "label": "Services",
           "type": "page",
           "ref": "services",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "svc-marketing",
               "label": "📣 AI-Driven Marketing",
               "type": "page",
-              "ref": "ai-driven-marketing"
+              "ref": "ai-driven-marketing",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "svc-aio",
               "label": "📝 Content Restructuring for AIO",
               "type": "page",
-              "ref": "content-restructuring-for-aio"
+              "ref": "content-restructuring-for-aio",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "svc-workflows",
               "label": "🔌 Custom Workflows & Integrations",
               "type": "page",
-              "ref": "custom-workflows-integrations"
+              "ref": "custom-workflows-integrations",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "svc-score",
               "label": "🎯 AI Presence Score",
               "type": "page",
-              "ref": "ai-presence-score"
+              "ref": "ai-presence-score",
+              "url": null,
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -141,13 +192,19 @@
           "id": "blog",
           "label": "Blog",
           "type": "url",
-          "url": "/blog"
+          "ref": null,
+          "url": "/blog",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "about",
           "label": "About",
           "type": "page",
-          "ref": "about-us"
+          "ref": "about-us",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -159,25 +216,37 @@
           "id": "fp-websites",
           "label": "AI Websites",
           "type": "page",
-          "ref": "ai-websites"
+          "ref": "ai-websites",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fp-ecommerce",
           "label": "AI E-Commerce",
           "type": "page",
-          "ref": "ai-ecommerce"
+          "ref": "ai-ecommerce",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fp-platform",
           "label": "AI Platform",
           "type": "page",
-          "ref": "ai-platform"
+          "ref": "ai-platform",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fp-solutions",
           "label": "Solutions overview",
           "type": "page",
-          "ref": "solutions"
+          "ref": "solutions",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -189,25 +258,37 @@
           "id": "fs-marketing",
           "label": "AI-Driven Marketing",
           "type": "page",
-          "ref": "ai-driven-marketing"
+          "ref": "ai-driven-marketing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-aio",
           "label": "Content for AIO",
           "type": "page",
-          "ref": "content-restructuring-for-aio"
+          "ref": "content-restructuring-for-aio",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-workflows",
           "label": "Workflows & Integrations",
           "type": "page",
-          "ref": "custom-workflows-integrations"
+          "ref": "custom-workflows-integrations",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fs-score",
           "label": "AI Presence Score",
           "type": "page",
-          "ref": "ai-presence-score"
+          "ref": "ai-presence-score",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -219,32 +300,46 @@
           "id": "fc-about",
           "label": "About",
           "type": "page",
-          "ref": "about-us"
+          "ref": "about-us",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-blog",
           "label": "Blog",
           "type": "url",
-          "url": "/blog"
+          "ref": null,
+          "url": "/blog",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-careers",
           "label": "Careers",
           "type": "page",
-          "ref": "careers"
+          "ref": "careers",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-contact",
           "label": "Contact",
           "type": "page",
-          "ref": "contact"
+          "ref": "contact",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "fc-support",
           "label": "Support",
           "type": "url",
+          "ref": null,
           "url": "https://buzznerd.freshdesk.com",
-          "newTab": true
+          "newTab": true,
+          "children": []
         }
       ]
     },
@@ -256,15 +351,19 @@
           "id": "instagram",
           "label": "Instagram",
           "type": "url",
+          "ref": null,
           "url": "https://www.instagram.com/buzznerdtrucks/",
-          "newTab": true
+          "newTab": true,
+          "children": []
         },
         {
           "id": "facebook",
           "label": "Facebook",
           "type": "url",
+          "ref": null,
           "url": "https://www.facebook.com/buzznerdtrucks/",
-          "newTab": true
+          "newTab": true,
+          "children": []
         }
       ]
     },
@@ -276,13 +375,19 @@
           "id": "privacy",
           "label": "Privacy",
           "type": "page",
-          "ref": "privacy"
+          "ref": "privacy",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "terms",
           "label": "Terms",
           "type": "page",
-          "ref": "terms"
+          "ref": "terms",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     }
