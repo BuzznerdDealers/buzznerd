@@ -193,7 +193,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "solutions",
@@ -236,13 +237,6 @@
               "url": "/content-restructuring-for-aio"
             },
             {
-              "icon": "💬",
-              "title": "AI Assistant",
-              "body": "24/7 AI Assistant that answers questions and reads each buyer's intent and readiness — handing your team buyers who are ready to talk.",
-              "linkLabel": "Meet the AI Assistant →",
-              "url": "/ai-platform#assistant"
-            },
-            {
               "icon": "📊",
               "title": "Attribution Analytics",
               "body": "See exactly which channels drive sold units. Real ROI dashboards, not vanity metrics — built for GMs.",
@@ -251,7 +245,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "upload",
@@ -526,7 +521,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "attribution",
@@ -853,7 +849,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -923,29 +920,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Book a demo",
-          "heading": "We'll walk your current site with you.",
-          "body": "20 minutes, no slides. We'll review your current site live, show you where leads are leaking, and walk you through what Buzznerd would do differently.",
-          "checklist": [
-            {
-              "label": "Live review of your current site"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ]
-        }
-      }
     }
   ]
 }
