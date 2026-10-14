@@ -231,15 +231,6 @@
           "children": []
         },
         {
-          "id": "fp-platform",
-          "label": "AI Platform",
-          "type": "page",
-          "ref": "ai-platform",
-          "url": null,
-          "newTab": false,
-          "children": []
-        },
-        {
           "id": "fp-solutions",
           "label": "Solutions overview",
           "type": "page",
