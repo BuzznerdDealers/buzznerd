@@ -2,8 +2,8 @@
   {
     "id": "book-demo",
     "label": "Book a demo",
-    "url": "/contact",
-    "formId": "book-demo",
+    "url": "https://calendar.app.google/G8uHP22VXwfXTT1i7",
+    "formId": null,
     "style": "primary",
     "intent": "book-demo",
     "newTab": false,
