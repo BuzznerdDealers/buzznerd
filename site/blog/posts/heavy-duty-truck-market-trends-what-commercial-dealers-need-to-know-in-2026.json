@@ -1,0 +1,225 @@
+{
+  "slug": "heavy-duty-truck-market-trends-what-commercial-dealers-need-to-know-in-2026",
+  "title": "Heavy Duty Truck Market Trends: What Commercial Dealers Need to Know in 2026",
+  "date": "2026-08-14",
+  "description": "The heavy duty truck market is in transition. After a prolonged and difficult downcycle through 2024 and most of 2025, the data coming out of mid-2026 tells a different story.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/08/blog-10.png",
+  "status": "published",
+  "keywords": [
+    "Insights"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Insights</strong> · 7 min read · By Vandana K"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "Backlogs at a 36-month high, EPA 2027 pull-forward, and the tariff headwind."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "The heavy duty truck market is in transition. After a prolonged and difficult downcycle through 2024 and most of 2025, the data coming out of mid-2026 tells a different story. Class 8 backlogs have reached a 36-month high. Order activity surged dramatically year over year in June. Fleet replacement demand is improving. And EPA 2027 is pushing fleets to make purchasing decisions they might otherwise have deferred."
+      }
+    },
+    {
+      "id": "img-2",
+      "type": "image",
+      "props": {
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/08/blog-10-1024x683.png",
+          "alt": "Heavy duty truck market trends 2026",
+          "width": 1024,
+          "height": 683
+        },
+        "width": "prose"
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "For commercial truck dealers, this is not just interesting market data. It is the context that shapes what buyers are thinking about right now, what they are prioritizing, and why the window for capturing this demand is narrower than it might appear."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "The Recovery Is Real but Not Uniform",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "The clearest signal of market improvement comes from Class 8 order activity. According to ACT Research and FTR, North American Class 8 orders surged in June, with preliminary figures showing year-over-year gains exceeding 200%. Backlogs reached a 36-month high, and build plans improved for the second half of 2026.\n\nThose are significant numbers. But the context behind them matters just as much as the figures themselves. A large portion of this surge reflects deferred replacement demand finally re-entering the market. Fleets that held off purchasing during the downcycle are now acting, driven by improving freight rates, tightening capacity, and urgency around EPA 2027 compliance timelines.\n\nThis is what ACT Research describes as a supply-driven recovery rather than a broad demand expansion. Capacity is contracting. Spot rates have strengthened sharply. Contract rates are accelerating. The conditions are improving, but fleet buying behavior remains disciplined. Fleets are replacing what they need, not expanding aggressively."
+      }
+    },
+    {
+      "id": "quote-6",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-6-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-6-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>The market has moved past its cyclical low. But the recovery is being earned through replacement demand and regulatory timing, not a broad surge in new fleet growth.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "What EPA 2027 Is Doing to Buying Decisions",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "EPA 2027 emission regulations are one of the most important variables shaping the current market and the one that commercial dealers most need to understand when talking to fleet buyers.\n\nThe new regulations, set to take effect in 2027, will require significantly cleaner engines than the current standard. That means equipment manufactured after the deadline will cost more and potentially have different operating characteristics than what fleets run today. For fleet operators, this creates a clear incentive to lock in purchases before those cost increases materialize.\n\nThis pull-forward dynamic is part of what is driving June's order surge. Fleets that have the financial capacity and operational need are moving now to secure vehicles at current pricing and specifications. For dealers, this means some of the buyers in the market right now are moving with more urgency than the typical replacement cycle would suggest. They have a deadline in mind, even if they do not always say so directly.\n\nAt the same time, not all fleets can act. Elevated financing costs, insurance, maintenance expenses, and uncertainty about future profitability are keeping some operators on the sidelines despite the regulatory pressure. The market is not a rising tide lifting all buyers equally. It is a selective environment where which fleets can act depends heavily on their financial position and equipment age."
+      }
+    },
+    {
+      "id": "h-9",
+      "type": "heading",
+      "props": {
+        "text": "The Tariff Headwind Is Real",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-10",
+      "type": "text",
+      "props": {
+        "text": "The recovery narrative is real, but it comes with a significant counterweight. According to CDK's 2026 State of the Heavy Truck Industry report, nearly half of dealers surveyed said tariffs have already reduced demand in their market, and optimism about the year ahead has dropped significantly compared to prior surveys.\n\nTariff-driven cost inflation is adding pressure to total cost of ownership for fleet operators. Truck prices have risen. Parts costs have increased. Diesel prices have moved higher. For operators already managing tight margins in a freight market that is still recovering, these cost increases are a real constraint on purchasing decisions.\n\nFor dealers, this means the conversation with fleet buyers is more nuanced than the order data might suggest. Some buyers are motivated to act before EPA 2027 drives prices higher. Others are hesitating precisely because prices are already higher than they expected. Understanding which situation a given buyer is in matters for how dealers position their inventory and their service offering."
+      }
+    },
+    {
+      "id": "quote-11",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-11-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-11-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>The dealers widening the gap right now are not the ones waiting for conditions to improve. They are the ones making sure they are visible and positioned to act when their buyers are ready.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "Used Class 8 Market Is Also Strengthening",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "The recovery is not limited to new truck orders. The used Class 8 market is also showing meaningful improvement. Same-dealer used Class 8 retail sales improved year over year in May, and average retail pricing was higher year over year as well.\n\nStronger used truck values carry implications across the market. For dealers holding used inventory, improving pricing supports margin. For fleets considering replacement, higher trade-in values make the economics of upgrading more attractive. For lenders and leasing companies, stronger residual values improve the business case for financing.\n\nThis is a supportive dynamic for dealers who have used Class 8 inventory and a functioning digital presence to put it in front of buyers who are actively searching. The demand is there. The question is whether the inventory is visible where buyers are looking."
+      }
+    },
+    {
+      "id": "h-14",
+      "type": "heading",
+      "props": {
+        "text": "What This Means for Commercial Dealers Heading Into Q4",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "Q4, October through December, is historically a significant period for commercial truck purchasing. Fleet operators making final capital decisions before year end, buyers completing replacement cycles, and operators planning for the following year all create concentrated purchasing activity in the final quarter.\n\nIn 2026, that Q4 dynamic is amplified by the EPA 2027 timeline. Fleets that have not yet acted on replacement decisions will feel increasing pressure as the year closes. Dealers who are positioned to be found, who have inventory visible on the right platforms, and whose digital presence makes it easy for a buyer to evaluate and make contact, are the ones most likely to capture that demand.\n\nThe CDK report makes an important observation: there is a widening gap between high-performing dealers who are making decisive moves and those taking a more reactive approach. That gap is being created now, before Q4 fully arrives. The dealers investing in their visibility and operations in August and September are building the position that determines how well they perform in October, November, and December."
+      }
+    },
+    {
+      "id": "h-16",
+      "type": "heading",
+      "props": {
+        "text": "The Buyers Coming Into the Market Are More Digital Than Ever",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-17",
+      "type": "text",
+      "props": {
+        "text": "One dimension of the current market that often goes undiscussed in industry forecasts is how the buyer profile is changing. Fleet managers and operators researching replacement decisions in 2026 are doing significantly more of that research online and increasingly through AI tools before they ever contact a dealer.\n\nA fleet manager evaluating Class 8 tractor options before EPA 2027 pricing kicks in is not starting that research by calling dealers. They are searching online, comparing spec data, checking used pricing, and in many cases asking AI tools which dealers in their area carry the inventory they need. The dealers who are visible in those moments, whose inventory is well-described and findable, and whose digital presence communicates real commercial expertise, are the ones who make the shortlist.\n\nThe dealers who are not visible in that research phase are often not aware of what they are missing, because those buyers never call. The lead simply does not exist in any report."
+      }
+    },
+    {
+      "id": "h-18",
+      "type": "heading",
+      "props": {
+        "text": "Where Does Your Dealership Stand in This Market?",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-19",
+      "type": "text",
+      "props": {
+        "text": "The market data points to real opportunity in the second half of 2026. Replacement demand is improving, used pricing is stronger, and EPA 2027 is creating urgency that will only increase as the year closes. The question for every commercial dealer is not whether the market is recovering. It clearly is. The question is whether your dealership is set up to capture your share of that recovery.\n\nIf you are not sure how visible your dealership is to the buyers currently in the market, or if you want to understand what it would take to be better positioned heading into Q4, that is a conversation worth having.\n\nAt Buzznerd we work specifically with commercial truck, trailer, equipment, and ag dealers to make sure their digital presence matches the quality of their inventory and the pace of the market they are operating in. That means AI-powered websites built for how commercial buyers actually search, Google and Meta campaigns that put your inventory in front of the right buyers, parts ecommerce that captures revenue outside business hours, and content structured so your dealership shows up when fleet buyers search on Google or AI tools like ChatGPT.\n\nThe market is creating real opportunity right now. The dealers who capture it will be the ones buyers can find, evaluate, and contact without friction.\n\nIf you want to see what that looks like for your dealership specifically, book a demo and we will walk through it with your market and your inventory in mind."
+      }
+    },
+    {
+      "id": "cta-20",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Book a Demo →"
+          }
+        ]
+      }
+    }
+  ]
+}

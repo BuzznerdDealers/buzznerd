@@ -1,0 +1,154 @@
+{
+  "slug": "buzznerd-returns-to-karmak-for-a-6th-year",
+  "title": "Buzznerd Returns to the Karmak Conference & Expo for a 6th Year",
+  "date": "2026-10-13",
+  "description": "We're heading back to St. Louis for our sixth Karmak Conference & Expo, October 20–22. Come find our booth and meet our new VP of Sales, David Fisher.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/02/Karmak-logo-white-background-1-2.png",
+  "status": "published",
+  "keywords": [
+    "Events"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Events</strong> · 2 min read · By Jerry Van Galder"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "October 20–22 at the St. Louis Union Station Hotel. Stop by our booth and meet our new VP of Sales, David Fisher."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Next week we're heading back to St. Louis for the Karmak Conference &amp; Expo. This is our sixth year attending, and the event is once again at the St. Louis Union Station Hotel, which is easily one of the most beautiful venues on the conference circuit.\n\nKarmak describes the conference as the place \"where the commercial transportation industry meets to align, learn, and move forward together.\" It brings together truck and trailer dealers, service networks, distributors, OEMs, fleets, and technology partners for three days of sessions, workshops, and networking."
+      }
+    },
+    {
+      "id": "h-2",
+      "type": "heading",
+      "props": {
+        "text": "Event Details",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-3",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Event: Karmak Conference & Expo 2026"
+          },
+          {
+            "label": "Dates: October 20–22, 2026"
+          },
+          {
+            "label": "Venue: St. Louis Union Station Hotel"
+          },
+          {
+            "label": "Address: 1820 Market Street, St. Louis, MO 63103"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "Meet David Fisher, Our New VP of Sales",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "This year's booth comes with a new face. David Fisher joined Buzznerd as VP of Sales earlier this year, and St. Louis is a great chance to meet him in person. Dave started his career as a commercial insurance broker working with fleets, specialty trucks, and heavy equipment, so he understands how commercial buyers evaluate, insure, and maintain the assets you sell.\n\nStop by and talk with Dave about what's working for commercial dealers right now: websites built for commercial inventory, parts e-commerce that connects to Karmak, AI search visibility, and listings that give fleet buyers what they need before they call."
+      }
+    },
+    {
+      "id": "h-6",
+      "type": "heading",
+      "props": {
+        "text": "What You'll See at Our Booth",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "list-7",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "How Buzznerd AI E-Commerce integrates with Karmak to sell parts and products online"
+          },
+          {
+            "label": "AI Websites built for truck, trailer, and equipment dealers"
+          },
+          {
+            "label": "Your free AI Presence Score, showing how AI search tools see your dealership"
+          },
+          {
+            "label": "Time with our team to talk through your specific challenges"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-8",
+      "type": "heading",
+      "props": {
+        "text": "Why We Keep Coming Back",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-9",
+      "type": "text",
+      "props": {
+        "text": "Six years in, the Karmak community is still one of our favorite rooms to be in. The sessions are practical, the hallway conversations are honest, and it's where we hear firsthand what dealers need next. We're grateful to Karmak for hosting and to every dealer who stops by to say hello.\n\nSee you in St. Louis!"
+      }
+    },
+    {
+      "id": "cta-10",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Schedule time with David →"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-11",
+      "type": "heading",
+      "props": {
+        "text": "More information",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "list-12",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Karmak — Conference & Expo (karmak.com/conference-and-expo)"
+          }
+        ]
+      }
+    }
+  ]
+}

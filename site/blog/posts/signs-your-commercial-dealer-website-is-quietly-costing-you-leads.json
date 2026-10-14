@@ -1,0 +1,335 @@
+{
+  "slug": "signs-your-commercial-dealer-website-is-quietly-costing-you-leads",
+  "title": "Signs Your Commercial Dealer Website Is Quietly Costing You Leads",
+  "date": "2026-08-26",
+  "description": "A commercial dealer website losing leads without knowing it is one of the most common and expensive problems in commercial truck dealerships today. Here are the signs and what they are telling you.",
+  "coverImage": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/08/blog-13.png",
+  "status": "published",
+  "keywords": [
+    "Websites"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Websites</strong> · 8 min read · By Vandana K"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "The lead loss that never shows up in a report, and how to spot it."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "A dealership website losing leads is one of the most expensive problems in commercial truck dealerships today because it is almost completely invisible. There is no notification when a fleet manager visits your inventory page, does not find what they need, and goes somewhere else. No alert when a buyer submits a contact form and never hears back. No report that shows how many people researched your dealership on their phone, hit a slow-loading page, and left before seeing your inventory."
+      }
+    },
+    {
+      "id": "img-2",
+      "type": "image",
+      "props": {
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/08/blog-13-1024x683.png",
+          "alt": "Commercial dealer website losing leads",
+          "width": 1024,
+          "height": 683
+        },
+        "width": "prose"
+      }
+    },
+    {
+      "id": "p-3",
+      "type": "text",
+      "props": {
+        "text": "The data behind this is stark. According to 2026 research from Web Tonic, 92% of local dealership domains fail Google's mobile speed test, with 70% scoring in the poor tier. The same research found that desktop converts at 3.8% compared to 1.9% on mobile, a gap that translates directly to missed revenue for any dealer whose buyers are researching on their phones. And Demand Local data shows that 65% of sales leads did not hear back from a salesperson within 24 hours of returning to the dealer site, meaning repeat visitors who are among the most qualified prospects in the pipeline are being lost to silence.\n\nMost commercial dealers have no visibility into any of this. The website looks functional. The phone rings occasionally. But the leads that never materialized are not in any report."
+      }
+    },
+    {
+      "id": "h-4",
+      "type": "heading",
+      "props": {
+        "text": "The Problem With Invisible Lead Loss",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-5",
+      "type": "text",
+      "props": {
+        "text": "Lead loss that shows up in a CRM is manageable. A missed call can be returned. A form submission that went to spam can be found. But lead loss that happens before any contact is made is a different category of problem entirely.\n\nWhen a commercial buyer visits a website and leaves without taking action, that event typically leaves no trace in a dealership's reporting. It does not appear as a lost lead. It does not show up as a missed call. It simply does not exist from the dealership's perspective, even though from the buyer's perspective a vendor was evaluated and rejected.\n\nThis invisible attrition compounds over time. Every month a website underperforms is another month of buyers choosing competitors, building relationships elsewhere, and becoming harder to reach. The dealerships that address these gaps early are the ones that create sustainable pipeline. The ones that wait until the problem is visible are often responding to a competitive disadvantage that has been building quietly for years."
+      }
+    },
+    {
+      "id": "quote-6",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-6-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-6-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>The leads you know about are not the problem. The ones that left without a trace are.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-7",
+      "type": "heading",
+      "props": {
+        "text": "Sign One: Your Mobile Experience Is Broken",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "Mobile bounce rates run approximately 12 percentage points higher than desktop across all industries in 2026, according to Digital Applied's benchmark data. For automotive and commercial dealer sites specifically, that gap is meaningful because the majority of website traffic is now mobile.\n\nA fleet manager checking inventory between appointments is on their phone. An owner-operator searching for parts at a truck stop is on their phone. A procurement coordinator comparing dealers while traveling is on their phone. If your website is slow, hard to navigate on a small screen, or shows inventory that does not load correctly on mobile, those buyers are not calling. They are moving to the next option.\n\nThe 92% failure rate on mobile speed tests among local dealership domains is not a statistic about bad intentions. It is a statistic about websites that were built without adequate attention to how the majority of buyers actually access them. Slow pages cost leads silently and consistently."
+      }
+    },
+    {
+      "id": "h-9",
+      "type": "heading",
+      "props": {
+        "text": "Sign Two: Your Forms Are Collecting Names, Not Qualified Buyers",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-10",
+      "type": "text",
+      "props": {
+        "text": "A contact form that asks for a name, email, and phone number was designed for a consumer making a personal inquiry. It does not work for a fleet manager who needs to communicate the scope of what they are looking for before any useful conversation can happen.\n\nWhen commercial buyers submit a generic form and receive a generic response, two things tend to happen. The buyer moves on to a competitor whose first response was more relevant. The salesperson spends time on a follow-up call that covers information the form should have collected. Neither outcome is good, and both are the direct result of a lead capture design that was never built for commercial transactions.\n\nThe Demand Local data is relevant here too. Dealerships responding to leads within five minutes are 21 times more likely to convert than those responding at the 42-hour industry average. But speed of response is only one variable. The quality of that response depends entirely on what information the form captured. A fast response to a low-information form is still not a useful first interaction for a fleet buyer who came with a specific need."
+      }
+    },
+    {
+      "id": "quote-11",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-11-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-11-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>A form that collects a name and phone number is not lead capture for a commercial dealer. It is the beginning of a phone tag cycle that most buyers will not wait out.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-12",
+      "type": "heading",
+      "props": {
+        "text": "Sign Three: Your Inventory Is There but Not Findable",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-13",
+      "type": "text",
+      "props": {
+        "text": "There is a meaningful difference between inventory that exists on a website and inventory that a buyer can actually find. Commercial truck buyers search by spec. They have a duty class in mind, an OEM preference, a transmission requirement, a mileage threshold. If your inventory search does not support those filters, the buyer cannot find what they are looking for even if it is on your lot.\n\nThis creates a specific pattern that dealers rarely notice. Traffic numbers look reasonable. Time on site might even look acceptable. But conversion is low because buyers are arriving, searching, not finding what they need in a usable format, and leaving. The inventory exists. The buyer exists. The connection simply never happens.\n\nFourteen percent of new sales leads never get logged into dealer CRMs, according to Demand Local research. That gap happens between the point of first contact and the point of CRM entry, but the precursor to that gap is often inventory that was never surfaced clearly enough to generate the contact in the first place."
+      }
+    },
+    {
+      "id": "h-14",
+      "type": "heading",
+      "props": {
+        "text": "Sign Four: Your Website Is Invisible to AI Search",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "This is the newest and fastest-growing source of invisible lead loss for commercial dealers. Buyers researching fleet replacements, specific part availability, or dealer service capabilities are increasingly starting that research on AI tools before they ever visit a website. When those tools cannot find or cite a dealership, the dealership is simply not part of the buyer's consideration set.\n\nThe gap between being indexed on Google and being visible to AI tools is real and growing. A website that ranks adequately in traditional search but has no schema markup, no FAQ content, no location signals in body text, and JavaScript-rendered inventory pages is essentially invisible to AI-generated recommendations. That invisibility does not show up in any standard analytics report, but it is already affecting which dealers buyers find first."
+      }
+    },
+    {
+      "id": "h-16",
+      "type": "heading",
+      "props": {
+        "text": "Sign Five: You Have No Way to Measure Any of This",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-17",
+      "type": "text",
+      "props": {
+        "text": "Perhaps the most telling sign that a commercial dealer website is quietly costing leads is the absence of measurement. If you do not know your mobile conversion rate, your average lead response time, your inventory page exit rate, or whether your dealership appears in AI-generated search results for relevant queries, you cannot know whether any of the problems above apply to your site.\n\nThe dealerships that are winning in the current commercial vehicle market recovery are not doing so by guessing. They are making decisions based on data about where buyers are coming from, what they are doing on the site, and where they are leaving. That data infrastructure is not complicated to build, but it requires intentional attention that most outdated commercial dealer websites were never set up to provide."
+      }
+    },
+    {
+      "id": "quote-18",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "quote-18-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "quote-18-t",
+              "type": "text",
+              "props": {
+                "text": "<strong><em>You cannot fix what you cannot see. And most commercial dealer websites are not set up to see where the leads are going.</em></strong>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-19",
+      "type": "heading",
+      "props": {
+        "text": "What These Signs Have in Common",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-20",
+      "type": "text",
+      "props": {
+        "text": "Every sign described above shares a common characteristic. The problem is invisible until someone looks for it specifically. Buyers do not send rejection emails. Slow pages do not file complaints. Forms that failed to capture useful information do not generate reports. AI tools that skipped your dealership leave no trace in your analytics.\n\nThe commercial vehicle market is in an active recovery cycle. Transaction velocity is improving and buyers are moving. The dealers positioned to capture that recovery are the ones whose websites are ready to meet buyers at every point in their research, on mobile, in search, on AI tools, and in the moment of first contact. The ones who discover they were losing leads all along will find that recovery more difficult than it needed to be."
+      }
+    },
+    {
+      "id": "h-21",
+      "type": "heading",
+      "props": {
+        "text": "Find Out Where Your Website Is Losing Leads",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-22",
+      "type": "text",
+      "props": {
+        "text": "At Buzznerd we work with commercial truck, trailer, equipment, and ag dealers to identify exactly where their website is underperforming and build the digital presence that matches the quality of their inventory and their team. If you want to understand where your site stands and what it would take to stop losing leads you do not know you are losing, book a demo."
+      }
+    },
+    {
+      "id": "cta-23",
+      "type": "buttons",
+      "props": {
+        "items": [
+          {
+            "ctaId": "book-demo",
+            "label": "Book a Demo →"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-24",
+      "type": "heading",
+      "props": {
+        "text": "FAQs",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "h-25",
+      "type": "heading",
+      "props": {
+        "text": "How do I know if my commercial dealer website is losing leads?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-26",
+      "type": "text",
+      "props": {
+        "text": "Key signs include high mobile bounce rates, generic contact forms that do not capture commercial buyer information, inventory that cannot be filtered by spec, no visibility in AI search tools, and no measurement infrastructure to track where buyers are dropping off. Most of this lead loss is invisible because buyers leave without making contact."
+      }
+    },
+    {
+      "id": "h-27",
+      "type": "heading",
+      "props": {
+        "text": "What percentage of dealership websites fail mobile performance tests?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-28",
+      "type": "text",
+      "props": {
+        "text": "According to 2026 research from Web Tonic, 92% of local dealership domains fail Google's mobile speed test, with 70% scoring in the poor tier. Mobile sessions convert at roughly half the rate of desktop sessions, making poor mobile performance one of the most costly and common sources of lead loss for commercial dealers."
+      }
+    },
+    {
+      "id": "h-29",
+      "type": "heading",
+      "props": {
+        "text": "How quickly should a commercial dealer respond to website leads?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-30",
+      "type": "text",
+      "props": {
+        "text": "Demand Local data shows dealerships responding within five minutes are 21 times more likely to convert than those responding at the 42-hour industry average. The same research found that 65% of sales leads did not hear back within 24 hours of returning to the dealer site, meaning repeat visitors who represent the most qualified prospects are frequently lost to slow follow-up."
+      }
+    },
+    {
+      "id": "h-31",
+      "type": "heading",
+      "props": {
+        "text": "Why is AI search visibility important for commercial dealer websites?",
+        "headingLevel": 4
+      }
+    },
+    {
+      "id": "p-32",
+      "type": "text",
+      "props": {
+        "text": "Commercial buyers are increasingly starting research on AI tools like ChatGPT and Gemini before visiting dealership websites. A website without schema markup, FAQ content, and structured HTML content is invisible to AI-generated recommendations even if it ranks acceptably in traditional search. This creates a growing source of invisible lead loss that does not appear in standard analytics."
+      }
+    }
+  ]
+}
