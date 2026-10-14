@@ -103,7 +103,7 @@
     "path": "/ai-platform",
     "out": "ai-platform/index.html",
     "dir": "ai-platform",
-    "status": "published",
+    "status": "draft",
     "seo": {
       "ogImage": null,
       "noindex": false,
