@@ -100,7 +100,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "platform",
@@ -345,7 +346,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "faq",
@@ -387,7 +389,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -457,29 +460,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Book a demo",
-          "heading": "We'll walk your current setup with you.",
-          "body": "20 minutes, no slides. We'll walk your actual site and show you which solutions will move the needle for your store.",
-          "checklist": [
-            {
-              "label": "Live review of your current setup"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ]
-        }
-      }
     }
   ]
 }
