@@ -168,7 +168,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "pages",
@@ -477,7 +478,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
@@ -556,30 +558,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Schedule a demo",
-          "heading": "We'll walk your current setup with you.",
-          "body": "20 minutes, no slides. We'll walk a few of your real pages and show you exactly what we'd restructure — and why.",
-          "checklist": [
-            {
-              "label": "Live review of your current setup"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ],
-          "note": "No spam, no obligation. We only use this to schedule your demo."
-        }
-      }
     }
   ]
 }
