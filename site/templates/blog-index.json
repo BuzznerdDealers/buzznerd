@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "id": "blog-index",
+  "name": "Blog index",
+  "conditions": [
+    {
+      "type": "blog",
+      "ref": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "header",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-header",
+        "values": {}
+      }
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "cta-band",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-cta",
+        "values": {}
+      }
+    },
+    {
+      "id": "footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {}
+      }
+    }
+  ],
+  "js": "/* Keep the footer copyright year current. */\n(function () {\n  var node = document.querySelector('[data-bz-node=\"footer-copy\"] p');\n  if (node) node.innerHTML = node.innerHTML.replace(/\\u00a9\\s*\\d{4}/, '\\u00a9 ' + new Date().getFullYear());\n})();\n"
+}

@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "id": "blog-post",
+  "name": "Blog post",
+  "conditions": [
+    {
+      "type": "allPosts",
+      "ref": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "header",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-header",
+        "values": {}
+      }
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
+    {
+      "id": "cta-inline",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "blog-cta",
+        "values": {
+          "heading": "See it working on your own lot.",
+          "body": "Book a 20-minute demo and we'll show you where the leads are hiding."
+        }
+      }
+    },
+    {
+      "id": "more",
+      "type": "section",
+      "props": {
+        "paddingY": 6,
+        "width": "boxed"
+      },
+      "children": [
+        {
+          "id": "more-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "more-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "more-posts",
+                  "type": "postsList",
+                  "props": {
+                    "heading": "More from the blog",
+                    "headingLevel": 2,
+                    "count": 3,
+                    "showDates": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {}
+      }
+    }
+  ],
+  "js": "/* Keep the footer copyright year current. */\n(function () {\n  var node = document.querySelector('[data-bz-node=\"footer-copy\"] p');\n  if (node) node.innerHTML = node.innerHTML.replace(/\\u00a9\\s*\\d{4}/, '\\u00a9 ' + new Date().getFullYear());\n})();\n"
+}
