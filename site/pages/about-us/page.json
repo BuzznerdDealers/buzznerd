@@ -316,7 +316,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "proof",
@@ -536,30 +537,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "demo",
-      "type": "sharedSection",
-      "props": {
-        "sectionId": "demo-request",
-        "values": {
-          "eyebrow": "Schedule a demo",
-          "heading": "We'll walk your current setup with you.",
-          "body": "20 minutes, no slides. Meet the team, see the platform, and get straight answers on what we'd do for your store.",
-          "checklist": [
-            {
-              "label": "Live review of your current setup"
-            },
-            {
-              "label": "Straight answers on pricing"
-            },
-            {
-              "label": "Reply within one business day"
-            }
-          ],
-          "note": "No spam, no obligation. We only use this to schedule your demo."
-        }
-      }
     }
   ]
 }
