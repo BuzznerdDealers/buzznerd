@@ -77,15 +77,6 @@
                       "height": 751
                     }
                   }
-                },
-                {
-                  "id": "hero-chip",
-                  "type": "ui-panel",
-                  "props": {
-                    "tone": "chip",
-                    "tag": "⚡ AI Sales Assistant",
-                    "title": "3 hot leads captured"
-                  }
                 }
               ]
             }
