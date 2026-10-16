@@ -1,0 +1,110 @@
+{
+  "slug": "class-5-7-demand-is-improving",
+  "title": "Class 5–7 Demand Is Improving",
+  "description": "",
+  "status": "draft",
+  "date": "2026-10-16",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-main",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "row-main",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "col-content",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "heading-main",
+                  "type": "heading",
+                  "props": {
+                    "text": "Class 5–7 Demand Is Improving: What Medium-Duty Dealers Should Watch",
+                    "headingLevel": 1,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "text-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "As the market for Class 5–7 trucks begins to show signs of improvement, medium-duty dealers must stay keenly aware of shifting trends and opportunities. Understanding these dynamics can position dealerships for better success in the coming months.",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "list-opportunities",
+                  "type": "list",
+                  "props": {
+                    "heading": "Key Opportunities",
+                    "headingLevel": 2,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Growing Demand",
+                        "desc": "An uptick in commercial and urban deliveries is increasing the need for medium-duty trucks."
+                      },
+                      {
+                        "label": "Technological Advances",
+                        "desc": "Adoption of new technologies in Class 5–7 trucks offers added value to customers."
+                      },
+                      {
+                        "label": "Sustainability Trends",
+                        "desc": "An increase in eco-friendly policies is creating a demand for more fuel-efficient and low-emission vehicles."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "text-recommendations",
+                  "type": "text",
+                  "props": {
+                    "text": "Dealers should consider expanding their inventory to include technologically advanced and eco-friendly models. Offering value-added services such as financing and maintenance packages can also attract more customers. Engaging with industry stakeholders on emerging trends will provide insights needed to stay competitive.",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-image",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "image-main",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/media/class-5-7-trucks.jpg",
+                      "alt": "Class 5-7 trucks"
+                    },
+                    "caption": "The market for Class 5–7 trucks is showing positive signs.",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
