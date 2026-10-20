@@ -1,0 +1,72 @@
+{
+  "slug": "introducing-ai4dealerships",
+  "title": "Introducing AI4Dealerships",
+  "description": "",
+  "status": "draft",
+  "date": "2026-10-20",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "hero-section",
+      "type": "hero",
+      "props": {
+        "headline": "Introducing AI4Dealerships",
+        "subhead": "Helping Dealers Get Found in AI Search",
+        "image": {
+          "src": "/media/ai4dealerships-hero.jpg",
+          "alt": "AI4Dealerships - AI Search Solutions for Dealers"
+        },
+        "ctas": [
+          {
+            "ctaId": "explore-ai-ecommerce"
+          }
+        ],
+        "headingLevel": 1
+      }
+    },
+    {
+      "id": "intro-section",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "intro-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Welcome to AI4Dealerships",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "AI4Dealerships is a ground-breaking platform designed to enhance dealership visibility in AI search engines. By leveraging state-of-the-art AI technology, we help dealers get their listings noticed, drive more traffic, and increase sales."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
