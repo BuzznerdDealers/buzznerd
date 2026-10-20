@@ -33,6 +33,17 @@
       },
       "children": [
         {
+          "id": "image",
+          "type": "image",
+          "props": {
+            "width": "full",
+            "image": {
+              "src": "https://vendure.buzznerdrv.com/assets/source/e4/ai4d-linkedin-variant-a.png",
+              "alt": "ai4d-linkedin-variant-a.png"
+            }
+          }
+        },
+        {
           "id": "intro-row",
           "type": "row",
           "props": {
@@ -47,19 +58,19 @@
               },
               "children": [
                 {
-                  "id": "intro-heading",
-                  "type": "heading",
-                  "props": {
-                    "text": "Welcome to AI4Dealerships",
-                    "headingLevel": 2,
-                    "align": "center"
-                  }
-                },
-                {
                   "id": "intro-text",
                   "type": "text",
                   "props": {
-                    "text": "AI4Dealerships is a ground-breaking platform designed to enhance dealership visibility in AI search engines. By leveraging state-of-the-art AI technology, we help dealers get their listings noticed, drive more traffic, and increase sales."
+                    "text": "Vehicle buyers are changing how they research dealerships. They’re asking AI tools like ChatGPT, Gemini, and Perplexity where to buy, which dealers to trust, and who has the right inventory or services.\nThe question is simple: When AI recommends a dealership, will yours be on the list?\nThat’s why we launched AI4Dealerships, a dedicated AI search visibility service built to help dealerships get discovered across traditional search engines and AI-powered platforms.\nWhy AI Search Matters for Dealerships\nA strong Google presence is still important, but search is evolving. AI-powered tools are changing how people discover businesses, compare options, and find answers.\nFor dealerships, this creates a new opportunity to reach potential buyers, service customers, and local shoppers earlier in their decision-making process.\nBut being online isn’t the same as being understood by AI. Your website needs clear content, accurate information, useful answers, and a strong foundation that helps search systems understand what your dealership offers.\nWhat AI4Dealerships Does\nWe help dealerships improve their visibility across Google and AI-powered search through:\nAI Search Visibility Reviews: Understand how your dealership appears across AI search platforms.\nWebsite Content Optimization: Make your inventory, services, and dealership information easier to understand.\nSEO, AEO and GEO Strategy: Strengthen your visibility in traditional search results and AI-generated answers.\nAuthority Building: Improve your website structure, FAQs, schema, internal linking, and local relevance.\nOur approach is built for the dealership industry, including automotive, commercial truck, RV, boat, powersports, trailer, and equipment dealerships, as well as parts and service departments and multi-location dealer groups.\nStart With Your Free AI Presence Score\nYou don’t have to guess where your dealership stands.\nAI4Dealerships offers a free AI Presence Score to help you start understanding your dealership’s visibility in the changing search landscape.\nIt’s a practical first step toward identifying opportunities to improve how your dealership is found, understood, and recommended.\nReady to see where your dealership stands?\nVisit ai4dealerships.com and check your AI Presence Score.\nThe way buyers find dealerships is changing. Make sure your dealership is ready.\n\n",
+                    "align": "left",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "alignItems": "center",
+                      "flexWrap": "wrap",
+                      "justifyContent": "around"
+                    }
                   }
                 }
               ]
