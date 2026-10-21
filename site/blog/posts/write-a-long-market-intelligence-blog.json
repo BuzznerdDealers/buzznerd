@@ -1,0 +1,393 @@
+{
+  "slug": "write-a-long-market-intelligence-blog",
+  "title": "Write A Long Market-intelligence Blog",
+  "description": "",
+  "status": "draft",
+  "date": "2026-10-21",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed"
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "The 2027 Truck Transition: How Engine Costs Could Change Buyer Behavior",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "This blog explores the upcoming changes in the commercial trucking industry due to regulatory requirements and their potential effects on purchasing behaviors. As we approach the 2027 EPA NOx rule implementation, dealers need to understand these dynamics intimately."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epa-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "epa-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "epa-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "epa-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "EPA 2027 NOx Rule",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "epa-text",
+                  "type": "text",
+                  "props": {
+                    "text": "The Environmental Protection Agency (EPA) has set a deadline for January 1, 2027, to implement new NOx emission standards for commercial vehicles. As a result, manufacturers are introducing engines that are about $8,000 to $12,000 more due to compliance requirements."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cost-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "cost-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "cost-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cost-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Cost Implications for Class 8 Trucks",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "cost-text",
+                  "type": "text",
+                  "props": {
+                    "text": "With increased compliance costs, Class 8 trucks are becoming significantly more expensive. This increase may affect not just direct buyers but also influence lease agreements and operational cost predictions for fleets."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "used-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "used-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "used-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "used-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Impacts on Used Demand",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "used-text",
+                  "type": "text",
+                  "props": {
+                    "text": "The surge in new truck prices due to compliance costs is likely to increase the demand for used trucks. Buyers who are cost-sensitive will look for pre-2027 models as an alternative to offset initial purchase costs."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mindsets-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "mindsets-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "mindsets-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "mindsets-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Three Buyer Mindsets",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "mindsets-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Different buyer behaviors will emerge in response to these changes: cost-avoidant buyers seeking savings, those favoring proven technology with pre-2027 models, and compliance-forward buyers willing to adopt new standards quickly."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dealers-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "dealers-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "dealers-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dealers-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Dealers Can Adapt",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "dealers-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Dealers need to adapt their listings and sales strategies to attract all types of buyers. Incorporating robust data and showcasing the value of compliant trucks will be key to engaging compliance-forward buyers."
+                  }
+                },
+                {
+                  "id": "list-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Here’s what a 2027-ready listing shows:"
+                  }
+                },
+                {
+                  "id": "list",
+                  "type": "list",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Compliance with 2027 EPA NOx standards"
+                      },
+                      {
+                        "label": "Cost-benefit analyses for long-term savings"
+                      },
+                      {
+                        "label": "Detailed engine specifications"
+                      },
+                      {
+                        "label": "Upgrade options available"
+                      },
+                      {
+                        "label": "Warranty and maintenance packages"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Frequently Asked Questions",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "faq-widget",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What are the new EPA standards for 2027?",
+                          "a": "The 2027 EPA standards require significant reductions in NOx emissions for heavy-duty trucks."
+                        },
+                        {
+                          "q": "How can buyers offset the higher prices of compliant trucks?",
+                          "a": "Buyers can offset costs through government incentives and focusing on long-term operational savings."
+                        },
+                        {
+                          "q": "Will used truck demand increase?",
+                          "a": "Yes, as new trucks become pricier, demand for used, pre-2027 models is likely to rise."
+                        },
+                        {
+                          "q": "What should dealers highlight in their truck listings?",
+                          "a": "Focus on compliance specifics, technology features, and long-term cost benefits."
+                        },
+                        {
+                          "q": "How is the pre-buy affecting the market?",
+                          "a": "The pre-buy in August 2026 led to a spike in purchases before the new standards, altering inventory dynamics going into 2027."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta-section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-text",
+                  "type": "text",
+                  "props": {
+                    "text": "To understand these changes further and tailor your strategies effectively, book a 15-minute consultation with our experts. Email us at info@buzznerd.com to schedule your session."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
