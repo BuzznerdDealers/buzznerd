@@ -346,6 +346,9 @@
                           "a": "The pre-buy in August 2026 led to a spike in purchases before the new standards, altering inventory dynamics going into 2027."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }
