@@ -37,6 +37,19 @@
                   }
                 },
                 {
+                  "id": "image",
+                  "type": "image",
+                  "props": {
+                    "width": "full",
+                    "image": {
+                      "src": "https://vendure.buzznerdrv.com/assets/source/47/buzznerd_blog-1.png",
+                      "alt": "buzznerd_blog-1.png",
+                      "width": 1200,
+                      "height": 800
+                    }
+                  }
+                },
+                {
                   "id": "intro-text",
                   "type": "text",
                   "props": {
