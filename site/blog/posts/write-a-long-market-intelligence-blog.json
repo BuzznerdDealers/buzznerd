@@ -40,7 +40,7 @@
                   "id": "intro-text",
                   "type": "text",
                   "props": {
-                    "text": "This blog explores the upcoming changes in the commercial trucking industry due to regulatory requirements and their potential effects on purchasing behaviors. As we approach the 2027 EPA NOx rule implementation, dealers need to understand these dynamics intimately."
+                    "text": "For a commercial truck buyer, January 1, 2027 is not a model-year rollover. It is a price event they have been planning around for more than a year. Starting with model year 2027, every new heavy-duty diesel engine built for sale in the United States has to meet a NOx limit of 0.035 grams per horsepower-hour — more than an 80% reduction from the current standard — and the hardware and warranty changes required to get there are projected to add thousands of dollars to the price of a new truck. (Source: Charter Trucks — Class 8 Emissions Rules in 2026)\n\nThe rule survived a year of legal and political challenges and is still scheduled to take effect on schedule. That means the buyers walking your lot and browsing your listings right now are doing something they were not doing two years ago: weighing a current-technology truck against a more expensive compliant one, and recalculating what \"the right truck\" actually costs them. The dealers who understand how that calculation is shifting are positioning their inventory for it. The ones who are still listing trucks as if nothing changed are about to watch buyer questions go unanswered.\n\nA compliant 2027 Class 8 truck is projected to cost $8,000–$12,000 more than the same truck built today. For buyers, that turns the new-vs-used decision into a math problem — and your inventory is one of the variables.\n"
                   }
                 }
               ]
@@ -74,7 +74,7 @@
                   "id": "epa-heading",
                   "type": "heading",
                   "props": {
-                    "text": "EPA 2027 NOx Rule",
+                    "text": "What Actually Changes on January 1, 2027\n",
                     "headingLevel": 2
                   }
                 },
@@ -82,7 +82,7 @@
                   "id": "epa-text",
                   "type": "text",
                   "props": {
-                    "text": "The Environmental Protection Agency (EPA) has set a deadline for January 1, 2027, to implement new NOx emission standards for commercial vehicles. As a result, manufacturers are introducing engines that are about $8,000 to $12,000 more due to compliance requirements."
+                    "text": "The 2027 transition is a criteria-pollutant rule covering NOx and particulate matter. The EPA finalized it in December 2022 with a four-year lead time, and as of September 2026 the model-year 2027 NOx standards remain in place and were not delayed, despite a formal request from the American Trucking Associations and other groups to push implementation to 2031. The EPA declined that petition. (Source: CCJ — EPA Rejects Trucking Industry Plea, Will Keep 2027 NOx Rule Timeline)\n\nTwo things did change in 2026, and neither of them is the NOx rule. The EPA rescinded the 2009 endangerment finding, published in February 2026 and effective April 20, 2026, which removed the greenhouse-gas standards built on it — including the heavy-duty GHG Phase 2 and Phase 3 programs. California's Omnibus Low-NOx program and the Clean Truck Partnership were also repealed or blocked. (Source: Charter Trucks — Class 8 Emissions Rules in 2026)\n\nWhat remains is the federal NOx and PM standard, stable and nationwide, beginning with model year 2027. For a buyer, the practical takeaway is simple: the engine in a truck built on December 31, 2026 and the engine in the same truck built one day later are regulated differently, carry different hardware, and are priced differently. And a truck's price is tied to its certification year, not its order date — so a unit ordered in 2026 that slips into a 2027 build can be repriced to 2027 certification, and backlog orders often carry no price protection. (Source: Ascendance Trucks — EPA 2027 Complete Fleet Planning Guide)\n"
                   }
                 }
               ]
@@ -116,7 +116,7 @@
                   "id": "cost-heading",
                   "type": "heading",
                   "props": {
-                    "text": "Cost Implications for Class 8 Trucks",
+                    "text": "The Price Cliff Buyers Are Planning Around\n",
                     "headingLevel": 2
                   }
                 },
@@ -124,7 +124,7 @@
                   "id": "cost-text",
                   "type": "text",
                   "props": {
-                    "text": "With increased compliance costs, Class 8 trucks are becoming significantly more expensive. This increase may affect not just direct buyers but also influence lease agreements and operational cost predictions for fleets."
+                    "text": "When the rule was written, industry analysts estimated the full package would add $20,000 to $25,000 per truck, with roughly one-third coming from new engine and aftertreatment technology and about two-thirds from the extended warranty and useful-life requirements — the emissions warranty jumping from 100,000 miles to 450,000 miles, and useful life climbing from 435,000 miles toward 650,000. (Source: Truckertotrucker — EPA 2027 Emissions Standards and Used Truck Prices)\n\nOn July 9, 2026, the EPA formally proposed amendments that would ease some of that burden — scaling back the extended-warranty mandate, delaying the useful-life increase, and replacing hard DEF derates with alerts — changes the agency projects could save roughly $6,000 per truck. With those adjustments, per-unit cost projections have come down to approximately $8,000 to $12,000. (Source: Truck Parts & Service — Updated EPA NOx Standards Forthcoming) A fully compliant 2027 powertrain is estimated to add $8,000 to $12,000 to a Class 8 price tag, while trucks built with noncompliance penalties could carry $6,000 to $7,000 per engine in added cost instead. (Source: FleetOwner — August 2026 Class 8 Truck Orders)\n\nThe scale compounds fast for fleet buyers. Fleet Advantage estimates the combined effect of the 2027 rule and tariffs at $8,000 to $15,000 per truck, and notes that for a 1,000-truck operation on a five-year lifecycle, an average $10,000-per-unit increase is a $10 million hit to capital budgets. (Source: The Trucker — Fleet Advantage Capital Cost Avoidance Program) Zoom out and the long trend is stark: average new Class 8 prices have moved from roughly $113,750 in the pre-emissions era of 2000–2002 toward a projected $155,000–$170,000-plus under the 2027 standards. (Source: Truckertotrucker — EPA 2027 Emissions Standards and Used Truck Prices)\n\nEvery prior round of emissions regulation raised new-truck prices. What is different in 2027 is how much information buyers now have before they contact a dealer — and how directly that cost is shaping which truck they ask about.\n"
                   }
                 }
               ]
@@ -158,7 +158,7 @@
                   "id": "used-heading",
                   "type": "heading",
                   "props": {
-                    "text": "Impacts on Used Demand",
+                    "text": "The Pre-Buy That Did Not Happen the Way Everyone Expected\n",
                     "headingLevel": 2
                   }
                 },
@@ -166,7 +166,7 @@
                   "id": "used-text",
                   "type": "text",
                   "props": {
-                    "text": "The surge in new truck prices due to compliance costs is likely to increase the demand for used trucks. Buyers who are cost-sensitive will look for pre-2027 models as an alternative to offset initial purchase costs."
+                    "text": "A price increase of this size was supposed to trigger the largest pre-buy in trucking history. A pre-buy is when fleets rush to purchase current-technology trucks ahead of a mandated price-and-technology change, and in 2022 ACT Research — along with Volvo Trucks North America, Fleet Advantage, and others — forecast a record wave of 2026 orders ahead of 2027. (Source: Heavy Duty Trucking — Goodbye, 2027 Truck Prebuy)\n\nIt did not play out that way. Regulatory uncertainty muted it for most of the cycle: with the rule under active reconsideration, many fleets asked the obvious question — why pre-buy a truck to beat a price increase that might not survive? Soft freight rates and tariff pressure pulled in the same direction. As ACT's Kenny Vieth put it, the anticipated pre-buy fizzled before it got off the ground. (Source: Heavy Duty Trucking — Goodbye, 2027 Truck Prebuy)\n\nBut demand stayed stubbornly strong where it counted. Through mid-2026, ACT reported Class 8 tractor orders holding far above where they typically fall this late in a cycle — evidence of pre-buying extending overcapacity longer than expected. (Source: The Trucker — Class 8 Tractor Pre-Buying Spree, ACT) Then the window closed. In August 2026, 2026 build slots sold out and OEMs began opening 2027 order boards. Preliminary August Class 8 orders came in around 16,800 to 18,200 units — up about 42% year over year — and trailing-twelve-month orders totaled 350,677 units. Analysts called it plainly: August marked the close of the 2026 order season and the effective end of the EPA 2027 NOx pre-buy. (Source: FleetOwner — August 2026 Class 8 Truck Orders; FreightWaves — Class 8 Demand Stays Hot Ahead of Costly 2027 Transition)\n\nThat matters for buyer behavior because it means the easy option is gone. The buyers who wanted a current-technology new truck at today's price and did not secure a 2026 build slot now face a real decision: pay more for a compliant 2027 unit, or look at the used and current-inventory market instead.\n"
                   }
                 }
               ]
@@ -242,7 +242,7 @@
                   "id": "dealers-heading",
                   "type": "heading",
                   "props": {
-                    "text": "How Dealers Can Adapt",
+                    "text": "What the End of the Pre-Buy Means for Used Demand\n",
                     "headingLevel": 2
                   }
                 },
@@ -250,37 +250,242 @@
                   "id": "dealers-text",
                   "type": "text",
                   "props": {
-                    "text": "Dealers need to adapt their listings and sales strategies to attract all types of buyers. Incorporating robust data and showcasing the value of compliant trucks will be key to engaging compliance-forward buyers."
+                    "text": "When new compliant trucks get more expensive and the pre-buy window closes, attention shifts to the equipment that already exists. Pre-2027, current-technology units — proven engine platforms, no new aftertreatment complexity, known maintenance patterns — take on strategic value they did not have 18 months ago. For a buyer who missed the new-truck window or cannot absorb the 2027 premium, a well-kept used unit is not a compromise. It is the rational play.\n\nThe used market is sending early signals worth watching rather than over-reading. ACT Research reported same-dealer used Class 8 retail sales declined 2.5% from June to July — a larger drop than seasonal norms — with used prices retreating in the same period. (Source: FreightWaves — Class 8 Demand Stays Hot Ahead of Costly 2027 Transition) That is a snapshot of a market still digesting uncertainty, not a verdict. But the structural pressure is clear: as the cost gap between a new compliant truck and a comparable pre-2027 unit widens, the pre-2027 unit's relative value proposition strengthens.\n\nFor dealers, this is the quiet opportunity in the transition. The inventory on your lot right now — current-technology trucks with clean histories — is exactly what a cost-conscious buyer recalculating their options is going to be searching for. Whether they find yours depends on whether your listing speaks their new language.\n\nThe pre-2027 truck on your lot is not aging inventory in this market. To a buyer weighing an $8,000–$12,000 premium on a new compliant unit, it is a cost-avoidance decision waiting to be made.\n"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Engine Costs Reshape the New-vs-Used Decision\n",
+                    "headingLevel": 2
                   }
                 },
                 {
-                  "id": "list-text",
+                  "id": "text",
                   "type": "text",
                   "props": {
-                    "text": "Here’s what a 2027-ready listing shows:"
+                    "text": "Before 2027, the new-vs-used decision for a commercial buyer was mostly about budget and hours. The 2027 transition adds a third axis — regulatory and technology risk — and it is pulling the decision apart into three distinct buyer mindsets, each of which reads a listing differently.\n\nThe cost-avoidance buyer is looking specifically for pre-2027, current-emissions units to sidestep the price increase entirely. They want to know the exact model year, the engine platform, and that the truck is built to standards in force today. The proven-technology buyer is wary of first-year compliant engines and new aftertreatment systems, and is actively choosing known platforms over brand-new ones until the 2027 engines have real-world miles behind them. And the compliance-forward buyer is buying new 2027 trucks anyway — often fleets that need the longer warranty coverage and are planning for resale value in states and contracts that will favor the newest emissions profile.\n\nAll three are making a total-cost calculation, not a sticker comparison. A compliant 2027 truck costs more up front but carries a longer emissions warranty. A pre-2027 truck costs less and uses a proven platform but will eventually be the older-emissions unit at resale. The buyer is weighing acquisition cost against warranty coverage, downtime risk from unfamiliar technology, and future resale position. The listing that gives them the inputs for that calculation is the one they engage with. The listing that just says \"2024 sleeper, low miles, nice truck\" leaves every one of those questions unanswered.\n"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "row-2",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-2",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "What This Means for How You List and Market Inventory\n",
+                    "headingLevel": 2
                   }
                 },
                 {
-                  "id": "list",
-                  "type": "list",
+                  "id": "text-2",
+                  "type": "text",
                   "props": {
-                    "items": [
-                      {
-                        "label": "Compliance with 2027 EPA NOx standards"
-                      },
-                      {
-                        "label": "Cost-benefit analyses for long-term savings"
-                      },
-                      {
-                        "label": "Detailed engine specifications"
-                      },
-                      {
-                        "label": "Upgrade options available"
-                      },
-                      {
-                        "label": "Warranty and maintenance packages"
-                      }
-                    ]
+                    "text": "The buyers in this market are arriving with the regulation already in their heads. A quarter of vehicle buyers now use AI tools during research, querying platforms like ChatGPT and Google AI Overviews for exactly these kinds of comparisons — new versus used, compliance implications, cost breakdowns — before they ever contact a dealer. (Source: Demand Local — Vehicle Purchase Decision Statistics 2026) If your inventory pages do not clearly state what regulatory era a unit belongs to, you are invisible to the buyer and to the AI answering their question.\n\nThe fix is specificity. Make the model year and certification unmistakable. State the engine platform by name. Say whether the unit meets current standards. For used inventory, lead with the things a cost-avoidance buyer is screening for; for any new 2027 units, make the warranty and useful-life coverage a selling point, because for the compliance-forward buyer it is one. This is not extra copy for its own sake — it is answering the single question reshaping the market, on the page where the buyer is deciding.\n"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "row-5",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-5",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "What a 2027-Transition-Ready Listing Makes Clear\n",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "type": "list",
+          "props": {
+            "headingLevel": 2,
+            "columns": 1,
+            "items": [
+              {
+                "label": "Exact model year and emissions certification — so cost-avoidance buyers can confirm it is a pre-2027, current-technology unit at a glance"
+              },
+              {
+                "label": "Engine platform by name — proven-technology buyers are screening for specific, known powertrains"
+              },
+              {
+                "label": "Warranty and useful-life coverage remaining — the deciding factor for compliance-forward buyers evaluating a new 2027 unit"
+              },
+              {
+                "label": "Documented maintenance and component status — the credibility layer that lets a buyer price risk instead of guessing"
+              },
+              {
+                "label": "Price context against current market comps — so the buyer can validate that your unit reflects the new-vs-used math they are already running"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "row-3",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-3",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Window Where Buyer Questions Are Changing\n",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "text-3",
+                  "type": "text",
+                  "props": {
+                    "text": "Right now, in the weeks on either side of the 2027 start date, buyer questions are actively shifting. People who assumed the rule would disappear are realizing it did not. People who meant to pre-buy are discovering the window closed in August. People who have never thought about emissions certification are starting to ask about it because an AI tool or a competitor's listing raised it first. This is the moment when being the dealer who answers the 2027 question clearly — in your listings, your content, and your market updates — converts into inquiries.\n\nThe transition is not a one-week news story. It is a reset in how commercial buyers value trucks, and it will play out across the next several buying cycles. The dealers who get ahead of it are the ones already telling buyers, in plain terms, where each unit sits on the 2027 line and what that means for their cost. The rest are leaving that calculation to the buyer to make somewhere else.\n"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "type": "section",
+      "props": {
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "row-4",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-4",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Is Your Inventory Positioned for the 2027 Buyer?\n",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "text-4",
+                  "type": "text",
+                  "props": {
+                    "text": "The engine-cost change arriving in 2027 is doing something a normal model-year change never does: it is making buyers re-sort your entire inventory by regulatory era before they decide what to ask about. Current-technology units are an opportunity. New compliant units are a different opportunity. Both only work if the buyer can tell which is which from your listing.\n\nBook a 15-Minute Call with our team. We will look at how your current inventory is positioned for the 2027 transition specifically — whether your listings make model year, emissions status, and cost context clear to the buyers now sorting the market that way, where the gaps are, and what changes typically move these units faster. No pitch, no obligation — just a clear look at what buyers and AI see when they find your inventory.\n\nEmail us directly: info@buzznerd.com\n"
+                  }
+                },
+                {
+                  "id": "text-5",
+                  "type": "text",
+                  "props": {
+                    "text": "Sources:\n\nCCJ (Commercial Carrier Journal) — EPA Rejects Trucking Industry Plea, Will Keep 2027 NOx Rule Timeline\n\nCharter Trucks — Class 8 Emissions Rules in 2026: What Changed, What Did Not\n\nTruck Parts & Service — Updated EPA NOx Standards for Heavy-Duty Trucks Forthcoming\n\nFederal Register — Amendments and Nonconformance Penalties for MY 2027 and Later Heavy-Duty Highway Engines\n\nACT Research — Class 8 Truck Sales Forecast: 2027 Outlook\n\nFleetOwner — August 2026 Class 8 Truck Orders Dip as 2027 Pre-Buy Reaches Limit\n\nFreightWaves — Class 8 Truck Demand Stays Hot Ahead of Costly 2027 Transition\n\nThe Trucker — There's a Class 8 Tractor Pre-Buying Spree Ahead of 2027 EPA Rules, ACT Reports\n\nThe Trucker — Fleet Advantage Launches Program to Counter 2027 EPA, Tariff Cost Surges\n\nHeavy Duty Trucking — Goodbye, 2027 Truck Prebuy (Kenny Vieth, ACT Research)\n\nTruckertotrucker — EPA 2027 Emissions Standards: What They Mean for Used Truck Prices and Buyers\n\nAscendance Trucks — EPA 2027: The Complete Fleet Planning Guide\n\nDemand Local — Vehicle Purchase Decision Statistics 2026\n"
                   }
                 }
               ]
@@ -326,24 +531,24 @@
                     "config": {
                       "items": [
                         {
-                          "q": "What are the new EPA standards for 2027?",
-                          "a": "The 2027 EPA standards require significant reductions in NOx emissions for heavy-duty trucks."
+                          "q": " Is the EPA 2027 NOx rule still happening?",
+                          "a": "Yes — it takes effect January 1, 2027. The EPA kept the timeline and the 0.035 g/hp-hr NOx limit and declined industry requests to delay to 2031. GHG Phase 3 was rescinded separately; NOx and PM standards stay."
                         },
                         {
-                          "q": "How can buyers offset the higher prices of compliant trucks?",
-                          "a": "Buyers can offset costs through government incentives and focusing on long-term operational savings."
+                          "q": "How much more will a 2027 truck cost?",
+                          "a": "Roughly $8,000–$12,000 more per compliant Class 8 unit, after the EPA's July 2026 cost-easing proposal — down from original $20,000–$25,000 estimates. For a 1,000-truck fleet, that's about a $10 million impact."
                         },
                         {
-                          "q": "Will used truck demand increase?",
-                          "a": "Yes, as new trucks become pricier, demand for used, pre-2027 models is likely to rise."
+                          "q": "What happened to the 2027 pre-buy?",
+                          "a": "It never hit record levels. Regulatory uncertainty and soft freight muted it, then the window closed in August 2026 when 2026 build slots sold out and 2027 order boards opened."
                         },
                         {
-                          "q": "What should dealers highlight in their truck listings?",
-                          "a": "Focus on compliance specifics, technology features, and long-term cost benefits."
+                          "q": "Will the transition increase used truck demand?",
+                          "a": "Likely yes. As new compliant trucks get pricier, proven pre-2027 units become a cost-avoidance option — making well-documented used inventory more valuable the wider the price gap grows."
                         },
                         {
-                          "q": "How is the pre-buy affecting the market?",
-                          "a": "The pre-buy in August 2026 led to a spike in purchases before the new standards, altering inventory dynamics going into 2027."
+                          "q": "How should dealers adjust listings for 2027 buyers?",
+                          "a": "Make the model year and emissions certification obvious, name the engine platform, and state warranty coverage. Buyers now sort inventory by regulatory era — and a quarter use AI to research it — so clear compliance details get found first."
                         }
                       ]
                     },
