@@ -407,10 +407,14 @@
           },
           "children": [
             {
-              "id": "slot-results-t",
-              "type": "text",
+              "id": "image",
+              "type": "image",
               "props": {
-                "text": "Results image (AI Presence Score report)\n\nImage pending"
+                "width": "full",
+                "image": {
+                  "src": "https://vendure.buzznerdrv.com/assets/source/d3/whatsapp-image-2026-10-27-at-1.16.19-am.jpeg",
+                  "alt": "whatsapp-image-2026-10-27-at-1.16.19-am.jpeg"
+                }
               }
             }
           ]
@@ -478,10 +482,14 @@
           },
           "children": [
             {
-              "id": "slot-chatgpt-t",
-              "type": "text",
+              "id": "image-2",
+              "type": "image",
               "props": {
-                "text": "ChatGPT answer naming WG Motors\n\nImage pending"
+                "width": "full",
+                "image": {
+                  "src": "https://vendure.buzznerdrv.com/assets/source/08/whatsapp-image-2026-10-27-at-1.16.34-am.jpeg",
+                  "alt": "whatsapp-image-2026-10-27-at-1.16.34-am.jpeg"
+                }
               }
             }
           ]
