@@ -1,0 +1,657 @@
+{
+  "slug": "wg-motors-case-study",
+  "title": "WG Motors: From 57 to 92 in AI Search",
+  "date": "2026-10-27",
+  "description": "A 70-year-old International dealership in Peterborough, Ontario raised its AI Presence Score from 57 to 92 in about three months, beating the 90+ target it was promised.",
+  "coverImage": "/assets/wg-motors-hero.webp",
+  "status": "published",
+  "keywords": [
+    "Case Study"
+  ],
+  "seo": {
+    "title": "WG Motors: From 57 to 92 in AI Search | Buzznerd Blog"
+  },
+  "css": "/* WG Motors case study: this post's own components. The post's stylesheet loads\n   on this page only. Layout, head, body typography and \"More from the blog\"\n   come from the Blog post template; this adds what only this article has. */\n\n/* The article ends with its own CTA box, so the template's inline demo card is off here. */\n[data-bz-node=\"cta-inline\"] { display: none; }\n\n/* The article is a flex column (the Blog post template orders its head that way),\n   so vertical margins add instead of collapsing as they do in the handoff's\n   flow layout. Gaps above headings are the handoff's collapsed values. */\nmain > article > * + .bz-block--heading .bz-headingblock h2 { margin-top: 16px; }\nmain > article > * + .bz-block--heading .bz-headingblock h3 { margin-top: 8px; }\nmain > article > :is([data-bz-node=\"stats\"], [data-bz-node=\"callout\"]) + .bz-block--heading .bz-headingblock h2 { margin-top: 8px; }\nmain > article > [data-bz-node=\"facts\"] + .bz-block--heading .bz-headingblock h2 { margin-top: 10px; }\nmain > article > [data-bz-node=\"steps\"] + .bz-block--heading .bz-headingblock h3 { margin-top: 2px; }\nmain > article h1, main > article .bz-headingblock :is(h2, h3) { text-wrap: balance; }\nmain > article .bz-text p { text-wrap: pretty; }\n/* A site-wide \"lede\" rule enlarges any paragraph that follows a heading; in this article it stays body size. */\nmain > article > .bz-block.bz-block--text:not([data-bz-node=\"post-meta\"], [data-bz-node=\"post-dek\"]) .bz-text p { font-size: 17.5px; line-height: 1.72; }\n/* A platform rule takes the last paragraph's margin off; the handoff keeps it. */\nmain > article > .bz-block--text:not([data-bz-node=\"post-meta\"], [data-bz-node=\"post-dek\"]) .bz-text p:last-child { margin-bottom: 22px; }\n/* The site-wide h1 size outranks the template's; this article's title is the handoff's. */\nmain > article .bz-prose h1 { font-size: clamp(30px, 4vw, 52px); line-height: 1.05; letter-spacing: -.025em; margin: 18px 0 0; }\n/* \"More from the blog\" sits on the handoff's 28px gutter. */\n[data-bz-node=\"more\"] > .bz-container { padding-inline: 28px; }\n\n/* Bulleted lists: one bold lead-in run inline with the sentence after it. */\nmain > article [data-bz-node^=\"ul-\"] ul.bz-grid { gap: 11px; margin: 0 0 22px; }\nmain > article [data-bz-node^=\"ul-\"] .bz-feature__t { display: inline; font-weight: 700; }\nmain > article [data-bz-node^=\"ul-\"] .bz-feature__d { display: inline; }\nmain > article [data-bz-node^=\"ul-\"] .bz-feature__t:not(:only-child)::after { content: ' '; }\nmain > article [data-bz-node^=\"ul-\"] .bz-feature:not(:has(.bz-feature__d)) .bz-feature__t { font-weight: 400; color: var(--bnb-text); }\n\n/* Stat cards */\nmain > article > [data-bz-node=\"stats\"].bz-block--statBand { margin: 0 0 30px; background: none; color: inherit; padding: 0; }\n[data-bz-node=\"stats\"] .bz-band { display: flex; flex-direction: column-reverse; gap: 12px; padding: 0; }\n[data-bz-node=\"stats\"] .bz-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 0; }\n[data-bz-node=\"stats\"] .bz-stat { background: var(--ink); border-radius: 18px; padding: 20px 18px; margin: 0; }\n[data-bz-node=\"stats\"] .bz-stat__v { font: 800 30px/1 var(--font-heading); letter-spacing: -.02em; color: var(--volt); white-space: nowrap; margin: 0; }\n[data-bz-node=\"stats\"] .bz-stat__l { font: 600 13px/1.35 var(--font-body); color: color-mix(in srgb, #fff 78%, var(--ink)); margin: 10px 0 0; }\n[data-bz-node=\"stats\"] .bz-stat:first-child { background: var(--accent-dark); }\n[data-bz-node=\"stats\"] .bz-stat:first-child .bz-stat__v { color: #fff; }\n[data-bz-node=\"stats\"] .bz-stat:first-child .bz-stat__l { color: color-mix(in srgb, #fff 86%, var(--accent)); }\nmain > article [data-bz-node=\"stats\"] .bz-band > div { width: 100%; text-align: left; justify-self: stretch; }\nmain > article [data-bz-node=\"stats\"] .bz-band .bz-band__b { font: 600 13px/1.5 var(--font-body); color: var(--muted); margin: 0; max-width: none; }\n\n/* At a glance */\nmain > article [data-bz-node=\"facts\"] ul.bz-grid { display: block; gap: 0; margin: 0 0 28px; padding: 0; background: var(--card); border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); border-radius: 18px; overflow: hidden; }\nmain > article [data-bz-node=\"facts\"] .bz-feature { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 6px 18px; padding: 15px 22px; }\nmain > article [data-bz-node=\"facts\"] .bz-feature + .bz-feature { border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }\nmain > article [data-bz-node=\"facts\"] .bz-feature::before { content: none; }\nmain > article [data-bz-node=\"facts\"] .bz-feature__t { font: 700 12.5px/1.5 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding-top: 2px; }\nmain > article [data-bz-node=\"facts\"] .bz-feature__d { font: 500 15.5px/1.5 var(--font-body); color: var(--ink); }\n\n/* Callout */\nmain > article > [data-bz-node=\"callout\"] { margin: 0 auto 30px; }\n[data-bz-node=\"callout-col\"].bz-col--bg-paper { display: flex; gap: 14px; align-items: flex-start; padding: 22px 24px; border: 0; border-radius: 18px; background: color-mix(in srgb, var(--volt) 26%, #fff); }\n[data-bz-node=\"callout-col\"]::before { content: '\\26A1'; font-size: 20px; line-height: 1.3; }\nmain > article [data-bz-node=\"callout-col\"].bz-col--bg-paper .bz-text p { font: 400 16px/1.6 var(--font-body) !important; font-style: normal; color: var(--bnb-text) !important; margin: 6px 0 0; }\nmain > article [data-bz-node=\"callout-col\"].bz-col--bg-paper .bz-text p:first-child { font: 800 16.5px/1.4 var(--font-body) !important; color: var(--ink) !important; margin: 0; }\n\n/* Five-phase timeline */\nmain > article [data-bz-node=\"steps\"] ul.bz-grid { display: block; gap: 0; margin: 6px 0 28px; padding: 0; counter-reset: bnb-step; }\nmain > article [data-bz-node=\"steps\"] .bz-feature { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 16px; position: relative; padding: 0 0 22px; counter-increment: bnb-step; }\nmain > article [data-bz-node=\"steps\"] .bz-feature:last-child { padding-bottom: 0; }\nmain > article [data-bz-node=\"steps\"] .bz-feature::before { content: counter(bnb-step); position: static; grid-row: 1 / span 2; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--accent-tint); color: var(--accent-dark); font: 800 15px/1 var(--font-body); }\nmain > article [data-bz-node=\"steps\"] .bz-feature:not(:last-child)::after { content: ''; position: absolute; left: 19px; top: 40px; bottom: 0; width: 2px; background: color-mix(in srgb, var(--accent) 14%, var(--card)); }\nmain > article [data-bz-node=\"steps\"] .bz-feature__t { grid-column: 2; padding-top: 8px; font: 800 17px/1.4 var(--font-body); color: var(--ink); display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }\nmain > article [data-bz-node=\"steps\"] .bz-feature__d { grid-column: 2; font: 400 16px/1.62 var(--font-body); margin-top: 6px; }\n.bnb-when { background: color-mix(in srgb, var(--accent) 5%, var(--paper)); color: var(--ink-soft); font: 700 12px/1.3 var(--font-body); padding: 4px 10px; border-radius: 999px; }\n\n/* What was built */\nmain > article > [data-bz-node=\"built\"] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0 auto 24px; }\n[data-bz-node=\"built\"] > .bz-col { background: var(--card); border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); border-radius: 18px; padding: 20px 22px; box-shadow: none; grid-column: auto; }\n[data-bz-node=\"built\"] .bz-container { padding-inline: 0; }\nmain > article [data-bz-node=\"built\"] .bz-headingblock h4 { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0; padding-bottom: 12px; border-bottom: 1px solid var(--line-soft); font: 800 15.5px/1.3 var(--font-body); color: var(--ink); }\n.bnb-count { font: 800 22px/1 var(--font-heading); color: var(--accent-dark); }\nmain > article [data-bz-node=\"built\"] ul.bz-grid { display: grid; gap: 9px; margin: 12px 0 0; padding: 0; }\nmain > article [data-bz-node=\"built\"] .bz-feature { padding-left: 20px; }\nmain > article [data-bz-node=\"built\"] .bz-feature::before { content: '\\2713'; top: 0; color: var(--accent); font: 800 14.5px/1.45 var(--font-body); }\nmain > article [data-bz-node=\"built\"] .bz-feature__t { font: 500 14.5px/1.45 var(--font-body); color: var(--bnb-text); }\n\n/* Promised vs delivered */\nmain > article > [data-bz-node=\"results-table\"] { box-sizing: border-box; width: 100%; max-width: 720px; margin: 0 auto 26px; padding-inline: 28px; }\n\n/* Image slots: a dashed placeholder naming the image still to come. Replace the\n   row with an Image block once the file is in the Media Bin. */\nmain > article > [data-bz-node^=\"slot-\"] { margin: 0 auto 28px; }\nmain > article [data-bz-node^=\"slot-\"] > .bz-col { aspect-ratio: 16 / 9; display: grid; place-content: center; padding: 20px; text-align: center; border: 2px dashed color-mix(in srgb, var(--ink) 18%, var(--paper)); border-radius: 16px; background: color-mix(in srgb, var(--accent) 3%, var(--paper)); }\nmain > article [data-bz-node^=\"slot-\"] .bz-container { padding-inline: 0; }\nmain > article [data-bz-node^=\"slot-\"] .bz-text p { font: 700 15px/1.4 var(--font-body); color: var(--ink-soft); margin: 0; }\nmain > article [data-bz-node^=\"slot-\"] .bz-text p + p { font: 700 12px/1.3 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }\n\n/* The customer's words: one dark card */\nmain > article > [data-bz-node=\"testimonial\"] { margin: 0 0 28px; }\n[data-bz-node=\"testimonial\"] .bz-grid { display: block; }\n[data-bz-node=\"testimonial\"] .bz-quote { position: relative; overflow: hidden; display: block; background: var(--ink); border: 0; border-radius: 22px; padding: 32px 34px; box-shadow: none; margin: 0; }\n[data-bz-node=\"testimonial\"] .bz-quote::before { content: ''; position: absolute; top: -60px; right: -40px; width: 240px; height: 200px; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%); }\n[data-bz-node=\"testimonial\"] blockquote { position: relative; margin: 0; font: 600 22px/1.38 var(--font-heading); letter-spacing: -.01em; color: #fff; }\n[data-bz-node=\"testimonial\"] figcaption { position: relative; margin-top: 18px; }\n[data-bz-node=\"testimonial\"] .bz-quote__n { font: 700 14px/1.4 var(--font-body); color: var(--volt); }\n\n[data-bz-node=\"testimonial\"] .bz-stars, [data-bz-node=\"dealer-quotes\"] .bz-stars { display: none; }\n/* In the dealer's words: two quote cards */\nmain > article > [data-bz-node=\"dealer-quotes\"] { margin: 0 0 24px; }\n[data-bz-node=\"dealer-quotes\"] .bz-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }\n[data-bz-node=\"dealer-quotes\"] .bz-quote { display: flex; flex-direction: column; justify-content: space-between; gap: 16px; background: var(--card); border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); border-radius: 18px; padding: 24px; box-shadow: none; margin: 0; }\n[data-bz-node=\"dealer-quotes\"] blockquote { margin: 0; flex: none; font: 600 16.5px/1.55 var(--font-body); color: var(--ink); }\n[data-bz-node=\"dealer-quotes\"] figcaption { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; gap: 10px; text-align: left; margin: 0; }\n[data-bz-node=\"dealer-quotes\"] figcaption::before { content: 'E'; display: grid; place-items: center; flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: var(--volt); font: 800 13px/1 var(--font-body); }\n[data-bz-node=\"dealer-quotes\"] .bz-quote__n { font: 700 13.5px/1.4 var(--font-body); color: var(--ink-soft); }\n\n/* Closing CTA box */\nmain > article > [data-bz-node=\"ctabox\"] { margin: 8px auto 10px; }\n[data-bz-node=\"ctabox-col\"].bz-col--bg-ink { padding: 36px; border-radius: 24px; background: var(--ink); }\n[data-bz-node=\"ctabox-col\"]::before { content: ''; position: absolute; top: -50px; right: -20px; width: 260px; height: 200px; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 40%, transparent), transparent 70%); pointer-events: none; }\n[data-bz-node=\"ctabox-col\"] > * { position: relative; }\n[data-bz-node=\"ctabox-col\"] .bz-container { padding-inline: 0; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-headingblock h3 { font: 800 28px/1.1 var(--font-heading); letter-spacing: 0; color: #fff; margin: 0; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-block.bz-block--text .bz-text p { font: 500 16px/1.6 var(--font-body); color: color-mix(in srgb, #fff 78%, var(--ink)); margin: 12px 0 0; max-width: 560px; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-btns { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 0; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-btn { font: 700 15.5px/1.2 var(--font-body); box-shadow: none; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-btn--primary { background: var(--volt); color: var(--ink); padding: 14px 26px; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-btn--secondary { background: transparent; border: 1.5px solid rgb(255 255 255 / .4); color: #fff; padding: 13px 24px; white-space: normal; }\nmain > article [data-bz-node=\"ctabox-col\"] .bz-btn--secondary:hover { border-color: #fff; }\n\n/* More from the blog: the category label above each title */\n[data-bz-node=\"more\"] .bnb-related-cat { font: 700 12px/1.3 var(--font-body); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }\n\n@media (max-width: 900px) {\n  [data-bz-node=\"stats\"] .bz-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }\n}\n@media (max-width: 600px) {\n  main > article .bz-container, main > article > .bnb-back, main > article > .bnb-author, main > article > .bz-row, main > article > [data-bz-node=\"results-table\"], main > article > .bz-block:not([data-bz-node]) > .bz-prose { padding-inline: 20px; }\n  main > article > .bz-row .bz-container { padding-inline: 0; }\n  main > article > .bz-block.bz-block--text:not([data-bz-node=\"post-meta\"], [data-bz-node=\"post-dek\"]) .bz-text p { font-size: 16.5px; }\n  main > article [data-bz-node=\"post-dek\"] .bz-text p { font-size: 17.5px; }\n  main > article .bz-headingblock h2 { font-size: 25px; }\n  [data-bz-node=\"more\"] > .bz-container { padding-inline: 20px; }\n  [data-bz-node=\"stats\"] .bz-stat__v { font-size: 26px; }\n  main > article [data-bz-node=\"facts\"] .bz-feature { grid-template-columns: 1fr; padding: 14px 18px; }\n  main > article > [data-bz-node=\"built\"], [data-bz-node=\"dealer-quotes\"] .bz-grid { grid-template-columns: 1fr; }\n  [data-bz-node=\"testimonial\"] .bz-quote { padding: 26px 24px; }\n  [data-bz-node=\"testimonial\"] blockquote { font-size: 19px; }\n  [data-bz-node=\"ctabox-col\"].bz-col--bg-ink { padding: 28px 24px; }\n  main > article [data-bz-node=\"ctabox-col\"] .bz-btn { width: 100%; text-align: center; }\n}\n",
+  "js": "/* WG Motors case study: the parts of the handoff no block field carries. Each\n   enhancement is text that is already on the page and readable without it. */\n(function () {\n  /* The kicker pill. The post's category stays \"Case Study\" (the blog listing\n     reads it); the pill on this page reads as the handoff's kicker. */\n  var tag = document.querySelector('[data-bz-node=\"post-meta\"] .bnb-tag');\n  if (tag) tag.textContent = 'Buzznerd Case Study · AI Optimization';\n\n  /* \"Title · chip\" → title + chip, for the timeline months and the counts on\n     the two \"What was built\" cards. */\n  function split(selector, cls) {\n    Array.prototype.forEach.call(document.querySelectorAll(selector), function (el) {\n      var text = el.textContent;\n      var at = text.lastIndexOf(' · ');\n      if (at < 0) return;\n      el.textContent = text.slice(0, at);\n      var chip = document.createElement('span');\n      chip.className = cls;\n      chip.textContent = text.slice(at + 3);\n      el.appendChild(chip);\n    });\n  }\n  split('[data-bz-node=\"steps\"] .bz-feature__t', 'bnb-when');\n  split('[data-bz-node=\"built\"] .bz-headingblock h4', 'bnb-count');\n\n  /* More from the blog: the three related case studies the handoff names, read\n     from their own pages. If any cannot be read the template's cards stay. */\n  var grid = document.querySelector('[data-bz-node=\"more\"] .bz-grid');\n  if (!grid || !window.fetch || !window.DOMParser) return;\n  var base = location.pathname.replace(/\\/[^/]+\\/?$/, '') || '/blog';\n  var slugs = [\n    'shaping-a-digital-future-elevating-customer-experiences-at-campbell-supply-company',\n    'buzznerd-launches-kriete-truck-centers-ai-powered-digital-store-front-w-hubspot-crm',\n    'buzznerd-trucks-launches-new-kenworth-sales-co-website'\n  ];\n  Promise.all(slugs.map(function (slug) {\n    var href = base + '/' + slug;\n    return fetch(href, { credentials: 'same-origin' })\n      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })\n      .then(function (html) {\n        var doc = new DOMParser().parseFromString(html, 'text/html');\n        var h1 = doc.querySelector('main > article h1');\n        var img = doc.querySelector('main > article > .bz-block:not([data-bz-node]) img');\n        if (!h1) throw new Error('no title');\n        return { href: href, title: h1.textContent.trim(), cover: img ? img.getAttribute('src') : '' };\n      });\n  })).then(function (posts) {\n    grid.textContent = '';\n    posts.forEach(function (p) {\n      var a = document.createElement('a');\n      a.className = 'bz-card bz-post';\n      a.href = p.href;\n      if (p.cover) {\n        var img = document.createElement('img');\n        img.src = p.cover;\n        img.alt = '';\n        img.loading = 'lazy';\n        img.decoding = 'async';\n        a.appendChild(img);\n      }\n      var body = document.createElement('div');\n      body.className = 'bz-card__body';\n      var cat = document.createElement('span');\n      cat.className = 'bnb-related-cat';\n      cat.textContent = 'Case Study';\n      var title = document.createElement('span');\n      title.className = 'bz-card__t';\n      title.textContent = p.title;\n      body.appendChild(cat);\n      body.appendChild(title);\n      a.appendChild(body);\n      grid.appendChild(a);\n    });\n  }).catch(function () { /* keep the template's newest posts */ });\n})();\n",
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Case Study</strong> · 7 min read · By Buzznerd Team"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "A 70-year-old International dealership in Peterborough, Ontario raised its AI Presence Score from 57 to 92 in about three months, beating the 90+ target it was promised."
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Customers no longer just Google “truck service near me.” They ask ChatGPT, Gemini and Perplexity, and those tools name one or two dealers. Winslow-Gerolamy Motors (WG Motors) had decades of real expertise. AI tools just couldn't read it. Buzznerd's AIO (AI Optimization) program fixed that without a new website, a new budget line or extra work for the dealership's team."
+      }
+    },
+    {
+      "id": "stats",
+      "type": "statBand",
+      "props": {
+        "body": "Scores from the full Buzznerd AI Presence audit, as of June 2026.",
+        "stats": [
+          {
+            "value": "57 → 92",
+            "label": "AI Presence Score"
+          },
+          {
+            "value": "+35",
+            "label": "Point improvement"
+          },
+          {
+            "value": "9",
+            "label": "Pages rebuilt"
+          },
+          {
+            "value": "5",
+            "label": "New authority guides"
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-3",
+      "type": "heading",
+      "props": {
+        "text": "At a glance",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "facts",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Dealer",
+            "desc": "Winslow-Gerolamy Motors Limited (WG Motors)"
+          },
+          {
+            "label": "Location",
+            "desc": "Peterborough, Ontario, serving Central and Southern Ontario, the GTA and Durham Region"
+          },
+          {
+            "label": "Brand",
+            "desc": "International Trucks, with sales, service, parts and fleet maintenance"
+          },
+          {
+            "label": "Heritage",
+            "desc": "70+ years in the trucking industry"
+          },
+          {
+            "label": "Program",
+            "desc": "Buzznerd AIO: AI Presence & Authority Upgrade"
+          },
+          {
+            "label": "Timeline",
+            "desc": "Proposal March 2026 → launch June 12 → results delivered June 17, 2026"
+          },
+          {
+            "label": "New website required?",
+            "desc": "No. Built on the dealer's existing site."
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-5",
+      "type": "heading",
+      "props": {
+        "text": "The challenge: real authority that AI couldn't see",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-6",
+      "type": "text",
+      "props": {
+        "text": "WG Motors started at 57/100. The dealership had the expertise; the website didn't show it in a form AI could use.\n\nThe March 2026 audit found the site described its services in general marketing language. It lacked the structured, machine-readable detail AI tools rely on before they recommend a dealer:"
+      }
+    },
+    {
+      "id": "ul-7",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Service page:",
+            "desc": "listed repairs, but not the diagnostic capabilities, International-specific expertise, emissions work or fleet programs behind them."
+          },
+          {
+            "label": "Parts page:",
+            "desc": "mentioned availability, but not OEM parts support, International compatibility or fleet ordering."
+          },
+          {
+            "label": "About page:",
+            "desc": "70 years of history and OEM credibility, written as a story rather than verifiable business facts."
+          },
+          {
+            "label": "No intent-based FAQs:",
+            "desc": "the questions buyers actually ask an AI tool weren't answered anywhere on the site."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-8",
+      "type": "text",
+      "props": {
+        "text": "The result: AI tools treated WG Motors as a fragmented data source. When a fleet manager asked “Where can I get International truck service and DPF cleaning in Peterborough, Ontario?”, nothing guaranteed WG Motors would be the answer, even though it was the obvious one."
+      }
+    },
+    {
+      "id": "callout",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "callout-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper"
+          },
+          "children": [
+            {
+              "id": "callout-t",
+              "type": "text",
+              "props": {
+                "text": "Sound familiar?\n\nMost International dealer sites are built on OEM templates designed for Google rankings, not AI answers. The service and parts pages are usually the thinnest pages on the site, and they cover the highest-intent questions customers ask."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-10",
+      "type": "heading",
+      "props": {
+        "text": "The approach: turn expertise into answers AI can cite",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-11",
+      "type": "text",
+      "props": {
+        "text": "Buzznerd ran a five-phase program on WG Motors' existing website. The dealership's only job was a short questionnaire and approving content."
+      }
+    },
+    {
+      "id": "steps",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "AI Presence audit · March",
+            "desc": "Scored the site on four factors AI tools weigh: Entity Architecture (how deep the service and location pages are), Topical Authority (expert content), LLM Data Accessibility (machine-readable business data) and Intent Match (FAQs that answer real buyer questions)."
+          },
+          {
+            "label": "Expertise capture · March",
+            "desc": "A short questionnaire drew out what makes WG Motors different: growth priorities, common customer problems, certifications, service area. Buzznerd's team turned the answers into content, so no one at the dealership had to write anything."
+          },
+          {
+            "label": "Page rebuilds · April–May",
+            "desc": "Nine core pages were rewritten with specific service detail, local relevance and intent-based FAQs. Forms and promotional sections were kept intact."
+          },
+          {
+            "label": "Authority guides · April–May",
+            "desc": "Five in-depth guides were written to establish WG Motors as a source of expert knowledge, not just a dealer listing."
+          },
+          {
+            "label": "Technical layer and indexing · May–June",
+            "desc": "Full JSON-LD structured data and FAQ schema, an upgraded llms.txt “source of truth” file for AI crawlers, internal linking and menu updates. All pages were resubmitted to Google Search Console. Launch: June 12."
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-13",
+      "type": "heading",
+      "props": {
+        "text": "What was built",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "built",
+      "type": "row",
+      "props": {
+        "gap": 0,
+        "stackOn": "mobile"
+      },
+      "children": [
+        {
+          "id": "built-1",
+          "type": "column",
+          "props": {
+            "span": 6
+          },
+          "children": [
+            {
+              "id": "built-1-h",
+              "type": "heading",
+              "props": {
+                "text": "Rebuilt core pages · 9",
+                "headingLevel": 4
+              }
+            },
+            {
+              "id": "built-1-list",
+              "type": "list",
+              "props": {
+                "columns": 1,
+                "items": [
+                  {
+                    "label": "About Us"
+                  },
+                  {
+                    "label": "Our History"
+                  },
+                  {
+                    "label": "Service"
+                  },
+                  {
+                    "label": "Parts"
+                  },
+                  {
+                    "label": "Contact Us"
+                  },
+                  {
+                    "label": "International Truck Sales in Central Ontario"
+                  },
+                  {
+                    "label": "Fleet Maintenance"
+                  },
+                  {
+                    "label": "DPF Cleaning & Emissions Service"
+                  },
+                  {
+                    "label": "Truck Service & Parts Locations"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "built-2",
+          "type": "column",
+          "props": {
+            "span": 6
+          },
+          "children": [
+            {
+              "id": "built-2-h",
+              "type": "heading",
+              "props": {
+                "text": "New authority guides · 5",
+                "headingLevel": 4
+              }
+            },
+            {
+              "id": "built-2-list",
+              "type": "list",
+              "props": {
+                "columns": 1,
+                "items": [
+                  {
+                    "label": "Cummins & International Engine Diagnostics Guide"
+                  },
+                  {
+                    "label": "DPF Cleaning & Emissions System Maintenance for Heavy-Duty Trucks"
+                  },
+                  {
+                    "label": "Fleet Maintenance Planning for Ontario Trucking Companies"
+                  },
+                  {
+                    "label": "OEM vs Aftermarket Parts for International Trucks"
+                  },
+                  {
+                    "label": "International Truck Preventive Maintenance Schedules for Ontario Fleets"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-15",
+      "type": "text",
+      "props": {
+        "text": "Each rebuilt page targets questions buyers actually ask AI tools, such as “Which International dealer in Southern Ontario offers fleet maintenance and OEM parts support?”"
+      }
+    },
+    {
+      "id": "h-16",
+      "type": "heading",
+      "props": {
+        "text": "The results: promise made, promise beaten",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-17",
+      "type": "text",
+      "props": {
+        "text": "WG Motors' AI Presence Score rose from 57 to 92 (+35 points), above the 90+ committed in the March proposal and above the 85 mark where dealers become far more likely to show up in AI answers."
+      }
+    },
+    {
+      "id": "results-table",
+      "type": "comparison-table",
+      "props": {
+        "rowHeader": "Metric",
+        "colA": "Promised (March 2026)",
+        "colB": "Delivered (June 2026)",
+        "rows": [
+          {
+            "label": "AI Presence Score",
+            "a": "57 → 90+",
+            "b": "57 → 92"
+          },
+          {
+            "label": "Core page rewrites",
+            "a": "8",
+            "b": "9"
+          },
+          {
+            "label": "Authority guides",
+            "a": "5",
+            "b": "5"
+          },
+          {
+            "label": "Structured data + llms.txt upgrade",
+            "a": "Included",
+            "b": "Completed"
+          },
+          {
+            "label": "Pages submitted to Google",
+            "a": "Included",
+            "b": "All 14 submitted for reindexing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot-results",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "slot-results-col",
+          "type": "column",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "id": "slot-results-t",
+              "type": "text",
+              "props": {
+                "text": "Results image (AI Presence Score report)\n\nImage pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-20",
+      "type": "text",
+      "props": {
+        "text": "<strong>What changed for AI tools.</strong> The site now spells out what WG Motors does, which International services it offers, which regions it serves and how customers reach it, all in a structure AI systems can verify. Every core page answers the questions buyers ask AI tools before they call, for example:"
+      }
+    },
+    {
+      "id": "ul-21",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Where can I service an International truck in Ontario?"
+          },
+          {
+            "label": "Who provides fleet maintenance near Peterborough?"
+          },
+          {
+            "label": "Where can I get DPF cleaning for heavy-duty trucks?"
+          },
+          {
+            "label": "What are the maintenance requirements for an International truck?"
+          },
+          {
+            "label": "Where can I find heavy-duty truck parts in Central Ontario?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-22",
+      "type": "text",
+      "props": {
+        "text": "<strong>What it cost the dealership's team.</strong> One questionnaire, content approvals and a check-in call. Buzznerd handled the writing, development, schema, indexing and QA."
+      }
+    },
+    {
+      "id": "h-23",
+      "type": "heading",
+      "props": {
+        "text": "Proof in the service bay: a new customer, found through ChatGPT",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "slot-chatgpt",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "slot-chatgpt-col",
+          "type": "column",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "id": "slot-chatgpt-t",
+              "type": "text",
+              "props": {
+                "text": "ChatGPT answer naming WG Motors\n\nImage pending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-25",
+      "type": "text",
+      "props": {
+        "text": "The score is the leading indicator. The booking is the payoff. After launch, a customer who had never worked with WG Motors asked ChatGPT where to get DPF cleaning in the area. ChatGPT named WG Motors."
+      }
+    },
+    {
+      "id": "testimonial",
+      "type": "testimonials",
+      "props": {
+        "items": [
+          {
+            "quote": "“A new customer contacted us to inquire about DPF cleaning after finding WG Motors through a ChatGPT search for services in the area. He proceeded to book with us the same week… with the potential for additional future business.”",
+            "name": "WG Motors, after their AI optimization with Buzznerd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-27",
+      "type": "text",
+      "props": {
+        "text": "That customer came with no ad spend and no outbound effort. The program had built content for exactly this question: a rebuilt DPF Cleaning & Emissions Service page and a dedicated DPF maintenance guide. DPF cleaning is a recurring need, so one AI referral can become a long-term service relationship."
+      }
+    },
+    {
+      "id": "h-28",
+      "type": "heading",
+      "props": {
+        "text": "In the dealer's words",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "dealer-quotes",
+      "type": "testimonials",
+      "props": {
+        "items": [
+          {
+            "quote": "“You're doing a great job. We really appreciate your help.”",
+            "name": "Erin Tardiff, Winslow-Gerolamy Motors"
+          },
+          {
+            "quote": "“I know that I had access to the back end … but I just always submit a ticket. You guys get it done so fast that I just let you guys handle it.”",
+            "name": "Erin Tardiff, Winslow-Gerolamy Motors"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p-30",
+      "type": "text",
+      "props": {
+        "text": "The program was built to fit how a busy dealership actually runs: WG Motors approved content, and Buzznerd's team did everything else, backed by the same fast-turnaround support Erin already relied on."
+      }
+    },
+    {
+      "id": "h-31",
+      "type": "heading",
+      "props": {
+        "text": "Why this matters for your International dealership",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-32",
+      "type": "text",
+      "props": {
+        "text": "If WG Motors needed help to be seen by AI, most International dealers do too. And the dealers who fix it first are the ones AI tools learn to recommend."
+      }
+    },
+    {
+      "id": "ul-33",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Service and parts are the easiest wins.",
+            "desc": "Questions like “DPF cleaning near me” or “International truck parts in [your city]” come from customers ready to book. Those pages are usually the thinnest on a dealer site."
+          },
+          {
+            "label": "It works on the site you already have.",
+            "desc": "WG Motors didn't rebuild its website or change its OEM program. The AIO work was layered onto existing pages."
+          },
+          {
+            "label": "It's built for International dealers specifically.",
+            "desc": "The content covers International trucks, Cummins diagnostics, OEM vs aftermarket parts and fleet maintenance, so it speaks the language your customers and the AI tools both look for."
+          },
+          {
+            "label": "It's a fixed-scope project.",
+            "desc": "A defined set of pages and guides, delivered on a clear timeline, with no surprises."
+          },
+          {
+            "label": "It's done for you.",
+            "desc": "One questionnaire and content approvals. No writing, no development, no extra headcount."
+          }
+        ]
+      }
+    },
+    {
+      "id": "h-34",
+      "type": "heading",
+      "props": {
+        "text": "What's next for WG Motors",
+        "headingLevel": 3
+      }
+    },
+    {
+      "id": "p-35",
+      "type": "text",
+      "props": {
+        "text": "WG Motors is now moving to Syyonara, Buzznerd's commercial-dealer platform, with a redesigned homepage the dealership reviewed and approved. The plan is to carry the AI-optimized content over so the new site starts with that head start in AI search."
+      }
+    },
+    {
+      "id": "ctabox",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "ctabox-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "ink"
+          },
+          "children": [
+            {
+              "id": "ctabox-h",
+              "type": "heading",
+              "props": {
+                "text": "See where your dealership stands",
+                "headingLevel": 3
+              }
+            },
+            {
+              "id": "ctabox-body",
+              "type": "text",
+              "props": {
+                "text": "Get your free AI Presence Score. In about 30 seconds, Buzznerd scores your site on the same four factors used for WG Motors (Entity Architecture, Topical Authority, LLM Data Accessibility and Intent Match) and shows what to fix first."
+              }
+            },
+            {
+              "id": "ctabox-btns",
+              "type": "buttons",
+              "props": {
+                "items": [
+                  {
+                    "ctaId": "free-score",
+                    "label": "Free AI Presence Score →"
+                  },
+                  {
+                    "ctaId": "call-walkthrough"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
