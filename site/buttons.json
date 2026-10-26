@@ -265,5 +265,14 @@
     "intent": "external-link",
     "newTab": true,
     "active": true
+  },
+  {
+    "id": "call-walkthrough",
+    "label": "Book a 30-minute walkthrough: 206-593-3407",
+    "url": "tel:+12065933407",
+    "style": "secondary",
+    "intent": "call",
+    "newTab": false,
+    "active": true
   }
 ]
