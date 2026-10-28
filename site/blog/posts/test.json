@@ -1,0 +1,68 @@
+{
+  "slug": "test",
+  "title": "Test",
+  "description": "",
+  "status": "draft",
+  "date": "2026-10-28",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-1",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "width": "wide"
+      },
+      "children": [
+        {
+          "id": "row-1",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "column-1",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Test Post Heading",
+                    "headingLevel": 1,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "text-1",
+                  "type": "text",
+                  "props": {
+                    "text": "This is a test post to demonstrate the page structure and functionality. It contains a heading, text, and a button aligned in a single column layout.",
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "buttons-1",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-solutions"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
