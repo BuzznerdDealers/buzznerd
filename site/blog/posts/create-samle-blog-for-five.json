@@ -83,6 +83,37 @@
                   }
                 },
                 {
+                  "id": "list",
+                  "type": "list",
+                  "props": {
+                    "heading": "Benefits",
+                    "headingLevel": 2,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Improved Search Rankings",
+                        "desc": "Having a comprehensive SEO strategy enhances your visibility on search engines, leading more potential customers to your website."
+                      },
+                      {
+                        "label": "Enhanced Customer Experience",
+                        "desc": "AIO helps tailor content to user preferences, improving engagement and satisfaction."
+                      },
+                      {
+                        "label": "Optimal Content Strategy",
+                        "desc": "SEO combined with AIO analyzes user interaction patterns to refine content, making it more appealing and effective."
+                      },
+                      {
+                        "label": "Increased Conversion Rates",
+                        "desc": "With better targeting and user-specific content suggested by AIO, conversion rates are likely to rise."
+                      },
+                      {
+                        "label": "Comprehensive Data Analysis",
+                        "desc": "AIO provides deep insights into customer behavior, helping fine-tune marketing strategies."
+                      }
+                    ]
+                  }
+                },
+                {
                   "id": "text-closing",
                   "type": "text",
                   "props": {
