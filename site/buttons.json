@@ -96,6 +96,16 @@
     "active": true
   },
   {
+    "id": "ai4dealerships-score",
+    "label": "Check your AI Presence Score →",
+    "url": "https://ai4dealerships.com",
+    "formId": null,
+    "style": "primary",
+    "intent": "presence-score",
+    "newTab": true,
+    "active": true
+  },
+  {
     "id": "explore-ai-websites",
     "label": "Explore AI Websites",
     "url": "/ai-websites",
