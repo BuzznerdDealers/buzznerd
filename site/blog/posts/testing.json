@@ -1,0 +1,52 @@
+{
+  "slug": "testing",
+  "title": "Testing",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-03",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "intro-section",
+      "type": "section",
+      "props": {
+        "paddingY": 5
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "intro-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Testing Page",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "This is a test page to verify layout and functionality."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
