@@ -1,0 +1,214 @@
+{
+  "slug": "format-the-blog-below-exactly",
+  "title": "Format The Blog Below Exactly",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-03",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-featured-image",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-featured-image",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-featured-image",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "image-featured",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/media/featured-image.jpg",
+                      "alt": "Featured blog image"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-main-title",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-main-title",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-main-title",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "title-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Blog Title Goes Here",
+                    "headingLevel": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-content",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-content",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-content",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "subheading-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Section Title",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "text-paragraph-1",
+                  "type": "text",
+                  "props": {
+                    "text": "This is the first paragraph of the section. It contains the main content and should be well-explained."
+                  }
+                },
+                {
+                  "id": "blockquote-callout",
+                  "type": "text",
+                  "props": {
+                    "text": "This is a callout or highlight from the section.",
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "subheading-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sub-section Title",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "text-paragraph-2",
+                  "type": "text",
+                  "props": {
+                    "text": "This is another paragraph, which goes over more details."
+                  }
+                },
+                {
+                  "id": "bullet-list",
+                  "type": "text",
+                  "props": {
+                    "text": "- First Bullet Point\n- Second Bullet Point\n- Third Bullet Point"
+                  }
+                },
+                {
+                  "id": "link-paragraph",
+                  "type": "text",
+                  "props": {
+                    "text": "For more information, visit [this link](https://example.com)."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-faq",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-faq",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Frequently Asked Questions",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "faq-item-1",
+                  "type": "text",
+                  "props": {
+                    "text": "**Question 1?**\nAnswer to question 1."
+                  }
+                },
+                {
+                  "id": "faq-item-2",
+                  "type": "text",
+                  "props": {
+                    "text": "**Question 2?**\nAnswer to question 2."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
