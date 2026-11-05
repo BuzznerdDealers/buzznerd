@@ -52,5 +52,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/blog/format-the-blog-below-exactly{/}?",
+      "destination": "/blog/2027-truck-transition-engine-costs-buyer-behavio",
+      "statusCode": 301
+    }
   ]
 }

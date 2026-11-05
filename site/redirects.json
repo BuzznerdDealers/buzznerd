@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "managedBy": "admin",
+  "useWildcards": false,
+  "redirects": [
+    {
+      "from": "/blog/format-the-blog-below-exactly",
+      "to": "/blog/2027-truck-transition-engine-costs-buyer-behavio",
+      "statusCode": 301,
+      "note": "Page moved to /blog/2027-truck-transition-engine-costs-buyer-behavio"
+    }
+  ]
+}
