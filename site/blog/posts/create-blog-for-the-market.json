@@ -1,0 +1,163 @@
+{
+  "slug": "create-blog-for-the-market",
+  "title": "Create Blog For The Market",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-05",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-intro",
+      "type": "section",
+      "props": {
+        "background": "none",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-intro",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "col-header",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "heading-main",
+                  "type": "heading",
+                  "props": {
+                    "text": "Market Updates 2027: Insights for Heavy Duty Dealerships",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "text-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "Stay ahead with our comprehensive 2027 market updates tailored for the heavy duty dealership industry. Gain insights into latest trends, technological advancements, and strategies to enhance your dealership's growth."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-content",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-content",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "col-text",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "text-content",
+                  "type": "text",
+                  "props": {
+                    "text": "### Key Market Trends\n- **Electrification & Sustainability**: As government regulations tighten, dealerships must adapt by incorporating sustainable practices and electric vehicles into their offerings.\n- **Automation & AI**: The rise of automation and AI tools are improving operational efficiency and customer service, paving the way for smarter dealerships.\n\n### Technological Innovations\n- **Telematics and Connectivity**: Embrace the power of telematics for better fleet management and customer satisfaction.\n- **Augmented Reality (AR) Sales Tools**: Virtual showrooms and AR tools are becoming crucial in assisting sales remotely."
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col-image",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "image-dealership",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/media/market-update-2027.jpg",
+                      "alt": "Heavy Duty Dealership"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-call-to-action",
+      "type": "section",
+      "props": {
+        "background": "accent",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "row-cta",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "col-cta",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "id": "text-cta",
+                  "type": "text",
+                  "props": {
+                    "text": "For tailored insights and latest trends analysis, get in touch with us."
+                  }
+                },
+                {
+                  "id": "buttons-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact",
+                        "label": "Contact Us for Insights",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
