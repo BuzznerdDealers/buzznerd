@@ -1,0 +1,156 @@
+{
+  "slug": "test-buzz",
+  "title": "Test Buzz",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-05",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-split-hero",
+      "type": "splitHero",
+      "props": {
+        "headline": "Welcome to Buzznerd",
+        "subhead": "Your partner in dealership innovation. Explore our AI-powered solutions.",
+        "ctas": [
+          {
+            "ctaId": "explore-ai-platform"
+          }
+        ],
+        "image": {
+          "src": "/media/hero-image.jpg",
+          "alt": "Buzznerd AI solutions"
+        },
+        "headingLevel": 2
+      },
+      "parentId": null
+    },
+    {
+      "id": "section-services",
+      "type": "serviceGrid",
+      "props": {
+        "heading": "Our Services",
+        "body": "Explore our range of AI-driven services designed to enhance your dealership performance.",
+        "headingLevel": 2,
+        "items": [
+          {
+            "label": "AI Websites",
+            "desc": "AI driven, lead-generating websites.",
+            "cta": {
+              "ctaId": "explore-ai-websites"
+            }
+          },
+          {
+            "label": "AI E-Commerce",
+            "desc": "Sell products online, anytime.",
+            "cta": {
+              "ctaId": "explore-ai-ecommerce"
+            }
+          },
+          {
+            "label": "AI Platform",
+            "desc": "An integrated platform for all your dealership needs.",
+            "cta": {
+              "ctaId": "explore-ai-platform"
+            }
+          }
+        ]
+      },
+      "parentId": null
+    },
+    {
+      "id": "section-testimonials",
+      "type": "testimonials",
+      "props": {
+        "heading": "What Our Clients Say",
+        "headingLevel": 2,
+        "items": [
+          {
+            "quote": "Buzznerd has transformed our digital presence.",
+            "name": "Alex Johnson",
+            "role": "Dealer Principal",
+            "rating": 5
+          },
+          {
+            "quote": "Our sales have increased by 30% since adopting Buzznerd's solutions.",
+            "name": "Maria Lee",
+            "role": "Marketing Director",
+            "rating": 5
+          }
+        ]
+      },
+      "parentId": null
+    },
+    {
+      "id": "section-contact-form",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "contact-column",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get in Touch",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "contact-text",
+                  "type": "text",
+                  "props": {
+                    "text": "We're here to help you get the most out of your dealership with AI."
+                  }
+                },
+                {
+                  "id": "contact-buttons",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "talk-to-sales"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-form-column",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parentId": null
+    }
+  ]
+}
