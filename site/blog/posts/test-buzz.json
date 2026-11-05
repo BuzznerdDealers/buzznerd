@@ -2,7 +2,7 @@
   "slug": "test-buzz",
   "title": "Test Buzz",
   "description": "",
-  "status": "draft",
+  "status": "published",
   "date": "2026-11-05",
   "coverImage": null,
   "nodes": [
@@ -22,8 +22,7 @@
           "alt": "Buzznerd AI solutions"
         },
         "headingLevel": 2
-      },
-      "parentId": null
+      }
     },
     {
       "id": "section-services",
@@ -55,8 +54,7 @@
             }
           }
         ]
-      },
-      "parentId": null
+      }
     },
     {
       "id": "section-testimonials",
@@ -78,8 +76,7 @@
             "rating": 5
           }
         ]
-      },
-      "parentId": null
+      }
     },
     {
       "id": "section-contact-form",
@@ -149,8 +146,7 @@
             }
           ]
         }
-      ],
-      "parentId": null
+      ]
     }
   ]
 }
