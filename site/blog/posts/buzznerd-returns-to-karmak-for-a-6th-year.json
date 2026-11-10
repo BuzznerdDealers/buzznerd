@@ -23,6 +23,19 @@
       }
     },
     {
+      "id": "image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://vendure.buzznerdrv.com/assets/source/e0/karmak-logo-white-background-1-2.png",
+          "alt": "karmak-logo",
+          "width": 965,
+          "height": 527
+        }
+      }
+    },
+    {
       "id": "p-1",
       "type": "text",
       "props": {
