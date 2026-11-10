@@ -1,0 +1,255 @@
+{
+  "slug": "buzznerd-partners-with-international-and-shift-digital-on-dealer-websites-and-online-marketing",
+  "title": "Buzznerd Partners with International and Shift Digital on Dealer Websites and Online Marketing",
+  "date": "2026-11-11",
+  "description": "Buzznerd has been selected as a partner in two categories of the International Digital Marketing & CRM Program (IDMCP), administered by Shift Digital: Website/Ecommerce and Online Marketing.",
+  "coverImage": "/assets/international-shift-digital-hero.webp",
+  "status": "published",
+  "keywords": [
+    "Partnerships"
+  ],
+  "nodes": [
+    {
+      "id": "post-meta",
+      "type": "text",
+      "props": {
+        "text": "<strong>Partnerships</strong> · 2 min read · By Buzznerd Team"
+      }
+    },
+    {
+      "id": "post-dek",
+      "type": "text",
+      "props": {
+        "text": "International Dealers can now work with Buzznerd for their dealership website, their online marketing, or both, all through the program."
+      }
+    },
+    {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "/assets/international-shift-digital-hero.webp",
+          "alt": "Buzznerd and International, administered by Shift Digital: International Digital Marketing & CRM Program, Website/Ecommerce and Online Marketing",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
+      "id": "p-1",
+      "type": "text",
+      "props": {
+        "text": "Buzznerd is proud to announce that it has been selected as a partner in two categories of the International Digital Marketing & CRM Program (IDMCP), administered by Shift Digital: Website/Ecommerce and Online Marketing. International Dealers can now work with Buzznerd for their dealership website, their online marketing, or both, all through the program.\n\nThe program gives International Dealers one official place to enroll with approved providers and a clear process from enrollment to launch. For dealers, that means a simpler way to get started, dedicated support from the Buzznerd team at every step, and the option to manage both their website and their online marketing with one team."
+      }
+    },
+    {
+      "id": "cats",
+      "type": "row",
+      "props": {
+        "gap": 4,
+        "stackOn": "mobile"
+      },
+      "children": [
+        {
+          "id": "cat-1",
+          "type": "column",
+          "props": {
+            "span": 6,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "cat-1-tag",
+              "type": "text",
+              "props": {
+                "text": "<strong>Category 1</strong>"
+              }
+            },
+            {
+              "id": "cat-1-h",
+              "type": "heading",
+              "props": {
+                "text": "Website/Ecommerce",
+                "headingLevel": 3
+              }
+            },
+            {
+              "id": "cat-1-p",
+              "type": "text",
+              "props": {
+                "text": "Buzznerd builds, launches and supports dealership websites through the program, including moving existing sites onto the Buzznerd platform."
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat-2",
+          "type": "column",
+          "props": {
+            "span": 6,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "cat-2-tag",
+              "type": "text",
+              "props": {
+                "text": "<strong>Category 2</strong>"
+              }
+            },
+            {
+              "id": "cat-2-h",
+              "type": "heading",
+              "props": {
+                "text": "Online Marketing",
+                "headingLevel": 3
+              }
+            },
+            {
+              "id": "cat-2-p",
+              "type": "text",
+              "props": {
+                "text": "Buzznerd also manages online marketing for enrolled dealerships, as a separate program category that dealers can choose on its own or together with their website."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-enroll",
+      "type": "heading",
+      "props": {
+        "text": "Enrolling with Buzznerd",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-enroll",
+      "type": "text",
+      "props": {
+        "text": "International Dealers can enroll through the program’s enrollment site at <a href=\"https://www.intldmp.com\" target=\"_blank\" rel=\"noopener\">www.intldmp.com</a>, also available in the Dealer Portal under Apps & Resources, then Marketing."
+      }
+    },
+    {
+      "id": "steps",
+      "type": "list",
+      "props": {
+        "columns": 1,
+        "items": [
+          {
+            "label": "Step 1",
+            "desc": "Visit the enrollment site and select Website/Ecommerce, Online Marketing, or both"
+          },
+          {
+            "label": "Step 2",
+            "desc": "Choose Buzznerd as your provider"
+          },
+          {
+            "label": "Step 3",
+            "desc": "Select your package"
+          },
+          {
+            "label": "Step 4",
+            "desc": "Complete your dealership information and submit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "clients",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "clients-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "paper",
+            "padding": 5
+          },
+          "children": [
+            {
+              "id": "clients-h",
+              "type": "heading",
+              "props": {
+                "text": "⚡ Current Buzznerd clients",
+                "headingLevel": 3
+              }
+            },
+            {
+              "id": "clients-p",
+              "type": "text",
+              "props": {
+                "text": "Current Buzznerd clients can continue their service by choosing Buzznerd as their provider and selecting the package that best fits their needs."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h-transition",
+      "type": "heading",
+      "props": {
+        "text": "A Seamless Transition",
+        "headingLevel": 2
+      }
+    },
+    {
+      "id": "p-transition",
+      "type": "text",
+      "props": {
+        "text": "Following enrollment, the Buzznerd team will work directly with each dealership on onboarding, launch and ongoing support, so dealers can stay focused on running their business."
+      }
+    },
+    {
+      "id": "learn-more",
+      "type": "row",
+      "props": {
+        "gap": 0
+      },
+      "children": [
+        {
+          "id": "learn-more-col",
+          "type": "column",
+          "props": {
+            "span": 12,
+            "background": "ink",
+            "padding": 6
+          },
+          "children": [
+            {
+              "id": "learn-more-h",
+              "type": "heading",
+              "props": {
+                "text": "To learn more, contact your Buzznerd representative or schedule a conversation with our team.",
+                "headingLevel": 3
+              }
+            },
+            {
+              "id": "learn-more-cta",
+              "type": "buttons",
+              "props": {
+                "items": [
+                  {
+                    "ctaId": "schedule-conversation"
+                  },
+                  {
+                    "ctaId": "go-to-enrollment"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
