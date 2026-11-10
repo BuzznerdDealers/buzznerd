@@ -29,7 +29,7 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/buzznerd_blog.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/cf/buzznerd_blog.png",
           "alt": "New Truck Demand vs. Used Truck Demand: Where Are Dealers Seeing the Opportunity?",
           "width": 1200,
           "height": 630
@@ -48,10 +48,10 @@
       "type": "image",
       "props": {
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/buzznerd_blog-1024x683.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/cf/buzznerd_blog.png",
           "alt": "New and used commercial trucks",
-          "width": 1024,
-          "height": 683
+          "width": 1536,
+          "height": 1024
         },
         "width": "prose"
       }
