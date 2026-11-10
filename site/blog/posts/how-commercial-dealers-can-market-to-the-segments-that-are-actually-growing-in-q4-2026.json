@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/1114e2cb-d5a8-45c5-b6df-7ec092247c1f.png",
+          "alt": "How Commercial Dealers Can Market to the Segments That Are Actually Growing in Q4 2026",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "p-1",
       "type": "text",
       "props": {

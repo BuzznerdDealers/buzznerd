@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/01/ChatGPT-Image-Jan-26-2026-12_18_33-PM.png",
+          "alt": "AI Search Optimization for Websites: 5 Critical Steps Your Site Can't Ignore",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "img-1",
       "type": "image",
       "props": {

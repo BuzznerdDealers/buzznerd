@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/accessible-browsing.jpg",
+          "alt": "ADA Lawsuits Against Dealers Are On The Rise — Make Your Website Accessible to Disabled Users",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "h-1",
       "type": "heading",
       "props": {
