@@ -29,10 +29,10 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/02/Karmak-logo-white-background-1-2.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/e0/karmak-logo-white-background-1-2.png",
           "alt": "Buzznerd Launches First AI-Powered E-Commerce Platform in Partnership with Karmak",
-          "width": 1200,
-          "height": 630
+          "width": 965,
+          "height": 527
         }
       }
     },
