@@ -29,7 +29,7 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/07/blog-5.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/07/blog-5.png",
           "alt": "Selling Truck and Equipment Parts Online: A Dealer's Getting-Started Guide",
           "width": 1200,
           "height": 630
@@ -48,10 +48,10 @@
       "type": "image",
       "props": {
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/07/blog-5-1024x683.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/07/blog-5.png",
           "alt": "Sell truck parts online",
-          "width": 1024,
-          "height": 683
+          "width": 1200,
+          "height": 800
         },
         "width": "prose"
       }
