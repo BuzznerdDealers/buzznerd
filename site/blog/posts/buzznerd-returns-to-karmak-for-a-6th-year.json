@@ -29,10 +29,10 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "/assets/placeholders/placeholder-1200x630.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/e0/karmak-logo-white-background-1-2.png",
           "alt": "Placeholder for a photo from the Karmak Conference & Expo",
-          "width": 1200,
-          "height": 630
+          "width": 965,
+          "height": 527
         }
       }
     },
