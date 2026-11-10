@@ -150,5 +150,8 @@
         ]
       }
     }
-  ]
+  ],
+  "seo": {
+    "ogImage": "https://vendure.buzznerdrv.com/assets/source/e0/karmak-logo-white-background-1-2.png"
+  }
 }
