@@ -29,10 +29,10 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/C-_Users_Noter_Desktop_fb-marketplace-conversation1.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/51/c-_users_noter_desktop_fb-marketplace-conversation1.png",
           "alt": "How To Keep Your Customers Informed During Covid-19",
-          "width": 1200,
-          "height": 630
+          "width": 418,
+          "height": 800
         }
       }
     },
