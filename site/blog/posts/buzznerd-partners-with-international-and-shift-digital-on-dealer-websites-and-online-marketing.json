@@ -239,7 +239,8 @@
               "props": {
                 "items": [
                   {
-                    "ctaId": "schedule-conversation"
+                    "ctaId": "schedule-conversation",
+                    "url": "https://calendar.app.google/G8uHP22VXwfXTT1i7"
                   },
                   {
                     "ctaId": "go-to-enrollment"
