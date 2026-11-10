@@ -3,7 +3,6 @@
   "title": "Buzznerd Returns to the Karmak Conference & Expo for a 6th Year",
   "date": "2026-10-13",
   "description": "We're heading back to St. Louis for our sixth Karmak Conference & Expo, October 20–22. Come find our booth and meet our new VP of Sales, David Fisher.",
-  "coverImage": "/assets/placeholders/placeholder-1200x630.png",
   "status": "published",
   "keywords": [
     "Events"
@@ -21,19 +20,6 @@
       "type": "text",
       "props": {
         "text": "October 20–22 at the St. Louis Union Station Hotel. Stop by our booth and meet our new VP of Sales, David Fisher."
-      }
-    },
-    {
-      "id": "image",
-      "type": "image",
-      "props": {
-        "width": "full",
-        "image": {
-          "src": "/assets/placeholders/placeholder-1200x630.png",
-          "alt": "Placeholder for a photo from the Karmak Conference & Expo",
-          "width": 1200,
-          "height": 630
-        }
       }
     },
     {
@@ -163,8 +149,5 @@
         ]
       }
     }
-  ],
-  "seo": {
-    "ogImage": "/assets/placeholders/placeholder-1200x630.png"
-  }
+  ]
 }
