@@ -29,7 +29,7 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2025/10/AIO_1f.webp",
+          "src": "https://vendure.buzznerdrv.com/assets/source/36/aio_1f.webp",
           "alt": "The AI Era Has Arrived: Is Your Dealership Website AI Ready?",
           "width": 1200,
           "height": 630
@@ -56,19 +56,6 @@
       "type": "text",
       "props": {
         "text": "Imagine a buyer asking: “What are the best medium-duty trucks for local delivery?”\n\nAI doesn't show ten random search results. It gives recommendations — hand-picked answers based on trust, structured data, and clarity. Your goal is no longer to rank high on a search page; it's to be the dealership that AI recommends first.\n\nThe buyer gets verified, personalized results instantly. The dealership captures high-intent, AI-driven traffic that's ready to buy. That's why AI optimization for dealership websites is the next evolution beyond SEO. It's not about impressions; it's about conversion."
-      }
-    },
-    {
-      "id": "img-4",
-      "type": "image",
-      "props": {
-        "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2025/10/AIO_1f-1024x525.webp",
-          "alt": "Google AI results for best medium-duty trucks",
-          "width": 1024,
-          "height": 525
-        },
-        "width": "prose"
       }
     },
     {
