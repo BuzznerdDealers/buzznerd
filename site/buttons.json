@@ -284,5 +284,25 @@
     "intent": "call",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "schedule-conversation",
+    "label": "Schedule a conversation →",
+    "url": "https://calendar.app.google/KNjgR81D3LUPyfAN9",
+    "formId": null,
+    "style": "primary",
+    "intent": "book-demo",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "go-to-enrollment",
+    "label": "Go to enrollment site",
+    "url": "https://www.intldmp.com",
+    "formId": null,
+    "style": "secondary",
+    "intent": "enroll",
+    "newTab": true,
+    "active": true
   }
 ]
