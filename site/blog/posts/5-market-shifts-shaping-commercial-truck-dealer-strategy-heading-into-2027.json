@@ -29,7 +29,7 @@
       "props": {
         "width": "full",
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/blog-15.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/db/blog-15.png",
           "alt": "5 Market Shifts Shaping Commercial Truck Dealer Strategy Heading Into 2027",
           "width": 1200,
           "height": 630
@@ -48,10 +48,10 @@
       "type": "image",
       "props": {
         "image": {
-          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/09/blog-15-1024x683.png",
+          "src": "https://vendure.buzznerdrv.com/assets/source/db/blog-15.png",
           "alt": "Market shifts shaping commercial truck dealer strategy",
-          "width": 1024,
-          "height": 683
+          "width": 1200,
+          "height": 800
         },
         "width": "prose"
       }
