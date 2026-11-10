@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2023/04/admin-ajax.png",
+          "alt": "Jerry Van Galder to Speak About AI-Powered E-Commerce at HDA Truck Pride",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "p-1",
       "type": "text",
       "props": {

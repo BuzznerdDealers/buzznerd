@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2021/05/Winter-Mountains-Instagram-Post-1024x1024-1.png",
+          "alt": "VTNA Pursues Intuitive AI to Improve Safety",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "p-1",
       "type": "text",
       "props": {

@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/08/blog-11.png",
+          "alt": "AI-Ready Commercial Ecommerce: Making Your Parts and Units Findable by AI",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "p-1",
       "type": "text",
       "props": {

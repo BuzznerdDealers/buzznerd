@@ -24,6 +24,19 @@
       }
     },
     {
+      "id": "hero-image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://d1jj54vtfkx4yj.cloudfront.net/efs/wp/domains/www.buzznerd.com/wp-content/uploads/2026/03/image0-e1773863267928.png",
+          "alt": "Evolving to Serve You Better: Nikki Molina Steps Into Chief Growth Officer Role",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+    {
       "id": "p-1",
       "type": "text",
       "props": {
