@@ -40,7 +40,7 @@
       "id": "p-1",
       "type": "text",
       "props": {
-        "text": "Buzznerd is proud to announce that it has been selected as a partner in two categories of the International Digital Marketing & CRM Program (IDMCP), administered by Shift Digital: Website/Ecommerce and Online Marketing. International Dealers can now work with Buzznerd for their dealership website, their online marketing, or both, all through the program.\n\nThe program gives International Dealers one official place to enroll with approved providers and a clear process from enrollment to launch. For dealers, that means a simpler way to get started, dedicated support from the Buzznerd team at every step, and the option to manage both their website and their online marketing with one team."
+        "text": "Buzznerd is proud to announce that it has been selected as a partner in two categories of the International Digital Marketing & CRM Program (IDMCP), administered by Shift Digital: Website and Online Marketing. International Dealers can now work with Buzznerd for their dealership website, their online marketing, or both, all through the program.\n\nThe program gives International Dealers one official place to enroll with approved providers and a clear process from enrollment to launch. For dealers, that means a simpler way to get started, dedicated support from the Buzznerd team at every step, and the option to manage both their website and their online marketing with one team."
       }
     },
     {
@@ -71,7 +71,7 @@
               "id": "cat-1-h",
               "type": "heading",
               "props": {
-                "text": "Website/Ecommerce",
+                "text": "Website",
                 "headingLevel": 3
               }
             },
