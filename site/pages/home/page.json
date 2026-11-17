@@ -7,6 +7,11 @@
       "props": {
         "paddingY": 8
       },
+      "styles": {
+        "base": {
+          "paddingBottom": 20
+        }
+      },
       "children": [
         {
           "id": "hero-row",
@@ -103,7 +108,8 @@
           "body": "International Dealers can now enroll with Buzznerd through the International Digital Marketing & CRM Program, administered by Shift Digital. Choose websites, online marketing, or both, and our team will handle setup, launch and ongoing support.",
           "note": "International dealer login required"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "integrations",
