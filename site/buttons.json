@@ -304,5 +304,15 @@
     "intent": "enroll",
     "newTab": true,
     "active": true
+  },
+  {
+    "id": "enroll-now",
+    "label": "Enroll Now →",
+    "url": "https://www.intldmp.com",
+    "formId": null,
+    "style": "primary",
+    "intent": "enroll",
+    "newTab": true,
+    "active": true
   }
 ]

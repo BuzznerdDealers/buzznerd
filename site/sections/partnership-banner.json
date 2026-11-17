@@ -1,0 +1,194 @@
+{
+  "version": 2,
+  "id": "partnership-banner",
+  "name": "Certified partner banner",
+  "props": [
+    {
+      "key": "badge",
+      "type": "text",
+      "label": "Badge",
+      "default": "New partnership"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "It’s Official: Buzznerd is now a Certified Partner with"
+    },
+    {
+      "key": "partnerMark",
+      "type": "image",
+      "label": "Partner mark"
+    },
+    {
+      "key": "partnerName",
+      "type": "text",
+      "label": "Partner name",
+      "default": "International"
+    },
+    {
+      "key": "tail",
+      "type": "text",
+      "label": "Heading, after the partner",
+      "default": "for Websites & Online Marketing"
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Body",
+      "default": "International Dealers can now enroll with Buzznerd through the International Digital Marketing & CRM Program, administered by Shift Digital. Choose websites, online marketing, or both, and our team will handle setup, launch and ongoing support."
+    },
+    {
+      "key": "note",
+      "type": "text",
+      "label": "Note under the button",
+      "default": "International dealer login required"
+    }
+  ],
+  "css": "/* Certified-partner banner: a blue gradient card with a yellow leading edge. All colour reads tokens; --volt is the brand yellow from the site-wide layer. */\n[data-bz-node=\"pb\"] { padding-block: var(--space-5); }\n[data-bz-node=\"pb-card\"] { position: relative; padding: 40px 48px 40px 52px; border-radius: var(--radius-card); border-left: 8px solid var(--volt); color: #fff; background: radial-gradient(circle at 92% 50%, color-mix(in srgb, #fff 26%, var(--accent)) 0, transparent 38%), linear-gradient(105deg, var(--accentDark, #1B5FD9) 0%, var(--accent) 100%); box-shadow: 0 24px 60px -24px color-mix(in srgb, var(--accent) 55%, transparent); }\n[data-bz-node=\"pb-badge\"] p { display: inline-block; margin: 0; padding: 5px 11px; border-radius: var(--radius-chip); background: var(--volt); color: var(--ink); font: 800 11px/1 var(--font-body); letter-spacing: .04em; text-transform: uppercase; }\n[data-bz-node=\"pb-h\"] h2 { color: #fff; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.15; margin: 14px 0 12px; }\n[data-bz-node=\"pb-line\"] { align-items: center; gap: 12px; margin-bottom: 16px; }\n[data-bz-node=\"pb-card\"] .bz-block { padding-block: 0; }\n[data-bz-node=\"pb-card\"] .bz-col { padding: 0; }\n[data-bz-node=\"pb-line\"] > .bz-col { flex: 0 1 auto; min-width: 0; grid-column: auto; }\n[data-bz-node=\"pb-line\"] { display: flex; flex-wrap: wrap; }\n[data-bz-node=\"pb-logo\"] { display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px; border-radius: 10px; background: #fff; }\n[data-bz-node=\"pb-logo\"] .bz-block { padding: 0; }\n[data-bz-node=\"pb-mark\"] img { height: 22px; width: auto; display: block; }\n[data-bz-node=\"pb-logo\"] > .bz-col, [data-bz-node=\"pb-logo\"] > .bz-block { margin: 0; }\n[data-bz-node=\"pb-name\"] p { margin: 0; color: var(--ink); font: 800 17px/1 var(--font-heading); letter-spacing: .08em; text-transform: uppercase; }\n[data-bz-node=\"pb-tail\"] p { margin: 0; color: #fff; font: 800 clamp(24px, 2.6vw, 32px)/1.15 var(--font-heading); letter-spacing: -.01em; }\n[data-bz-node=\"pb-body\"] p { margin: 0; max-width: 560px; color: color-mix(in srgb, #fff 92%, transparent); font-size: 15.5px; line-height: 1.55; }\n[data-bz-node=\"pb-action\"] { text-align: center; }\n[data-bz-node=\"pb-action\"] .bz-buttons { justify-content: center; }\n[data-bz-node=\"pb-action\"] .bz-btn { background: var(--volt); color: var(--ink); border-color: var(--volt); font-weight: 800; padding-inline: 28px; box-shadow: 0 10px 26px rgb(0 0 0 / .22); }\n[data-bz-node=\"pb-action\"] .bz-btn:hover { background: color-mix(in srgb, var(--volt) 88%, #fff); }\n[data-bz-node=\"pb-note\"] p { margin: 10px 0 0; color: color-mix(in srgb, #fff 85%, transparent); font-size: 12px; }\n@media (max-width: 900px) { [data-bz-node=\"pb-card\"] { padding: 28px 24px 28px 28px; } [data-bz-node=\"pb-action\"] { text-align: left; } [data-bz-node=\"pb-action\"] .bz-buttons { justify-content: flex-start; } }\n[data-bz-node=\"pb-card\"] [data-bz-node=\"pb-logo\"].bz-col { padding: 7px 14px; }\n",
+  "nodes": [
+    {
+      "id": "pb",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "pb-wrap",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "pb-card",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pb-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 8,
+                    "align": "center",
+                    "stackOn": "tablet"
+                  },
+                  "children": [
+                    {
+                      "id": "pb-copy",
+                      "type": "column",
+                      "props": {
+                        "span": 9
+                      },
+                      "children": [
+                        {
+                          "id": "pb-badge",
+                          "type": "text",
+                          "props": {
+                            "text": "{{badge}}"
+                          }
+                        },
+                        {
+                          "id": "pb-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{heading}}",
+                            "headingLevel": 2
+                          }
+                        },
+                        {
+                          "id": "pb-line",
+                          "type": "row",
+                          "props": {},
+                          "children": [
+                            {
+                              "id": "pb-logo",
+                              "type": "column",
+                              "props": {
+                                "span": 4
+                              },
+                              "children": [
+                                {
+                                  "id": "pb-mark",
+                                  "type": "image",
+                                  "props": {
+                                    "image": "{{partnerMark}}"
+                                  }
+                                },
+                                {
+                                  "id": "pb-name",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{partnerName}}"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "id": "pb-tailcol",
+                              "type": "column",
+                              "props": {
+                                "span": 8
+                              },
+                              "children": [
+                                {
+                                  "id": "pb-tail",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{tail}}"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "pb-body",
+                          "type": "text",
+                          "props": {
+                            "text": "{{body}}"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "pb-action",
+                      "type": "column",
+                      "props": {
+                        "span": 3
+                      },
+                      "children": [
+                        {
+                          "id": "pb-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "enroll-now"
+                              }
+                            ],
+                            "align": "center"
+                          }
+                        },
+                        {
+                          "id": "pb-note",
+                          "type": "text",
+                          "props": {
+                            "text": "{{note}}",
+                            "align": "center"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
