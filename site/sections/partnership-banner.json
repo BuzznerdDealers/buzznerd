@@ -51,7 +51,7 @@
       "id": "pb",
       "type": "section",
       "props": {
-        "width": "wide",
+        "width": "boxed",
         "paddingY": 4
       },
       "children": [
