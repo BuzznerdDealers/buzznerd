@@ -1,0 +1,167 @@
+{
+  "slug": "create-a",
+  "title": "Create A",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-20",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-overview",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "row-overview",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "col-overview",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-overview",
+                  "type": "heading",
+                  "props": {
+                    "text": "Recent Trends in the Heavy Duty Market",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "text-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "Explore the latest trends shaping the heavy-duty market, as we dive into data-driven insights and predictions for the industry.",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-trends",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "row-trends",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "col-trends",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-trends",
+                  "type": "heading",
+                  "props": {
+                    "text": "Key Market Trends",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "list-trends",
+                  "type": "list",
+                  "props": {
+                    "heading": "Identified Trends",
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Electric Vehicle Adoption",
+                        "desc": "Growth in EV options for fleets aiming to reduce emissions."
+                      },
+                      {
+                        "label": "Supply Chain Adjustments",
+                        "desc": "Adapting logistics to meet post-pandemic demands."
+                      },
+                      {
+                        "label": "Sustainability Practices",
+                        "desc": "Increased focus on sustainable sourcing and operations."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "row-cta",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "col-cta",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "text-cta",
+                  "type": "text",
+                  "props": {
+                    "text": "Stay informed about these trends by contacting our team today.",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "buttons-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "talk-to-sales"
+                      },
+                      {
+                        "ctaId": "see-platform"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
