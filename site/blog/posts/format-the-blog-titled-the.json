@@ -217,6 +217,15 @@
                     "align": "left",
                     "width": "full"
                   }
+                },
+                {
+                  "id": "text-10",
+                  "type": "text",
+                  "props": {
+                    "text": "Sources\nCCJ (Commercial Carrier Journal) — EPA Rejects Trucking Industry Plea, Will Keep 2027 NOx Rule Timeline\nCharter Trucks — Class 8 Emissions Rules in 2026: What Changed, What Did Not\nTruck Parts & Service — Updated EPA NOx Standards for Heavy-Duty Trucks Forthcoming\nFederal Register — Amendments and Nonconformance Penalties for MY 2027 and Later Heavy-Duty Highway Engines\nACT Research — Class 8 Truck Sales Forecast: 2027 Outlook\nFleetOwner — August 2026 Class 8 Truck Orders Dip as 2027 Pre-Buy Reaches Limit\nFreightWaves — Class 8 Truck Demand Stays Hot Ahead of Costly 2027 Transition\nThe Trucker — There's a Class 8 Tractor Pre-Buying Spree Ahead of 2027 EPA Rules, ACT Reports\nThe Trucker — Fleet Advantage Launches Program to Counter 2027 EPA, Tariff Cost Surges\nHeavy Duty Trucking — Goodbye, 2027 Truck Prebuy (Kenny Vieth, ACT Research)\nTruckertotrucker — EPA 2027 Emissions Standards: What They Mean for Used Truck Prices and Buyers\nAscendance Trucks — EPA 2027: The Complete Fleet Planning Guide\nDemand Local — Vehicle Purchase Decision Statistics 2026\n",
+                    "align": "left",
+                    "width": "full"
+                  }
                 }
               ]
             }
