@@ -1,0 +1,136 @@
+{
+  "slug": "format-the-blog-titled-the",
+  "title": "Format The Blog Titled **\"The",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-26",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "section-1",
+      "type": "section",
+      "props": {
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "row-1",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "column-1",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "heading-1",
+                  "type": "heading",
+                  "props": {
+                    "text": "The 2027 Truck Transition: How Engine Costs Could Change Buyer Behavior",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "text-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<p>Your introductory paragraph here.</p>",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "heading-2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Main Section 1",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "text-2",
+                  "type": "text",
+                  "props": {
+                    "text": "<p>The market for trucks is expected to experience significant changes by 2027, with engine costs playing a key role.</p>",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "heading-3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Subheading 1.1",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "text-3",
+                  "type": "text",
+                  "props": {
+                    "text": "<p>Key factors influencing this shift include:</p>",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "list-1",
+                  "type": "text",
+                  "props": {
+                    "text": "<ul><li>Cost of new engine technologies</li><li>Changes in fuel prices</li><li>Environmental regulations</li></ul>",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "heading-4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Main Section 2",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "text-4",
+                  "type": "text",
+                  "props": {
+                    "text": "<p>According to industry experts, <strong>engine costs could rise by up to 25%</strong>, impacting purchasing decisions.</p>",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                },
+                {
+                  "id": "heading-5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Conclusion",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "text-5",
+                  "type": "text",
+                  "props": {
+                    "text": "<p>In conclusion, the next decade will test both truck manufacturers and buyers as they navigate the complexities of <strong>the 2027 truck transition</strong>.</p>",
+                    "align": "left",
+                    "width": "prose"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
