@@ -241,49 +241,22 @@
             "width": "full",
             "text": "Right now, in the weeks on either side of the 2027 start date, buyer questions are actively shifting. People who assumed the rule would disappear are realizing it did not. People who meant to pre-buy are discovering the window closed in August. People who have never thought about emissions certification are starting to ask about it because an AI tool or a competitor's listing raised it first. This is the moment when being the dealer who answers the 2027 question clearly — in your listings, your content, and your market updates — converts into inquiries.\n\nThe transition is not a one-week news story. It is a reset in how commercial buyers value trucks, and it will play out across the next several buying cycles. The dealers who get ahead of it are the ones already telling buyers, in plain terms, where each unit sits on the 2027 line and what that means for their cost. The rest are leaving that calculation to the buyer to make somewhere else.\n"
           }
-        }
-      ]
-    },
-    {
-      "id": "behavior-section",
-      "type": "section",
-      "props": {
-        "background": "none"
-      },
-      "children": [
+        },
         {
-          "id": "behavior-row",
-          "type": "row",
+          "id": "heading-7",
+          "type": "heading",
           "props": {
-            "gap": 6
-          },
-          "children": [
-            {
-              "id": "behavior-column",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "heading-8",
-                  "type": "heading",
-                  "props": {
-                    "text": "Is Your Inventory Positioned for the 2027 Buyer?\n",
-                    "headingLevel": 2
-                  }
-                },
-                {
-                  "id": "behavior-text",
-                  "type": "text",
-                  "props": {
-                    "text": "The engine-cost change arriving in 2027 is doing something a normal model-year change never does: it is making buyers re-sort your entire inventory by regulatory era before they decide what to ask about. Current-technology units are an opportunity. New compliant units are a different opportunity. Both only work if the buyer can tell which is which from your listing.\n\n<a href=\"https://calendar.app.google/G8uHP22VXwfXTT1i7\">Book a 15-Minute Call</a> with our team. We will look at how your current inventory is positioned for the 2027 transition specifically — whether your listings make model year, emissions status, and cost context clear to the buyers now sorting the market that way, where the gaps are, and what changes typically move these units faster. No pitch, no obligation — just a clear look at what buyers and AI see when they find your inventory.\n\nEmail us directly: <a href=\"mailto:info@buzznerd.com\">info@buzznerd.com</a>\n",
-                    "width": "full"
-                  }
-                }
-              ]
-            }
-          ]
+            "text": "Is Your Inventory Positioned for the 2027 Buyer?\n",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "text-7",
+          "type": "text",
+          "props": {
+            "width": "full",
+            "text": "The engine-cost change arriving in 2027 is doing something a normal model-year change never does: it is making buyers re-sort your entire inventory by regulatory era before they decide what to ask about. Current-technology units are an opportunity. New compliant units are a different opportunity. Both only work if the buyer can tell which is which from your listing.\n\n<a href=\"https://calendar.app.google/G8uHP22VXwfXTT1i7\">Book a 15-Minute Call</a> with our team. We will look at how your current inventory is positioned for the 2027 transition specifically — whether your listings make model year, emissions status, and cost context clear to the buyers now sorting the market that way, where the gaps are, and what changes typically move these units faster. No pitch, no obligation — just a clear look at what buyers and AI see when they find your inventory.\n\nEmail us directly: <a href=\"mailto:info@buzznerd.com\">info@buzznerd.com</a>\n"
+          }
         }
       ]
     },
@@ -317,7 +290,13 @@
                   },
                   "styles": {
                     "base": {
-                      "textColor": "#fafafa"
+                      "textColor": "#fafafa",
+                      "paddingRight": 10,
+                      "paddingLeft": 10,
+                      "marginTop": 10,
+                      "marginBottom": 10,
+                      "marginLeft": 10,
+                      "marginRight": 10
                     }
                   }
                 },
@@ -330,7 +309,14 @@
                   },
                   "styles": {
                     "base": {
-                      "textColor": "#fcfcfc"
+                      "textColor": "#fcfcfc",
+                      "paddingTop": 10,
+                      "paddingRight": 10,
+                      "paddingLeft": 10,
+                      "marginTop": 10,
+                      "marginBottom": 10,
+                      "marginLeft": 10,
+                      "marginRight": 10
                     }
                   }
                 }
