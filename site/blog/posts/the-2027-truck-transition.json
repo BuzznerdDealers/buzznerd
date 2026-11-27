@@ -1,0 +1,205 @@
+{
+  "slug": "the-2027-truck-transition",
+  "title": "The 2027 Truck Transition",
+  "description": "",
+  "status": "draft",
+  "date": "2026-11-27",
+  "coverImage": null,
+  "nodes": [
+    {
+      "id": "main-title",
+      "type": "section",
+      "props": {
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "title-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "title-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "main-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "The 2027 Truck Transition: How Engine Costs Could Change Buyer Behavior",
+                    "headingLevel": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro-section",
+      "type": "section",
+      "props": {
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "intro-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "In 2027, the truck industry may undergo significant shifts due to changing engine costs. This post explores the potential impacts on buyer behavior and industry dynamics."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "costs-section",
+      "type": "section",
+      "props": {
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "costs-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "costs-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "costs-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "How Engine Costs are Expected to Change in 2027",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "costs-text",
+                  "type": "text",
+                  "props": {
+                    "text": "As new technologies and regulations emerge, engine costs are projected to rise. We examine the factors contributing to these changes, including materials costs, labor, and innovation."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "behavior-section",
+      "type": "section",
+      "props": {
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "behavior-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "behavior-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "behavior-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Impact on Buyer Behavior",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "behavior-text",
+                  "type": "text",
+                  "props": {
+                    "text": "With rising engine costs, buyers may shift towards more fuel-efficient models or alternative power sources. We explore how these trends could influence purchasing decisions and market strategies."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusion-section",
+      "type": "section",
+      "props": {
+        "background": "accent"
+      },
+      "children": [
+        {
+          "id": "conclusion-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "conclusion-column",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "conclusion-heading",
+                  "type": "heading",
+                  "props": {
+                    "text": "Key Takeaways",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "conclusion-text",
+                  "type": "text",
+                  "props": {
+                    "text": "2027 promises to be a pivotal year for the truck industry. Understanding the shifts in engine costs will be vital for both manufacturers and buyers to navigate the changes effectively."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
