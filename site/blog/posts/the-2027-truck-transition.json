@@ -211,7 +211,16 @@
       "id": "conclusion-section",
       "type": "section",
       "props": {
-        "background": "accent"
+        "background": "accent",
+        "align": "center",
+        "minHeight": "auto",
+        "paddingY": 10,
+        "width": "full"
+      },
+      "styles": {
+        "base": {
+          "flexWrap": "wrap"
+        }
       },
       "children": [
         {
