@@ -77,6 +77,19 @@
       ]
     },
     {
+      "id": "image",
+      "type": "image",
+      "props": {
+        "width": "full",
+        "image": {
+          "src": "https://vendure.buzznerdrv.com/assets/source/80/blog.png",
+          "alt": "blog.png",
+          "width": 1200,
+          "height": 800
+        }
+      }
+    },
+    {
       "id": "costs-section",
       "type": "section",
       "props": {
@@ -326,6 +339,38 @@
           ]
         }
       ]
+    },
+    {
+      "id": "shared-faq-band",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "faq-band",
+        "values": {
+          "faqs": [
+            {
+              "q": " Is the EPA 2027 NOx rule still happening?",
+              "a": " Yes — it takes effect January 1, 2027. The EPA kept the timeline and the 0.035 g/hp-hr NOx limit and declined industry requests to delay to 2031. GHG Phase 3 was rescinded separately; NOx and PM standards stay."
+            },
+            {
+              "q": "How much more will a 2027 truck cost?",
+              "a": " Roughly $8,000–$12,000 more per compliant Class 8 unit, after the EPA's July 2026 cost-easing proposal — down from original $20,000–$25,000 estimates. For a 1,000-truck fleet, that's about a $10 million impact."
+            },
+            {
+              "q": "What happened to the 2027 pre-buy?",
+              "a": "It never hit record levels. Regulatory uncertainty and soft freight muted it, then the window closed in August 2026 when 2026 build slots sold out and 2027 order boards opened."
+            },
+            {
+              "q": " Will the transition increase used truck demand?",
+              "a": "Likely yes. As new compliant trucks get pricier, proven pre-2027 units become a cost-avoidance option — making well-documented used inventory more valuable the wider the price gap grows."
+            },
+            {
+              "q": "How should dealers adjust listings for 2027 buyers?",
+              "a": " Make the model year and emissions certification obvious, name the engine platform, and state warranty coverage. Buyers now sort inventory by regulatory era — and a quarter use AI to research it — so clear compliance details get found first."
+            }
+          ]
+        }
+      },
+      "children": []
     }
   ]
 }
