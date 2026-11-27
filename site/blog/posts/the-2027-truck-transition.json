@@ -219,7 +219,16 @@
       },
       "styles": {
         "base": {
-          "flexWrap": "wrap"
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "justifyContent": "start",
+          "paddingTop": 10,
+          "marginTop": 10,
+          "marginBottom": 10,
+          "paddingRight": 10,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "marginLeft": 10
         }
       },
       "children": [
