@@ -7,95 +7,21 @@
   "coverImage": null,
   "nodes": [
     {
-      "id": "main-title",
-      "type": "section",
-      "props": {
-        "background": "none"
-      },
-      "children": [
-        {
-          "id": "title-row",
-          "type": "row",
-          "props": {
-            "gap": 6
-          },
-          "children": [
-            {
-              "id": "title-column",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "main-heading",
-                  "type": "heading",
-                  "props": {
-                    "text": "How Engine Costs Could Change Buyer Behavior",
-                    "headingLevel": 2
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "intro-section",
-      "type": "section",
-      "props": {
-        "background": "paper"
-      },
-      "children": [
-        {
-          "id": "intro-row",
-          "type": "row",
-          "props": {
-            "gap": 6
-          },
-          "children": [
-            {
-              "id": "intro-column",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "intro-text",
-                  "type": "text",
-                  "props": {
-                    "text": "For a commercial truck buyer, January 1, 2027 is not a model-year rollover. It is a price event they have been planning around for more than a year. Starting with model year 2027, every new heavy-duty diesel engine built for sale in the United States has to meet a NOx limit of 0.035 grams per horsepower-hour — more than an 80% reduction from the current standard — and the hardware and warranty changes required to get there are projected to add thousands of dollars to the price of a new truck. (Source: <a href=\"https://chartertrucks.com/blog/class-8-emissions-rules-in-2026-what-changed-what-did-not-and-what-it-means-for-your-next-truck\">Charter Trucks — Class 8 Emissions Rules in 2026</a>)\n\n\n\nThe rule survived a year of legal and political challenges and is still scheduled to take effect on schedule. That means the buyers walking your lot and browsing your listings right now are doing something they were not doing two years ago: weighing a current-technology truck against a more expensive compliant one, and recalculating what \"the right truck\" actually costs them. The dealers who understand how that calculation is shifting are positioning their inventory for it. The ones who are still listing trucks as if nothing changed are about to watch buyer questions go unanswered.\n\nA compliant 2027 Class 8 truck is projected to cost $8,000–$12,000 more than the same truck built today. For buyers, that turns the new-vs-used decision into a math problem — and your inventory is one of the variables.\n",
-                    "width": "full"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "image",
-      "type": "image",
-      "props": {
-        "width": "full",
-        "image": {
-          "src": "https://vendure.buzznerdrv.com/assets/source/80/blog.png",
-          "alt": "blog.png",
-          "width": 1200,
-          "height": 800
-        }
-      }
-    },
-    {
       "id": "costs-section",
       "type": "section",
       "props": {
         "background": "card"
       },
       "children": [
+        {
+          "id": "heading-8",
+          "type": "heading",
+          "props": {
+            "headingLevel": 2,
+            "align": "left",
+            "text": "The 2027 Truck Transition: How Engine Costs Could Change Buyer Behavior\n"
+          }
+        },
         {
           "id": "costs-row",
           "type": "row",
